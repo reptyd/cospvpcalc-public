@@ -1,0 +1,119 @@
+[
+  {
+    "name": "kendyll_vs_eigion_warden_active_melee_matches_ts_output",
+    "attacker": {
+      "health": 8000,
+      "weight": 13400,
+      "damage": 823.9606249999999,
+      "biteCooldown": 1.08,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 9000,
+      "weight": 30400,
+      "damage": 93.0278125,
+      "biteCooldown": 0.9,
+      "healthRegen": 6,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": true,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 3
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.45,
+        "Burn_Status": 0.3,
+        "Injury_Status": 0.3,
+        "Necropoison_Status": 1,
+        "Poison_Status": 0.3
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": true,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Shredded_Wings",
+        "stacks": 3,
+        "label": "Shredded Wings +3"
+      }
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 9.900000000000002,
+      "maxTimeSec": 180,
+      "dpsAtoB": 666.6666666666669,
+      "ttkAtoB": 13.499999999999996,
+      "damageDealtA": 9000,
+      "damageDealtAAtBDeath": 9000,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

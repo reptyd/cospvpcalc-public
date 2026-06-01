@@ -1,0 +1,41 @@
+[
+  {
+    "name": "adrenaline-activates-when-ready",
+    "time": 10,
+    "activesOn": true,
+    "abilityDisabled": false,
+    "startingAdrenalineActiveUntil": 0,
+    "startingAdrenalineCooldownUntil": 0,
+    "expected": {
+      "adrenalineActiveUntil": 40,
+      "adrenalineCooldownUntil": 100,
+      "abilityAppliedCount": 1
+    }
+  },
+  {
+    "name": "adrenaline-does-not-reactivate-during-active-window",
+    "time": 11,
+    "activesOn": true,
+    "abilityDisabled": false,
+    "startingAdrenalineActiveUntil": 25,
+    "startingAdrenalineCooldownUntil": 90,
+    "expected": {
+      "adrenalineActiveUntil": 25,
+      "adrenalineCooldownUntil": 90,
+      "abilityAppliedCount": 0
+    }
+  },
+  {
+    "name": "adrenaline-disabled-no-op",
+    "time": 10,
+    "activesOn": true,
+    "abilityDisabled": true,
+    "startingAdrenalineActiveUntil": 0,
+    "startingAdrenalineCooldownUntil": 0,
+    "expected": {
+      "adrenalineActiveUntil": 0,
+      "adrenalineCooldownUntil": 0,
+      "abilityAppliedCount": 0
+    }
+  }
+]

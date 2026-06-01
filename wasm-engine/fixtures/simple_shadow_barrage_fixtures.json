@@ -1,0 +1,120 @@
+{
+  "activation": [
+    {
+      "name": "shadow-barrage-activation-arms-hits",
+      "time": 5,
+      "lastMeleeHitAt": 1,
+      "lastMeleeHitDamage": 100,
+      "cooldownUntil": 0,
+      "remainingHits": 0,
+      "abilityValue": 5,
+      "expected": {
+        "shadowBarrageCooldownUntil": 35,
+        "shadowBarrageBaseDamage": 100,
+        "shadowBarrageRemainingHits": 5,
+        "shadowBarrageNextHitAt": 6,
+        "abilityAppliedCount": 1
+      }
+    },
+    {
+      "name": "shadow-barrage-activation-skips-when-last-hit-too-old",
+      "time": 20,
+      "lastMeleeHitAt": 1,
+      "lastMeleeHitDamage": 100,
+      "cooldownUntil": 0,
+      "remainingHits": 0,
+      "abilityValue": 5,
+      "expected": {
+        "shadowBarrageCooldownUntil": 0,
+        "shadowBarrageBaseDamage": 0,
+        "shadowBarrageRemainingHits": 0,
+        "shadowBarrageNextHitAt": null,
+        "abilityAppliedCount": 0
+      }
+    }
+  ],
+  "hits": [
+    {
+      "name": "shadow-barrage-first-hit",
+      "time": 6,
+      "defenderStartingHp": 12000,
+      "baseDamage": 100,
+      "totalHits": 5,
+      "remainingHits": 5,
+      "nextHitAt": 6,
+      "plushieOnHitStatuses": {},
+      "attackerApplyStatusOnHit": [
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 0.5
+        },
+        {
+          "statusId": "Frostbite_Status",
+          "stacks": 0.5
+        }
+      ],
+      "expected": {
+        "damageDealt": 90,
+        "defenderHp": 11910,
+        "defenderStatuses": {
+          "Corrosion_Status": {
+            "stacks": 0.4107142857142857,
+            "nextTickAt": 9,
+            "nextDecayAt": 9,
+            "remainingSec": 3
+          },
+          "Frostbite_Status": {
+            "stacks": 0.5,
+            "nextTickAt": null,
+            "nextDecayAt": 9,
+            "remainingSec": 3
+          }
+        },
+        "shadowBarrageRemainingHits": 4,
+        "shadowBarrageNextHitAt": 7,
+        "abilityAppliedCount": 1
+      }
+    },
+    {
+      "name": "shadow-barrage-second-hit-dropoff",
+      "time": 7,
+      "defenderStartingHp": 12000,
+      "baseDamage": 100,
+      "totalHits": 5,
+      "remainingHits": 4,
+      "nextHitAt": 7,
+      "plushieOnHitStatuses": {},
+      "attackerApplyStatusOnHit": [
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 0.5
+        },
+        {
+          "statusId": "Frostbite_Status",
+          "stacks": 0.5
+        }
+      ],
+      "expected": {
+        "damageDealt": 90,
+        "defenderHp": 11910,
+        "defenderStatuses": {
+          "Corrosion_Status": {
+            "stacks": 0.4107142857142857,
+            "nextTickAt": 10,
+            "nextDecayAt": 10,
+            "remainingSec": 3
+          },
+          "Frostbite_Status": {
+            "stacks": 0.5,
+            "nextTickAt": null,
+            "nextDecayAt": 10,
+            "remainingSec": 3
+          }
+        },
+        "shadowBarrageRemainingHits": 3,
+        "shadowBarrageNextHitAt": 8,
+        "abilityAppliedCount": 1
+      }
+    }
+  ]
+}

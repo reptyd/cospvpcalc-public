@@ -1,0 +1,139 @@
+[
+  {
+    "name": "fortify-status-oxytalis-vs-athulyth",
+    "attacker": {
+      "health": 10200,
+      "weight": 19500,
+      "damage": 375,
+      "biteCooldown": 0.9,
+      "healthRegen": 3,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 4
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": -0.4,
+        "Injury_Status": 0.3,
+        "Poison_Status": 0.8
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 7000,
+      "weight": 8500,
+      "damage": 175,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 1,
+        "Burn_Status": 0.5,
+        "Injury_Status": 1,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "fortifyProfile": {
+      "attackerFortifyAvailable": false,
+      "defenderFortifyAvailable": true
+    },
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 20,
+      "dpsAtoB": 707.0707070707069,
+      "ttkAtoB": 9.900000000000002,
+      "damageDealtA": 7012,
+      "damageDealtAAtBDeath": 7000,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "fortify-status-athulyth-vs-korathos",
+    "attacker": {
+      "health": 7000,
+      "weight": 8500,
+      "damage": 175,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 1,
+        "Burn_Status": 0.5,
+        "Injury_Status": 1,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "fortifyProfile": {
+      "attackerFortifyAvailable": true,
+      "defenderFortifyAvailable": false
+    },
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 7,
+      "maxTimeSec": 20,
+      "dpsAtoB": 107.25,
+      "ttkAtoB": 20,
+      "damageDealtA": 2252.25,
+      "damageDealtAAtBDeath": 2252.25,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

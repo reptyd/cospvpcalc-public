@@ -1,0 +1,156 @@
+[
+  {
+    "name": "jeff_vs_dioxikin_active_melee_bestbuild_live_matches_ts_output",
+    "attackerBuild": {
+      "venerationStage": 5,
+      "traits": [
+        "Bite",
+        "Damage"
+      ],
+      "ascensionAssignments": [
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage"
+      ],
+      "plushies": [
+        "Void",
+        "Void"
+      ],
+      "elder": "None"
+    },
+    "defenderBuild": {
+      "venerationStage": 5,
+      "traits": [
+        "Damage",
+        "Bite"
+      ],
+      "ascensionAssignments": [
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage"
+      ],
+      "plushies": [
+        "Void",
+        "Void"
+      ],
+      "elder": "Powerful"
+    },
+    "attacker": {
+      "health": 1150,
+      "weight": 680,
+      "damage": 99.67265625,
+      "biteCooldown": 0.45,
+      "healthRegen": 9,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 1950,
+      "weight": 1480,
+      "damage": 191.03925781249998,
+      "biteCooldown": 0.6615000000000001,
+      "healthRegen": 6.4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 1.25
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": -0.25,
+        "Burn_Status": -0.25,
+        "Disease_Status": -0.25,
+        "Frostbite_Status": -0.25,
+        "Injury_Status": -0.25,
+        "Necropoison_Status": 1,
+        "Poison_Status": -0.25
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": true,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": true,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Corrosion_Status",
+        "stacks": 5,
+        "label": "Corrosion +5"
+      }
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 2.6460000000000004,
+      "maxTimeSec": 180,
+      "dpsAtoB": 180.55555555555563,
+      "ttkAtoB": 10.799999999999997,
+      "damageDealtA": 1950.0000000000002,
+      "damageDealtAAtBDeath": 1950.0000000000002,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

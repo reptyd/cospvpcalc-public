@@ -1,0 +1,180 @@
+[
+  {
+    "name": "korathos_vs_golgaroth_life_leech_breath_matches_ts_output",
+    "attackerBuild": {
+      "venerationStage": 5,
+      "traits": [
+        "Bite",
+        "Damage"
+      ],
+      "ascensionAssignments": [
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage"
+      ],
+      "plushies": [
+        "Void",
+        "Void"
+      ],
+      "elder": "None"
+    },
+    "defenderBuild": {
+      "venerationStage": 5,
+      "traits": [
+        "Damage",
+        "Bite"
+      ],
+      "ascensionAssignments": [
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage"
+      ],
+      "plushies": [
+        "Void",
+        "Void"
+      ],
+      "elder": "Powerful"
+    },
+    "attacker": {
+      "health": 11750,
+      "weight": 50400,
+      "damage": 598.0359374999999,
+      "biteCooldown": 0.9,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 17000,
+      "weight": 51400,
+      "damage": 275.0965312499999,
+      "biteCooldown": 1.1340000000000001,
+      "healthRegen": 3.2,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 80,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": -2
+        },
+        {
+          "statusId": "Burn_Status",
+          "stacks": -1
+        },
+        {
+          "statusId": "Frostbite_Status",
+          "stacks": -1
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": -1
+        }
+      ],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": -2
+        },
+        {
+          "statusId": "Burn_Status",
+          "stacks": -1
+        },
+        {
+          "statusId": "Frostbite_Status",
+          "stacks": -1
+        },
+        {
+          "statusId": "Injury_Status",
+          "stacks": 0.5
+        },
+        {
+          "statusId": "Necropoison_Status",
+          "stacks": -1
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": -1.5
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 1,
+        "Burn_Status": 0.85,
+        "Frostbite_Status": 0.85,
+        "Injury_Status": 1,
+        "Necropoison_Status": 0.75,
+        "Poison_Status": 0.85
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": {
+      "dpsPct": 0.5,
+      "capacity": 10,
+      "regenRate": 2.5,
+      "critChancePct": 25,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": "miasma",
+      "selfHealPct": 0.5,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": null,
+    "lifeLeechProfile": {
+      "attacker": {
+        "available": true,
+        "lifeLeechValue": 0.3
+      },
+      "defender": {
+        "available": false,
+        "lifeLeechValue": 0
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": 133.81199999999995,
+      "maxTimeSec": 180,
+      "dpsAtoB": 194.09961685823737,
+      "ttkAtoB": 104.40000000000018,
+      "damageDealtA": 21601.21643968873,
+      "damageDealtAAtBDeath": 20264.000000000015,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

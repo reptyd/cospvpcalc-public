@@ -1,0 +1,145 @@
+[
+  {
+    "name": "kendyll_vs_kragnyx_breath_top_result_2_fast_matches_ts_output",
+    "attackerBuild": {
+      "venerationStage": 5,
+      "traits": [
+        "Bite",
+        "Damage"
+      ],
+      "ascensionAssignments": [
+        "Bite",
+        "Bite",
+        "Bite",
+        "Bite",
+        "Bite"
+      ],
+      "plushies": [
+        "Coal",
+        "Ice Wolf"
+      ],
+      "elder": "Powerful"
+    },
+    "defenderBuild": {
+      "venerationStage": 5,
+      "traits": [
+        "Damage",
+        "Bite"
+      ],
+      "ascensionAssignments": [
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage"
+      ],
+      "plushies": [
+        "Void",
+        "Void"
+      ],
+      "elder": "Powerful"
+    },
+    "disabledAbilitiesA": [],
+    "disabledAbilitiesB": [],
+    "abilityPolicy": "fast",
+    "attacker": {
+      "health": 8000,
+      "weight": 16560,
+      "damage": 786.0825,
+      "biteCooldown": 1.0710000000000002,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 11500,
+      "weight": 48400,
+      "damage": 351.51223437499993,
+      "biteCooldown": 0.9450000000000001,
+      "healthRegen": 3.2,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": {
+        "triggerHpRatioLte": 0.15,
+        "damagePct": 10,
+        "selfHpFloorPct": 5,
+        "applyStatuses": [
+          {
+            "statusId": "Burn_Status",
+            "stacks": 10
+          }
+        ]
+      },
+      "hunkerReductionPct": 60,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 1.5
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.75,
+        "Burn_Status": 0.25,
+        "Injury_Status": 1,
+        "Poison_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": null,
+    "defenderBreath": {
+      "dpsPct": 0.45,
+      "capacity": 8,
+      "regenRate": 5,
+      "critChancePct": 0,
+      "chain": 100,
+      "chainMaxStacks": 10,
+      "specialKind": "energy",
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "thornTrapProfile": {
+      "attackerThornTrapAvailable": false,
+      "defenderThornTrapAvailable": true
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 16.065,
+      "maxTimeSec": 180,
+      "dpsAtoB": 336.02460592080007,
+      "ttkAtoB": 36.413999999999966,
+      "damageDealtA": 12236.000000000002,
+      "damageDealtAAtBDeath": 12236.000000000002,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

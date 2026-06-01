@@ -1,0 +1,80 @@
+[
+  {
+    "name": "drowsy-area-breath-kendyll-vs-shararook",
+    "attacker": {
+      "health": 8000,
+      "weight": 13400,
+      "damage": 620,
+      "biteCooldown": 1.2,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 7413,
+      "weight": 4840,
+      "damage": 275,
+      "biteCooldown": 0.8,
+      "healthRegen": 6,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0.28,
+      "firstStrikeHpRatioThreshold": 0.75,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 0.5
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 1
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.45,
+        "Burn_Status": -0.1,
+        "Poison_Status": 0.45
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": null,
+    "defenderBreath": null,
+    "drowsyAreaProfile": {
+      "attackerDrowsyAreaAvailable": false,
+      "defenderDrowsyAreaAvailable": true
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": 31.200000000000017,
+      "maxTimeSec": 180,
+      "dpsAtoB": 762.6543209876542,
+      "ttkAtoB": 9.720000000000002,
+      "damageDealtA": 7434,
+      "damageDealtAAtBDeath": 7413,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

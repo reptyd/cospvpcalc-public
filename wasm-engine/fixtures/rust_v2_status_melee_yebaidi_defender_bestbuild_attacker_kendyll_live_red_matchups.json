@@ -1,0 +1,76 @@
+[
+  {
+    "name": "kendyll_vs_yebaidi_status_melee_live_surface_matches_ts_output",
+    "attacker": {
+      "health": 8000,
+      "weight": 13400,
+      "damage": 823.9606249999999,
+      "biteCooldown": 1.08,
+      "healthRegen": 5,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 9500,
+      "weight": 11200,
+      "damage": 496.70207031249987,
+      "biteCooldown": 0.9450000000000001,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 1.5
+        },
+        {
+          "statusId": "Injury_Status",
+          "stacks": 1
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4,
+        "Injury_Status": 0.25,
+        "Poison_Status": 0.4
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": 14.175000000000002,
+      "maxTimeSec": 180,
+      "dpsAtoB": 703.7037037037037,
+      "ttkAtoB": 13.5,
+      "damageDealtA": 9501,
+      "damageDealtAAtBDeath": 9500,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

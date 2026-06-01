@@ -1,0 +1,29 @@
+[
+  {
+    "name": "drowsy-area-applies-drowsy",
+    "time": 0,
+    "activesOn": true,
+    "startingDefenderStatuses": {},
+    "expected": {
+      "defenderStatuses": {
+        "Drowsy_Status": {
+          "stacks": 5,
+          "nextTickAt": null,
+          "nextDecayAt": 3,
+          "remainingSec": 15
+        }
+      },
+      "abilityAppliedCount": 1
+    }
+  },
+  {
+    "name": "drowsy-area-disabled-with-actives-off",
+    "time": 0,
+    "activesOn": false,
+    "startingDefenderStatuses": {},
+    "expected": {
+      "defenderStatuses": {},
+      "abilityAppliedCount": 0
+    }
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "name": "fortify-clears-removable-statuses",
+    "time": 0,
+    "startingStatuses": {
+      "Burn_Status": {
+        "stacks": 3,
+        "nextTickAt": 3,
+        "remainingSec": 12
+      },
+      "Frostbite_Status": {
+        "stacks": 2,
+        "nextTickAt": 3,
+        "remainingSec": 12
+      }
+    },
+    "startingFortifyCooldownUntil": 0,
+    "expected": {
+      "statuses": {},
+      "fortifyCooldownUntil": 90,
+      "fortifyImmuneUntil": 9,
+      "fortifyWeightBonusUntil": 9,
+      "abilityAppliedCount": 1
+    }
+  },
+  {
+    "name": "fortify-ignores-non-removable-only-set",
+    "time": 0,
+    "startingStatuses": {
+      "Slow_Status": {
+        "stacks": 2,
+        "nextTickAt": 3,
+        "remainingSec": 12
+      }
+    },
+    "startingFortifyCooldownUntil": 0,
+    "expected": {
+      "statuses": {
+        "Slow_Status": {
+          "stacks": 2,
+          "nextTickAt": 3,
+          "remainingSec": 12
+        }
+      },
+      "fortifyCooldownUntil": 0,
+      "fortifyImmuneUntil": 0,
+      "fortifyWeightBonusUntil": 0,
+      "abilityAppliedCount": 0
+    }
+  }
+]

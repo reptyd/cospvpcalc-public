@@ -1,0 +1,260 @@
+[
+  {
+    "name": "fortify-breath-embristiss-vs-korathos",
+    "attacker": {
+      "health": 5500,
+      "weight": 6300,
+      "damage": 200,
+      "biteCooldown": 0.8,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": {
+        "triggerHpRatioLte": 0.15,
+        "damagePct": 10,
+        "selfHpFloorPct": 5,
+        "applyStatuses": [
+          {
+            "statusId": "Burn_Status",
+            "stacks": 10
+          }
+        ]
+      },
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Burn_Status",
+          "stacks": 2
+        },
+        {
+          "statusId": "Injury_Status",
+          "stacks": 1
+        }
+      ],
+      "statusResistFractions": {
+        "Burn_Status": 1,
+        "Injury_Status": 0.3,
+        "Necropoison_Status": 0.9,
+        "Poison_Status": -0.15
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": {
+      "dpsPct": 1,
+      "capacity": 20,
+      "regenRate": 1.5,
+      "critChancePct": 25,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": {
+      "dpsPct": 0.5,
+      "capacity": 10,
+      "regenRate": 2.5,
+      "critChancePct": 25,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "fortifyProfile": {
+      "attackerFortifyAvailable": true,
+      "defenderFortifyAvailable": false
+    },
+    "maxTimeSec": 24,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 5,
+      "maxTimeSec": 24,
+      "dpsAtoB": 287.3238932291667,
+      "ttkAtoB": 24,
+      "damageDealtA": 6895.773437500004,
+      "damageDealtAAtBDeath": 6895.773437500004,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "fortify-breath-korathos-vs-embristiss",
+    "attacker": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 5500,
+      "weight": 6300,
+      "damage": 200,
+      "biteCooldown": 0.8,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": {
+        "triggerHpRatioLte": 0.15,
+        "damagePct": 10,
+        "selfHpFloorPct": 5,
+        "applyStatuses": [
+          {
+            "statusId": "Burn_Status",
+            "stacks": 10
+          }
+        ]
+      },
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Burn_Status",
+          "stacks": 2
+        },
+        {
+          "statusId": "Injury_Status",
+          "stacks": 1
+        }
+      ],
+      "statusResistFractions": {
+        "Burn_Status": 1,
+        "Injury_Status": 0.3,
+        "Necropoison_Status": 0.9,
+        "Poison_Status": -0.15
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": {
+      "dpsPct": 0.5,
+      "capacity": 10,
+      "regenRate": 2.5,
+      "critChancePct": 25,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": {
+      "dpsPct": 1,
+      "capacity": 20,
+      "regenRate": 1.5,
+      "critChancePct": 25,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "fortifyProfile": {
+      "attackerFortifyAvailable": false,
+      "defenderFortifyAvailable": true
+    },
+    "maxTimeSec": 24,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 24,
+      "dpsAtoB": 1099.9999999999998,
+      "ttkAtoB": 5,
+      "damageDealtA": 6664.249999999999,
+      "damageDealtAAtBDeath": 5499.999999999999,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

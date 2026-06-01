@@ -1,0 +1,110 @@
+[
+  {
+    "name": "unbridled-rage-breath-caldonterrus-vs-aereis",
+    "attacker": {
+      "health": 14500,
+      "weight": 50000,
+      "damage": 300,
+      "biteCooldown": 1.2,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Burn_Status",
+          "stacks": 2
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.7,
+        "Burn_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 2150,
+      "weight": 2300,
+      "damage": 260,
+      "biteCooldown": 0.8,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": {
+      "dpsPct": 1,
+      "capacity": 20,
+      "regenRate": 1.5,
+      "critChancePct": 25,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": {
+      "dpsPct": 0.5,
+      "capacity": 20,
+      "regenRate": 0.75,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "unbridledRageProfile": {
+      "attackerUnbridledRageAvailable": true,
+      "defenderUnbridledRageAvailable": false
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 24,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 24,
+      "dpsAtoB": 895.8333333333334,
+      "ttkAtoB": 2.4,
+      "damageDealtA": 2876.3875000000003,
+      "damageDealtAAtBDeath": 2150,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

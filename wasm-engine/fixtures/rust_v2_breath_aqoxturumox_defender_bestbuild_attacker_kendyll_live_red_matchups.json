@@ -1,0 +1,98 @@
+[
+  {
+    "name": "kendyll_vs_aqoxturumox_breath_live_surface_matches_ts_output",
+    "attacker": {
+      "health": 8000,
+      "weight": 13400,
+      "damage": 823.9606249999999,
+      "biteCooldown": 1.08,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 15000,
+      "weight": 26800,
+      "damage": 229.24710937499998,
+      "biteCooldown": 0.6615000000000001,
+      "healthRegen": 4.800000000000001,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 1
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.75,
+        "Injury_Status": 0.35,
+        "Poison_Status": 0.4
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": null,
+    "defenderBreath": {
+      "dpsPct": 1.5,
+      "capacity": 10,
+      "regenRate": 2.5,
+      "critChancePct": 20,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 11.245500000000002,
+      "maxTimeSec": 180,
+      "dpsAtoB": 856.2091503267982,
+      "ttkAtoB": 18.359999999999985,
+      "damageDealtA": 15720.000000000002,
+      "damageDealtAAtBDeath": 15720.000000000002,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

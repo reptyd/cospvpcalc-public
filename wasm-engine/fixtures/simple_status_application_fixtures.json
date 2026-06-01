@@ -1,0 +1,97 @@
+[
+  {
+    "name": "block-poison-halves",
+    "time": 0,
+    "statusId": "Poison_Status",
+    "stacks": 2.5,
+    "startingStatuses": {},
+    "resistFraction": 0.5,
+    "plushieBlockFraction": 0,
+    "expected": {
+      "statuses": {
+        "Poison_Status": {
+          "stacks": 1.25,
+          "nextTickAt": 3,
+          "nextDecayAt": 3,
+          "remainingSec": 3.75
+        }
+      },
+      "appliedStacks": 1.25,
+      "blockedStacks": 1.25,
+      "effectiveFraction": 0.5
+    }
+  },
+  {
+    "name": "negative-burn-resist-amplifies",
+    "time": 0,
+    "statusId": "Burn_Status",
+    "stacks": 1,
+    "startingStatuses": {},
+    "resistFraction": -0.1,
+    "plushieBlockFraction": 0,
+    "expected": {
+      "statuses": {
+        "Burn_Status": {
+          "stacks": 1.1,
+          "nextTickAt": 3,
+          "nextDecayAt": 3,
+          "remainingSec": 3.3000000000000003
+        }
+      },
+      "appliedStacks": 1.1,
+      "blockedStacks": -0.10000000000000009,
+      "effectiveFraction": 0
+    }
+  },
+  {
+    "name": "plushie-burn-block-reduces",
+    "time": 0,
+    "statusId": "Burn_Status",
+    "stacks": 1,
+    "startingStatuses": {},
+    "resistFraction": 0.25,
+    "plushieBlockFraction": 0.15,
+    "expected": {
+      "statuses": {
+        "Burn_Status": {
+          "stacks": 0.6,
+          "nextTickAt": 3,
+          "nextDecayAt": 3,
+          "remainingSec": 3
+        }
+      },
+      "appliedStacks": 0.6,
+      "blockedStacks": 0.4,
+      "effectiveFraction": 0.4
+    }
+  },
+  {
+    "name": "sticky-teeth-does-not-restack",
+    "time": 1,
+    "statusId": "Sticky_Teeth_Status",
+    "stacks": 1,
+    "startingStatuses": {
+      "Sticky_Teeth_Status": {
+        "stacks": 1,
+        "nextTickAt": null,
+        "nextDecayAt": 3,
+        "remainingSec": 3
+      }
+    },
+    "resistFraction": 0,
+    "plushieBlockFraction": 0,
+    "expected": {
+      "statuses": {
+        "Sticky_Teeth_Status": {
+          "stacks": 2,
+          "nextTickAt": null,
+          "nextDecayAt": 3,
+          "remainingSec": 5
+        }
+      },
+      "appliedStacks": 1,
+      "blockedStacks": 0,
+      "effectiveFraction": 0
+    }
+  }
+]

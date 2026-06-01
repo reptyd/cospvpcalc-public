@@ -1,0 +1,81 @@
+import type { scoreResult } from "../optimizer/scoring";
+import type { getPerspectiveMetrics } from "./buildDetailsExplainHelpers";
+
+export type BuildDetailsPerspectiveMetrics = ReturnType<typeof getPerspectiveMetrics>;
+
+export type BuildDetailsSplitAnalysis = {
+  score: ReturnType<typeof scoreResult>;
+  metrics: BuildDetailsPerspectiveMetrics;
+  counts: number[];
+};
+
+export type BuildDetailsExplainAnalysis = {
+  trait1: string;
+  trait2: string;
+  traitCountById: Record<string, number>;
+  traitLine: string;
+  plushieLine: string;
+  ascLine: string;
+  winner: string;
+  dps: number;
+  killDps: number;
+  ttk: number;
+  effective: number;
+  baseTraitGain: number;
+  trait1PercentBase: number;
+  trait1PercentTotal: number;
+  trait2PercentBase: number;
+  trait2PercentTotal: number;
+  trait1FullEff: number;
+  trait2FullEff: number;
+  trait1BaseGain: number;
+  trait2BaseGain: number;
+  trait1UpgradeEff: number;
+  trait2UpgradeEff: number;
+  trait1FullDps: number;
+  trait2FullDps: number;
+  trait1BaseDps: number;
+  trait2BaseDps: number;
+  trait1UpgradeDps: number;
+  trait2UpgradeDps: number;
+  trait1TtkGain: number;
+  trait2TtkGain: number;
+  trait1BaseTtk: number;
+  trait2BaseTtk: number;
+  trait1UpgradeTtk: number;
+  trait2UpgradeTtk: number;
+  statusGainEffective: number;
+  statusGainDps: number;
+  statusGainTtk: number;
+  statusPressureEstimate: number;
+  statusStacksBase: number;
+  statusStacksNo: number;
+  dotDpsBase: number;
+  dotDpsNo: number;
+  opponentRegenDenied: number;
+  biteStatusSynergy: number;
+  biteStatusStacksGain: number;
+  biteEffectiveGain: number;
+  biteDpsGain: number;
+  biteTtkGain: number;
+  weightOffGain: number;
+  weightDefGain: number;
+  healthRegenGain: number;
+  topSplits: BuildDetailsSplitAnalysis[];
+  statusAppliedBreakdown: Array<[string, number]>;
+};
+
+export type BuildDetailsStatusAnalysisSnapshot = {
+  noStatuses: BuildDetailsPerspectiveMetrics;
+  statusStacksBase: number;
+  statusStacksNo: number;
+  dotDpsBase: number;
+  dotDpsNo: number;
+  opponentRegenDenied: number;
+  biteStatusSynergy: number;
+  biteStatusStacksGain: number;
+  biteEffectiveGain: number;
+  biteDpsGain: number;
+  biteTtkGain: number;
+  statusAppliedBreakdown: Array<[string, number]>;
+};

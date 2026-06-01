@@ -1,0 +1,87 @@
+[
+  {
+    "name": "poison-single-stack",
+    "statusId": "Poison_Status",
+    "stacks": 1,
+    "maxHp": 1000,
+    "tickTime": 3,
+    "expected": {
+      "hpAfter": 997.5,
+      "sourceDamageDealt": 2.5,
+      "sourceDotDamageDealt": 2.5,
+      "status": {
+        "stacks": 1,
+        "nextTickAt": 6,
+        "remainingSec": 3
+      }
+    }
+  },
+  {
+    "name": "burn-four-stacks",
+    "statusId": "Burn_Status",
+    "stacks": 4,
+    "maxHp": 1500,
+    "tickTime": 3,
+    "expected": {
+      "hpAfter": 1490.25,
+      "sourceDamageDealt": 9.75,
+      "sourceDotDamageDealt": 9.75,
+      "status": {
+        "stacks": 4,
+        "nextTickAt": 6,
+        "remainingSec": 12
+      }
+    }
+  },
+  {
+    "name": "corrosion-many-stacks",
+    "statusId": "Corrosion_Status",
+    "stacks": 8,
+    "maxHp": 2000,
+    "tickTime": 3,
+    "expected": {
+      "hpAfter": 1990,
+      "sourceDamageDealt": 10,
+      "sourceDotDamageDealt": 10,
+      "status": {
+        "stacks": 8,
+        "nextTickAt": 6,
+        "remainingSec": 24
+      }
+    }
+  },
+  {
+    "name": "bleed-two-stacks",
+    "statusId": "Bleed_Status",
+    "stacks": 2,
+    "maxHp": 1200,
+    "tickTime": 3,
+    "expected": {
+      "hpAfter": 1188,
+      "sourceDamageDealt": 12,
+      "sourceDotDamageDealt": 12,
+      "status": {
+        "stacks": 2,
+        "nextTickAt": 6,
+        "remainingSec": 6
+      }
+    }
+  },
+  {
+    "name": "sticky-teeth-no-stack",
+    "statusId": "Sticky_Teeth_Status",
+    "stacks": 1,
+    "maxHp": 900,
+    "tickTime": 3,
+    "expected": {
+      "hpAfter": 900,
+      "sourceDamageDealt": 0,
+      "sourceDotDamageDealt": 0,
+      "status": {
+        "stacks": 1,
+        "nextTickAt": null,
+        "remainingSec": 3
+      }
+    }
+  }
+]

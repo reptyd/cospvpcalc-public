@@ -1,0 +1,106 @@
+[
+  {
+    "name": "kendyll_vs_hellion_warden_warden_rage_breath_live_surface_matches_ts_output",
+    "attacker": {
+      "health": 8000,
+      "weight": 13400,
+      "damage": 823.9606249999999,
+      "biteCooldown": 1.08,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 9450,
+      "weight": 11920,
+      "damage": 99.3404140625,
+      "biteCooldown": 1.1340000000000001,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": true,
+      "breathResistance": 0.9,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 3
+        }
+      ],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 1.5
+        },
+        {
+          "statusId": "Injury_Status",
+          "stacks": 2.5
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.6,
+        "Injury_Status": 1,
+        "Necropoison_Status": 1,
+        "Poison_Status": 0.3
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": null,
+    "defenderBreath": {
+      "dpsPct": 0.5,
+      "capacity": 10,
+      "regenRate": 1.8,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "drowsyAreaProfile": {
+      "attackerDrowsyAreaAvailable": false,
+      "defenderDrowsyAreaAvailable": false,
+      "attackerWardenRageAvailable": false,
+      "defenderWardenRageAvailable": true
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 12.474000000000002,
+      "maxTimeSec": 180,
+      "dpsAtoB": 875.0000000000005,
+      "ttkAtoB": 13.499999999999996,
+      "damageDealtA": 11812.500000000004,
+      "damageDealtAAtBDeath": 11812.500000000004,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

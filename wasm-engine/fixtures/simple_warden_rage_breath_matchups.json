@@ -1,0 +1,246 @@
+[
+  {
+    "name": "warden-rage-breath-garra-warden-vs-aereis",
+    "attacker": {
+      "health": 3500,
+      "weight": 3050,
+      "damage": 10,
+      "biteCooldown": 0.3,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": true,
+      "breathResistance": 0.9,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 3
+        },
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Disease_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 1.5
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.2,
+        "Necropoison_Status": 1,
+        "Poison_Status": 0.7
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 2150,
+      "weight": 2300,
+      "damage": 260,
+      "biteCooldown": 0.8,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": {
+      "dpsPct": 1,
+      "capacity": 20,
+      "regenRate": 3,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": {
+      "dpsPct": 1,
+      "capacity": 25,
+      "regenRate": 3,
+      "critChancePct": 10,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "wardenRageProfile": {
+      "attackerWardenRageAvailable": true,
+      "defenderWardenRageAvailable": false
+    },
+    "maxTimeSec": 24,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 13.600000000000003,
+      "maxTimeSec": 24,
+      "dpsAtoB": 132.21568108673515,
+      "ttkAtoB": 24,
+      "damageDealtA": 1798.1332627795982,
+      "damageDealtAAtBDeath": 1798.1332627795982,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "warden-rage-breath-aereis-vs-garra-warden",
+    "attacker": {
+      "health": 2150,
+      "weight": 2300,
+      "damage": 260,
+      "biteCooldown": 0.8,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 3500,
+      "weight": 3050,
+      "damage": 10,
+      "biteCooldown": 0.3,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": true,
+      "breathResistance": 0.9,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 3
+        },
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Disease_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 1.5
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.2,
+        "Necropoison_Status": 1,
+        "Poison_Status": 0.7
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": {
+      "dpsPct": 1,
+      "capacity": 25,
+      "regenRate": 3,
+      "critChancePct": 10,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": {
+      "dpsPct": 1,
+      "capacity": 20,
+      "regenRate": 3,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "wardenRageProfile": {
+      "attackerWardenRageAvailable": false,
+      "defenderWardenRageAvailable": true
+    },
+    "maxTimeSec": 24,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 24,
+      "dpsAtoB": 260.1918087994214,
+      "ttkAtoB": 13.600000000000003,
+      "damageDealtA": 3538.6085996721313,
+      "damageDealtAAtBDeath": 3538.6085996721313,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

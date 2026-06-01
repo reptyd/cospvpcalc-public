@@ -1,0 +1,81 @@
+[
+  {
+    "name": "kendyll_vs_aidoneiscus_status_melee_live_surface_matches_ts_output",
+    "attacker": {
+      "health": 8000,
+      "weight": 13400,
+      "damage": 823.9606249999999,
+      "biteCooldown": 1.08,
+      "healthRegen": 5,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 6000,
+      "weight": 4480,
+      "damage": 603.6840546874998,
+      "biteCooldown": 1.3230000000000002,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Burn_Status",
+          "stacks": 2.5
+        },
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Burn_Status",
+          "stacks": 0.5
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.45,
+        "Burn_Status": 1,
+        "Frostbite_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": 13.891500000000002,
+      "maxTimeSec": 180,
+      "dpsAtoB": 1388.8888888888887,
+      "ttkAtoB": 4.32,
+      "damageDealtA": 6009,
+      "damageDealtAAtBDeath": 6000,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

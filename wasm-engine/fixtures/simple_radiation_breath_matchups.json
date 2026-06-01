@@ -1,0 +1,234 @@
+[
+  {
+    "name": "radiation-breath-noxiouk-vs-korathos",
+    "attacker": {
+      "health": 4350,
+      "weight": 3000,
+      "damage": 180,
+      "biteCooldown": 0.8,
+      "healthRegen": 6,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 0.6
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.35,
+        "Disease_Status": 0.6,
+        "Poison_Status": 1
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": {
+      "dpsPct": 1,
+      "capacity": 10,
+      "regenRate": 1.8,
+      "critChancePct": 10,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": {
+      "dpsPct": 0.5,
+      "capacity": 10,
+      "regenRate": 2.5,
+      "critChancePct": 25,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "radiationProfile": {
+      "attackerRadiationAvailable": true,
+      "defenderRadiationAvailable": false,
+      "attackerAuraDiseaseAvailable": false,
+      "defenderAuraDiseaseAvailable": false
+    },
+    "maxTimeSec": 24,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 4,
+      "maxTimeSec": 24,
+      "dpsAtoB": 166.7330211873882,
+      "ttkAtoB": 24,
+      "damageDealtA": 4001.5925084973187,
+      "damageDealtAAtBDeath": 4001.5925084973187,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "radiation-breath-korathos-vs-noxiouk",
+    "attacker": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 4350,
+      "weight": 3000,
+      "damage": 180,
+      "biteCooldown": 0.8,
+      "healthRegen": 6,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 0.6
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.35,
+        "Disease_Status": 0.6,
+        "Poison_Status": 1
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": {
+      "dpsPct": 0.5,
+      "capacity": 10,
+      "regenRate": 2.5,
+      "critChancePct": 25,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": {
+      "dpsPct": 1,
+      "capacity": 10,
+      "regenRate": 1.8,
+      "critChancePct": 10,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "radiationProfile": {
+      "attackerRadiationAvailable": false,
+      "defenderRadiationAvailable": true,
+      "attackerAuraDiseaseAvailable": false,
+      "defenderAuraDiseaseAvailable": false
+    },
+    "maxTimeSec": 24,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 24,
+      "dpsAtoB": 1242.857142857143,
+      "ttkAtoB": 3.5,
+      "damageDealtA": 4637,
+      "damageDealtAAtBDeath": 4350,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

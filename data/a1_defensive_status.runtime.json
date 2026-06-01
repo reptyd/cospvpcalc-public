@@ -1,0 +1,1850 @@
+{
+  "byCreature": {
+    "Arcabatur": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Avothius": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Boskurro": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Buukon": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Cantapodi": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Capukoralu": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Corrosion"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Celeritas": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Chromohege": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Chrysos": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Coniferon": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Dalghara": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Doragonix": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Dragonixsauria": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 0.75,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Elarickkeir": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Embristiss": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Felikxtrox": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Flixlit": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Frigiboa": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Frigilinx": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Garra Warden": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Golgaroth": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -2,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": -1,
+        "sourceAbility": "Defensive Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": -1,
+        "sourceAbility": "Defensive Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": -1,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": -1.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Goreganthus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Hayrhinozh": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Kaegiszarr": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Khu'Vuk": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Koryser": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Levoneh": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Lucensia": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Magnarothus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Melantha": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Morinus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Muravil": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Nyctoxon": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Opralegion": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Ovufu": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Pleuremiert": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Plumetik": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Sarcosiris": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Scrimpeii": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Seradae": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Sigmatox": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Skulderouge": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Sleirnok": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Takamorath": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Tarakotu": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Therokis": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Trikylo": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Trutholbyeva": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Varskela": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Venuella": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Veraiatrice": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 5,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Viridex": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Xeleviprex": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Zethines": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Zoltraack": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Aidoneiscus": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Altulis": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Amolis": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Ani": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Asilvestrela": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Caldonterrus": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Cimidstik": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Cindrothar": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Deluumar": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Frostbite"
+      },
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Firakai": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Flamerir": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 5,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Fyranili": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Glovaucus": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Haechionx": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Iztajuatl": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Jabblebashhe": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Khetheral": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Mag'Masta": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Phyremia": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Seraphis": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Shiziyou": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Starlit": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Sturbi": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Taiyuelong": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Thundrake": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Valkurse": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Veldys": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Burn"
+      },
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Vivoltex": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Burn"
+      },
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Volnoirve": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Wixpectr'o": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Zieti": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Burn"
+      }
+    ],
+    "Apofuex": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Defensive Corrosion"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Astrothi": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Defensive Corrosion"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Cavengauu": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Corrosion"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Hellion Warden": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Corrosion"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Kehmador": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Corrosion"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Lactarim": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Corrosion"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 4.5,
+        "sourceAbility": "Defensive Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Pentagloss": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Corrosion"
+      }
+    ],
+    "Venatrox": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Corrosion"
+      }
+    ],
+    "Zeoarex": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Corrosion"
+      }
+    ],
+    "Aholai": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Disease"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Necropoison"
+      }
+    ],
+    "Artikauk": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Bolatra": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Disease"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Cottol": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Enthomen": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Lithumbra": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Disease"
+      }
+    ],
+    "Lus-Adarch": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 4.5,
+        "sourceAbility": "Defensive Disease"
+      }
+    ],
+    "Morthorax": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Nemni": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Disease"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Nok'Tuun": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Disease"
+      }
+    ],
+    "Noxiouk": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Disease"
+      }
+    ],
+    "Phantejer": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Defensive Disease"
+      }
+    ],
+    "Ralokai": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Disease"
+      }
+    ],
+    "Salrahn": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Disease"
+      }
+    ],
+    "Tornir": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Tsugae": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Disease"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Ushrumesh": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 5,
+        "sourceAbility": "Defensive Disease"
+      }
+    ],
+    "Vahiaex": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Disease"
+      }
+    ],
+    "Woodralone": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Disease"
+      }
+    ],
+    "Wuggawyrm": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Aesthyrion": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Boreal Warden": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Cimmabu": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Despisicle": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Etheralotus": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Minthwyrm": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Mawhrott": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Disease"
+      }
+    ],
+    "Moluna": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Noxulumen": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Permacham": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Prialoura": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Stratifelis": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Uldraaké": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 0.75,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Urzuk": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Verklixin": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 5,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Yohsog": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Frostbite"
+      }
+    ],
+    "Aqoxturumox": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Astolo": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Athulyth": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Bäruw": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Denjzi": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Geoptxina": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Geortharoc": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Gnolrok": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Haxaline": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Inkpujin": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Liskwyrm": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Phugu": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Taburúún": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Zakaiodrak": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Aesho": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Aueko": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Chamei": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Necropoison"
+      }
+    ],
+    "Citrulantis": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Necropoison"
+      }
+    ],
+    "Crata Peretina": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 6,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Dalitil": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Necropoison"
+      }
+    ],
+    "Fairiocris": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Necropoison"
+      }
+    ],
+    "Felifaux": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Necropoison"
+      }
+    ],
+    "Glysgadota": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Necropoison"
+      }
+    ],
+    "Gryvila": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Kretśnik": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Lorolael": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Malupiscis": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Necropoison"
+      }
+    ],
+    "Minawii": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Nindyr": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Nuciffracoccu": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Quezekel": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Necropoison"
+      }
+    ],
+    "Sha'Rei": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Necropoison"
+      }
+    ],
+    "Shiyaro": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Necropoison"
+      }
+    ],
+    "Zhelijin": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Necropoison"
+      },
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Flipli": [
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Keruku": [
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Knalriki": [
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Militrua": [
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Okiamano": [
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Taurolystris": [
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Uleoum": [
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Yama'tu": [
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Zokzis": [
+      {
+        "statusId": "Paralyze_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Paralyze"
+      }
+    ],
+    "Arkmetta": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Belluvaraptor": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Brequewk": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Buff Eulopii": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Convarlia": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Cucuerpum": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Demetyra": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Dyaelatura": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Eigion Warden": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Eulopii": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Fleuralis": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Fluren": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Galeostra": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Laibonich": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Lerachu": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Lissiceous": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Miik": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Moemoea": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Momola": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 7.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Mordelium": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Mufolium": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Murlk": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Nolumoth": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Paru-Gama": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Shro": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Slaiorn": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Squitico": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Turgeon": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Yggdragstyx": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Zwevealisk": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Poison"
+      }
+    ],
+    "Mycenlich": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 3,
+        "sourceAbility": "Defensive Disease"
+      }
+    ],
+    "Grimcorr": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Defensive Bleed"
+      }
+    ],
+    "Kragnyx": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Defensive Injury"
+      }
+    ],
+    "Kretapex": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Defensive Injury"
+      }
+    ]
+  }
+}

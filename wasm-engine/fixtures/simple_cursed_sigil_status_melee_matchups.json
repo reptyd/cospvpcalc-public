@@ -1,0 +1,144 @@
+[
+  {
+    "name": "cursed-sigil-status-lithumbra-vs-korathos",
+    "attacker": {
+      "health": 1750,
+      "weight": 1350,
+      "damage": 90,
+      "biteCooldown": 0.7,
+      "healthRegen": 8,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 1.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4,
+        "Necropoison_Status": 0.8
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "cursedSigilProfile": {
+      "attackerCursedSigilStacks": 6,
+      "defenderCursedSigilStacks": 0
+    },
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 1,
+      "maxTimeSec": 20,
+      "dpsAtoB": 78.32650862068967,
+      "ttkAtoB": 20,
+      "damageDealtA": 1590.0281249999994,
+      "damageDealtAAtBDeath": 1590.0281249999994,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "cursed-sigil-status-korathos-vs-lithumbra",
+    "attacker": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 1750,
+      "weight": 1350,
+      "damage": 90,
+      "biteCooldown": 0.7,
+      "healthRegen": 8,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 1.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4,
+        "Necropoison_Status": 0.8
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "cursedSigilProfile": {
+      "attackerCursedSigilStacks": 0,
+      "defenderCursedSigilStacks": 6
+    },
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 20,
+      "dpsAtoB": 1750,
+      "ttkAtoB": 1,
+      "damageDealtA": 2062.5625,
+      "damageDealtAAtBDeath": 1750,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

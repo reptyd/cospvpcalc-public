@@ -1,0 +1,154 @@
+[
+  {
+    "name": "cursed-sigil-breath-lithumbra-vs-oxytalis",
+    "attacker": {
+      "health": 1750,
+      "weight": 1350,
+      "damage": 90,
+      "biteCooldown": 0.7,
+      "healthRegen": 8,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 1.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4,
+        "Necropoison_Status": 0.8
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10200,
+      "weight": 19500,
+      "damage": 375,
+      "biteCooldown": 0.9,
+      "healthRegen": 3,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 4
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": -0.4,
+        "Injury_Status": 0.3,
+        "Poison_Status": 0.8
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": null,
+    "defenderBreath": null,
+    "cursedSigilProfile": {
+      "attackerCursedSigilStacks": 6,
+      "defenderCursedSigilStacks": 0
+    },
+    "maxTimeSec": 24,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 1.8,
+      "maxTimeSec": 24,
+      "dpsAtoB": 79.46125356125354,
+      "ttkAtoB": 24,
+      "damageDealtA": 1930.9084615384604,
+      "damageDealtAAtBDeath": 1930.9084615384604,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "cursed-sigil-breath-oxytalis-vs-lithumbra",
+    "attacker": {
+      "health": 10200,
+      "weight": 19500,
+      "damage": 375,
+      "biteCooldown": 0.9,
+      "healthRegen": 3,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 4
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": -0.4,
+        "Injury_Status": 0.3,
+        "Poison_Status": 0.8
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 1750,
+      "weight": 1350,
+      "damage": 90,
+      "biteCooldown": 0.7,
+      "healthRegen": 8,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 1.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4,
+        "Necropoison_Status": 0.8
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": null,
+    "defenderBreath": null,
+    "cursedSigilProfile": {
+      "attackerCursedSigilStacks": 0,
+      "defenderCursedSigilStacks": 6
+    },
+    "maxTimeSec": 24,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 24,
+      "dpsAtoB": 972.2222222222222,
+      "ttkAtoB": 1.8,
+      "damageDealtA": 3343.6,
+      "damageDealtAAtBDeath": 1750,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

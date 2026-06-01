@@ -1,0 +1,91 @@
+{
+  "$schema_version": 1,
+  "$description": "Whitelist of known approximations where Rust and TS are expected to diverge by design. Read by Phase D parity harness auto-triage. Source: KNOWN_APPROXIMATION_REFERENCE_DRAFTS in src/pages/referenceContent.ts.",
+  "entries": [
+    {
+      "mechanic_id": "rewind_snapshot",
+      "reference_name": "Rewind snapshot behavior",
+      "allowed_divergence": "HP/status rollback uses 9s snapshot with 25% max HP cap, not simple direct heal. Skip winner/ttk deltas when Rewind fires on either side."
+    },
+    {
+      "mechanic_id": "self_destruct",
+      "reference_name": "Self-Destruct",
+      "allowed_divergence": "Auto-arms at HP <= 25%, explodes ~1s later. Outdated approximation. Skip deltas when selfDestructProfile set."
+    },
+    {
+      "mechanic_id": "thorn_trap_target",
+      "reference_name": "Thorn Trap target behavior",
+      "allowed_divergence": "Target assumed caught immediately on activation. Stand-and-fight simplification."
+    },
+    {
+      "mechanic_id": "frosty_compare",
+      "reference_name": "Frosty",
+      "allowed_divergence": "Frosty applies only +25% regen in Compare. Weather side not modeled."
+    },
+    {
+      "mechanic_id": "bad_omen_outcome",
+      "reference_name": "Bad Omen",
+      "allowed_divergence": "BB forces Burn+8 outcome, Compare may roll or force. Skip when Bad Omen fires and BB/Compare modes selected differ."
+    },
+    {
+      "mechanic_id": "breath_pseudo_crits",
+      "reference_name": "Breath pseudo-crits and pseudo-procs",
+      "allowed_divergence": "Crit chance → constant multiplier. Chance effects → expected avg stacks. Already implemented symmetrically in both engines."
+    },
+    {
+      "mechanic_id": "hunker_first_activation",
+      "reference_name": "Hunker first activation",
+      "allowed_divergence": "First Hunker activation is immediate. 5s delay applies only to re-activations."
+    },
+    {
+      "mechanic_id": "reflux_puddle_occupancy",
+      "reference_name": "Reflux puddle occupancy",
+      "allowed_divergence": "Target treated as permanently inside puddle for full duration."
+    },
+    {
+      "mechanic_id": "totem_target",
+      "reference_name": "Totem target behavior",
+      "allowed_divergence": "Target does not try to destroy Totem. Poison ticks continue for full duration."
+    },
+    {
+      "mechanic_id": "two_faced_tranquility_only",
+      "reference_name": "Two-Faced",
+      "allowed_divergence": "Only Tranquility side modeled. Madness side absent from both engines."
+    },
+    {
+      "mechanic_id": "broodwatcher_permanent",
+      "reference_name": "Broodwatcher",
+      "allowed_divergence": "Compare starts with 5 Defensive stacks, no decay. Treated as permanent buff."
+    },
+    {
+      "mechanic_id": "first_tick_rule",
+      "reference_name": "First Tick Rule",
+      "allowed_divergence": "Compare-only approximation for server-driven passive ticking. Shifts first tick timing."
+    },
+    {
+      "mechanic_id": "buffered_natural_regen",
+      "reference_name": "Buffered natural regeneration",
+      "allowed_divergence": "Blocked regen ticks are buffered, apply after anti-heal ends."
+    },
+    {
+      "mechanic_id": "pack_healer_both_sides",
+      "reference_name": "Pack Healer",
+      "allowed_divergence": "Pack Healer nearby applies regen to both sides in Compare, not one-sided."
+    },
+    {
+      "mechanic_id": "clean_water_refreshed_durationless",
+      "reference_name": "Clean water and Refreshed",
+      "allowed_divergence": "Treated as durationless stat bonuses in Compare. No in-fight duration timer."
+    },
+    {
+      "mechanic_id": "special_air_pvp_rule",
+      "reference_name": "Special Air PvP Rule",
+      "allowed_divergence": "Both creatures forced to fixed bite cooldown. Not a full air-combat simulation."
+    },
+    {
+      "mechanic_id": "spirit_glare_single_burn",
+      "reference_name": "Spirit Glare",
+      "allowed_divergence": "Rust applies 1 Burn + 1 Fear per breath tick (per Reference: 'inflicts Burn Status Probability=100% STACKS=1 and Fear Status Probability=100% STACKS=1'). TS applies 2 Burn + 1 Fear per tick due to a regex bug in parseBreathAilments (runtimeHelpers.ts:54): the hardcoded Spirit Glare path in breathSpecialRuntime.ts adds Burn+Fear, and the generic applyBreathAilments path re-adds Burn (but fails to match Fear because the regex prefix group `(?:^|[,:]|\\binflicts?\\b)` does not match the 'and' conjunction before 'Fear Status'). Rust is spec-correct; TS is buggy. Fixture expected values for Spirit Glare matchups are regenerated from Rust."
+    }
+  ]
+}

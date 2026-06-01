@@ -1,0 +1,1500 @@
+[
+  {
+    "name": "active-melee-spite-vs-akorbik",
+    "attacker": {
+      "health": 3000,
+      "weight": 3500,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Injury_Status",
+          "stacks": 4
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.45,
+        "Injury_Status": 0.65
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 1700,
+      "weight": 1900,
+      "damage": 135,
+      "biteCooldown": 1,
+      "healthRegen": 6,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0.25,
+      "firstStrikeHpRatioThreshold": 0.75,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 75,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.8,
+        "Burn_Status": 0.2,
+        "Injury_Status": 0.5,
+        "Poison_Status": 0.4
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": 0.05,
+        "hardenAvailable": true,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Deep_Wounds_Status",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": true,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Poison_Status",
+        "stacks": 10,
+        "label": "Poison +10"
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 20,
+      "dpsAtoB": 212.5,
+      "ttkAtoB": 8,
+      "damageDealtA": 1816.2,
+      "damageDealtAAtBDeath": 1700,
+      "extendedDamagePotentialA": 21135.671052631587
+    }
+  },
+  {
+    "name": "active-melee-radiation-vs-athulyth-fortify",
+    "attacker": {
+      "health": 10200,
+      "weight": 19500,
+      "damage": 375,
+      "biteCooldown": 0.9,
+      "healthRegen": 3,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": -0.4,
+        "Injury_Status": 0.3,
+        "Poison_Status": 0.8
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 7000,
+      "weight": 8500,
+      "damage": 175,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 1,
+        "Burn_Status": 0.5,
+        "Injury_Status": 1,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": true,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": true,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Shredded_Wings",
+        "stacks": 3,
+        "label": "Shredded Wings +3"
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 20,
+      "dpsAtoB": 707.0707070707068,
+      "ttkAtoB": 9.900000000000002,
+      "damageDealtA": 7081.999999999999,
+      "damageDealtAAtBDeath": 6999.999999999999,
+      "extendedDamagePotentialA": 23987.037967930235
+    }
+  },
+  {
+    "name": "active-melee-cursed-sigil-vs-korathos",
+    "attacker": {
+      "health": 1750,
+      "weight": 1350,
+      "damage": 90,
+      "biteCooldown": 0.7,
+      "healthRegen": 8,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 1.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4,
+        "Necropoison_Status": 0.8
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 6,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Shredded_Wings",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Bleed_Status",
+        "stacks": 10,
+        "label": "Bleed +10"
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 1,
+      "maxTimeSec": 20,
+      "dpsAtoB": 78.32650862068967,
+      "ttkAtoB": 20,
+      "damageDealtA": 1590.0281249999994,
+      "damageDealtAAtBDeath": 1590.0281249999994,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "active-melee-korathos-vs-apofuex-self-destruct",
+    "attacker": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 4000,
+      "weight": 3000,
+      "damage": 75,
+      "biteCooldown": 0.8,
+      "healthRegen": 6,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": {
+        "triggerHpRatioLte": 0.15,
+        "damagePct": 10,
+        "selfHpFloorPct": 5,
+        "applyStatuses": [
+          {
+            "statusId": "Burn_Status",
+            "stacks": 10
+          }
+        ]
+      },
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 3.5
+        },
+        {
+          "statusId": "Disease_Status",
+          "stacks": 3
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 3
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4,
+        "Disease_Status": 0.65,
+        "Poison_Status": 0.9
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Shredded_Wings",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Injury_Status",
+        "stacks": 10,
+        "label": "Injury +10"
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 20,
+      "dpsAtoB": 1000,
+      "ttkAtoB": 4,
+      "damageDealtA": 4256,
+      "damageDealtAAtBDeath": 4000,
+      "extendedDamagePotentialA": 27900
+    }
+  },
+  {
+    "name": "active-melee-amolis-vs-korathos-drowsy",
+    "attacker": {
+      "health": 3000,
+      "weight": 2700,
+      "damage": 180,
+      "biteCooldown": 0.8,
+      "healthRegen": 6,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Burn_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Frostbite_Status",
+          "stacks": 1.5
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4,
+        "Burn_Status": 0.3,
+        "Frostbite_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": true,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Shredded_Wings",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Injury_Status",
+        "stacks": 10,
+        "label": "Injury +10"
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 4.23,
+      "maxTimeSec": 20,
+      "dpsAtoB": 139.44299999999993,
+      "ttkAtoB": 20,
+      "damageDealtA": 2788.8599999999997,
+      "damageDealtAAtBDeath": 2788.8599999999997,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "active-melee-hellion-warden-vs-korathos-rewind",
+    "attacker": {
+      "health": 8450,
+      "weight": 9600,
+      "damage": 65,
+      "biteCooldown": 1.2,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": true,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 3
+        }
+      ],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 1.5
+        },
+        {
+          "statusId": "Injury_Status",
+          "stacks": 2.5
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.6,
+        "Injury_Status": 1,
+        "Necropoison_Status": 1,
+        "Poison_Status": 0.3
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": true,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": true,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Shredded_Wings",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Frostbite_Status",
+        "stacks": 5,
+        "label": "Frostbite +5"
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 11.0,
+      "maxTimeSec": 20,
+      "dpsAtoB": 290.551228,
+      "ttkAtoB": 20,
+      "damageDealtA": 5927.245050,
+      "damageDealtAAtBDeath": 5927.245050,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "active-melee-empiterium-vs-korathos-hunters-curse",
+    "attacker": {
+      "health": 7250,
+      "weight": 15750,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 3
+        },
+        {
+          "statusId": "Injury_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": true,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Deep_Wounds_Status",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Shredded_Wings",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Frostbite_Status",
+        "stacks": 5,
+        "label": "Frostbite +5"
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 7,
+      "maxTimeSec": 20,
+      "dpsAtoB": 521.3333333333334,
+      "ttkAtoB": 20,
+      "damageDealtA": 10948,
+      "damageDealtAAtBDeath": 10948,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "active-melee-morcanix-vs-korathos-unbridled-rage",
+    "attacker": {
+      "health": 3200,
+      "weight": 3400,
+      "damage": 270,
+      "biteCooldown": 0.8,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0.15,
+      "firstStrikeHpRatioThreshold": 0.75,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 3
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.35
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": true,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Shredded_Wings",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Shredded_Wings",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Necropoison_Status",
+        "stacks": 10,
+        "label": "Necropoison +10"
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 3,
+      "maxTimeSec": 20,
+      "dpsAtoB": 503.0580882352942,
+      "ttkAtoB": 20,
+      "damageDealtA": 10262.384999999998,
+      "damageDealtAAtBDeath": 10262.384999999998,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "active-melee-arrainoa-vs-korathos-adrenaline",
+    "attacker": {
+      "health": 4000,
+      "weight": 2800,
+      "damage": 400,
+      "biteCooldown": 1,
+      "healthRegen": 7,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 3
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.1
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": true,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Deep_Wounds_Status",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Shredded_Wings",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Corrosion_Status",
+        "stacks": 5,
+        "label": "Corrosion +5"
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 4,
+      "maxTimeSec": 20,
+      "dpsAtoB": 300.4857142857142,
+      "ttkAtoB": 20,
+      "damageDealtA": 6310.199999999998,
+      "damageDealtAAtBDeath": 6310.199999999998,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "active-melee-angelic-warden-vs-korathos-warden-rage",
+    "attacker": {
+      "health": 4000,
+      "weight": 2250,
+      "damage": 65,
+      "biteCooldown": 1,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": true,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.3,
+        "Burn_Status": 0.25,
+        "Necropoison_Status": 1,
+        "Poison_Status": 0.2
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": true,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Shredded_Wings",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Poison_Status",
+        "stacks": 10,
+        "label": "Poison +10"
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 4,
+      "maxTimeSec": 20,
+      "dpsAtoB": 282.41436011904756,
+      "ttkAtoB": 20,
+      "damageDealtA": 5930.7015624999985,
+      "damageDealtAAtBDeath": 5930.7015624999985,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "active-melee-akorbik-vs-korathos-thorn-trap",
+    "attacker": {
+      "health": 1700,
+      "weight": 1900,
+      "damage": 135,
+      "biteCooldown": 1,
+      "healthRegen": 6,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0.25,
+      "firstStrikeHpRatioThreshold": 0.75,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 75,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.8,
+        "Burn_Status": 0.2,
+        "Injury_Status": 0.5,
+        "Poison_Status": 0.4
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": true,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [
+          {
+            "statusId": "Shredded_Wings",
+            "stacks": 1
+          }
+        ],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Injury_Status",
+        "stacks": 10,
+        "label": "Injury +10"
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 7,
+      "maxTimeSec": 20,
+      "dpsAtoB": 63.41517857142859,
+      "ttkAtoB": 20,
+      "damageDealtA": 1331.7187500000005,
+      "damageDealtAAtBDeath": 1331.7187500000005,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "active-melee-uleoum-vs-akorbik-frost-nova",
+    "attacker": {
+      "health": 2000,
+      "weight": 1500,
+      "damage": 120,
+      "biteCooldown": 0.6,
+      "healthRegen": 8,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 1700,
+      "weight": 1900,
+      "damage": 135,
+      "biteCooldown": 1,
+      "healthRegen": 6,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0.25,
+      "firstStrikeHpRatioThreshold": 0.75,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 75,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.8,
+        "Burn_Status": 0.2,
+        "Injury_Status": 0.5,
+        "Poison_Status": 0.4
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": true,
+        "frostNovaValue": 50,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Confusion_Status",
+        "stacks": 3,
+        "label": "Confusion +3"
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 20,
+      "dpsAtoB": 69.73684210526318,
+      "ttkAtoB": 20,
+      "damageDealtA": 1422.6315789473692,
+      "damageDealtAAtBDeath": 1422.6315789473692,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "name": "berserk-inactive-high-hp",
+    "attacker": {
+      "health": 1000,
+      "weight": 1250,
+      "damage": 250,
+      "biteCooldown": 0.6,
+      "healthRegen": 7,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerCurrentHp": 800,
+    "startingStatuses": {},
+    "expected": {
+      "biteCooldown": 0.6
+    }
+  },
+  {
+    "name": "berserk-active-low-hp",
+    "attacker": {
+      "health": 1000,
+      "weight": 1250,
+      "damage": 250,
+      "biteCooldown": 0.6,
+      "healthRegen": 7,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerCurrentHp": 100,
+    "startingStatuses": {},
+    "expected": {
+      "biteCooldown": 0.3
+    }
+  },
+  {
+    "name": "berserk-active-with-status-modifiers",
+    "attacker": {
+      "health": 1000,
+      "weight": 1250,
+      "damage": 250,
+      "biteCooldown": 0.6,
+      "healthRegen": 7,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerCurrentHp": 100,
+    "startingStatuses": {
+      "Drowsy_Status": {
+        "stacks": 1,
+        "nextTickAt": 3,
+        "remainingSec": 8
+      },
+      "Frostbite_Status": {
+        "stacks": 4,
+        "nextTickAt": 3,
+        "remainingSec": 8
+      }
+    },
+    "expected": {
+      "biteCooldown": 0.43500000000000005
+    }
+  }
+]

@@ -1,0 +1,614 @@
+[
+  {
+    "name": "storm-breath-attacker",
+    "attacker": {
+      "health": 2400,
+      "weight": 320,
+      "damage": 120,
+      "biteCooldown": 2,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "defender": {
+      "health": 2800,
+      "weight": 360,
+      "damage": 90,
+      "biteCooldown": 2.4,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "attackerBreath": {
+      "dpsPct": 0.002,
+      "capacity": 20,
+      "regenRate": 1.75,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": [
+        {
+          "statusId": "Blurred_Vision_Status",
+          "stacks": 0.4
+        }
+      ]
+    },
+    "defenderBreath": null,
+    "maxTimeSec": 16,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 16,
+      "dpsAtoB": 61.85344107744109,
+      "ttkAtoB": 16,
+      "damageDealtA": 1020.581777777778,
+      "damageDealtAAtBDeath": 1020.581777777778,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "water-vs-ice-breath-duel",
+    "attacker": {
+      "health": 2600,
+      "weight": 360,
+      "damage": 110,
+      "biteCooldown": 2,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "defender": {
+      "health": 2550,
+      "weight": 350,
+      "damage": 115,
+      "biteCooldown": 2.1,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "attackerBreath": {
+      "dpsPct": 1.5,
+      "capacity": 10,
+      "regenRate": 2.5,
+      "critChancePct": 20,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": {
+      "dpsPct": 1,
+      "capacity": 10,
+      "regenRate": 3.75,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "maxTimeSec": 18,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 18,
+      "dpsAtoB": 79.18281853281853,
+      "ttkAtoB": 18,
+      "damageDealtA": 1464.8821428571428,
+      "damageDealtAAtBDeath": 1464.8821428571428,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "lightning-breath-chain-attacker",
+    "attacker": {
+      "health": 2500,
+      "weight": 340,
+      "damage": 100,
+      "biteCooldown": 2.1,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "defender": {
+      "health": 3200,
+      "weight": 390,
+      "damage": 105,
+      "biteCooldown": 2.3,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "attackerBreath": {
+      "dpsPct": 3,
+      "capacity": 5,
+      "regenRate": 12,
+      "critChancePct": 50,
+      "chain": 25,
+      "chainMaxStacks": 5,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": [
+        {
+          "statusId": "Shock_Status",
+          "stacks": 0.5
+        }
+      ]
+    },
+    "defenderBreath": null,
+    "maxTimeSec": 10,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 10,
+      "dpsAtoB": 109.63369963369966,
+      "ttkAtoB": 10,
+      "damageDealtA": 1151.1538461538464,
+      "damageDealtAAtBDeath": 1151.1538461538464,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "heal-breath-self-sustain",
+    "attacker": {
+      "health": 2200,
+      "weight": 300,
+      "damage": 95,
+      "biteCooldown": 2.1,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "defender": {
+      "health": 2600,
+      "weight": 320,
+      "damage": 110,
+      "biteCooldown": 2.2,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Burn_Status",
+          "stacks": 1
+        }
+      ],
+      "startingStatuses": []
+    },
+    "attackerBreath": {
+      "dpsPct": 0,
+      "capacity": 10,
+      "regenRate": 5,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": "heal",
+      "selfHealPct": 3,
+      "cleanseStacks": 0.5,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": null,
+    "maxTimeSec": 18,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 18,
+      "dpsAtoB": 44.77195945945946,
+      "ttkAtoB": 18,
+      "damageDealtA": 828.28125,
+      "damageDealtAAtBDeath": 828.28125,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "cloud-breath-self-sustain",
+    "attacker": {
+      "health": 2400,
+      "weight": 330,
+      "damage": 100,
+      "biteCooldown": 2.15,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "defender": {
+      "health": 2700,
+      "weight": 335,
+      "damage": 112,
+      "biteCooldown": 2.25,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 1
+        }
+      ],
+      "startingStatuses": []
+    },
+    "attackerBreath": {
+      "dpsPct": 0,
+      "capacity": 10,
+      "regenRate": 1.3,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": "cloud",
+      "selfHealPct": 0.5,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": null,
+    "maxTimeSec": 18,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 18,
+      "dpsAtoB": 48.28559903186768,
+      "ttkAtoB": 18,
+      "damageDealtA": 893.2835820895522,
+      "damageDealtAAtBDeath": 893.2835820895522,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "lance-burn-attacker",
+    "attacker": {
+      "health": 2600,
+      "weight": 700,
+      "damage": 120,
+      "biteCooldown": 1.8,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "defender": {
+      "health": 3200,
+      "weight": 850,
+      "damage": 105,
+      "biteCooldown": 2.2,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "attackerBreath": {
+      "dpsPct": 0,
+      "capacity": 0,
+      "regenRate": 0,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": "lance",
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 5,
+      "lanceChargeSec": 3,
+      "lanceCooldownSec": 60,
+      "lanceStatusId": "Burn_Status"
+    },
+    "defenderBreath": null,
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 20,
+      "dpsAtoB": 71.85078909612626,
+      "ttkAtoB": 20,
+      "damageDealtA": 1472.9411764705885,
+      "damageDealtAAtBDeath": 1472.9411764705885,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "lance-frostbite-defender",
+    "attacker": {
+      "health": 2800,
+      "weight": 760,
+      "damage": 135,
+      "biteCooldown": 1.9,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "defender": {
+      "health": 3400,
+      "weight": 980,
+      "damage": 118,
+      "biteCooldown": 2.3,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "attackerBreath": null,
+    "defenderBreath": {
+      "dpsPct": 0,
+      "capacity": 0,
+      "regenRate": 0,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": "lance",
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 5,
+      "lanceChargeSec": 3,
+      "lanceCooldownSec": 60,
+      "lanceStatusId": "Frostbite_Status"
+    },
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 20,
+      "dpsAtoB": 64.30811348929815,
+      "ttkAtoB": 20,
+      "damageDealtA": 1318.316326530612,
+      "damageDealtAAtBDeath": 1318.316326530612,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "spirit-glare-autofire-attacker",
+    "$divergenceNote": "Rust applies 1 Burn + 1 Fear per breath tick per Reference spec. TS applies 2 Burn + 1 Fear due to parseBreathAilments regex bug. Expected values regenerated from Rust; see known_approximations.json#spirit_glare_single_burn. Burn formula uses base 0.025% + 0.1% per stack with decay-before-damage ordering (matches empirical PvP data).",
+    "attacker": {
+      "health": 2400,
+      "weight": 680,
+      "damage": 115,
+      "biteCooldown": 2,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "defender": {
+      "health": 2900,
+      "weight": 760,
+      "damage": 105,
+      "biteCooldown": 2.3,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "attackerBreath": {
+      "dpsPct": 2,
+      "capacity": 10,
+      "regenRate": 0,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": "spirit_glare",
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 2,
+      "autoFireCooldownSec": 120,
+      "specialStatuses": [
+        {
+          "statusId": "Burn_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Fear_Status",
+          "stacks": 1
+        }
+      ]
+    },
+    "defenderBreath": null,
+    "maxTimeSec": 130,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": 75.89999999999995,
+      "maxTimeSec": 130,
+      "dpsAtoB": 80.555556,
+      "ttkAtoB": 36,
+      "damageDealtA": 3029.925,
+      "damageDealtAAtBDeath": 2900,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "spirit-glare-vs-spirit-glare",
+    "$divergenceNote": "Rust applies 1 Burn + 1 Fear per breath tick per Reference spec. TS applies 2 Burn + 1 Fear due to parseBreathAilments regex bug. Expected values regenerated from Rust; see known_approximations.json#spirit_glare_single_burn.",
+    "attacker": {
+      "health": 2300,
+      "weight": 640,
+      "damage": 110,
+      "biteCooldown": 2.05,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "defender": {
+      "health": 2350,
+      "weight": 650,
+      "damage": 112,
+      "biteCooldown": 2.1,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "attackerBreath": {
+      "dpsPct": 2,
+      "capacity": 10,
+      "regenRate": 0,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": "spirit_glare",
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 2,
+      "autoFireCooldownSec": 120,
+      "specialStatuses": [
+        {
+          "statusId": "Burn_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Fear_Status",
+          "stacks": 1
+        }
+      ]
+    },
+    "defenderBreath": {
+      "dpsPct": 2,
+      "capacity": 10,
+      "regenRate": 0,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": "spirit_glare",
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 2,
+      "autoFireCooldownSec": 120,
+      "specialStatuses": [
+        {
+          "statusId": "Burn_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Fear_Status",
+          "stacks": 1
+        }
+      ]
+    },
+    "maxTimeSec": 130,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 46.2,
+      "maxTimeSec": 130,
+      "dpsAtoB": 49.840933,
+      "ttkAtoB": 47.15,
+      "damageDealtA": 2350,
+      "damageDealtAAtBDeath": 2350,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "storm-breath-vs-sticky-fur-defender",
+    "attacker": {
+      "health": 2400,
+      "weight": 320,
+      "damage": 120,
+      "biteCooldown": 2,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "defender": {
+      "health": 2800,
+      "weight": 360,
+      "damage": 90,
+      "biteCooldown": 2.4,
+      "healthRegen": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "startingStatuses": []
+    },
+    "attackerBreath": {
+      "dpsPct": 0.002,
+      "capacity": 20,
+      "regenRate": 1.75,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": [
+        {
+          "statusId": "Blurred_Vision_Status",
+          "stacks": 0.4
+        }
+      ]
+    },
+    "defenderBreath": null,
+    "maxTimeSec": 16,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 16,
+      "dpsAtoB": 61.85344107744109,
+      "ttkAtoB": 16,
+      "damageDealtA": 1020.581777777778,
+      "damageDealtAAtBDeath": 1020.581777777778,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

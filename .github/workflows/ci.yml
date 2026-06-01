@@ -1,0 +1,148 @@
+# Continuous-integration gate. Runs on every push to main and on every
+# pull request. Six jobs cover the verification stack defined in
+# `CONTRIBUTING.md`:
+#
+#   build-ts     — `npm run build` (= `tsc -b && vite build`). Strict
+#                  type-check via tsconfig.app.json + tsconfig.node.json
+#                  AND production bundler. Catches the kind of break that
+#                  audit #43 found (build silently broken for many rounds
+#                  while `tsc --noEmit` falsely returned 0 because the
+#                  root tsconfig is references-only). Then
+#                  `npm run check:bundle` gates the initial-paint asset
+#                  size against accidental doubling.
+#   test-ts      — `npx vitest run`. Runtime behaviour tests for the TS
+#                  surface (~441 tests as of June 2026).
+#   test-rust    — `cargo test --lib` inside `wasm-engine/`. Engine
+#                  invariant tests (~1114 tests as of June 2026 incl.
+#                  phase isolation + reference tests).
+#   lint-ts      — `npm run check:mojibake` (UTF-8->CP1251 corruption
+#                  guard over tracked text) then `npm run lint`
+#                  (= `eslint .`). Zero-warning gate.
+#   lint-rust    — `cargo clippy --all-targets -- -D warnings` inside
+#                  `wasm-engine/`. Zero-warning gate (lib + tests).
+#   e2e          — `npm run test:e2e` (Playwright). Chromium smoke suite
+#                  under `e2e/` against the Vite dev server: app boots,
+#                  top-level navigation works, no WASM-unsupported gate.
+#                  Browser is cached across runs; 2 retries absorb flake.
+#
+# All six must succeed for the gate to pass: lint is now a hard gate
+# (the codebase is lint-clean and must stay so). The audit workflow
+# (`audit.yml`) covers dependency-vulnerability checks separately.
+
+name: ci
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-ts:
+    name: build (tsc -b + vite build)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+      - name: install
+        run: npm ci
+      - name: build
+        run: npm run build
+      - name: bundle-size guard
+        run: npm run check:bundle
+
+  test-ts:
+    name: vitest (TS runtime tests)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+      - name: install
+        run: npm ci
+      - name: test
+        run: npx vitest run
+
+  test-rust:
+    name: cargo test --lib
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: wasm-engine
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            wasm-engine/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('wasm-engine/Cargo.lock') }}
+      - name: test
+        run: cargo test --lib
+
+  lint-ts:
+    name: eslint + mojibake
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+      - name: mojibake guard
+        run: npm run check:mojibake
+      - name: install
+        run: npm ci
+      - name: lint
+        run: npm run lint
+
+  lint-rust:
+    name: cargo clippy
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: wasm-engine
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy
+      - name: cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            wasm-engine/target
+          key: ${{ runner.os }}-cargo-clippy-${{ hashFiles('wasm-engine/Cargo.lock') }}
+      - name: clippy
+        run: cargo clippy --all-targets -- -D warnings
+
+  e2e:
+    name: playwright e2e
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+      - name: install
+        run: npm ci
+      - name: cache playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('package-lock.json') }}
+      - name: install chromium
+        run: npx playwright install --with-deps chromium
+      - name: e2e
+        run: npm run test:e2e

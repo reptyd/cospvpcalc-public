@@ -1,0 +1,85 @@
+[
+  {
+    "name": "cursed-sigil-applies-bad-omen-and-starts-cooldown",
+    "defender": {
+      "health": 1000,
+      "weight": 100,
+      "damage": 100,
+      "biteCooldown": 1,
+      "healthRegen": 0,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "time": 0,
+    "activesOn": true,
+    "cursedSigilStacks": 4,
+    "startingDefenderStatuses": {},
+    "startingCursedSigilCooldownUntil": 0,
+    "expected": {
+      "defenderStatuses": {
+        "Bad_Omen": {
+          "stacks": 4,
+          "nextTickAt": null,
+          "nextDecayAt": 3,
+          "remainingSec": 12
+        }
+      },
+      "cursedSigilCooldownUntil": 85,
+      "abilityAppliedCount": 1
+    }
+  },
+  {
+    "name": "cursed-sigil-respects-cooldown",
+    "defender": {
+      "health": 1000,
+      "weight": 100,
+      "damage": 100,
+      "biteCooldown": 1,
+      "healthRegen": 0,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "time": 1,
+    "activesOn": true,
+    "cursedSigilStacks": 4,
+    "startingDefenderStatuses": {
+      "Bad_Omen": {
+        "stacks": 4,
+        "nextTickAt": null,
+        "nextDecayAt": 3,
+        "remainingSec": 12
+      }
+    },
+    "startingCursedSigilCooldownUntil": 85,
+    "expected": {
+      "defenderStatuses": {
+        "Bad_Omen": {
+          "stacks": 4,
+          "nextTickAt": null,
+          "nextDecayAt": 3,
+          "remainingSec": 12
+        }
+      },
+      "cursedSigilCooldownUntil": 85,
+      "abilityAppliedCount": 0
+    }
+  }
+]

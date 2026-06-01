@@ -1,0 +1,128 @@
+[
+  {
+    "name": "hunker-enable-fragile-vs-dangerous",
+    "attacker": {
+      "health": 3000,
+      "weight": 500,
+      "damage": 120,
+      "biteCooldown": 1,
+      "healthRegen": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 75,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 5000,
+      "weight": 800,
+      "damage": 700,
+      "biteCooldown": 1,
+      "healthRegen": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerCurrentHp": 3000,
+    "defenderCurrentHp": 5000,
+    "startingHunkerOn": false,
+    "expected": {
+      "nextHunkerOn": true,
+      "abilityAppliedCount": 1
+    }
+  },
+  {
+    "name": "hunker-stay-off-dominant-vs-weak",
+    "attacker": {
+      "health": 8000,
+      "weight": 900,
+      "damage": 900,
+      "biteCooldown": 1,
+      "healthRegen": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 75,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 2500,
+      "weight": 300,
+      "damage": 80,
+      "biteCooldown": 1,
+      "healthRegen": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerCurrentHp": 8000,
+    "defenderCurrentHp": 2500,
+    "startingHunkerOn": false,
+    "expected": {
+      "nextHunkerOn": false,
+      "abilityAppliedCount": 0
+    }
+  },
+  {
+    "name": "hunker-disable-when-already-on-and-dominant",
+    "attacker": {
+      "health": 8000,
+      "weight": 900,
+      "damage": 900,
+      "biteCooldown": 1,
+      "healthRegen": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 75,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 2500,
+      "weight": 300,
+      "damage": 80,
+      "biteCooldown": 1,
+      "healthRegen": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerCurrentHp": 8000,
+    "defenderCurrentHp": 2500,
+    "startingHunkerOn": true,
+    "expected": {
+      "nextHunkerOn": false,
+      "abilityAppliedCount": 0
+    }
+  }
+]

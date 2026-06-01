@@ -1,0 +1,73 @@
+[
+  {
+    "name": "rewind-heal-and-cleanse",
+    "maxHp": 8450,
+    "time": 9,
+    "currentHp": 4000,
+    "currentStatuses": {
+      "Burn_Status": {
+        "stacks": 9,
+        "nextTickAt": 3,
+        "remainingSec": 9
+      },
+      "Poison_Status": {
+        "stacks": 4,
+        "nextTickAt": 3,
+        "remainingSec": 9
+      }
+    },
+    "snapshotHp": 6000,
+    "snapshotStatuses": {
+      "Burn_Status": {
+        "stacks": 3,
+        "nextTickAt": 3,
+        "remainingSec": 9
+      }
+    },
+    "expected": {
+      "hp": 6000,
+      "statuses": {
+        "Burn_Status": {
+          "stacks": 3,
+          "nextTickAt": 3,
+          "remainingSec": 9
+        }
+      },
+      "rewindCooldownUntil": 109
+    }
+  },
+  {
+    "name": "rewind-capped-at-quarter-max-heal",
+    "maxHp": 8450,
+    "time": 9,
+    "currentHp": 1000,
+    "currentStatuses": {},
+    "snapshotHp": 8450,
+    "snapshotStatuses": {},
+    "expected": {
+      "hp": 3112.5,
+      "statuses": {},
+      "rewindCooldownUntil": 109
+    }
+  },
+  {
+    "name": "rewind-can-lower-current-hp",
+    "maxHp": 8450,
+    "time": 9,
+    "currentHp": 7000,
+    "currentStatuses": {
+      "Burn_Status": {
+        "stacks": 2,
+        "nextTickAt": 3,
+        "remainingSec": 9
+      }
+    },
+    "snapshotHp": 5500,
+    "snapshotStatuses": {},
+    "expected": {
+      "hp": 5500,
+      "statuses": {},
+      "rewindCooldownUntil": 109
+    }
+  }
+]

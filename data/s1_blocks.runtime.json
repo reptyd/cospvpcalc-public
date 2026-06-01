@@ -1,0 +1,6157 @@
+{
+  "byCreature": {
+    "Adharcaiin": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Aereis": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Aesho": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Aesmir": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Aholai": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Ahri'Tahmuk": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Aidoneiscus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Akorbik": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Aleicuda": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Alkaksu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.15,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Allifu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Altulis": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Amolis": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Angelic Warden": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Ani": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": -1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Anutill": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.15,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Aolenus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Apofuex": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.9,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Aqoxturumox": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Arachyu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Arcabatur": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.1,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Archalium": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Archinax": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Ardor Warden": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Arkmetta": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.2,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Arrainoa": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Arsonos": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Aseliorus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Asilvestrela": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Astrothi": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Athulyth": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Aueko": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.15,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Auraron": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Avothius": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Axothan": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Banishii": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Bazelii": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Beezu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Belluvaraptor": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Bengon": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Bolatra": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Boreal Warden": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Borenhir": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Boskurro": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Buukon": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Caldonterrus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Cantapodi": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Cavengauu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Celeritas": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Cenicara": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Chamei": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Chisudo": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Chrysos": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Cimmabu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Cindrothar": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Citrulantis": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Coniferon": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Convarlia": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Corsarlett": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": -0.2,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Cottol": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Crata Peretina": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Cryptoth": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Cucuerpum": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Cupuere": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Cuxena": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Dabaemura": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Dalghara": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Dalitil": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": -0.2,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Danténos": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Deluumar": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.9,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Demetyra": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Denjzi": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Despisicle": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Dieamarjla": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Diokrine": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Dioxikin": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Doragonix": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Dowatt": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Dragonixsauria": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Dunklaestus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Eigion Warden": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Eiroca": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Elarickkeir": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Emphines": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.15,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Empiterium": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Enthomen": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Equenix": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Erridea": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Eskarlor": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Etheralotus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Euvias": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Exotide": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Exterreri": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Fabráashé": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Faecalu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Fairiocris": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": -0.4,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Felifaux": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Felikxtrox": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.9,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Fellisio": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Ferrah": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Firakai": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Flamerir": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Fleuralis": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Flickaflie": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Flipli": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.1,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Flixlit": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Fluren": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Frigiboa": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Frigilinx": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Follugila": [
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      },
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Frosflit": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.15,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Furnilixii": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Fyluf": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Galeostra": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Galiryn": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Galtekron": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Garra Warden": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Geogoff": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Geoptxina": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Geortharoc": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.15,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Ghalgeya": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Ghartokus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Ghibli": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": -0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Gholbini": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.15,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Gimon-Ogu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Gloracus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Glysgadota": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Gnolrok": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Gobbatlin": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Golgaroth": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Goreganthus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Gorgonichus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Goskogur": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Gramoss": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Grysallmog": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Gryvila": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Guardian Dragon": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Gwiodama": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Gyroudus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Haechionx": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Halaqual": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Hallucinix": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Haxaline": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Hayrhinozh": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Hebitoa": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Heisoteri": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Hellion Warden": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Hemokai": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Hikorshi": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Hisolidium": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Hyboria": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Hygos": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Ibetchi": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Idrabark": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.15,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Ikoran": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Imeaorn": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Imini": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Inkpujin": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Irdegarde": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Irizah": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Iztajuatl": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Jabblebashhe": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Jetebene": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Jhiggo-Jangl": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Jotunhel": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Kaegiszarr": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Kaluaka": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Kamigami": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.15,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Kaminaru": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Karakro": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Kavouradis": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.9,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Kehmador": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Kemoti": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": -0.1,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Kendyll": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Keruku": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Khetheral": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Khiku": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Khilutatra": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": -0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Khu'Vuk": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Kiridian": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Knalriki": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Kohikii": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Koini": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Koipise": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Konomushi": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Feral Korathos": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Korathos": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Kriffin": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Kriprik": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": -0.15,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Kyiki": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Lactarim": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Laharpes": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Laibonich": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Lenarabu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Leurimess": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Levoneh": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": -0.2,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": -0.15,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Liskwyrm": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Lissiceous": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Lithumbra": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Lmakosauruodon": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Lorolael": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Lotremum": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Lucensia": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Lus-Adarch": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.15,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Luxsces": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Mag'Masta": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Magnacetus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Magnarothus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Maiueve": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Malupiscis": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Megalodystrix": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Melantha": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Menace": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.5,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Meorlark": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Mijusuima": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Militrua": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.9,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Minawii": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Minthwyrm": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Mobuushiy": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Moemoea": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Molangai": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Mawhrott": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Disease"
+      }
+    ],
+    "Moluna": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Momola": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.2,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Moonelle": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Mooslmossle": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Morcanix": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Morinus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Morthorax": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Mufolium": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Muravil": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Murlk": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Mustegaryx": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Nachtskinhren": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Nakamaska": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Nemni": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Nimoona": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Nindyr": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Noctivul": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Noctla'Lune": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Nok'Tuun": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Nolumoth": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Norokk": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Norskogg": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Novus Warden": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Noxiouk": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Noxulumen": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Nuciffracoccu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Nyctoxon": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Nymphasuchus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Nytoltalus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Nyxasolyx": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Okiamano": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Olatua": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": -0.45,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": -0.75,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Opralegion": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "OriOri": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.2,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": -0.2,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Ouratum": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Ovufu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Oxidaizen": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Oxysenix": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Oxytalis": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.4,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Pacedegon": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Parahexilian": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Paru-Gama": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": -0.1,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Parux": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Pentagloss": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Permacham": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.15,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Pernirex": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Pero": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.35,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Phantaris": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Phantejer": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Phugu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Phyremia": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Pleuremiert": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Pliarys": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.15,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Plumetik": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Polymonstrum": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Prabiki": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Prialoura": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Pterolythux": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Puffwump": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.35,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Quezekel": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": -0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Qurugosk": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Raiquazok": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Ralokai": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": -0.35,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Reeox": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.15,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Reverbelle": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Reviiaton": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Ripirin": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Disease"
+      }
+    ],
+    "Rorolo": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Rukig": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Rusrin": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Saikarie": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Salrahn": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Sana'ata": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Sang Toare": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Sarchias": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Sarcosiris": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.9,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Saukuryn": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Scrimpeii": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Seradae": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Seraphis": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Sha'Rei": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Shararook": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Shiziyou": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Sigmatox": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Skulderouge": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Slaiorn": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Sochuri": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Somnia Elus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Squitico": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.05,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Starknol": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Starlit": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Stratifelis": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Sturbi": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.05,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Sylvesqual": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.15,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": -0.15,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Syroudon": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Taburúún": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Taiyuelong": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Takamorath": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Tarakotu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Taurolystris": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Teinook": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Therimorse": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Therokis": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Therolachus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Thundrake": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Thykallos": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Tohukos": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Torcherouk": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Tornir": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Traiboros": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Trikylo": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Trutholbyeva": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Tsugae": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Tundrik": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Turgeon": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Uldraaké": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Uleoum": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Umbraxi": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": -0.15,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Undoli": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Ura": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Urzuk": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Ushrumesh": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Vahiaex": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Valkurse": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Valkyrie": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": -0.3,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Varskela": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.55,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Vaumora": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.15,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Veishyadar": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Veldys": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Veludorah": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Venatrox": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Venuella": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Veraiatrice": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Verdant Warden": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Verklixin": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Verza": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Vetemortem": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Viracniar": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Viridex": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Voletexius": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": -0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Volnoirve": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Vorpalus": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Wewuix": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Whispthera": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Wixpectr'o": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Woodralone": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Wuggawyrm": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Wystora": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Xeleviprex": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Xenolif": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Xeternos": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.1,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.15,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Xymorax": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": -0.3,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Yeba'idi": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Yggdragstyx": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Yiepir": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Yohsog": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Zakaiodrak": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Zeoarex": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.85,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Zethines": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Zhelijin": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": -0.3,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Zieti": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Zohdok": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Zolbatros": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Zoltraack": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.9,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Zoocuu": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Bleed"
+      }
+    ],
+    "Astolo": [
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": -0.5,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Bäruw": [
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Capukoralu": [
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Embristiss": [
+      {
+        "statusId": "Burn_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.9,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": -0.15,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Glovaucus": [
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Lerachu": [
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.1,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Vivoltex": [
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      }
+    ],
+    "Zokzis": [
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.8,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Zarrax": [
+      {
+        "statusId": "Disease_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Aesthyrion": [
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.7,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Artikauk": [
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      }
+    ],
+    "Sleirnok": [
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.65,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Fuejin'Liya": [
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Kiiwin": [
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Kretśnik": [
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Shro": [
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Miik": [
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Buff Eulopii": [
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Heiboktoruk": [
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Hushike": [
+      {
+        "statusId": "Poison_Status",
+        "fraction": -0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Mordelium": [
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Pierry": [
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Zwevealisk": [
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Mycenlich": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Disease_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Grimcorr": [
+      {
+        "statusId": "Disease_Status",
+        "fraction": -0.3,
+        "sourceAbility": "Block Disease"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Necropoison"
+      }
+    ],
+    "Kragnyx": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Velcacao": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Burn"
+      }
+    ],
+    "Vespritte": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Burn_Status",
+        "fraction": -0.15,
+        "sourceAbility": "Block Burn"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": -0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": 1,
+        "sourceAbility": "Block Necropoison"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Kretapex": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.75,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "fraction": 0.3,
+        "sourceAbility": "Block Frostbite"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.5,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.35,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Whilora": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.45,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.2,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 0.25,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Vielheart": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 0.6,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Injury_Status",
+        "fraction": 0.4,
+        "sourceAbility": "Block Injury"
+      },
+      {
+        "statusId": "Poison_Status",
+        "fraction": 1.0,
+        "sourceAbility": "Block Poison"
+      }
+    ],
+    "Silligie": [
+      {
+        "statusId": "Bleed_Status",
+        "fraction": 1.0,
+        "sourceAbility": "Block Bleed"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "fraction": -0.5,
+        "sourceAbility": "Block Necropoison"
+      }
+    ]
+  }
+}

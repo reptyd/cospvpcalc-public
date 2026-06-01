@@ -1,0 +1,110 @@
+{
+  "First Strike": {
+    "type": "conditionalDamageBoost",
+    "trigger": {
+      "hpRatioGte": 0.75
+    },
+    "paramFromCreatureValue": true,
+    "notes": "Boost amount comes from creature sheet value."
+  },
+  "Berserk": {
+    "type": "conditionalMultiStat",
+    "trigger": {
+      "hpRatioLt": 0.2
+    },
+    "mods": {
+      "stamRegenMultiplier": 2.0,
+      "biteCooldownMultiplier": 0.5
+    }
+  },
+  "Channeling": {
+    "type": "conditionalAuraStatusPulse",
+    "trigger": {
+      "hpRatioLte": 0.25
+    },
+    "pulseSec": 5,
+    "radiusStuds": 150,
+    "apply": [
+      {
+        "statusId": "Shock_Status",
+        "stacks": 3
+      },
+      {
+        "statusId": "Confusion_Status",
+        "stacks": 2
+      }
+    ],
+    "notes": "Stacks apply each pulse."
+  },
+  "Quick Recovery": {
+    "type": "conditionalHpRegenBoost",
+    "trigger": {
+      "hpRatioLt": 0.4
+    },
+    "paramUnknown": true,
+    "notes": "Wiki: lower HP => higher regen boost; numeric function not specified in sheet."
+  },
+  "Last Stand": {
+    "type": "conditionalPoisonAura",
+    "trigger": {
+      "hpRatioLt": 0.5
+    },
+    "paramUnknown": true,
+    "notes": "Wiki: deals increased poison over time; exact magnitude not provided in sheet."
+  },
+  "Self-Destruct": {
+    "type": "conditionalDelayedExplosion",
+    "trigger": {
+      "hpRatioLte": 0.15
+    },
+    "cooldownSec": 300,
+    "onExplode": {
+      "dealDamage": {
+        "mode": "percentTargetMaxHp",
+        "pct": 10
+      },
+      "applyStatus": [
+        {
+          "statusId": "Burn_Status",
+          "stacks": 10
+        }
+      ]
+    },
+    "selfAfterExplode": {
+      "hpFloorPct": 5
+    }
+  },
+  "Guilt": {
+    "type": "damageTakenMultiplier",
+    "when": "onBeingBitten",
+    "multiplier": 0.5
+  },
+  "Breath Resistance": {
+    "type": "breathDamageReduction",
+    "paramFromCreatureValue": true,
+    "notes": "Value should be interpreted as fraction (1.0=100% immune to breath damage)."
+  },
+  "Aura (Disease)": {
+    "type": "diseaseAura",
+    "notes": "TS stand-and-fight approximation: pulses Disease on the in-range opponent every 3 seconds."
+  },
+  "Grim Lariat": {
+    "type": "targetedBurstStatus",
+    "notes": "TS stand-and-fight approximation: 60s cooldown, guaranteed hit on the single opponent, deals 50% of current damage, and applies 8 Heartbroken."
+  },
+  "Ligament Tear": {
+    "type": "onHitStatus",
+    "notes": "Applies Torn Ligaments on hit; current stand-and-fight model intentionally ignores stamina, glide, and movement penalties."
+  },
+  "Stubborn Stacker": {
+    "type": "plushieOverride",
+    "notes": "Replaces specific offensive ailment plushie payloads with creature-specific stat and block bonuses."
+  },
+  "Unbreakable": {
+    "type": "statusImmunity",
+    "immuneTo": [
+      "Bleed_Status",
+      "Injury_Status"
+    ]
+  }
+}

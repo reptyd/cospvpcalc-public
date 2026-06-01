@@ -1,0 +1,88 @@
+[
+  {
+    "name": "jeff_vs_veldys_breath_matches_ts_output",
+    "disabledAbilitiesA": [
+      "Adrenaline"
+    ],
+    "disabledAbilitiesB": [],
+    "attacker": {
+      "health": 1150,
+      "weight": 680,
+      "damage": 99.67265625,
+      "biteCooldown": 0.45,
+      "healthRegen": 9,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 2800,
+      "weight": 1840,
+      "damage": 106.98198437499998,
+      "biteCooldown": 0.5670000000000001,
+      "healthRegen": 5.6000000000000005,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Burn_Status",
+          "stacks": 1.5
+        },
+        {
+          "statusId": "Paralyze_Status",
+          "stacks": 1
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.35
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": null,
+    "defenderBreath": {
+      "dpsPct": 3,
+      "capacity": 10,
+      "regenRate": 0,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 2.8350000000000004,
+      "maxTimeSec": 180,
+      "dpsAtoB": 149.33333333333348,
+      "ttkAtoB": 19.799999999999983,
+      "damageDealtA": 2956.8000000000006,
+      "damageDealtAAtBDeath": 2956.8000000000006,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

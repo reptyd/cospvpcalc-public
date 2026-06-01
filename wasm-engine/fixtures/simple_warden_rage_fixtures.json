@@ -1,0 +1,142 @@
+[
+  {
+    "name": "warden-rage-does-not-waste-high-hp-window",
+    "attacker": {
+      "health": 4000,
+      "weight": 2250,
+      "damage": 65,
+      "biteCooldown": 1,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerHp": 3200,
+    "time": 1,
+    "activesOn": true,
+    "startingWardenRageOn": false,
+    "startingWardenRageStacks": 0,
+    "startingWardenRageTapUntil": 0,
+    "startingWardenRageCooldownUntil": 0,
+    "expected": {
+      "wardenRageOn": false,
+      "wardenRageStacks": 0,
+      "wardenRageTapUntil": 0,
+      "wardenRageCooldownUntil": 0,
+      "abilityAppliedCount": 0
+    }
+  },
+  {
+    "name": "warden-rage-enable-low-hp",
+    "attacker": {
+      "health": 4000,
+      "weight": 2250,
+      "damage": 65,
+      "biteCooldown": 1,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerHp": 1600,
+    "time": 1,
+    "activesOn": true,
+    "startingWardenRageOn": false,
+    "startingWardenRageStacks": 0,
+    "startingWardenRageTapUntil": 0,
+    "startingWardenRageCooldownUntil": 0,
+    "expected": {
+      "wardenRageOn": true,
+      "wardenRageStacks": 100,
+      "wardenRageTapUntil": 1.25,
+      "wardenRageCooldownUntil": 31,
+      "abilityAppliedCount": 1
+    }
+  },
+  {
+    "name": "warden-rage-disable-high-hp",
+    "attacker": {
+      "health": 4000,
+      "weight": 2250,
+      "damage": 65,
+      "biteCooldown": 1,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerHp": 4000,
+    "time": 2,
+    "activesOn": true,
+    "startingWardenRageOn": true,
+    "startingWardenRageStacks": 100,
+    "startingWardenRageTapUntil": 1,
+    "startingWardenRageCooldownUntil": 31,
+    "expected": {
+      "wardenRageOn": false,
+      "wardenRageStacks": 0,
+      "wardenRageTapUntil": 0,
+      "wardenRageCooldownUntil": 31,
+      "abilityAppliedCount": 0
+    }
+  },
+  {
+    "name": "warden-rage-respects-cooldown-before-reactivation",
+    "attacker": {
+      "health": 4000,
+      "weight": 2250,
+      "damage": 65,
+      "biteCooldown": 1,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerHp": 1600,
+    "time": 1,
+    "activesOn": true,
+    "startingWardenRageOn": false,
+    "startingWardenRageStacks": 0,
+    "startingWardenRageTapUntil": 0,
+    "startingWardenRageCooldownUntil": 20,
+    "expected": {
+      "wardenRageOn": false,
+      "wardenRageStacks": 0,
+      "wardenRageTapUntil": 0,
+      "wardenRageCooldownUntil": 20,
+      "abilityAppliedCount": 0
+    }
+  }
+]

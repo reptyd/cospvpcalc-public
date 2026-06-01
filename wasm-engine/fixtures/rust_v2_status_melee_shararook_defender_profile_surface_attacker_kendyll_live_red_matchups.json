@@ -1,0 +1,76 @@
+[
+  {
+    "name": "kendyll_vs_shararook_status_melee_profile_surface_matches_ts_output",
+    "attacker": {
+      "health": 8000,
+      "weight": 13400,
+      "damage": 823.9606249999999,
+      "biteCooldown": 1.08,
+      "healthRegen": 5,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 7413,
+      "weight": 4840,
+      "damage": 365.46640625,
+      "biteCooldown": 0.7200000000000001,
+      "healthRegen": 6,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0.28,
+      "firstStrikeHpRatioThreshold": 0.75,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 0.5
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 1
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.45,
+        "Burn_Status": -0.1,
+        "Poison_Status": 0.45
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": 23.039999999999996,
+      "maxTimeSec": 180,
+      "dpsAtoB": 1372.7777777777776,
+      "ttkAtoB": 5.4,
+      "damageDealtA": 7433,
+      "damageDealtAAtBDeath": 7413,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

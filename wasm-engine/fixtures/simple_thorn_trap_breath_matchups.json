@@ -1,0 +1,124 @@
+[
+  {
+    "name": "thorn-trap-breath-skulderouge-vs-aereis",
+    "attacker": {
+      "health": 4650,
+      "weight": 4500,
+      "damage": 285,
+      "biteCooldown": 0.5,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 3
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 1
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.25,
+        "Burn_Status": -0.25,
+        "Frostbite_Status": -0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 2150,
+      "weight": 2300,
+      "damage": 260,
+      "biteCooldown": 0.8,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": {
+      "dpsPct": 1.5,
+      "capacity": 20,
+      "regenRate": 1.5,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": {
+      "dpsPct": 0.5,
+      "capacity": 20,
+      "regenRate": 0.75,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "thornTrapProfile": {
+      "attackerThornTrapAvailable": true,
+      "defenderThornTrapAvailable": false
+    },
+    "maxTimeSec": 24,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": 16.000000000000004,
+      "maxTimeSec": 24,
+      "dpsAtoB": 1075,
+      "ttkAtoB": 2,
+      "damageDealtA": 3568.9749999999995,
+      "damageDealtAAtBDeath": 2150,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

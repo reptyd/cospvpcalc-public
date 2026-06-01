@@ -1,0 +1,168 @@
+[
+  {
+    "name": "jeff_vs_yiepir_active_melee_matches_ts_output",
+    "attackerBuild": {
+      "venerationStage": 5,
+      "traits": [
+        "Bite",
+        "Damage"
+      ],
+      "ascensionAssignments": [
+        "Bite",
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage"
+      ],
+      "plushies": [
+        "Magichorn Prongbug",
+        "Cat"
+      ],
+      "elder": "Powerful"
+    },
+    "defenderBuild": {
+      "venerationStage": 5,
+      "traits": [
+        "Damage",
+        "Bite"
+      ],
+      "ascensionAssignments": [
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage"
+      ],
+      "plushies": [
+        "Void",
+        "Void"
+      ],
+      "elder": "Powerful"
+    },
+    "abilityPolicy": "semiIdeal",
+    "attacker": {
+      "health": 1150,
+      "weight": 800,
+      "damage": 95.02593749999997,
+      "biteCooldown": 0.46725000000000005,
+      "healthRegen": 7.920000000000001,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 1300,
+      "weight": 1040,
+      "damage": 160.47297656249995,
+      "biteCooldown": 0.47250000000000003,
+      "healthRegen": 6.4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Injury_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "causeFearAvailable": false,
+        "grimLariatAvailable": false,
+        "reflectAvailable": false,
+        "totemAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": true,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "lichMarkAvailable": false,
+        "lichMarkPayloadStatusId": null,
+        "radiationAvailable": false,
+        "auraDiseaseAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {
+          "Bleed_Status": 1
+        }
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "causeFearAvailable": false,
+        "grimLariatAvailable": false,
+        "reflectAvailable": false,
+        "totemAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "lichMarkAvailable": false,
+        "lichMarkPayloadStatusId": null,
+        "radiationAvailable": false,
+        "auraDiseaseAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Disease_Status",
+        "stacks": 20,
+        "label": "Disease +20"
+      }
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 2.8350000000000004,
+      "maxTimeSec": 180,
+      "dpsAtoB": 217.15351562499993,
+      "ttkAtoB": 6,
+      "damageDealtA": 1302.9210937499995,
+      "damageDealtAAtBDeath": 1302.9210937499995,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

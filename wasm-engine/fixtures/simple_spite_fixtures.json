@@ -1,0 +1,198 @@
+{
+  "activation": [
+    {
+      "name": "spite-positive-arms-after-hit",
+      "time": 1,
+      "spiteValue": 0.05,
+      "cooldownUntil": 0,
+      "alreadyArmed": false,
+      "hasOffensivePayload": true,
+      "expected": {
+        "spiteArmed": true,
+        "spiteChargeReadyAt": 6,
+        "spiteCooldownUntil": 21,
+        "abilityAppliedCount": 1
+      }
+    },
+    {
+      "name": "spite-negative-with-payload-arms-after-hit",
+      "time": 1,
+      "spiteValue": -3.1,
+      "cooldownUntil": 0,
+      "alreadyArmed": false,
+      "hasOffensivePayload": true,
+      "expected": {
+        "spiteArmed": true,
+        "spiteChargeReadyAt": 6,
+        "spiteCooldownUntil": 21,
+        "abilityAppliedCount": 1
+      }
+    },
+    {
+      "name": "spite-skips-when-cooldown-active",
+      "time": 1,
+      "spiteValue": 0.05,
+      "cooldownUntil": 99,
+      "alreadyArmed": false,
+      "hasOffensivePayload": true,
+      "expected": {
+        "spiteArmed": false,
+        "spiteChargeReadyAt": 0,
+        "spiteCooldownUntil": 99,
+        "abilityAppliedCount": 0
+      }
+    }
+  ],
+  "bites": [
+    {
+      "name": "spite-positive-full-charge-bite",
+      "time": 6,
+      "baseDamage": 881.25,
+      "spiteValue": 0.05,
+      "spiteChargeReadyAt": 6,
+      "defenderStartingHp": 11118.75,
+      "defenderMaxHp": 12000,
+      "attackerApplyStatusOnHit": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Injury_Status",
+          "stacks": 4
+        }
+      ],
+      "attackerExplicitStatuses": [
+        {
+          "statusId": "Deep_Wounds_Status",
+          "stacks": 1
+        }
+      ],
+      "plushieOnHitStatuses": {},
+      "defenderStartingStatuses": {
+        "Bleed_Status": {
+          "stacks": 1,
+          "nextTickAt": 4,
+          "nextDecayAt": 4,
+          "remainingSec": 3
+        },
+        "Injury_Status": {
+          "stacks": 7.833333333333333,
+          "nextTickAt": null,
+          "nextDecayAt": 4,
+          "remainingSec": 23.5
+        },
+        "Deep_Wounds_Status": {
+          "stacks": 1,
+          "nextTickAt": null,
+          "nextDecayAt": 4,
+          "remainingSec": 3
+        }
+      },
+      "startingAbilityAppliedCount": 1,
+      "expected": {
+        "damageDelta": 925.3125,
+        "defenderHp": 10193.4375,
+        "defenderStatuses": {
+          "Bleed_Status": {
+            "stacks": 3,
+            "nextTickAt": 4,
+            "nextDecayAt": 4,
+            "remainingSec": 6
+          },
+          "Injury_Status": {
+            "stacks": 23.5,
+            "nextTickAt": null,
+            "nextDecayAt": 4,
+            "remainingSec": 67.5
+          },
+          "Deep_Wounds_Status": {
+            "stacks": 3,
+            "nextTickAt": null,
+            "nextDecayAt": 4,
+            "remainingSec": 6
+          }
+        },
+        "spiteArmed": false,
+        "spiteChargeReadyAt": 0,
+        "abilityAppliedCount": 2
+      }
+    },
+    {
+      "name": "spite-negative-full-charge-bite",
+      "time": 6,
+      "baseDamage": 217.5,
+      "spiteValue": -3.1,
+      "spiteChargeReadyAt": 6,
+      "defenderStartingHp": 11782.5,
+      "defenderMaxHp": 12000,
+      "attackerApplyStatusOnHit": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 1.5
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 1.5
+        }
+      ],
+      "attackerExplicitStatuses": [],
+      "plushieOnHitStatuses": {},
+      "defenderStartingStatuses": {
+        "Bleed_Status": {
+          "stacks": 1.5,
+          "nextTickAt": 4,
+          "nextDecayAt": 4,
+          "remainingSec": 4.5
+        },
+        "Poison_Status": {
+          "stacks": 1.5,
+          "nextTickAt": 4,
+          "nextDecayAt": 4,
+          "remainingSec": 4.5
+        }
+      },
+      "startingAbilityAppliedCount": 1,
+      "expected": {
+        "damageDelta": 0,
+        "defenderHp": 12000,
+        "defenderStatuses": {
+          "Bleed_Status": {
+            "stacks": 4.5,
+            "nextTickAt": 4,
+            "nextDecayAt": 4,
+            "remainingSec": 10.5
+          },
+          "Poison_Status": {
+            "stacks": 4.5,
+            "nextTickAt": 4,
+            "nextDecayAt": 4,
+            "remainingSec": 10.5
+          }
+        },
+        "spiteArmed": false,
+        "spiteChargeReadyAt": 0,
+        "abilityAppliedCount": 2
+      }
+    }
+  ],
+  "waitPolicy": [
+    {
+      "name": "spite-high-positive-delays-for-full-charge",
+      "time": 1.5,
+      "baseDamage": 53.74999999999999,
+      "spiteValue": 2,
+      "spiteChargeReadyAt": 6,
+      "attackerHp": 1150,
+      "attackerCurrentHp": 1150,
+      "attackerMaxHp": 1150,
+      "attackerBiteCooldown": 0.5,
+      "defenderDamage": 50,
+      "defenderBiteCooldown": 1,
+      "expected": {
+        "shouldDelay": false,
+        "nextHitAt": 1.5
+      }
+    }
+  ]
+}

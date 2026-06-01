@@ -1,0 +1,92 @@
+[
+  {
+    "name": "kendyll_vs_novus_warden_warden_rage_breath_live_surface_matches_ts_output",
+    "attacker": {
+      "health": 8000,
+      "weight": 13400,
+      "damage": 823.9606249999999,
+      "biteCooldown": 1.08,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 8000,
+      "weight": 6700,
+      "damage": 45.849421875,
+      "biteCooldown": 0.9450000000000001,
+      "healthRegen": 4,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": true,
+      "breathResistance": 0.9,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4,
+        "Burn_Status": 0.25,
+        "Injury_Status": 0.4,
+        "Necropoison_Status": 1,
+        "Poison_Status": 0.25
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": null,
+    "defenderBreath": {
+      "dpsPct": 0,
+      "capacity": 10,
+      "regenRate": 1.3,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": "cloud",
+      "selfHealPct": 0.5,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "drowsyAreaProfile": {
+      "attackerDrowsyAreaAvailable": false,
+      "defenderDrowsyAreaAvailable": false,
+      "attackerWardenRageAvailable": false,
+      "defenderWardenRageAvailable": true
+    },
+    "maxTimeSec": 90,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": 34.965,
+      "maxTimeSec": 90,
+      "dpsAtoB": 1126.984126984127,
+      "ttkAtoB": 7.5600000000000005,
+      "damageDealtA": 8551,
+      "damageDealtAAtBDeath": 8520,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

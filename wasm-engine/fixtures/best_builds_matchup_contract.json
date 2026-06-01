@@ -1,0 +1,359 @@
+[
+  {
+    "name": "kendyll-vs-korathos",
+    "input": {
+      "finalA": {
+        "tier": 5,
+        "health": 8000,
+        "weight": 14070,
+        "damage": 823.9606249999999,
+        "biteCooldown": 1.2,
+        "damage2": null,
+        "healthRegen": 5,
+        "stamina": 70,
+        "stamRegen": 2,
+        "walkAndSwimSpeed": 33,
+        "sprintSpeed": 49,
+        "turn": 6,
+        "venerationRate": 1,
+        "diet": "Carnivore",
+        "type": "Semi-Aquatic",
+        "mobilityOverride": "",
+        "breath": "N/A",
+        "name": "Kendyll",
+        "hasBreath": false,
+        "breathType": null,
+        "activeCooldownMultiplier": 1,
+        "approxNotes": [],
+        "appliedTraits": [
+          "Damage",
+          "Weight"
+        ],
+        "elder": "None",
+        "elderStatusBlockPct": 0,
+        "plushieStatusOnHit": {},
+        "plushieStatusOnHitTaken": {},
+        "plushieStatusBlockPct": {},
+        "plushieGrantedOtherAbilities": []
+      },
+      "finalB": {
+        "tier": 5,
+        "health": 11750,
+        "weight": 60400,
+        "damage": 687.7413281249999,
+        "biteCooldown": 0.9450000000000001,
+        "damage2": 175,
+        "healthRegen": 3.2,
+        "stamina": 40,
+        "stamRegen": 1,
+        "walkAndSwimSpeed": 28.5,
+        "sprintSpeed": 33.25,
+        "turn": 6,
+        "venerationRate": 1,
+        "diet": "Carnivore",
+        "type": "Terrestrial",
+        "mobilityOverride": "",
+        "breath": "Miasma Breath",
+        "name": "Korathos",
+        "hasBreath": true,
+        "breathType": "Miasma Breath",
+        "activeCooldownMultiplier": 1,
+        "approxNotes": [],
+        "appliedTraits": [
+          "Damage",
+          "Bite"
+        ],
+        "elder": "Powerful",
+        "elderStatusBlockPct": 0,
+        "plushieStatusOnHit": {},
+        "plushieStatusOnHitTaken": {},
+        "plushieStatusBlockPct": {},
+        "plushieGrantedOtherAbilities": []
+      },
+      "activesOn": true,
+      "breathOn": true,
+      "maxTimeSec": 30,
+      "abilityPolicy": "semiIdeal",
+      "badOmenOutcome": {
+        "statusId": "Burn_Status",
+        "stacks": 8,
+        "label": "Burn +8"
+      }
+    },
+    "summary": {
+      "winner": "B",
+      "deathTimeA": 4.7250000000000005,
+      "maxTimeSec": 30,
+      "dpsAtoB": 755.91664552937,
+      "ttkAtoB": 19.200000000000003,
+      "damageDealtA": 14513.599594163907,
+      "damageDealtAAtBDeath": 14513.599594163907,
+      "extendedDamagePotentialA": 0
+    },
+    "expectedAggregate": {
+      "win": 0,
+      "draw": 0,
+      "survival": 4.7250000000000005,
+      "avgDps": 755.91664552937,
+      "ttkWin": 30,
+      "immortalDamage": 14513.599594163907
+    },
+    "opponentBaseline": {
+      "venerationStage": 5,
+      "traits": [
+        "Damage",
+        "Bite"
+      ],
+      "ascensionAssignments": [
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage"
+      ],
+      "plushies": [
+        "Void",
+        "Void"
+      ],
+      "elder": "Powerful"
+    }
+  },
+  {
+    "name": "korathos-vs-sigmatox",
+    "input": {
+      "finalA": {
+        "tier": 5,
+        "health": 11750,
+        "weight": 52920,
+        "damage": 598.0359374999999,
+        "biteCooldown": 1,
+        "damage2": 175,
+        "healthRegen": 4,
+        "stamina": 50,
+        "stamRegen": 1,
+        "walkAndSwimSpeed": 30,
+        "sprintSpeed": 35,
+        "turn": 6,
+        "venerationRate": 1,
+        "diet": "Carnivore",
+        "type": "Terrestrial",
+        "mobilityOverride": "",
+        "breath": "Miasma Breath",
+        "name": "Korathos",
+        "hasBreath": true,
+        "breathType": "Miasma Breath",
+        "activeCooldownMultiplier": 1,
+        "approxNotes": [],
+        "appliedTraits": [
+          "Damage",
+          "Weight"
+        ],
+        "elder": "None",
+        "elderStatusBlockPct": 0,
+        "plushieStatusOnHit": {},
+        "plushieStatusOnHitTaken": {},
+        "plushieStatusBlockPct": {},
+        "plushieGrantedOtherAbilities": []
+      },
+      "finalB": {
+        "tier": 5,
+        "health": 8700,
+        "weight": 9040,
+        "damage": 764.1570312499999,
+        "biteCooldown": 1.0395,
+        "damage2": 400,
+        "healthRegen": 4,
+        "stamina": 60,
+        "stamRegen": 3,
+        "walkAndSwimSpeed": 32.3,
+        "sprintSpeed": 50.349999999999994,
+        "turn": 5,
+        "venerationRate": 1,
+        "diet": "Carnivore",
+        "type": "Terrestrial",
+        "mobilityOverride": "",
+        "breath": "N/A",
+        "name": "Sigmatox",
+        "hasBreath": false,
+        "breathType": null,
+        "activeCooldownMultiplier": 1,
+        "approxNotes": [],
+        "appliedTraits": [
+          "Damage",
+          "Bite"
+        ],
+        "elder": "Powerful",
+        "elderStatusBlockPct": 0,
+        "plushieStatusOnHit": {},
+        "plushieStatusOnHitTaken": {},
+        "plushieStatusBlockPct": {},
+        "plushieGrantedOtherAbilities": []
+      },
+      "activesOn": true,
+      "breathOn": true,
+      "maxTimeSec": 30,
+      "abilityPolicy": "semiIdeal",
+      "badOmenOutcome": {
+        "statusId": "Burn_Status",
+        "stacks": 8,
+        "label": "Burn +8"
+      }
+    },
+    "summary": {
+      "winner": "A",
+      "deathTimeA": 30.145500000000006,
+      "maxTimeSec": 30,
+      "dpsAtoB": 1450.0000000000002,
+      "ttkAtoB": 6,
+      "damageDealtA": 9425.000000000002,
+      "damageDealtAAtBDeath": 8700.000000000002,
+      "extendedDamagePotentialA": 0
+    },
+    "expectedAggregate": {
+      "win": 1,
+      "draw": 0,
+      "survival": 30.145500000000006,
+      "avgDps": 1450.0000000000002,
+      "ttkWin": 6,
+      "immortalDamage": 8700.000000000002
+    },
+    "opponentBaseline": {
+      "venerationStage": 5,
+      "traits": [
+        "Damage",
+        "Bite"
+      ],
+      "ascensionAssignments": [
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage"
+      ],
+      "plushies": [
+        "Void",
+        "Void"
+      ],
+      "elder": "Powerful"
+    }
+  },
+  {
+    "name": "oxytalis-vs-korathos",
+    "input": {
+      "finalA": {
+        "tier": 5,
+        "health": 11200,
+        "weight": 20895,
+        "damage": 433.359375,
+        "biteCooldown": 0.9,
+        "damage2": null,
+        "healthRegen": 3.9749999999999996,
+        "stamina": 60,
+        "stamRegen": 2.5,
+        "walkAndSwimSpeed": 26,
+        "sprintSpeed": 41,
+        "turn": 6,
+        "venerationRate": 1,
+        "diet": "Photocarnivore",
+        "type": "Terrestrial",
+        "mobilityOverride": "",
+        "breath": "N/A",
+        "name": "Oxytalis",
+        "hasBreath": false,
+        "breathType": null,
+        "activeCooldownMultiplier": 1,
+        "approxNotes": [],
+        "appliedTraits": [
+          "Health",
+          "Weight"
+        ],
+        "elder": "None",
+        "elderStatusBlockPct": 0,
+        "plushieStatusOnHit": {},
+        "plushieStatusOnHitTaken": {},
+        "plushieStatusBlockPct": {},
+        "plushieGrantedOtherAbilities": []
+      },
+      "finalB": {
+        "tier": 5,
+        "health": 11750,
+        "weight": 60400,
+        "damage": 687.7413281249999,
+        "biteCooldown": 0.9450000000000001,
+        "damage2": 175,
+        "healthRegen": 3.2,
+        "stamina": 40,
+        "stamRegen": 1,
+        "walkAndSwimSpeed": 28.5,
+        "sprintSpeed": 33.25,
+        "turn": 6,
+        "venerationRate": 1,
+        "diet": "Carnivore",
+        "type": "Terrestrial",
+        "mobilityOverride": "",
+        "breath": "Miasma Breath",
+        "name": "Korathos",
+        "hasBreath": true,
+        "breathType": "Miasma Breath",
+        "activeCooldownMultiplier": 1,
+        "approxNotes": [],
+        "appliedTraits": [
+          "Damage",
+          "Bite"
+        ],
+        "elder": "Powerful",
+        "elderStatusBlockPct": 0,
+        "plushieStatusOnHit": {},
+        "plushieStatusOnHitTaken": {},
+        "plushieStatusBlockPct": {},
+        "plushieGrantedOtherAbilities": []
+      },
+      "activesOn": true,
+      "breathOn": true,
+      "maxTimeSec": 30,
+      "abilityPolicy": "semiIdeal",
+      "badOmenOutcome": {
+        "statusId": "Burn_Status",
+        "stacks": 8,
+        "label": "Burn +8"
+      }
+    },
+    "summary": {
+      "winner": "B",
+      "deathTimeA": 7.560000000000001,
+      "maxTimeSec": 30,
+      "dpsAtoB": 426.81828103697825,
+      "ttkAtoB": 30,
+      "damageDealtA": 12906.984818558225,
+      "damageDealtAAtBDeath": 12906.984818558225,
+      "extendedDamagePotentialA": 0
+    },
+    "expectedAggregate": {
+      "win": 0,
+      "draw": 0,
+      "survival": 7.560000000000001,
+      "avgDps": 426.81828103697825,
+      "ttkWin": 30,
+      "immortalDamage": 12906.984818558225
+    },
+    "opponentBaseline": {
+      "venerationStage": 5,
+      "traits": [
+        "Damage",
+        "Bite"
+      ],
+      "ascensionAssignments": [
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage",
+        "Damage"
+      ],
+      "plushies": [
+        "Void",
+        "Void"
+      ],
+      "elder": "Powerful"
+    }
+  }
+]

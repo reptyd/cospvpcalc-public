@@ -1,0 +1,115 @@
+{
+  "stages": 5,
+  "stageHours": 6,
+  "tierBonusesAtStage5": {
+    "1": {
+      "extraHealthAt5": 200,
+      "extraWeightAt5": 80
+    },
+    "2": {
+      "extraHealthAt5": 400,
+      "extraWeightAt5": 160
+    },
+    "3": {
+      "extraHealthAt5": 600,
+      "extraWeightAt5": 240
+    },
+    "4": {
+      "extraHealthAt5": 800,
+      "extraWeightAt5": 320
+    },
+    "5": {
+      "extraHealthAt5": 1000,
+      "extraWeightAt5": 400
+    }
+  },
+  "traitAscension": {
+    "Bite": {
+      "perAscension": "1%",
+      "sequence": [
+        "10%",
+        "11%",
+        "12%",
+        "13%",
+        "14%",
+        "15%"
+      ]
+    },
+    "Damage": {
+      "perAscension": "2%",
+      "sequence": [
+        "5%",
+        "7%",
+        "9%",
+        "11%",
+        "13%",
+        "15%"
+      ]
+    },
+    "Healing": {
+      "perAscension": "2%",
+      "sequence": [
+        "5%",
+        "7%",
+        "9%",
+        "11%",
+        "13%",
+        "15%"
+      ]
+    },
+    "Health Regen": {
+      "perAscension": "4%",
+      "sequence": [
+        "12.5%",
+        "16.5%",
+        "20.5%",
+        "24.5%",
+        "28.5%",
+        "32.5%"
+      ]
+    },
+    "Max Stamina": {
+      "perAscension": "2.5%",
+      "sequence": [
+        "15%",
+        "17.5%",
+        "20%",
+        "22.5%",
+        "25%",
+        "27.5%"
+      ]
+    },
+    "Speed": {
+      "perAscension": "1.5%",
+      "sequence": [
+        "3.5%",
+        "5%",
+        "6.5%",
+        "8%",
+        "9.5%",
+        "11%"
+      ]
+    },
+    "Stamina/Glide Regen": {
+      "perAscension": "3.5%",
+      "sequence": [
+        "20%",
+        "23.5%",
+        "27%",
+        "30.5%",
+        "34%"
+      ]
+    },
+    "Weight": {
+      "perAscension": "2%",
+      "sequence": [
+        "5%",
+        "7%",
+        "9%",
+        "11%",
+        "13%",
+        "15%"
+      ]
+    }
+  }
+}

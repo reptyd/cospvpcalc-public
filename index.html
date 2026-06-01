@@ -1,0 +1,119 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/site-icon.png" />
+    <link rel="apple-touch-icon" href="/site-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Typography is self-hosted via `@fontsource/archivo` +
+         `@fontsource/fraunces`, imported in `src/main.tsx`. The CSS
+         baseline carries `system-ui, sans-serif` fallbacks so the
+         first paint never waits on font CSS hydration. Self-hosting
+         (vs the pre-2026-05-12 Google Fonts `<link>`) lets the CSP
+         drop the `fonts.googleapis.com` / `fonts.gstatic.com`
+         allowlist and re-enables `Cross-Origin-Embedder-Policy:
+         require-corp` server-side. -->
+    <title>Sonaria Stat Lab - CoS PvP Calculator & Optimizer</title>
+    <meta
+      name="description"
+      content="Sonaria Stat Lab is a data-driven PvP calculator and optimizer for Creatures of Sonaria. Compare creature matchups, estimate TTK, and optimize traits and plushies."
+    />
+    <meta
+      name="keywords"
+      content="Sonaria Stat Lab, CoS PvP Calc, Creatures of Sonaria calculator, Creatures of Sonaria optimizer, CoS build optimizer, creature vs creature, best traits, best plushies, CoS PvP guide"
+    />
+    <meta name="yandex-verification" content="a1c001310b21cc5e" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="theme-color" content="#0b1220" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sonaria Stat Lab - CoS PvP Calculator & Optimizer" />
+    <meta
+      property="og:description"
+      content="PvP Calculator, Optimizer, and Matchup Tools for Creatures of Sonaria."
+    />
+    <meta property="og:url" content="https://cospvpcalc.ru/" />
+    <meta property="og:image" content="https://cospvpcalc.ru/site-icon.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Sonaria Stat Lab - CoS PvP Calculator & Optimizer" />
+    <meta
+      name="twitter:description"
+      content="Compare creatures, estimate TTK, and optimize builds for Creatures of Sonaria PvP."
+    />
+    <meta name="twitter:image" content="https://cospvpcalc.ru/site-icon.png" />
+
+    <link rel="canonical" href="https://cospvpcalc.ru/" />
+    <link rel="alternate" hreflang="en" href="https://cospvpcalc.ru/" />
+    <link rel="alternate" hreflang="x-default" href="https://cospvpcalc.ru/" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Sonaria Stat Lab",
+        "alternateName": ["CoS PvP Calc", "Creatures of Sonaria PvP Calculator"],
+        "url": "https://cospvpcalc.ru/",
+        "description": "PvP Calculator, Optimizer, and Matchup Tools for Creatures of Sonaria",
+        "inLanguage": "en"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Sonaria Stat Lab",
+        "alternateName": "CoS PvP Calc",
+        "url": "https://cospvpcalc.ru/",
+        "email": "cos.pvp.contact@gmail.com",
+        "sameAs": ["https://boosty.to/cospvpcalc"]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Sonaria Stat Lab",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Any",
+        "url": "https://cospvpcalc.ru/",
+        "inLanguage": "en",
+        "browserRequirements": "Requires JavaScript",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "PvP Calculator, Optimizer, and Matchup Tools for Creatures of Sonaria"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <!-- JS disabled: the runtime feature-gate in main.tsx never runs,
+           so surface an equivalent message here. (A nomodule shim for
+           ESM-incapable legacy browsers is intentionally omitted — CSP
+           forbids inline scripts and such browsers are out of support.) -->
+      <div role="alert" style="
+        max-width: 640px;
+        margin: 12vh auto;
+        padding: 1.5rem;
+        font-family: system-ui, sans-serif;
+        color: #eee;
+        background: #1d1f24;
+        border-radius: 8px;
+        line-height: 1.5;
+      ">
+        <h1 style="margin-top: 0; font-size: 1.4rem;">JavaScript is required.</h1>
+        <p style="margin-bottom: 0;">
+          This simulator runs entirely in your browser via WebAssembly and
+          needs JavaScript enabled. Please turn it on and reload.
+        </p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

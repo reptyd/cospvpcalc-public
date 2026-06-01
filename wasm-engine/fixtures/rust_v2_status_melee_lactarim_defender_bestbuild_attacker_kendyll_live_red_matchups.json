@@ -1,0 +1,92 @@
+[
+  {
+    "name": "kendyll_vs_lactarim_status_melee_live_surface_matches_ts_output",
+    "attacker": {
+      "health": 8000,
+      "weight": 13400,
+      "damage": 823.9606249999999,
+      "biteCooldown": 1.08,
+      "healthRegen": 5,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 9000,
+      "weight": 38800,
+      "damage": 305.6628124999999,
+      "biteCooldown": 1.1340000000000001,
+      "healthRegen": 3.2,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 0.75
+        }
+      ],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 0.5
+        },
+        {
+          "statusId": "Disease_Status",
+          "stacks": 4.5
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2
+        },
+        {
+          "statusId": "Sticky_Teeth_Status",
+          "stacks": 1
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Disease_Status": 0.7,
+        "Frostbite_Status": 0.35,
+        "Injury_Status": 0.25,
+        "Necropoison_Status": 1,
+        "Poison_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 14.742000000000003,
+      "maxTimeSec": 180,
+      "dpsAtoB": 413.4615384615386,
+      "ttkAtoB": 22.46399999999999,
+      "damageDealtA": 9288,
+      "damageDealtAAtBDeath": 9288,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

@@ -1,0 +1,3245 @@
+{
+  "byCreature": {
+    "Adharcaiin": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Aereis": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Aesthyrion": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Aleicuda": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Ani": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -0.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": -1,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": -0.5,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": -0.5,
+        "sourceAbility": "Disease Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": -0.5,
+        "sourceAbility": "Frostbite Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": -0.5,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": -0.5,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": -0.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Arcabatur": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Archalium": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Ardor Warden": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Arrainoa": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Aseliorus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Astolo": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": -1,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": -1,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Auraron": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Axothan": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Bäruw": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 4,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Bazelii": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Belluvaraptor": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Boskurro": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Cantapodi": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Cenicara": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Chisudo": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 2,
+        "sourceAbility": "Corrosion Attack"
+      }
+    ],
+    "Chrysos": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Cindrothar": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Citrulantis": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": -2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Colval": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Corsarlett": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Corvurax": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Cryptoth": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Cuxena": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 10,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Denjzi": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 7,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Despisicle": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 2,
+        "sourceAbility": "Frostbite Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Dowatt": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Dunklaestus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 4,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Dyaelatura": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Elarickkeir": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Emphines": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Empiterium": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Erridea": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Eskarlor": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Euvias": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Exotide": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Fabráashé": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Fairiocris": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": -1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Felifaux": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Felikxtrox": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Fellisio": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Ferrah": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Flamerir": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": -5,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Fleuralis": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": -2,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Flixlit": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Frigilinx": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Follugila": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Fuejin'Liya": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Garra Warden": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Ghalgeya": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Gholbini": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Glovaucus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Gobbatlin": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Golgaroth": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": -1,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": -1,
+        "sourceAbility": "Frostbite Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": -1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Goreganthus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 15,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Guardian Dragon": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Gwiodama": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Gyroudus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 8,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Hallucinix": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Heiboktoruk": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Hellion Warden": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Hisolidium": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 5.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Hushike": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Hygos": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Ibetchi": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Idrabark": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Ikoran": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Imeaorn": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Irdegarde": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Irizah": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Jabblebashhe": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Jetebene": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1,
+        "sourceAbility": "Corrosion Attack"
+      }
+    ],
+    "Jotunhel": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Kaluaka": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Kamigami": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Karakro": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Kemoti": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Khetheral": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Khiku": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Khu'Vuk": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Kiridian": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Knalriki": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 4.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Kohikii": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 6,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Koipise": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 8,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Koryser": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Kriffin": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Kriprik": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Laharpes": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Lenarabu": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Leurimess": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Levoneh": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 4,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Lissiceous": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Lotremum": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Lus-Adarch": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 6,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Magnarothus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 20,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Mekmek": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Melantha": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Meorlark": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.25,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Mijusuima": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Minthwyrm": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Momola": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -1.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Morcanix": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Mawhrott": [
+      {
+        "statusId": "Torn_Ligaments_Status",
+        "stacks": 3,
+        "sourceAbility": "Ligament Tear"
+      }
+    ],
+    "Morthorax": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Muravil": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Murlk": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": -2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Nachtskinhren": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Frostbite Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Nakamaska": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Nemni": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -3.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": -3.5,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": -3.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Noctla'Lune": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Norokk": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Frostbite Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Nyctoxon": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Nymphasuchus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 4,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Nytoltalus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Nyxasolyx": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Okiamano": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 3,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "OriOri": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 3,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Ouratum": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Ovufu": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Owa'Stryrus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Oxysenix": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Oxytalis": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Parux": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Permacham": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Pernirex": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Phantaris": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Pierry": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 3,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Plumetik": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Prabiki": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Prialoura": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -1,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": -1,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Pterolythux": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 6,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Puffwump": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Qurugosk": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Raiquazok": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Ralokai": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 1.75,
+        "sourceAbility": "Disease Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Reeox": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2,
+        "sourceAbility": "Disease Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Reviiaton": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Saikarie": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Sang Toare": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Sarchias": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Seraphis": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": -2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": -2,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": -2,
+        "sourceAbility": "Frostbite Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": -2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Shararook": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Skulderouge": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Sleirnok": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Sochuri": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Stratifelis": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Syroudon": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 15,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Taburúún": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": -3,
+        "sourceAbility": "Disease Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": -3,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Tarakotu": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Taurolystris": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Teinook": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 3,
+        "sourceAbility": "Frostbite Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Therimorse": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Therokis": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Thundrake": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Thykallos": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Tohukos": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 4.5,
+        "sourceAbility": "Disease Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Traiboros": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Corrosion Attack"
+      }
+    ],
+    "Trikylo": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Trutholbyeva": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Umbraxi": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Undoli": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Ushrumesh": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Vahiaex": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Valkurse": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Varskela": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Vaumora": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Veludorah": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Vetemortem": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 4,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Viridex": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Vorpalus": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Whispthera": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 3,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Xymorax": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 3,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Yeba'idi": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Yiepir": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Zethines": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 9,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Zohdok": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Zwevealisk": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Ahri'Tahmuk": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Aidoneiscus": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 2,
+        "sourceAbility": "Corrosion Attack"
+      }
+    ],
+    "Altulis": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Anutill": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Aolenus": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Arsonos": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Asilvestrela": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Danténos": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Firakai": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Frosflit": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": -1,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Fyranili": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Ghibli": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Haechionx": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Heisoteri": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 3,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Iztajuatl": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Mag'Masta": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 3,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Noxulumen": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Parahexilian": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Shiziyou": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 0.75,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Starlit": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Sylvesqual": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Frostbite Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Torcherouk": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Veraiatrice": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": -4,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Vivoltex": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Voletexius": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Volnoirve": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Xeternos": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 1,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Frostbite Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Zieti": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Burn Attack"
+      }
+    ],
+    "Zoltraack": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 2,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Banishii": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 2,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Bolatra": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1,
+        "sourceAbility": "Corrosion Attack"
+      }
+    ],
+    "Dieamarjla": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 2,
+        "sourceAbility": "Corrosion Attack"
+      }
+    ],
+    "Diokrine": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2,
+        "sourceAbility": "Disease Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Dioxikin": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1.25,
+        "sourceAbility": "Corrosion Attack"
+      }
+    ],
+    "Exterreri": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 2,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 4,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Fluren": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 2,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Gimon-Ogu": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Gryvila": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": -1,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": -3,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Khilutatra": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Malupiscis": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Menace": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Noctivul": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Nok'Tuun": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1,
+        "sourceAbility": "Corrosion Attack"
+      }
+    ],
+    "Nolumoth": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Noxiouk": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 0.6,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Pentagloss": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Sana'ata": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 4.5,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Sigmatox": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 4,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Venatrox": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 2,
+        "sourceAbility": "Corrosion Attack"
+      }
+    ],
+    "Venuella": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Xenolif": [
+      {
+        "statusId": "Corrosion_Status",
+        "stacks": 1,
+        "sourceAbility": "Corrosion Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Dalitil": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 1,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Enthomen": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Lithumbra": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Disease Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Phantejer": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Ripirin": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Rusrin": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": -6,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Salrahn": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Taiyuelong": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": -4,
+        "sourceAbility": "Disease Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": -4,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Tsugae": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 4,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Woodralone": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 6,
+        "sourceAbility": "Disease Attack"
+      }
+    ],
+    "Yama'tu": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 8,
+        "sourceAbility": "Disease Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 4,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Zarrax": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 4,
+        "sourceAbility": "Disease Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": -0.5,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 4,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Zokzis": [
+      {
+        "statusId": "Disease_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Disease Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Artikauk": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Borenhir": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Cottol": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": -1,
+        "sourceAbility": "Frostbite Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Etheralotus": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Kaminaru": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Frostbite Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Pacedegon": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Frostbite Attack"
+      },
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Somnia Elus": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 4,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Tundrik": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 2,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Uleoum": [
+      {
+        "statusId": "Frostbite_Status",
+        "stacks": 1,
+        "sourceAbility": "Frostbite Attack"
+      }
+    ],
+    "Akorbik": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Allifu": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Aqoxturumox": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Arachyu": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Archinax": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Avothius": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Buff Eulopii": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Demetyra": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Diesura": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Equenix": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": -2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Geogoff": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Ghartokus": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 8,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Gloracus": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Gnolrok": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Gorgonichus": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Goskogur": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 4.25,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Gramoss": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Grysallmog": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Gurava": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.25,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Haxaline": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Hayrhinozh": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Hebitoa": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Inkpujin": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Kavouradis": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Kendyll": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Konomushi": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Lactarim": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 0.75,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Lerachu": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 4,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Luxsces": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Magnacetus": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Molangai": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Mooslmossle": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Mustegaryx": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Polymonstrum": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Sarcosiris": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 4,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Shro": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Therolachus": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Tornir": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Verza": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Zakaiodrak": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 0.75,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Zolbatros": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 3,
+        "sourceAbility": "Injury Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Cucuerpum": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 3,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Furnilixii": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 3,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Glysgadota": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Hikorshi": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Jhiggo-Jangl": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Kretśnik": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Liskwyrm": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Quezekel": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 1,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Shiyaro": [
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 2,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Beezu": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Convarlia": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Dabaemura": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Doragonix": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Fernifly": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Galiryn": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Hemokai": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 4.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Feral Korathos": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Korathos": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Lure": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 4.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Moemoea": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Pleuremiert": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 3,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Slaiorn": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 2,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Turgeon": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Viracniar": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Xeleviprex": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 4.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Zeoarex": [
+      {
+        "statusId": "Poison_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Poison Attack"
+      }
+    ],
+    "Mycenlich": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Veishyadar": [
+      {
+        "statusId": "Burn_Status",
+        "stacks": 0.4,
+        "sourceAbility": "Burn Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 0.4,
+        "sourceAbility": "Necropoison Attack"
+      },
+      {
+        "statusId": "Torn_Ligaments_Status",
+        "stacks": 1,
+        "sourceAbility": "Ligament Tear"
+      }
+    ],
+    "Velcacao": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1.5,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Vespritte": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 0.75,
+        "sourceAbility": "Bleed Attack"
+      },
+      {
+        "statusId": "Necropoison_Status",
+        "stacks": 0.5,
+        "sourceAbility": "Necropoison Attack"
+      }
+    ],
+    "Kretapex": [
+      {
+        "statusId": "Bleed_Status",
+        "stacks": 4,
+        "sourceAbility": "Bleed Attack"
+      }
+    ],
+    "Whilora": [
+      {
+        "statusId": "Injury_Status",
+        "stacks": 1,
+        "sourceAbility": "Injury Attack"
+      }
+    ],
+    "Vielheart": [],
+    "Silligie": []
+  }
+}

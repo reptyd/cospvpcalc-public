@@ -1,0 +1,111 @@
+[
+  {
+    "name": "adrenaline-breath-jotunhel-vs-aereis",
+    "attacker": {
+      "health": 3800,
+      "weight": 3500,
+      "damage": 245,
+      "biteCooldown": 0.8,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 3
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.25,
+        "Frostbite_Status": 0.4,
+        "Injury_Status": 0.4
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 2150,
+      "weight": 2300,
+      "damage": 260,
+      "biteCooldown": 0.8,
+      "healthRegen": 5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "breathResistance": 0,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "attackerBreath": {
+      "dpsPct": 1.5,
+      "capacity": 10,
+      "regenRate": 2.5,
+      "critChancePct": 20,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "defenderBreath": {
+      "dpsPct": 0.5,
+      "capacity": 20,
+      "regenRate": 0.75,
+      "critChancePct": 0,
+      "chain": 0,
+      "chainMaxStacks": 0,
+      "specialKind": null,
+      "selfHealPct": 0,
+      "cleanseStacks": 0,
+      "lanceDamagePct": 0,
+      "lanceChargeSec": 0,
+      "lanceCooldownSec": 0,
+      "lanceStatusId": null,
+      "autoFireDelaySec": 0,
+      "autoFireCooldownSec": 0,
+      "specialStatuses": []
+    },
+    "adrenalineProfile": {
+      "attackerAdrenalineAvailable": true,
+      "defenderAdrenalineAvailable": false
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 24,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": 12.000000000000002,
+      "maxTimeSec": 24,
+      "dpsAtoB": 537.4999999999999,
+      "ttkAtoB": 4,
+      "damageDealtA": 2478.9999999999995,
+      "damageDealtAAtBDeath": 2149.9999999999995,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

@@ -1,0 +1,129 @@
+[
+  {
+    "name": "kendyll_vs_xymorax_active_melee_live_surface_matches_ts_output",
+    "attacker": {
+      "health": 8000,
+      "weight": 16000,
+      "damage": 785.5477499999998,
+      "biteCooldown": 1.1214000000000002,
+      "healthRegen": 4.4,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        },
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 1
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 3800,
+      "weight": 3080,
+      "damage": 397.36165625,
+      "biteCooldown": 0.7560000000000001,
+      "healthRegen": 4.800000000000001,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "selfDestructProfile": null,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 1.5
+        },
+        {
+          "statusId": "Disease_Status",
+          "stacks": 3
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.35,
+        "Disease_Status": 1,
+        "Injury_Status": -0.3,
+        "Necropoison_Status": 1,
+        "Poison_Status": 0.4
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "activeProfile": {
+      "attacker": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 0,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {
+          "Bleed_Status": 1
+        }
+      },
+      "defender": {
+        "spiteValue": null,
+        "hardenAvailable": false,
+        "fortifyAvailable": false,
+        "frostNovaAvailable": false,
+        "frostNovaValue": null,
+        "wardenRageAvailable": false,
+        "adrenalineAvailable": false,
+        "huntersCurseAvailable": false,
+        "unbridledRageAvailable": false,
+        "drowsyAreaAvailable": false,
+        "rewindAvailable": false,
+        "radiationAvailable": false,
+        "refluxAvailable": false,
+        "frostSnareAvailable": false,
+        "cursedSigilStacks": 0,
+        "thornTrapAvailable": false,
+        "shadowBarrageValue": 3,
+        "explicitOnHitStatuses": [],
+        "plushieOnHitStatuses": {}
+      },
+      "badOmenOutcome": {
+        "statusId": "Bleed_Status",
+        "stacks": 10,
+        "label": "Bleed +10"
+      }
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": 22.680000000000003,
+      "maxTimeSec": 180,
+      "dpsAtoB": 1129.540455383152,
+      "ttkAtoB": 3.3642000000000003,
+      "damageDealtA": 3971.8,
+      "damageDealtAAtBDeath": 3800,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "name": "thorn-trap-applies-bleed-and-freeze",
+    "defender": {
+      "health": 1000,
+      "weight": 100,
+      "damage": 100,
+      "biteCooldown": 1,
+      "healthRegen": 0,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "time": 0,
+    "activesOn": true,
+    "startingDefenderStatuses": {},
+    "startingThornTrapCooldownUntil": 0,
+    "expected": {
+      "defenderStatuses": {
+        "Bleed_Status": {
+          "stacks": 6,
+          "nextTickAt": 3,
+          "nextDecayAt": 3,
+          "remainingSec": 18
+        },
+        "Freeze_Status": {
+          "stacks": 2,
+          "nextTickAt": null,
+          "nextDecayAt": 3,
+          "remainingSec": 6
+        }
+      },
+      "thornTrapCooldownUntil": 35,
+      "abilityAppliedCount": 1
+    }
+  },
+  {
+    "name": "thorn-trap-respects-cooldown",
+    "defender": {
+      "health": 1000,
+      "weight": 100,
+      "damage": 100,
+      "biteCooldown": 1,
+      "healthRegen": 0,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "time": 1,
+    "activesOn": true,
+    "startingDefenderStatuses": {
+      "Bleed_Status": {
+        "stacks": 6,
+        "nextTickAt": 3,
+        "nextDecayAt": 3,
+        "remainingSec": 18
+      },
+      "Freeze_Status": {
+        "stacks": 2,
+        "nextTickAt": null,
+        "nextDecayAt": 3,
+        "remainingSec": 6
+      }
+    },
+    "startingThornTrapCooldownUntil": 35,
+    "expected": {
+      "defenderStatuses": {
+        "Bleed_Status": {
+          "stacks": 6,
+          "nextTickAt": 3,
+          "nextDecayAt": 3,
+          "remainingSec": 18
+        },
+        "Freeze_Status": {
+          "stacks": 2,
+          "nextTickAt": null,
+          "nextDecayAt": 3,
+          "remainingSec": 6
+        }
+      },
+      "thornTrapCooldownUntil": 35,
+      "abilityAppliedCount": 0
+    }
+  }
+]

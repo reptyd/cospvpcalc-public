@@ -1,0 +1,85 @@
+[
+  {
+    "name": "kendyll_vs_sigmatox_status_melee_matches_ts_output",
+    "attacker": {
+      "health": 8000,
+      "weight": 13400,
+      "damage": 823.9606249999999,
+      "biteCooldown": 1.08,
+      "healthRegen": 5,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 8700,
+      "weight": 9040,
+      "damage": 764.1570312499999,
+      "biteCooldown": 1.0395,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0.2,
+      "firstStrikeHpRatioThreshold": 0.75,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 1
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 4
+        },
+        {
+          "statusId": "Shredded_Wings",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 1
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.25,
+        "Injury_Status": 0.25,
+        "Poison_Status": 1
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "maxTimeSec": 180,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": 10.395000000000001,
+      "maxTimeSec": 180,
+      "dpsAtoB": 947.7124183006537,
+      "ttkAtoB": 9.18,
+      "damageDealtA": 8702,
+      "damageDealtAAtBDeath": 8700,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

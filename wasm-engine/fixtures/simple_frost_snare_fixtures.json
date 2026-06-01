@@ -1,0 +1,55 @@
+[
+  {
+    "name": "frost-snare-applies-five-frostbite",
+    "time": 0,
+    "startingCooldownUntil": 0,
+    "startingStatuses": {},
+    "expected": {
+      "frostSnareCooldownUntil": 205,
+      "defenderStatuses": {
+        "Frostbite_Status": {
+          "stacks": 5,
+          "nextTickAt": null,
+          "nextDecayAt": 3,
+          "remainingSec": 15
+        }
+      },
+      "abilityAppliedCount": 1
+    }
+  },
+  {
+    "name": "frost-snare-respects-existing-cooldown",
+    "time": 10,
+    "startingCooldownUntil": 120,
+    "startingStatuses": {},
+    "expected": {
+      "frostSnareCooldownUntil": 120,
+      "defenderStatuses": {},
+      "abilityAppliedCount": 0
+    }
+  },
+  {
+    "name": "frost-snare-stacks-onto-existing-frostbite",
+    "time": 0,
+    "startingCooldownUntil": 0,
+    "startingStatuses": {
+      "Frostbite_Status": {
+        "stacks": 2,
+        "nextTickAt": null,
+        "remainingSec": 6
+      }
+    },
+    "expected": {
+      "frostSnareCooldownUntil": 205,
+      "defenderStatuses": {
+        "Frostbite_Status": {
+          "stacks": 7,
+          "nextTickAt": null,
+          "remainingSec": 21,
+          "nextDecayAt": 3
+        }
+      },
+      "abilityAppliedCount": 1
+    }
+  }
+]
