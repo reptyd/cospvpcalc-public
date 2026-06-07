@@ -1,0 +1,17 @@
+{
+  "name": "cos-calc-wasm-engine",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "cos_calc_wasm_engine_bg.wasm",
+    "cos_calc_wasm_engine.js",
+    "cos_calc_wasm_engine_bg.js",
+    "cos_calc_wasm_engine.d.ts"
+  ],
+  "main": "cos_calc_wasm_engine.js",
+  "types": "cos_calc_wasm_engine.d.ts",
+  "sideEffects": [
+    "./cos_calc_wasm_engine.js",
+    "./snippets/*"
+  ]
+}

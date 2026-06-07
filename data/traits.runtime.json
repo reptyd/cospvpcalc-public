@@ -1,0 +1,45 @@
+{
+  "traits": [
+    {
+      "id": "Bite",
+      "name": "Bite",
+      "effectText": "+10% Faster bite cooldown Estimated 14."
+    },
+    {
+      "id": "Damage",
+      "name": "Damage",
+      "effectText": "+5% Damage Estimated 14."
+    },
+    {
+      "id": "Health",
+      "name": "Health",
+      "effectText": "+12.5% HP Regen Estimated 14."
+    },
+    {
+      "id": "Healing",
+      "name": "Healing",
+      "effectText": "+5% Healing Estimated 12."
+    },
+    {
+      "id": "Speed",
+      "name": "Speed",
+      "effectText": "+3.5% Fly Speed +3."
+    },
+    {
+      "id": "Max_Stamina",
+      "name": "Max Stamina",
+      "effectText": "+15% Total Stamina Estimated 14."
+    },
+    {
+      "id": "Stamina_Regen",
+      "name": "Stamina Regen",
+      "effectText": "+20% Stamina Regeneration (including in-glide stamina regeneration) Estimated 14."
+    },
+    {
+      "id": "Weight",
+      "name": "Weight",
+      "effectText": "+5% Weight Estimated 14."
+    }
+  ],
+  "count": 8
+}

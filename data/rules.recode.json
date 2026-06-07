@@ -1,0 +1,43 @@
+{
+  "version": "recode",
+  "sources": {
+    "combat": "https://creatures-of-sonaria-official.fandom.com/wiki/Combat#Melee_damage_formula",
+    "breath": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities#Breath"
+  },
+  "model": {
+    "pvpMode": "1v1",
+    "stance": "standing",
+    "environment": "off",
+    "pack": "off",
+    "useDamage2": false,
+    "useInvisibility": false,
+    "useKeenObserver": false,
+    "activesDefault": "on"
+  },
+  "damage": {
+    "melee": {
+      "formula": "finalDamage = (baseDamage * targetSitOrLayMultiplier * packMultiplier * (1 + userWeight/targetWeight)) / 2",
+      "weightRatioCap": 3,
+      "targetSitOrLayMultiplier": {
+        "standing": 1.0,
+        "sitting": 1.5,
+        "laying": 1.75
+      },
+      "packMultiplier": {
+        "nonPackmate": 1.0,
+        "packmate": 0.25
+      }
+    },
+    "breath": {
+      "enabled": true,
+      "formula": "finalBreathDamage = (breathDps * (1 + userWeight/targetWeight)) / 2",
+      "weightRatioCap": 3,
+      "notes": "Breath DPS values are % of base damage per wiki notes (unless stated otherwise)."
+    }
+  },
+  "notes": [
+    "damage2 (e.g., Tail Whip) is excluded from this calculator.",
+    "Active abilities are enabled by default and are assumed to be used optimally by the simulator/optimizer.",
+    "Do not infer ability behavior from name alone; use wiki descriptions and the Recode Stats sheet numeric values." 
+  ]
+}

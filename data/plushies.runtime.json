@@ -1,0 +1,810 @@
+{
+  "count": 83,
+  "plushies": [
+    {
+      "id": "Horned_Beetlefly",
+      "name": "Horned Beetlefly",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Magichorn_Prongbug",
+      "name": "Magichorn Prongbug",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "hpRegenPct",
+          "op": "addPct",
+          "value": 10,
+          "note": "+10% health regeneration"
+        }
+      ]
+    },
+    {
+      "id": "Oceanwing",
+      "name": "Oceanwing",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Rock",
+      "name": "Rock",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Stick",
+      "name": "Stick",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Succulant",
+      "name": "Succulant",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Aerix",
+      "name": "Aerix",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Aerodon",
+      "name": "Aerodon",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "appetiteDrainPct",
+          "op": "addPct",
+          "value": -15,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Euvatops",
+      "name": "Euvatops",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "appetiteDrainPct",
+          "op": "addPct",
+          "value": -15,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Octroma",
+      "name": "Octroma",
+      "stackRule": "unique",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Cat",
+      "name": "Cat",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "damagePct",
+          "op": "addPct",
+          "value": -2.5,
+          "note": null
+        },
+        {
+          "stat": "bleedStacks",
+          "op": "addFlat",
+          "value": 1,
+          "note": "+1 Offensive Bleed"
+        }
+      ]
+    },
+    {
+      "id": "Cavity_Critter",
+      "name": "Cavity Critter",
+      "stackRule": "unique",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Haunt_Dragon",
+      "name": "Haunt Dragon",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "poisonStacks",
+          "op": "addFlat",
+          "value": 0.5,
+          "note": "+0.5 offensive poison"
+        }
+      ]
+    },
+    {
+      "id": "Ghost",
+      "name": "Ghost",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Magic_Frog",
+      "name": "Magic Frog",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Owl",
+      "name": "Owl",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Pig-Lantern",
+      "name": "Pig-Lantern",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "damagePct",
+          "op": "addPct",
+          "value": -2.5,
+          "note": null
+        },
+        {
+          "stat": "burnStacks",
+          "op": "addFlat",
+          "value": 0.5,
+          "note": "+0.5 offensive burn"
+        }
+      ]
+    },
+    {
+      "id": "Stitch_Head",
+      "name": "Stitch Head",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Vampire_Bat",
+      "name": "Vampire Bat",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "damagePct",
+          "op": "addPct",
+          "value": -2.5,
+          "note": null
+        },
+        {
+          "stat": "bleedStacks",
+          "op": "addFlat",
+          "value": 1,
+          "note": "+1 Defensive Bleed"
+        },
+        {
+          "stat": "blockBleedPct",
+          "op": "addPct",
+          "value": 2.5,
+          "note": "+2.5% bleed block"
+        }
+      ]
+    },
+    {
+      "id": "Jammy_Slug",
+      "name": "Jammy Slug",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "damagePct",
+          "op": "addPct",
+          "value": -5,
+          "note": null
+        },
+        {
+          "stat": "necropoisonStacks",
+          "op": "addFlat",
+          "value": 0.5,
+          "note": "+0.5 defensive necropoison"
+        }
+      ]
+    },
+    {
+      "id": "Maple_Leaflet",
+      "name": "Maple Leaflet",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Pie_Chomper",
+      "name": "Pie Chomper",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "hpRegenPct",
+          "op": "addPct",
+          "value": -25,
+          "note": "-25% health regeneration"
+        }
+      ]
+    },
+    {
+      "id": "Blessed_Bean",
+      "name": "Blessed Bean",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Coal",
+      "name": "Coal",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "weightPct",
+          "op": "addPct",
+          "value": 3.5,
+          "note": "+3.5% weight"
+        }
+      ]
+    },
+    {
+      "id": "Frost_Dragon",
+      "name": "Frost Dragon",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Ginger_Snapper",
+      "name": "Ginger Snapper",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "frostbiteStacks",
+          "op": "addFlat",
+          "value": 0.5,
+          "note": "+0.5 defensive frostbite"
+        },
+        {
+          "stat": "blockBurnPct",
+          "op": "addPct",
+          "value": -5,
+          "note": "-5.0% burn block"
+        }
+      ]
+    },
+    {
+      "id": "Ice_Wolf",
+      "name": "Ice Wolf",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "damagePct",
+          "op": "addPct",
+          "value": 5,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Minty_Wiggler",
+      "name": "Minty Wiggler",
+      "stackRule": "unique",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Partridge",
+      "name": "Partridge",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Reindeer",
+      "name": "Reindeer",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Snowflake_Sneak",
+      "name": "Snowflake Sneak",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Snowman",
+      "name": "Snowman",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Tannenbaum",
+      "name": "Tannenbaum",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "frostbiteStacks",
+          "op": "addFlat",
+          "value": 0.5,
+          "note": "+0.5 offensive frostbite"
+        },
+        {
+          "stat": "biteCooldownPct",
+          "op": "addPct",
+          "value": 5,
+          "note": "+5% bite cooldown"
+        }
+      ]
+    },
+    {
+      "id": "Heart",
+      "name": "Heart",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "hpRegenPct",
+          "op": "addPct",
+          "value": 30,
+          "note": null
+        },
+        {
+          "stat": "weightPct",
+          "op": "addPct",
+          "value": -5,
+          "note": "-5% weight"
+        }
+      ]
+    },
+    {
+      "id": "Heartsnake",
+      "name": "Heartsnake",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "poisonStacks",
+          "op": "addFlat",
+          "value": 0.75,
+          "note": "+0.75 defensive poison"
+        }
+      ]
+    },
+    {
+      "id": "Rosevine",
+      "name": "Rosevine",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Swan",
+      "name": "Swan",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Clover_Blossom",
+      "name": "Clover Blossom",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Golden_Bulb",
+      "name": "Golden Bulb",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Bunny",
+      "name": "Bunny",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Chick",
+      "name": "Chick",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "movementSpeedPct",
+          "op": "addPct",
+          "value": 5,
+          "note": null
+        },
+        {
+          "stat": "weightPct",
+          "op": "addPct",
+          "value": -7.5,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Cow",
+      "name": "Cow",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "damagePct",
+          "op": "addPct",
+          "value": -5,
+          "note": null
+        },
+        {
+          "stat": "weightPct",
+          "op": "addPct",
+          "value": 10,
+          "note": "+10% weight"
+        },
+        {
+          "stat": "weightPct",
+          "op": "addPct",
+          "value": 10,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Egg_Shell",
+      "name": "Egg Shell",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Egg_Gobbler",
+      "name": "Egg Gobbler",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Eggy_Snake",
+      "name": "Eggy Snake",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Jackrabbit",
+      "name": "Jackrabbit",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Springram",
+      "name": "Springram",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Catalyst",
+      "name": "Catalyst",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Eclipse",
+      "name": "Eclipse",
+      "stackRule": "unique",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Darkstar",
+      "name": "Darkstar",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Elemental",
+      "name": "Elemental",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Knight",
+      "name": "Knight",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "damagePct",
+          "op": "addPct",
+          "value": -5,
+          "note": null
+        },
+        {
+          "stat": "plushieReflectAvgPct",
+          "op": "addFlat",
+          "value": 5,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Land",
+      "name": "Land",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "muddyDurationBoost",
+          "op": "addPct",
+          "value": 100,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Sea",
+      "name": "Sea",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Sky",
+      "name": "Sky",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Void",
+      "name": "Void",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "damagePct",
+          "op": "addPct",
+          "value": 7.5,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Sparkler",
+      "name": "Sparkler",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "blockPoisonPct",
+          "op": "addPct",
+          "value": 15,
+          "note": "15.0% poison block"
+        },
+        {
+          "stat": "blockFrostbitePct",
+          "op": "addPct",
+          "value": 15,
+          "note": "15.0% frostbite block"
+        },
+        {
+          "stat": "blockBurnPct",
+          "op": "addPct",
+          "value": 15,
+          "note": "15.0% burn block"
+        },
+        {
+          "stat": "blockBleedPct",
+          "op": "addPct",
+          "value": -20,
+          "note": "-20.0% bleed block"
+        }
+      ]
+    },
+    {
+      "id": "Clownfish",
+      "name": "Clownfish",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Goldfish",
+      "name": "Goldfish",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "appetiteDrainPct",
+          "op": "addPct",
+          "value": 20,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Palmtree",
+      "name": "Palmtree",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "appetiteCapacityPct",
+          "op": "addPct",
+          "value": 10,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Serpent",
+      "name": "Serpent",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "damagePct",
+          "op": "addPct",
+          "value": -10,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Icebreaker",
+      "name": "Icebreaker",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Baby_Dragon",
+      "name": "Baby Dragon",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "breathRegenPct",
+          "op": "addPct",
+          "value": 20,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Bear",
+      "name": "Bear",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Fox",
+      "name": "Fox",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Dolt",
+      "name": "Dolt",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Hum",
+      "name": "Hum",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "weightPct",
+          "op": "addPct",
+          "value": 2.5,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Knox",
+      "name": "Knox",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "movementSpeedPct",
+          "op": "addPct",
+          "value": 5,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Mo",
+      "name": "Mo",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "damagePct",
+          "op": "addPct",
+          "value": 2.5,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Rod",
+      "name": "Rod",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "hpRegenPct",
+          "op": "addPct",
+          "value": 10,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Arcane",
+      "name": "Arcane",
+      "stackRule": "unique",
+      "modifiersParsed": [
+        {
+          "stat": "breathDamagePct",
+          "op": "addPct",
+          "value": 12.5,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "Seal",
+      "name": "Seal",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Springbok",
+      "name": "Springbok",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Creator_Star",
+      "name": "Creator Star",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Astral_Quetzal",
+      "name": "Astral Quetzal",
+      "stackRule": "unique",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Ember_Spirit",
+      "name": "Ember Spirit",
+      "stackRule": "stackable",
+      "modifiersParsed": [
+        {
+          "stat": "burnStacks",
+          "op": "addFlat",
+          "value": 0.5,
+          "note": "+0.5 defensive burn"
+        },
+        {
+          "stat": "blockFrostbitePct",
+          "op": "addPct",
+          "value": -7.5,
+          "note": "-7.5% frostbite block"
+        }
+      ]
+    },
+    {
+      "id": "Smore_Cat",
+      "name": "Smore Cat",
+      "stackRule": "stackable",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Notes",
+      "name": "Notes",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Mylo",
+      "name": "Mylo",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Jotun_Scale",
+      "name": "Jotun Scale",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Humming_Frost",
+      "name": "Humming Frost",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    },
+    {
+      "id": "Lunar_Qilin",
+      "name": "Lunar Qilin",
+      "stackRule": "unknown",
+      "modifiersParsed": []
+    }
+  ]
+}

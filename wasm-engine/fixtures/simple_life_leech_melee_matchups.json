@@ -1,0 +1,191 @@
+[
+  {
+    "name": "life-leech-melee-korathos-vs-dummy",
+    "attacker": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 14000,
+      "weight": 50000,
+      "damage": 360,
+      "biteCooldown": 1,
+      "healthRegen": 0,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "lifeLeechProfile": {
+      "attacker": {
+        "available": true,
+        "lifeLeechValue": 0.3
+      },
+      "defender": {
+        "available": false,
+        "lifeLeechValue": 0
+      }
+    },
+    "abilityPolicy": "fast",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 20,
+      "dpsAtoB": 471.42857142857144,
+      "ttkAtoB": 20,
+      "damageDealtA": 9900,
+      "damageDealtAAtBDeath": 9900,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "life-leech-melee-korathos-mirror",
+    "attacker": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "lifeLeechProfile": {
+      "attacker": {
+        "available": true,
+        "lifeLeechValue": 0.3
+      },
+      "defender": {
+        "available": true,
+        "lifeLeechValue": 0.3
+      }
+    },
+    "abilityPolicy": "fast",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 20,
+      "dpsAtoB": 471.42857142857144,
+      "ttkAtoB": 20,
+      "damageDealtA": 9900,
+      "damageDealtAAtBDeath": 9900,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "life-leech-melee-korathos-mirror-semi-ideal",
+    "attacker": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "hunkerReductionPct": 0,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [],
+      "startingStatuses": [],
+      "statusResistFractions": {},
+      "plushieStatusBlockFractions": {}
+    },
+    "lifeLeechProfile": {
+      "attacker": {
+        "available": true,
+        "lifeLeechValue": 0.3
+      },
+      "defender": {
+        "available": true,
+        "lifeLeechValue": 0.3
+      }
+    },
+    "abilityPolicy": "semiIdeal",
+    "maxTimeSec": 20,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 20,
+      "dpsAtoB": 471.42857142857144,
+      "ttkAtoB": 20,
+      "damageDealtA": 9900,
+      "damageDealtAAtBDeath": 9900,
+      "extendedDamagePotentialA": 0
+    }
+  }
+]

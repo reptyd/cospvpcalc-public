@@ -1,0 +1,87 @@
+/* Fonts are loaded asynchronously from index.html with a <link>
+   preload-swap pattern (preconnect → media=print → onload swap)
+   so the initial paint isn't render-blocked by Google Fonts.
+   Local fallbacks below are picked up while the webfont arrives. */
+
+:root {
+  font-family: "Archivo", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Dark, slim scrollbars - the default white/native scrollbar clashed
+   with the dark theme. Applies to the page and every scrollable
+   container (panels, dropdowns, lists). */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3a4d68 transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #2f415a;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #41597b;
+  background-clip: padding-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+/* Visible keyboard focus ring on every interactive element. Mouse
+   clicks suppress the ring (`:focus-visible` only); keyboard nav
+   keeps it. Without this, a screen-reader / keyboard user can't
+   tell which control is currently focused - a hard a11y blocker. */
+:focus-visible {
+  outline: 2px solid #6cf2c1;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skip-link target - anchor jump from the keyboard-only "Skip to
+   content" link in `App.tsx`. Hidden until focused. */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 8px;
+  z-index: 1000;
+  padding: 8px 14px;
+  background: #1d1f24;
+  color: #6cf2c1;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 8px;
+}

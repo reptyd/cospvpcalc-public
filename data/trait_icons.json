@@ -1,0 +1,18 @@
+{
+  "source": "local-cache",
+  "note": "local cached trait icons",
+  "icons": {
+    "Healing": "/icons/traits/Healing.png",
+    "Damage": "/icons/traits/Damage.png",
+    "Stamina_Regen": "/icons/traits/Stamina_Regen.png",
+    "Bite": "/icons/traits/Bite.png",
+    "Health": "/icons/traits/Health.png",
+    "Stamina Regen": "/icons/traits/Stamina_Regen.png",
+    "Weight": "/icons/traits/Weight.png",
+    "Health Regen": "/icons/traits/Health_Regen.png",
+    "Stamina/Glide Regen": "/icons/traits/Stamina_Glide_Regen.png",
+    "Max_Stamina": "/icons/traits/Max_Stamina.png",
+    "Speed": "/icons/traits/Speed.png",
+    "Max Stamina": "/icons/traits/Max_Stamina.png"
+  }
+}

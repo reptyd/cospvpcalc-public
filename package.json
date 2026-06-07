@@ -1,0 +1,87 @@
+{
+  "name": "cos-calc",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Data-driven PvP calculator and matchup optimizer for Creatures of Sonaria, with a deterministic Rust+WASM combat engine.",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "author": "Tymamatyty <cos.pvp.contact@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reptyd/cospvpcalc-public.git"
+  },
+  "homepage": "https://cospvpcalc.ru/",
+  "bugs": {
+    "url": "https://github.com/reptyd/cospvpcalc-public/issues"
+  },
+  "keywords": [
+    "creatures-of-sonaria",
+    "pvp",
+    "calculator",
+    "wasm",
+    "rust",
+    "react",
+    "game-tools"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "check:mojibake": "node scripts/check-mojibake.mjs",
+    "check:bundle": "node scripts/check-bundle-size.mjs",
+    "coverage:gap": "npx.cmd tsx scripts/reference_coverage_gap.ts",
+    "coverage:gap:only": "npx.cmd tsx scripts/reference_coverage_gap.ts --only-gaps",
+    "coverage:gap:ci": "npx.cmd tsx scripts/reference_coverage_gap.ts --only-gaps --ci",
+    "profile:best-builds": "node --experimental-wasm-modules --import tsx scripts/profile_best_builds.ts",
+    "rust:build": "wasm-pack build wasm-engine --target bundler --out-dir ../src/rust-pkg",
+    "rust:test": "cargo test --manifest-path wasm-engine/Cargo.toml",
+    "gen:registry": "npx.cmd tsx scripts/gen_effects_registry.ts",
+    "rust:bench:contours": "cargo test --manifest-path wasm-engine/Cargo.toml contour_benchmark_report -- --ignored --nocapture",
+    "test": "vitest run -c vitest.config.ts --pool forks --reporter verbose",
+    "test:ci": "vitest run -c vitest.config.ts --pool forks --reporter verbose",
+    "preview": "vite preview",
+    "tool:editor": "npx.cmd tsx tools/creature-editor.ts",
+    "tool:wiki-sync": "npx.cmd tsx tools/wiki-sync.ts",
+    "tool:wiki-sync:all": "npx.cmd tsx tools/wiki-sync.ts --all",
+    "tool:wiki-sync:dry": "npx.cmd tsx tools/wiki-sync.ts --dry",
+    "tool:wiki-sync:icons": "npx.cmd tsx tools/wiki-sync.ts --all --icons",
+    "tool:wiki-sync:pvp": "npx.cmd tsx tools/wiki-sync.ts --dry --pvp",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@fontsource/archivo": "5.2.8",
+    "@fontsource/fraunces": "5.2.9",
+    "mobile-drag-drop": "^2.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.3",
+    "@eslint/js": "^9.39.1",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "playwright": "^1.58.2",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.2.4",
+    "vite-plugin-top-level-await": "^1.6.0",
+    "vite-plugin-wasm": "^3.5.0",
+    "vitest": "^4.0.18"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 Edge versions",
+    "Firefox ESR",
+    "not dead"
+  ]
+}

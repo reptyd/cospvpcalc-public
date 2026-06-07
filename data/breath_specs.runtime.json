@@ -1,0 +1,360 @@
+{
+  "breathTypes": [
+    {
+      "id": "Acid_Breath",
+      "name": "Acid Breath",
+      "raw": "Dieamarjla using the Acid Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.5 per hit. This breath has a Capacity of 10, a Regen Rate of 1.8, a Range of 180 studs, and a Critical chance of 10%. It can also inflict Corrosion Status (Probability = 100%, STACKS = 0.5). Acid Breath Creatures : Click to toggle. Dieamarjla Jetebene Malupiscis Nok'Tuun Noxiouk Venatrox Zeoarex",
+      "effect": {
+        "dps": 1,
+        "perHit": "0.5% PER HIT"
+      },
+      "stats": {
+        "capacity": 10,
+        "regenRate": 1.8,
+        "rangeStuds": 180,
+        "critChancePct": 10
+      }
+    },
+    {
+      "id": "Cloud_Breath",
+      "name": "Cloud Breath",
+      "raw": "Wixpectr'o using its Cloud Breath ability Effect: Deals no damage. This breath has a Capacity of 10, a Regen Rate of 1.3, and a Range of 250 studs. It provides SelfHeal at 1% Max health regen per sec and Stamina Regen at 1% Max stamina regen per sec. It can also self-apply Water Regeneration (Probability = 99%, STACKS = 2), and Muddy (Probability = 40%, STACKS = 2). Cloud Breath Creatures : Click to toggle. Flickaflie Fuejin'Liya Galtekron Geortharoc Gramoss Gryvila Halaqual Leurimess Novus Warden Taiyuelong Wixpectr'o Wystora Yenyasha",
+      "effect": {
+        "dps": 0,
+        "perHit": "0% PER HIT"
+      },
+      "stats": {
+        "capacity": 10,
+        "regenRate": 1.3,
+        "rangeStuds": 250
+      }
+    },
+    {
+      "id": "Crystal_Breath",
+      "name": "Crystal Breath",
+      "raw": "Geoptxina using its Crystal breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.5 per hit. This breath has a Capacity of 10, a Regen Rate of 1.8, a Range of 150 studs, and a Critical chance of 0%. It can also inflict the following ailments: Bleed Status (Probability = 75%, STACKS = 0.5), Injury (Probability = 50%, STACKS = 1), and Shredded Wings (Probability = 50%, STACKS = 1). Crystal Breath Creatures : Click to toggle. Geoptxina Lucensia Muravil Pliarys Viridex Zethines",
+      "effect": {
+        "dps": 1,
+        "perHit": "0.5% PER HIT"
+      },
+      "stats": {
+        "capacity": 10,
+        "regenRate": 1.8,
+        "rangeStuds": 150,
+        "critChancePct": 0
+      }
+    },
+    {
+      "id": "Energy_Breath",
+      "name": "Energy Breath",
+      "raw": "Qurugosk using its Energy Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.225 per hit. This breath has a Capacity of 8, a Regen Rate of 5, a Range of 180 studs, a Critical chance of 0%, a Chain value of 100, and a ChainMaxStacks of 10. It has a maximum chain damage of +1000%. It can also inflict Slowed Status (Probability = 25%, no stacking). Energy Breath Creatures : Click to toggle. Kemoti Khu'Vuk Qurugosk Xeternos",
+      "effect": {
+        "dps": 0.45,
+        "perHit": "0.225% PER HIT"
+      },
+      "stats": {
+        "capacity": 8,
+        "regenRate": 5,
+        "rangeStuds": 180,
+        "critChancePct": 0,
+        "chain": 100,
+        "chainMaxStacks": 10
+      }
+    },
+    {
+      "id": "Fire_Breath",
+      "name": "Fire Breath",
+      "raw": "Valkurse using its Fire Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.5 per hit. This breath has a Capacity of 20, a Regen Rate of 1.5, a Range of 200 studs, and Critical chance of 25%. Fire Breath can also inflict Burn Status (Probability = 75%, STACKS = 0.5). Fire Breath Creatures : Click to toggle. Arsonos Caldonterrus Embristiss Galiryn Gurava Heisoteri Kamigami Mag'Masta OriOri Sochuri Valkurse Zoltraack",
+      "effect": {
+        "dps": 1,
+        "perHit": "0.5% PER HIT"
+      },
+      "stats": {
+        "capacity": 20,
+        "regenRate": 1.5,
+        "rangeStuds": 200,
+        "critChancePct": 25
+      }
+    },
+    {
+      "id": "Glacier_Breath",
+      "name": "Glacier Breath",
+      "raw": "Old Etheralotus model using its Glacier Breath ability Effect: Deals damage two times per second, with a damage multiplier of x1 per hit. This breath has a Capacity of 10, a Regen Rate of 4.5, a Range of 150 studs, a Critical chance of 35%, a Chain value of 5, and a ChainMaxStacks of 10. It can also inflict Slowed Status (Probability = 30%, no stacking), Injury (Probability = 30%, STACKS = 1), and Freeze (Probability = 5%, no stacking). Glacier Breath Creatures : Click to toggle. Despisicle Morinus Nyctoxon Uldraak?? Varskela",
+      "effect": {
+        "dps": 2,
+        "perHit": "1% PER HIT"
+      },
+      "stats": {
+        "capacity": 10,
+        "regenRate": 4.5,
+        "rangeStuds": 150,
+        "critChancePct": 35,
+        "chain": 5,
+        "chainMaxStacks": 10
+      }
+    },
+    {
+      "id": "Gold_Breath",
+      "name": "Gold Breath",
+      "raw": "Verza using its Gold Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.25 per hit. This breath has a Capacity of 20, a Regen Rate of 0.75 seconds, a Range of 250 studs, and a Critical chance of 0%. Gold Breath can inflict Blurred Vision (Probability = 30%, no stacking) and Freeze Status (Probability = 5%, no stacking). Gold Breath Creatures : Click to toggle. Aereis Flixlit Nyxasolyx Verza Zoocuu",
+      "effect": {
+        "dps": 0.5,
+        "perHit": "0.25% PER HIT"
+      },
+      "stats": {
+        "capacity": 20,
+        "regenRate": 0.75,
+        "rangeStuds": 250,
+        "critChancePct": 0
+      }
+    },
+    {
+      "id": "Green_Fire_Breath",
+      "name": "Green Fire Breath",
+      "raw": "Guardian Dragon using its Green Fire Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.5 per hit. This breath has a Capacity of 20, a Regen Rate of 1.5, a Range of 200 studs, and Critical chance of 25%. Green Fire Breath can also inflict Burn Status (Probability = 75%, STACKS = 0.5). Green Fire Breath Creatures : Click to toggle. Guardian Dragon",
+      "effect": {
+        "dps": 1,
+        "perHit": "0.5% PER HIT"
+      },
+      "stats": {
+        "capacity": 20,
+        "regenRate": 1.5,
+        "rangeStuds": 200,
+        "critChancePct": 25
+      }
+    },
+    {
+      "id": "Haunt_Breath",
+      "name": "Haunt Breath",
+      "raw": "Viracniar using its Haunt Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.75 per hit. This breath has a Capacity of 10, a Regen Rate of 2.5, a Range of 175 studs, and a Critical chance of 35%. Haunt Breath can also inflict Poison Status (Probability = 75%, STACKS = 1), Shock Status (Probability = 10%, STACKS = 0.5), and Tunnel Vision (Probability = 25%, STACKS = 0.5). Haunt Breath Creatures : Click to toggle. Cucuerpum Fleuralis Liskwyrm Lotremum Sylvesqual Viracniar",
+      "effect": {
+        "dps": 1.5,
+        "perHit": "0.75% PER HIT"
+      },
+      "stats": {
+        "capacity": 10,
+        "regenRate": 2.5,
+        "rangeStuds": 175,
+        "critChancePct": 35
+      }
+    },
+    {
+      "id": "Heal_Beam",
+      "name": "Heal Beam",
+      "raw": "Ani using the Heal Beam ability Heal Beam is a modified breath that heals instead of damages and looks like a focused light beam. It heals all creatures it touches (except the user of the beam). Heal Beam Creatures : Click to toggle. Ani Equenix Paru-Gama Prialoura"
+    },
+    {
+      "id": "Heal_Breath",
+      "name": "Heal Breath",
+      "raw": "Brequewk using its Heal Breath ability Effect: Deals no damage. This breath has a Capacity of 10, a Regen Rate of 5, a Range of 150 studs, and a Critical chance of 0%. It provides SelfHeal at 3% Max health regen and heals 0.5 of every negative ailment every second. Heal Breath Creatures : Click to toggle. Brequewk Dioxikin Fairiocris Hyboria Maiueve Mufolium Saukuryn",
+      "effect": {
+        "dps": 0,
+        "perHit": "0% PER HIT"
+      },
+      "stats": {
+        "capacity": 10,
+        "regenRate": 5,
+        "rangeStuds": 150,
+        "critChancePct": 0
+      }
+    },
+    {
+      "id": "Ice_Breath",
+      "name": "Ice Breath",
+      "raw": "Euvias using its Ice Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.5 per hit. This breath has a Capacity of 10, a Regen Rate of 3.75, and a Range of 200 studs. Ice Breath can also inflict Slowed Status (Probability = 40%, no stacking) and Frostbite (Probability = 75%, STACKS = 0.5). Ice Breath Creatures : Click to toggle. Emphines Euvias Kaminaru Noxulumen Sleirnok Somnia Elus Tundrik Umbraxi Yohsog",
+      "effect": {
+        "dps": 1,
+        "perHit": "0.5% PER HIT"
+      },
+      "stats": {
+        "capacity": 10,
+        "regenRate": 3.75,
+        "rangeStuds": 200,
+        "critChancePct": 0
+      }
+    },
+    {
+      "id": "Lightning_Breath",
+      "name": "Lightning Breath",
+      "raw": "Dowatt using its Lightning Breath ability Effect: Deals damage two times per second, with a damage multiplier of x1.5 per hit. This breath has a Capacity of 5, a Regen Rate of 12, a Range of 175 studs, a Critical chance of 50%, a Chain value of 25, and a ChainMaxStacks of 5. It has a maximum chain damage of +125%. It also has a chance to inflict Shock Status (Probability = 50%, no stacking). Lightning Breath Creatures : Click to toggle. Dowatt Keruku Taurolystris Vaumora Veludorah Vivoltex",
+      "effect": {
+        "dps": 3,
+        "perHit": "1.5% PER HIT"
+      },
+      "stats": {
+        "capacity": 5,
+        "regenRate": 12,
+        "rangeStuds": 175,
+        "critChancePct": 50,
+        "chain": 25,
+        "chainMaxStacks": 5
+      }
+    },
+    {
+      "id": "Miasma_Breath",
+      "name": "Miasma Breath",
+      "raw": "Korathos using its Miasma Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.25 per hit, provides a SelfHeal of 0.5%, and does 2.5% stamina damage of the target's stamina per tick. This breath has a Capacity of 10, a Regen Rate of 2.5, a Range of 200 studs, and a Critical chance of 25%. Miasma Breath Creatures : Click to toggle. Aidoneiscus Gimon-Ogu Glysgadota Irizah Khilutatra Korathos Ushrumesh Woodralone",
+      "effect": {
+        "dps": 0.5,
+        "perHit": "0.25% PER HIT"
+      },
+      "stats": {
+        "capacity": 10,
+        "regenRate": 2.5,
+        "rangeStuds": 200,
+        "critChancePct": 25
+      }
+    },
+    {
+      "id": "Plague_Breath",
+      "name": "Plague Breath",
+      "raw": "Tsugae using its Plague Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.25 per hit. This breath has a Capacity of 5, a Regen Rate of 2, a Range of 180 studs, and a Critical chance of 25%. It can also inflict Disease Status (Probability = 100%, STACKS = 1). Plague Breath Creatures : Click to toggle. Cottol Plumetik Ripirin Salrahn Tornir Tsugae",
+      "effect": {
+        "dps": 0.5,
+        "perHit": "0.25% PER HIT"
+      },
+      "stats": {
+        "capacity": 5,
+        "regenRate": 2,
+        "rangeStuds": 180,
+        "critChancePct": 25
+      }
+    },
+    {
+      "id": "Rock_Breath",
+      "name": "Rock Breath",
+      "raw": "Effect: Deals damage two times per second, with a damage multiplier of x1 per hit. This breath has a Capacity of 10, a Regen Rate of 3.5, a Range of 150 studs, and a Critical chance of 10%. It can inflict Injury Status (Probability = 10%, STACKS = 2) and Shredded Wings (Probability = 10%, STACKS = 2). Rock Breath Creatures : Click to toggle. Geogoff Gnolrok Sana'ata Trikylo",
+      "effect": {
+        "dps": 2,
+        "perHit": "1% PER HIT"
+      },
+      "stats": {
+        "capacity": 10,
+        "regenRate": 3.5,
+        "rangeStuds": 150,
+        "critChancePct": 10
+      }
+    },
+    {
+      "id": "Sand_Breath",
+      "name": "Sand Breath",
+      "raw": "Aleicuda using its Sand Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.25 per hit. This ability has a Capacity of 10, a Regen Rate of 1.8, a Range of 250 studs, and a Critical chance of 0%. It can also inflict Blurred Vision (Probability = 100%, no stacking) and Tunnel Vision (Probability = 50%, no stacking). Sand Breath Creatures : Click to toggle. Aleicuda Chrysos Hellion Warden Kaluaka Phantejer Scrimpeii Vetemortem",
+      "effect": {
+        "dps": 0.5,
+        "perHit": "0.25% PER HIT"
+      },
+      "stats": {
+        "capacity": 10,
+        "regenRate": 1.8,
+        "rangeStuds": 250,
+        "critChancePct": 0
+      }
+    },
+    {
+      "id": "Solar_Beam",
+      "name": "Solar Beam",
+      "raw": "Ouratum using its Solar Beam ability Effect: Deals damage two times per second, with a damage multiplier of x1.5 per hit. This ability has a Capacity of 10, a Regen Rate of 0, a Range of 550 studs, and a Critical chance of 0%. Unlike other breaths, once activated, Solar Beam will not stop firing until empty. This ability has a Time Before Fire of 3 seconds and has a Cooldown of 120 seconds, instead of a Regen Rate. Creatures with this ability : Click to toggle. Ahri'Tahmuk Altulis Asilvestrela Astolo Cindrothar Ouratum Thykallos Veldys",
+      "stats": {
+        "capacity": 10,
+        "regenRate": 0,
+        "rangeStuds": 550,
+        "critChancePct": 0
+      },
+      "effect": {
+        "dps": 3,
+        "perHit": "1.5% PER HIT"
+      }
+    },
+    {
+      "id": "Spirit_Glare",
+      "name": "Spirit Glare",
+      "raw": "Deluumar using its Spirit Glare ability Effect: Deals damage two times per second, with a damage multiplier of x1 per hit. This ability has a Capacity of 10, a Regen Rate of 0, a Range of 550 studs, and a Critical chance of 0%. Unlike other breaths, once activated, Spirit Glare will not stop firing until empty. This ability has a Time Before Fire of 0 seconds and has a Cooldown of 120 seconds, instead of a Regen Rate. Spirit Glare inflicts Burn Status (Probability = 100%, STACKS = 1) and Fear Status (Probability = 100%, STACKS = 1). Creatures with this ability : Click to toggle. Deluumar Opralegion",
+      "stats": {
+        "capacity": 10,
+        "regenRate": 0,
+        "rangeStuds": 550,
+        "critChancePct": 0
+      },
+      "effect": {
+        "dps": 2,
+        "perHit": "1% PER HIT"
+      }
+    },
+    {
+      "id": "Heliolyths_Judgement",
+      "name": "Heliolyth's Judgement",
+      "raw": "Turrim using its Heliolyth's Judgement ability Effect: Deals true damage two times per second, equal to 1.6% of the target's max HP per hit. This ability ignores Breath Resistance and weight scaling. This ability has a Capacity of 10, a Regen Rate of 0, a Range of 550 studs, and a Critical chance of 0%. Once activated, Heliolyth's Judgement will not stop firing until empty. This ability has a Time Before Fire of 3 seconds and has a Cooldown of 120 seconds, instead of a Regen Rate.",
+      "stats": {
+        "capacity": 10,
+        "regenRate": 0,
+        "rangeStuds": 550,
+        "critChancePct": 0
+      },
+      "effect": {
+        "dps": 3.2,
+        "perHit": "1.6% MAX HP TRUE DAMAGE PER HIT"
+      }
+    },
+    {
+      "id": "Storm_Breath",
+      "name": "Storm Breath",
+      "raw": "Norskogg using its Storm Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.001 per hit. This breath has a Capacity of 20, a Regen Rate of 1.75 seconds, a Critical chance of 0%, and a Range of 250 studs. Storm Breath can also inflict Slowed Status (Probability = 35%, no stacking), and Blurred Vision (Probability = 40%, no stacking). Storm Breath Creatures : Click to toggle. Dalghara Etheralotus Fellisio Koini Norskogg Pero Thundrake",
+      "effect": {
+        "dps": 0.002,
+        "perHit": "0.001% PER HIT"
+      },
+      "stats": {
+        "capacity": 20,
+        "regenRate": 1.75,
+        "rangeStuds": 250,
+        "critChancePct": 0
+      }
+    },
+    {
+      "id": "Toxin_Breath",
+      "name": "Toxin Breath",
+      "raw": "Hemokai using its Toxin Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.25 per hit. This breath has a Capacity of 15, a Regen Rate of 2.5, a Critical chance of 5%, a Range of 250 studs, and can inflict Poison Status (Probability = 75%, STACKS = 0.75). Toxin Breath Creatures : Click to toggle. Arkmetta Hemokai Nindyr Shro Xeleviprex",
+      "effect": {
+        "dps": 0.5,
+        "perHit": "0.25% PER HIT"
+      },
+      "stats": {
+        "capacity": 15,
+        "regenRate": 2.5,
+        "rangeStuds": 250,
+        "critChancePct": 5
+      }
+    },
+    {
+      "id": "Virus_Breath",
+      "name": "Virus Breath",
+      "raw": "Garra Warden using its Virus Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.25 per hit. This breath has a Capacity of 20, a Regen Rate of 1.5, a Critical chance of 0%, a Range of 180 studs, and can inflict Bleed Status (Probability = 75%, STACKS = 1). Virus Breath Creatures : Click to toggle. Garra Warden Morthorax Noctla'Lune Phantaris Raiquazok Skulderouge",
+      "effect": {
+        "dps": 0.5,
+        "perHit": "0.25% PER HIT"
+      },
+      "stats": {
+        "capacity": 20,
+        "regenRate": 1.5,
+        "rangeStuds": 180,
+        "critChancePct": 0
+      }
+    },
+    {
+      "id": "Water_Breath",
+      "name": "Water Breath",
+      "raw": "Zohdok using its Water Breath ability Effect: Deals damage two times per second, with a damage multiplier of x0.75 per hit. This breath has a Capacity of 10, a Regen Rate of 2.5, a Critical chance of 20%, a Range of 200 studs, and can inflict Blurred Vision (Probability = 60%, no stacking). Water Breath Creatures : Click to toggle. Aqoxturumox Corsarlett Exotide Gobli Haxaline Jotunhel Nuciffracoccu Olatua Oxysenix Seradae Starknol Zakaiodrak Zohdok",
+      "effect": {
+        "dps": 1.5,
+        "perHit": "0.75% PER HIT"
+      },
+      "stats": {
+        "capacity": 10,
+        "regenRate": 2.5,
+        "rangeStuds": 200,
+        "critChancePct": 20
+      }
+    }
+  ],
+  "count": 23
+}

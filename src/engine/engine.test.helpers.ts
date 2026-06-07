@@ -1,0 +1,26 @@
+import type { FinalStats } from "./types";
+
+export const baseStats = (overrides: Partial<FinalStats> = {}): FinalStats => ({
+  name: "Test",
+  tier: 1,
+  health: 300,
+  weight: 100,
+  damage: 100,
+  biteCooldown: 1,
+  healthRegen: 0,
+  stamina: 0,
+  stamRegen: 0,
+  walkAndSwimSpeed: 0,
+  sprintSpeed: 0,
+  turn: 0,
+  venerationRate: 0,
+  diet: "none",
+  type: "test",
+  mobilityOverride: "none",
+  breath: "N/A",
+  hasBreath: false,
+  breathType: null,
+  approxNotes: [],
+  appliedTraits: [],
+  ...overrides,
+});

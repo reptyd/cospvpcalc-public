@@ -1,0 +1,142 @@
+[
+  {
+    "name": "equal-stats-three-hit-draw",
+    "attacker": {
+      "health": 300,
+      "weight": 100,
+      "damage": 100,
+      "biteCooldown": 1,
+      "healthRegen": 0
+    },
+    "defender": {
+      "health": 300,
+      "weight": 100,
+      "damage": 100,
+      "biteCooldown": 1,
+      "healthRegen": 0
+    },
+    "maxTimeSec": 10,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": 3,
+      "maxTimeSec": 10,
+      "dpsAtoB": 100,
+      "ttkAtoB": 3,
+      "damageDealtA": 300,
+      "damageDealtAAtBDeath": 300,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "heavy-attacker-faster-kill",
+    "attacker": {
+      "health": 600,
+      "weight": 200,
+      "damage": 180,
+      "biteCooldown": 1,
+      "healthRegen": 0
+    },
+    "defender": {
+      "health": 450,
+      "weight": 100,
+      "damage": 90,
+      "biteCooldown": 1.25,
+      "healthRegen": 0
+    },
+    "maxTimeSec": 10,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 10,
+      "dpsAtoB": 270,
+      "ttkAtoB": 2,
+      "damageDealtA": 540,
+      "damageDealtAAtBDeath": 540,
+      "extendedDamagePotentialA": 7830
+    }
+  },
+  {
+    "name": "defender-survives-time-cap",
+    "attacker": {
+      "health": 300,
+      "weight": 100,
+      "damage": 40,
+      "biteCooldown": 2,
+      "healthRegen": 0
+    },
+    "defender": {
+      "health": 1200,
+      "weight": 300,
+      "damage": 20,
+      "biteCooldown": 2,
+      "healthRegen": 0
+    },
+    "maxTimeSec": 6,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 6,
+      "dpsAtoB": 13.333333333333332,
+      "ttkAtoB": 6,
+      "damageDealtA": 106.66666666666666,
+      "damageDealtAAtBDeath": 106.66666666666666,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "defender-regen-extends-ttk",
+    "attacker": {
+      "health": 2200,
+      "weight": 350,
+      "damage": 180,
+      "biteCooldown": 2,
+      "healthRegen": 0
+    },
+    "defender": {
+      "health": 2600,
+      "weight": 420,
+      "damage": 80,
+      "biteCooldown": 2.5,
+      "healthRegen": 2
+    },
+    "maxTimeSec": 50,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 50,
+      "dpsAtoB": 82.5,
+      "ttkAtoB": 34,
+      "damageDealtA": 2805,
+      "damageDealtAAtBDeath": 2805,
+      "extendedDamagePotentialA": 165
+    }
+  },
+  {
+    "name": "attacker-regen-improves-survival-but-still-wins",
+    "attacker": {
+      "health": 3200,
+      "weight": 450,
+      "damage": 260,
+      "biteCooldown": 1.5,
+      "healthRegen": 1.5
+    },
+    "defender": {
+      "health": 2400,
+      "weight": 320,
+      "damage": 120,
+      "biteCooldown": 1.6,
+      "healthRegen": 0
+    },
+    "maxTimeSec": 40,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 40,
+      "dpsAtoB": 208.54166666666666,
+      "ttkAtoB": 12,
+      "damageDealtA": 2502.5,
+      "damageDealtAAtBDeath": 2502.5,
+      "extendedDamagePotentialA": 4066.5625
+    }
+  }
+]
