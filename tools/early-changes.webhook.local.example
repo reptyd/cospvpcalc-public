@@ -1,0 +1,6 @@
+Copy this file to tools/early-changes.webhook.local and put the Discord webhook
+URL on the first line. That file is gitignored (matches *.local) and never
+committed. The webhook can also be supplied via the
+COS_EARLY_CHANGES_DISCORD_WEBHOOK environment variable.
+
+https://discord.com/api/webhooks/XXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX

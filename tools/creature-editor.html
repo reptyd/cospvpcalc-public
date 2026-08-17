@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CoS Creature Editor</title>
+<style>
+:root {
+  --bg: #1a1a2e;
+  --bg2: #16213e;
+  --bg3: #0f3460;
+  --accent: #e94560;
+  --accent2: #53a8b6;
+  --text: #e0e0e0;
+  --text2: #a0a0b0;
+  --border: #2a2a4a;
+  --success: #4caf50;
+  --warn: #ff9800;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+header {
+  background: var(--bg2);
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+header h1 { font-size: 18px; font-weight: 600; color: var(--accent); }
+header .count { color: var(--text2); font-size: 13px; }
+#statusMsg {
+  margin-left: auto;
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+}
+.layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ── Sidebar ── */
+aside {
+  width: 260px;
+  min-width: 200px;
+  background: var(--bg2);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+aside .controls {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+aside input[type=text] {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+}
+aside input[type=text]:focus { border-color: var(--accent2); }
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.btn-accent {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-accent:hover { background: #d13550; }
+.btn-green {
+  background: var(--success);
+  color: #fff;
+}
+.btn-green:hover { background: #43a047; }
+.btn-warn {
+  background: var(--warn);
+  color: #000;
+}
+.btn-warn:hover { background: #f57c00; }
+.btn-small {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--accent2);
+  border: 1px solid var(--border);
+}
+.btn-ghost:hover { background: var(--bg3); }
+#creatureList {
+  list-style: none;
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 0;
+}
+#creatureList li {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 13px;
+  border-left: 3px solid transparent;
+  transition: background 0.1s;
+}
+#creatureList li:hover { background: var(--bg3); }
+#creatureList li.active {
+  background: var(--bg3);
+  border-left-color: var(--accent);
+  color: #fff;
+}
+#creatureList li .tier {
+  color: var(--text2);
+  font-size: 11px;
+  margin-left: 4px;
+}
+
+/* ── Main editor ── */
+main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 32px;
+}
+#placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text2);
+  font-size: 16px;
+}
+.editor-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.editor-header h2 { font-size: 22px; font-weight: 600; }
+.editor-header .actions { margin-left: auto; display: flex; gap: 8px; }
+
+.section {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.section-title {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  background: rgba(255,255,255,0.03);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-body { padding: 16px; }
+
+/* Stats grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+.stat-field label {
+  display: block;
+  font-size: 12px;
+  color: var(--text2);
+  margin-bottom: 4px;
+}
+.stat-field input, .stat-field select {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+}
+.stat-field input:focus, .stat-field select:focus {
+  border-color: var(--accent2);
+}
+
+/* Ability rows */
+.ability-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.ability-row:last-child { border-bottom: none; }
+.ability-row .ab-name {
+  flex: 1;
+  min-width: 0;
+}
+.ability-row .ab-name input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 13px;
+  outline: none;
+}
+.ability-row .ab-name input:focus { border-color: var(--accent2); }
+.ability-row .ab-val {
+  width: 80px;
+}
+.ability-row .ab-val input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 13px;
+  outline: none;
+  text-align: center;
+}
+.ability-row .ab-sem {
+  width: 110px;
+}
+.ability-row .ab-sem select {
+  width: 100%;
+  padding: 6px 4px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 12px;
+  outline: none;
+}
+.ability-row .ab-del {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(233,69,96,0.15);
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.ability-row .ab-del:hover { background: rgba(233,69,96,0.3); }
+.add-ability-bar {
+  padding: 8px 0 0;
+  display: flex;
+  gap: 8px;
+}
+
+/* Autocomplete */
+.ac-wrapper { position: relative; flex: 1; }
+.ac-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0 0 6px 6px;
+  z-index: 100;
+  display: none;
+}
+.ac-dropdown.open { display: block; }
+.ac-dropdown div {
+  padding: 6px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.ac-dropdown div:hover, .ac-dropdown div.highlight {
+  background: var(--bg3);
+}
+.ac-dropdown div .cat {
+  float: right;
+  font-size: 11px;
+  color: var(--text2);
+  font-style: italic;
+}
+
+/* Name input */
+#creatureName {
+  font-size: 22px;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--text);
+  padding: 4px 8px;
+  outline: none;
+  width: 300px;
+}
+#creatureName:focus { border-color: var(--accent2); }
+#creatureName.new-creature { border-color: var(--warn); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--bg3); }
+
+/* Responsive */
+@media (max-width: 700px) {
+  .layout { flex-direction: column; }
+  aside { width: 100%; max-height: 200px; border-right: none; border-bottom: 1px solid var(--border); }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Creatures of Sonaria &mdash; Editor</h1>
+  <span class="count" id="totalCount"></span>
+  <span id="statusMsg"></span>
+</header>
+<div class="layout">
+
+<!-- Sidebar -->
+<aside>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search creatures..." autocomplete="off">
+    <button class="btn btn-accent" id="btnNew">+ New Creature</button>
+  </div>
+  <ul id="creatureList"></ul>
+</aside>
+
+<!-- Editor -->
+<main>
+  <div id="placeholder">Select a creature or create a new one</div>
+  <div id="editorArea" style="display:none">
+    <div class="editor-header">
+      <input type="text" id="creatureName" placeholder="Creature Name" spellcheck="false">
+      <div class="actions">
+        <button class="btn btn-green" id="btnSave">Save</button>
+        <button class="btn btn-warn btn-small" id="btnDelete">Delete</button>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="section">
+      <div class="section-title">Stats</div>
+      <div class="section-body">
+        <div class="stats-grid" id="statsGrid"></div>
+      </div>
+    </div>
+
+    <!-- Passive Abilities -->
+    <div class="section">
+      <div class="section-title">Passive Abilities <span id="passiveCount" style="color:var(--text2);font-weight:400;font-size:12px"></span></div>
+      <div class="section-body">
+        <div id="passiveList"></div>
+        <div class="add-ability-bar">
+          <div class="ac-wrapper">
+            <input type="text" id="addPassiveInput" placeholder="Type ability name..." autocomplete="off">
+            <div class="ac-dropdown" id="addPassiveAC"></div>
+          </div>
+          <button class="btn btn-ghost btn-small" id="btnAddPassive">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activated Abilities -->
+    <div class="section">
+      <div class="section-title">Activated Abilities <span id="activatedCount" style="color:var(--text2);font-weight:400;font-size:12px"></span></div>
+      <div class="section-body">
+        <div id="activatedList"></div>
+        <div class="add-ability-bar">
+          <div class="ac-wrapper">
+            <input type="text" id="addActivatedInput" placeholder="Type ability name..." autocomplete="off">
+            <div class="ac-dropdown" id="addActivatedAC"></div>
+          </div>
+          <button class="btn btn-ghost btn-small" id="btnAddActivated">+ Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Breath Abilities -->
+    <div class="section">
+      <div class="section-title">Breath Abilities <span id="breathCount" style="color:var(--text2);font-weight:400;font-size:12px"></span></div>
+      <div class="section-body">
+        <div id="breathList"></div>
+        <div class="add-ability-bar">
+          <div class="ac-wrapper">
+            <input type="text" id="addBreathInput" placeholder="Type breath name..." autocomplete="off">
+            <div class="ac-dropdown" id="addBreathAC"></div>
+          </div>
+          <button class="btn btn-ghost btn-small" id="btnAddBreath">+ Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</div>
+
+<script>
+/* ================================================================== */
+/*  State                                                              */
+/* ================================================================== */
+let creatures = [];
+let abilityCatalog = [];
+let breathTypes = [];
+let selected = null;      // creature object being edited
+let originalName = null;  // for rename detection
+let dirty = false;
+
+const STAT_FIELDS = [
+  { key: 'tier',             label: 'Tier',              type: 'number', step: '1' },
+  { key: 'health',           label: 'Health',            type: 'number', step: '1' },
+  { key: 'weight',           label: 'Weight',            type: 'number', step: '1' },
+  { key: 'damage',           label: 'Damage',            type: 'number', step: '1' },
+  { key: 'biteCooldown',     label: 'Bite Cooldown (s)', type: 'number', step: '0.1' },
+  { key: 'damage2',          label: 'Damage 2 (opt)',    type: 'number', step: '1', nullable: true },
+  { key: 'healthRegen',      label: 'Health Regen',      type: 'number', step: '0.1', nullable: true },
+  { key: 'stamina',          label: 'Stamina',           type: 'number', step: '1', nullable: true },
+  { key: 'stamRegen',        label: 'Stamina Regen',     type: 'number', step: '0.1', nullable: true },
+  { key: 'walkAndSwimSpeed', label: 'Walk/Swim Speed',   type: 'number', step: '1', nullable: true },
+  { key: 'sprintSpeed',      label: 'Sprint Speed',      type: 'number', step: '1', nullable: true },
+  { key: 'turn',             label: 'Turn',              type: 'number', step: '0.1', nullable: true },
+  { key: 'venerationRate',   label: 'Veneration Rate',   type: 'number', step: '0.1', nullable: true },
+  { key: 'breathResistance', label: 'Breath Resistance',  type: 'number', step: '0.01', nullable: true },
+  { key: 'diet',             label: 'Diet',              type: 'select',
+    options: ['', 'Carnivore', 'Herbivore', 'Omnivore'] },
+  { key: 'type',             label: 'Type',              type: 'select',
+    options: ['', 'Terrestrial', 'Semi-Aquatic', 'Aquatic', 'Flier'] },
+  { key: 'mobilityOverride', label: 'Mobility Override', type: 'text' },
+  { key: 'breath',           label: 'Breath',            type: 'breath-select' },
+];
+
+const SEMANTICS = ['neutral', 'offensive', 'defensive', 'block'];
+
+/* ================================================================== */
+/*  API                                                                */
+/* ================================================================== */
+async function fetchCreatures() {
+  const r = await fetch('/api/creatures');
+  const d = await r.json();
+  creatures = d.creatures;
+  document.getElementById('totalCount').textContent = `(${creatures.length} creatures)`;
+}
+
+async function fetchAbilities() {
+  const r = await fetch('/api/abilities');
+  const d = await r.json();
+  abilityCatalog = d.abilities;
+  breathTypes = d.breathTypes;
+}
+
+async function saveCreature(creature) {
+  const r = await fetch('/api/creature', {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(creature),
+  });
+  return r.json();
+}
+
+async function deleteCreature(name) {
+  const r = await fetch(`/api/creature?name=${encodeURIComponent(name)}`, { method: 'DELETE' });
+  return r.json();
+}
+
+/* ================================================================== */
+/*  Rendering                                                          */
+/* ================================================================== */
+function renderList(filter = '') {
+  const ul = document.getElementById('creatureList');
+  const lc = filter.toLowerCase();
+  const filtered = creatures.filter(c => c.name.toLowerCase().includes(lc));
+  ul.innerHTML = filtered.map(c =>
+    `<li data-name="${esc(c.name)}" class="${selected && selected.name === c.name ? 'active' : ''}">`
+    + `${esc(c.name)}<span class="tier">T${c.stats.tier}</span></li>`
+  ).join('');
+  ul.querySelectorAll('li').forEach(li => {
+    li.onclick = () => selectCreature(li.dataset.name);
+  });
+}
+
+function selectCreature(name) {
+  if (dirty && !confirm('You have unsaved changes. Discard?')) return;
+  const c = creatures.find(cr => cr.name === name);
+  if (!c) return;
+  selected = JSON.parse(JSON.stringify(c)); // deep clone
+  originalName = c.name;
+  dirty = false;
+  showEditor();
+  renderList(document.getElementById('search').value);
+}
+
+function showEditor() {
+  document.getElementById('placeholder').style.display = 'none';
+  document.getElementById('editorArea').style.display = 'block';
+  document.getElementById('creatureName').value = selected.name;
+  document.getElementById('creatureName').classList.toggle('new-creature', !originalName);
+  renderStats();
+  renderAbilityList('passive', selected.passiveAbilities ?? []);
+  renderAbilityList('activated', selected.activatedAbilities ?? []);
+  renderAbilityList('breath', selected.breathAbilities ?? []);
+}
+
+function renderStats() {
+  const grid = document.getElementById('statsGrid');
+  grid.innerHTML = STAT_FIELDS.map(f => {
+    const val = selected.stats[f.key];
+    if (f.type === 'select') {
+      const opts = f.options.map(o =>
+        `<option value="${o}" ${val === o ? 'selected' : ''}>${o || '(none)'}</option>`
+      ).join('');
+      return `<div class="stat-field"><label>${f.label}</label><select data-key="${f.key}">${opts}</select></div>`;
+    }
+    if (f.type === 'breath-select') {
+      const allBreaths = ['N/A', ...breathTypes];
+      const opts = allBreaths.map(b =>
+        `<option value="${b}" ${val === b ? 'selected' : ''}>${b}</option>`
+      ).join('');
+      return `<div class="stat-field"><label>${f.label}</label><select data-key="${f.key}">${opts}</select></div>`;
+    }
+    const v = (val === null || val === undefined) ? '' : val;
+    return `<div class="stat-field"><label>${f.label}</label>`
+      + `<input type="${f.type}" data-key="${f.key}" value="${v}" step="${f.step || ''}" placeholder="${f.nullable ? 'empty = N/A' : ''}"></div>`;
+  }).join('');
+
+  grid.querySelectorAll('input, select').forEach(el => {
+    el.addEventListener('input', () => {
+      const key = el.dataset.key;
+      const field = STAT_FIELDS.find(f => f.key === key);
+      if (field.type === 'number') {
+        const raw = el.value.trim();
+        selected.stats[key] = raw === '' ? null : parseFloat(raw);
+      } else {
+        selected.stats[key] = el.value;
+      }
+      markDirty();
+    });
+  });
+}
+
+function renderAbilityList(category, abilities) {
+  const container = document.getElementById(`${category}List`);
+  const countEl = document.getElementById(`${category}Count`);
+  countEl.textContent = `(${abilities.length})`;
+
+  container.innerHTML = abilities.map((a, i) => `
+    <div class="ability-row" data-idx="${i}">
+      <div class="ab-name">
+        <div class="ac-wrapper">
+          <input type="text" value="${esc(a.name)}" data-field="name" placeholder="Ability name" autocomplete="off">
+        </div>
+      </div>
+      <div class="ab-val">
+        <input type="text" value="${a.value !== null && a.value !== undefined ? a.value : ''}" data-field="value" placeholder="val">
+      </div>
+      <div class="ab-sem">
+        <select data-field="semantics">
+          ${SEMANTICS.map(s => `<option value="${s}" ${a.semantics === s ? 'selected' : ''}>${s}</option>`).join('')}
+        </select>
+      </div>
+      <button class="ab-del" title="Remove">&times;</button>
+    </div>
+  `).join('');
+
+  container.querySelectorAll('.ability-row').forEach(row => {
+    const idx = parseInt(row.dataset.idx);
+
+    // Name input with inline autocomplete
+    const nameInput = row.querySelector('[data-field="name"]');
+    setupAbilityAutocomplete(nameInput, category, idx);
+
+    nameInput.addEventListener('change', () => {
+      const name = nameInput.value.trim();
+      abilities[idx].name = name;
+      abilities[idx].abilityId = name.replace(/\s+/g, '_');
+      // Auto-detect semantics from catalog
+      const known = abilityCatalog.find(a => a.name.toLowerCase() === name.toLowerCase());
+      if (known) {
+        abilities[idx].semantics = known.semantics;
+        row.querySelector('[data-field="semantics"]').value = known.semantics;
+      }
+      markDirty();
+    });
+
+    row.querySelector('[data-field="value"]').addEventListener('input', (e) => {
+      const raw = e.target.value.trim();
+      abilities[idx].value = raw === '' ? null : (isNaN(Number(raw)) ? raw : parseFloat(raw));
+      markDirty();
+    });
+
+    row.querySelector('[data-field="semantics"]').addEventListener('change', (e) => {
+      abilities[idx].semantics = e.target.value;
+      markDirty();
+    });
+
+    row.querySelector('.ab-del').addEventListener('click', () => {
+      abilities.splice(idx, 1);
+      updateAbilityArray(category, abilities);
+      renderAbilityList(category, abilities);
+      markDirty();
+    });
+  });
+}
+
+function setupAbilityAutocomplete(input, category, idx) {
+  let dropdown = null;
+  let highlighted = -1;
+
+  function getDropdown() {
+    if (!dropdown) {
+      dropdown = document.createElement('div');
+      dropdown.className = 'ac-dropdown';
+      input.parentElement.appendChild(dropdown);
+    }
+    return dropdown;
+  }
+
+  function show(filter) {
+    const dd = getDropdown();
+    const lc = filter.toLowerCase();
+    const matches = abilityCatalog
+      .filter(a => a.name.toLowerCase().includes(lc))
+      .slice(0, 15);
+    if (!matches.length || !filter) { dd.classList.remove('open'); return; }
+    highlighted = -1;
+    dd.innerHTML = matches.map((a, i) =>
+      `<div data-i="${i}" data-name="${esc(a.name)}" data-sem="${a.semantics}">`
+      + `${esc(a.name)}<span class="cat">${a.category}</span></div>`
+    ).join('');
+    dd.classList.add('open');
+    dd.querySelectorAll('div').forEach(d => {
+      d.onmousedown = (e) => {
+        e.preventDefault();
+        pick(d.dataset.name, d.dataset.sem);
+      };
+    });
+  }
+
+  function pick(name, sem) {
+    input.value = name;
+    const abilities = getAbilityArray(category);
+    abilities[idx].name = name;
+    abilities[idx].abilityId = name.replace(/\s+/g, '_');
+    if (sem) {
+      abilities[idx].semantics = sem;
+      const semSelect = input.closest('.ability-row').querySelector('[data-field="semantics"]');
+      if (semSelect) semSelect.value = sem;
+    }
+    const dd = getDropdown();
+    dd.classList.remove('open');
+    markDirty();
+  }
+
+  input.addEventListener('input', () => show(input.value));
+  input.addEventListener('focus', () => { if (input.value) show(input.value); });
+  input.addEventListener('blur', () => {
+    setTimeout(() => { const dd = getDropdown(); dd.classList.remove('open'); }, 150);
+  });
+  input.addEventListener('keydown', (e) => {
+    const dd = getDropdown();
+    const items = dd.querySelectorAll('div');
+    if (!dd.classList.contains('open') || !items.length) return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      highlighted = Math.min(highlighted + 1, items.length - 1);
+      items.forEach((it, i) => it.classList.toggle('highlight', i === highlighted));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      highlighted = Math.max(highlighted - 1, 0);
+      items.forEach((it, i) => it.classList.toggle('highlight', i === highlighted));
+    } else if (e.key === 'Enter' && highlighted >= 0) {
+      e.preventDefault();
+      const it = items[highlighted];
+      pick(it.dataset.name, it.dataset.sem);
+    } else if (e.key === 'Escape') {
+      dd.classList.remove('open');
+    }
+  });
+}
+
+function getAbilityArray(category) {
+  if (category === 'passive') return selected.passiveAbilities;
+  if (category === 'activated') return selected.activatedAbilities;
+  return selected.breathAbilities;
+}
+
+function updateAbilityArray(category, arr) {
+  if (category === 'passive') selected.passiveAbilities = arr;
+  else if (category === 'activated') selected.activatedAbilities = arr;
+  else selected.breathAbilities = arr;
+}
+
+function addAbility(category) {
+  const input = document.getElementById(`add${cap(category)}Input`);
+  const name = input.value.trim();
+  if (!name) return;
+  const known = abilityCatalog.find(a => a.name.toLowerCase() === name.toLowerCase());
+  const ability = {
+    abilityId: (known?.abilityId) || name.replace(/\s+/g, '_'),
+    name: known?.name || name,
+    value: null,
+    semantics: known?.semantics || guessSemantic(name),
+    subtype: category === 'breath' ? name : null,
+  };
+  const arr = getAbilityArray(category);
+  arr.push(ability);
+  renderAbilityList(category, arr);
+  input.value = '';
+  markDirty();
+}
+
+function guessSemantic(name) {
+  const lc = name.toLowerCase();
+  if (lc.startsWith('block')) return 'block';
+  if (lc.includes('attack') || lc.includes('shredder') || lc.includes('curse') ||
+      lc.includes('poison') || lc.includes('burn') || lc.includes('bleed') ||
+      lc.includes('necropoison') || lc.includes('corrosion')) return 'offensive';
+  if (lc.includes('resist') || lc.includes('shield') || lc.includes('fortify') ||
+      lc.includes('guard')) return 'defensive';
+  return 'neutral';
+}
+
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+function markDirty() { dirty = true; }
+
+function showStatus(msg, ok = true) {
+  const el = document.getElementById('statusMsg');
+  el.textContent = msg;
+  el.style.background = ok ? 'rgba(76,175,80,0.2)' : 'rgba(233,69,96,0.2)';
+  el.style.color = ok ? '#4caf50' : '#e94560';
+  el.style.opacity = '1';
+  setTimeout(() => { el.style.opacity = '0'; }, 3000);
+}
+
+/* ================================================================== */
+/*  Autocomplete for add-ability inputs                                */
+/* ================================================================== */
+function setupAddAbilityAC(category) {
+  const input = document.getElementById(`add${cap(category)}Input`);
+  const dd = document.getElementById(`add${cap(category)}AC`);
+  let highlighted = -1;
+
+  function show(filter) {
+    const lc = filter.toLowerCase();
+    const matches = abilityCatalog
+      .filter(a => a.name.toLowerCase().includes(lc))
+      .slice(0, 12);
+    if (!matches.length || !filter) { dd.classList.remove('open'); return; }
+    highlighted = -1;
+    dd.innerHTML = matches.map((a, i) =>
+      `<div data-i="${i}" data-name="${esc(a.name)}">${esc(a.name)}<span class="cat">${a.category}</span></div>`
+    ).join('');
+    dd.classList.add('open');
+    dd.querySelectorAll('div').forEach(d => {
+      d.onmousedown = (e) => { e.preventDefault(); input.value = d.dataset.name; dd.classList.remove('open'); };
+    });
+  }
+
+  input.addEventListener('input', () => show(input.value));
+  input.addEventListener('focus', () => { if (input.value) show(input.value); });
+  input.addEventListener('blur', () => { setTimeout(() => dd.classList.remove('open'), 150); });
+  input.addEventListener('keydown', (e) => {
+    const items = dd.querySelectorAll('div');
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (highlighted >= 0 && items[highlighted]) {
+        input.value = items[highlighted].dataset.name;
+        dd.classList.remove('open');
+      }
+      addAbility(category);
+      return;
+    }
+    if (!dd.classList.contains('open') || !items.length) return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      highlighted = Math.min(highlighted + 1, items.length - 1);
+      items.forEach((it, i) => it.classList.toggle('highlight', i === highlighted));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      highlighted = Math.max(highlighted - 1, 0);
+      items.forEach((it, i) => it.classList.toggle('highlight', i === highlighted));
+    } else if (e.key === 'Escape') {
+      dd.classList.remove('open');
+    }
+  });
+}
+
+/* ================================================================== */
+/*  Event Handlers                                                     */
+/* ================================================================== */
+async function init() {
+  await Promise.all([fetchCreatures(), fetchAbilities()]);
+  renderList();
+
+  // Search
+  document.getElementById('search').addEventListener('input', (e) => {
+    renderList(e.target.value);
+  });
+
+  // New creature
+  document.getElementById('btnNew').addEventListener('click', () => {
+    if (dirty && !confirm('Unsaved changes. Discard?')) return;
+    selected = {
+      name: '',
+      stats: {
+        tier: 1, health: 100, weight: 100, damage: 10, biteCooldown: 1.0,
+        damage2: null, healthRegen: null, stamina: null, stamRegen: null,
+        walkAndSwimSpeed: null, sprintSpeed: null, turn: null,
+        venerationRate: 1, diet: '', type: '', mobilityOverride: '', breath: 'N/A',
+        breathResistance: null,
+      },
+      passiveAbilities: [],
+      activatedAbilities: [],
+      breathAbilities: [],
+    };
+    originalName = null;
+    dirty = false;
+    showEditor();
+    document.getElementById('creatureName').focus();
+  });
+
+  // Save
+  document.getElementById('btnSave').addEventListener('click', async () => {
+    const name = document.getElementById('creatureName').value.trim();
+    if (!name) { showStatus('Creature name is required!', false); return; }
+    selected.name = name;
+
+    // If renamed, delete old entry
+    if (originalName && originalName !== name) {
+      await deleteCreature(originalName);
+    }
+
+    const result = await saveCreature(selected);
+    if (result.ok) {
+      showStatus(`Saved "${name}" (${result.total} creatures total)`);
+      originalName = name;
+      dirty = false;
+      await fetchCreatures();
+      renderList(document.getElementById('search').value);
+    } else {
+      showStatus(`Error: ${result.error}`, false);
+    }
+  });
+
+  // Delete
+  document.getElementById('btnDelete').addEventListener('click', async () => {
+    if (!originalName) { showStatus('This creature has not been saved yet', false); return; }
+    if (!confirm(`Delete "${originalName}"? This cannot be undone.`)) return;
+    const result = await deleteCreature(originalName);
+    if (result.ok) {
+      showStatus(`Deleted "${originalName}"`);
+      selected = null;
+      originalName = null;
+      dirty = false;
+      document.getElementById('editorArea').style.display = 'none';
+      document.getElementById('placeholder').style.display = 'flex';
+      await fetchCreatures();
+      renderList(document.getElementById('search').value);
+    } else {
+      showStatus(`Error: ${result.error}`, false);
+    }
+  });
+
+  // Add ability buttons
+  document.getElementById('btnAddPassive').addEventListener('click', () => addAbility('passive'));
+  document.getElementById('btnAddActivated').addEventListener('click', () => addAbility('activated'));
+  document.getElementById('btnAddBreath').addEventListener('click', () => addAbility('breath'));
+
+  // Add ability autocomplete
+  setupAddAbilityAC('passive');
+  setupAddAbilityAC('activated');
+  setupAddAbilityAC('breath');
+
+  // Keyboard shortcut: Ctrl+S to save
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+      e.preventDefault();
+      document.getElementById('btnSave').click();
+    }
+  });
+}
+
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+/* Beta Optimizer ("Counter recommendation"). Shares the beta tokens + the
+ * cb-* primitives from compareBeta.css (cb-seg, cb-modal, cb-ghostbtn,
+ * cb-empty, the cb-modal input/select/chip reskin). These ob-* rules cover the
+ * control bar and the BuildCard, which are bespoke to this page. */
+
+.ob { display: flex; flex-direction: column; gap: 16px; }
+
+/* ---- Control bar: target→building matchup, objective lever, Configure+Run */
+.ob-bar {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  background: var(--panel-2); border: 1px solid var(--line); border-radius: 14px;
+  padding: 12px 16px; box-shadow: var(--shadow);
+}
+/* Long creature names used to push the objective and the run controls onto a
+   second line. The matchup gives way instead: it shrinks and the name ellipses,
+   so the bar stays one row whatever the roster is called. */
+.ob-matchup { display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 260px; }
+.ob-matchup__side { display: flex; align-items: center; gap: 9px; min-width: 0; }
+/* Clickable sides: button reset + a subtle hover affordance (opens Setup). */
+.ob-matchup__side--btn { border: 1px solid transparent; background: none; cursor: pointer; padding: 4px 8px; border-radius: 10px; font: inherit; color: inherit; transition: border-color 0.14s ease, background 0.14s ease; }
+.ob-matchup__side--btn:hover { border-color: var(--line); background: rgba(255, 255, 255, 0.03); }
+.ob-matchup__side--b { flex-direction: row-reverse; text-align: right; }
+.ob-matchup__side span { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
+.ob-matchup__side b { font-size: 15px; font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ob-matchup__side em { font-size: 10px; font-style: normal; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); }
+.ob-matchup__side--a b { color: #9ccaff; }
+.ob-matchup__side--b b { color: #8fe9bd; }
+.ob-matchup__vs { color: var(--text-dim); font-size: 18px; font-weight: 700; }
+
+.ob-bar__obj { display: flex; align-items: center; gap: 10px; flex: 0 0 auto; }
+.ob-bar__obj-label { font-size: 10px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+.ob-bar__actions { display: flex; align-items: center; gap: 10px; margin-left: auto; flex: 0 0 auto; }
+.ob-bar__actions .calculate-btn,
+.ob-bar__actions button.primary {
+  background: linear-gradient(180deg, #5aabff, #2e8ef3); color: #07090e; border: none;
+  border-radius: 9px; padding: 9px 20px; font-weight: 700; font-size: 14px; cursor: pointer;
+  box-shadow: 0 6px 16px rgba(46, 142, 243, 0.35);
+}
+.ob-bar__actions button.primary:disabled { opacity: 0.6; cursor: progress; }
+.ob-bar__obj .cb-seg { flex-wrap: wrap; }
+
+/* Run controls — zero layout shift. The run button has a FIXED width, so
+   "Calculate" / "Run Optimizer" and the widest running label "Running… 100%"
+   all occupy the same box and the ticking percentage never resizes it. While
+   running it shows progress as an internal fill + label (no separate corner
+   number). Cancel renders only while running, to the LEFT of the cluster, so it
+   appears in the flexible gap without moving the fixed Configure + run pair. */
+.ob-bar__actions .ob-run { width: 150px; box-sizing: border-box; text-align: center; flex: none; }
+.ob-bar__actions .ob-run--progress {
+  position: relative; overflow: hidden; isolation: isolate;
+  border: 1px solid rgba(77, 163, 255, 0.5); border-radius: 9px; padding: 9px 16px;
+  background: rgba(46, 142, 243, 0.1); color: #d6e9ff; font-weight: 700; font-size: 14px; cursor: progress;
+}
+.ob-bar__actions .ob-run--progress .ob-run__fill {
+  position: absolute; left: 0; top: 0; bottom: 0; z-index: -1;
+  background: linear-gradient(90deg, rgba(66, 211, 146, 0.45), rgba(77, 163, 255, 0.5));
+  box-shadow: 0 0 10px rgba(77, 163, 255, 0.35); transition: width 0.25s ease;
+}
+.ob-bar__actions .ob-run--progress .ob-run__text { position: relative; font-variant-numeric: tabular-nums; }
+
+.ob-error { border: 1px solid rgba(240, 123, 123, 0.4); background: rgba(240, 123, 123, 0.1); color: #f6b6b0; border-radius: 12px; padding: 10px 14px; font-size: 13px; }
+
+/* ---- Results ------------------------------------------------------------- */
+.ob-results { display: flex; flex-direction: column; gap: 12px; }
+.ob-results__head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.ob-results__head::before { content: ""; align-self: center; width: 4px; height: 17px; border-radius: 2px; background: linear-gradient(180deg, var(--primary), var(--ok)); box-shadow: 0 0 7px rgba(77, 163, 255, 0.4); }
+.ob-results__title { font-family: "Fraunces", Georgia, serif; font-size: 18px; font-weight: 700; }
+.ob-results__hint { font-size: 12px; color: var(--text-dim); }
+
+/* ---- BuildCard: the hero. The optimizer's output is a BUILD, so it's a
+   loadout card (chips) + a metric readout whose lead stat follows the
+   objective. The #1 card is the hero (bigger, green winner accent). */
+.ob-card {
+  position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 13px; padding: 16px;
+  border: 1px solid var(--line); border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0) 42%), var(--panel-2);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), var(--shadow);
+}
+.ob-card--hero {
+  border-top: 3px solid var(--ok);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0) 46%), var(--panel);
+}
+.ob-card--hero::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(130% 80% at 100% 0%, rgba(66, 211, 146, 0.12), transparent 55%); }
+.ob-card > * { position: relative; }
+
+.ob-card__head { display: flex; align-items: center; gap: 12px; }
+.ob-card__rank { flex: none; font-family: "Fraunces", Georgia, serif; font-size: 15px; font-weight: 700; color: var(--text-dim); min-width: 26px; }
+.ob-card--hero .ob-card__rank { color: var(--ok); }
+.ob-card__id { min-width: 0; }
+.ob-card__name { font-family: "Fraunces", Georgia, serif; font-size: 17px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ob-card--hero .ob-card__name { font-size: 20px; }
+.ob-card__sub { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); }
+.ob-verdict { margin-left: auto; flex: none; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; padding: 4px 11px; border-radius: 999px; border: 1px solid var(--line); }
+.ob-verdict--good { color: #07090e; background: linear-gradient(180deg, #5ee0a4, #2bb47a); border-color: transparent; box-shadow: 0 2px 10px rgba(66, 211, 146, 0.4); }
+.ob-verdict--bad { color: #f7c2bd; background: rgba(240, 123, 123, 0.12); border-color: rgba(240, 123, 123, 0.4); }
+.ob-verdict--flat { color: var(--text-dim); background: rgba(255, 255, 255, 0.04); }
+
+/* Metric readout: lead stat (objective) prominent, the rest in a tile grid. */
+.ob-card__metrics { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: stretch; }
+.ob-metric { display: flex; flex-direction: column; gap: 2px; padding: 9px 12px; border: 1px solid var(--b-line-soft, rgba(140,170,210,0.12)); border-radius: 11px; background: rgba(0,0,0,0.22); min-width: 0; }
+.ob-metric > span { font-size: 9.5px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+.ob-metric > b { font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.ob-metric > small { font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--warn); }
+.ob-metric--lead { justify-content: center; border-color: rgba(242, 181, 95, 0.45); background: rgba(242, 181, 95, 0.1); }
+.ob-metric--lead > b { font-size: 24px; color: #ffe3ad; }
+.ob-card--hero .ob-metric--lead > b { font-size: 28px; }
+.ob-metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 8px; }
+
+/* Build loadout strip (rendered by the shared <BuildLoadout> component). */
+.ob-card__build { padding-top: 12px; border-top: 1px solid var(--b-line-soft, rgba(140,170,210,0.12)); }
+
+.ob-card__actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.ob-apply { background: linear-gradient(180deg, #5aabff, #2e8ef3); color: #07090e; border: none; border-radius: 9px; padding: 9px 18px; font-weight: 700; font-size: 13px; cursor: pointer; box-shadow: 0 4px 14px rgba(46, 142, 243, 0.32); }
+.ob-apply:hover { filter: brightness(1.05); }
+
+/* ---- Phone ---------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .ob-bar { gap: 12px; }
+  /* Actions take the full row; Configure + the run button (and Cancel while
+     running) flex to share it. */
+  .ob-bar__actions { margin-left: 0; width: 100%; flex-wrap: wrap; }
+  .ob-bar__actions .cb-ghostbtn,
+  .ob-bar__actions .ob-run { flex: 1 1 auto; }
+  .ob-bar__actions .ob-cancel { order: 4; flex: 1 1 auto; }
+  .ob-bar__obj { width: 100%; flex-direction: column; align-items: flex-start; }
+  .ob-card__metrics { grid-template-columns: 1fr; }
+  .ob-metric--lead { flex-direction: row; align-items: baseline; gap: 8px; justify-content: flex-start; }
+  .ob-card--hero .ob-metric--lead > b, .ob-metric--lead > b { font-size: 22px; }
+}
+
+/* ============================================================================
+   Search tab (OptimizerSettingsPanel) — keep its section <h3> headers (the
+   shared cb-modal panel reskin styles them) and give the Battle Settings
+   trigger a proper beta button look. Uses cb-tabpane--search (NOT --battle, so
+   it doesn't inherit Compare's h3-hide).
+   ========================================================================== */
+/* Lay the simple select-fields in two columns; section headers, toggles, the
+   battle-settings trigger and the two-faced block span the full width. Reads
+   as a tidy settings sheet instead of one tall column. */
+.cb-modal .cb-tabpane--search .panel-block { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; align-items: start; }
+.cb-modal .cb-tabpane--search .panel-block > .field { margin: 0; }
+.cb-modal .cb-tabpane--search .panel-block > h3,
+.cb-modal .cb-tabpane--search .panel-block > .switch,
+.cb-modal .cb-tabpane--search .panel-block > .note,
+.cb-modal .cb-tabpane--search .panel-block > .bb-battle-settings-trigger,
+.cb-modal .cb-tabpane--search .panel-block > .beta-portal,
+.cb-modal .cb-tabpane--search .panel-block > .best-builds-two-faced-mode,
+.cb-modal .cb-tabpane--search .panel-block > .debug-controls { grid-column: 1 / -1; }
+.cb-modal .cb-tabpane--search .panel-block > h3 {
+  font-family: "Fraunces", Georgia, serif; font-size: 15px; font-weight: 700; margin: 6px 0 0;
+  display: flex; align-items: center; gap: 9px;
+}
+.cb-modal .cb-tabpane--search .panel-block > h3::before { content: ""; width: 3px; height: 14px; border-radius: 2px; background: var(--primary); box-shadow: 0 0 6px rgba(77,163,255,0.5); }
+@media (max-width: 560px) {
+  .cb-modal .cb-tabpane--search .panel-block { grid-template-columns: 1fr; }
+}
+.cb-modal .cb-tabpane--search .bb-battle-settings-trigger {
+  width: 100%; justify-content: center; margin: 4px 0; min-height: 0; padding: 11px 16px;
+  border-radius: 11px; border: 1px solid rgba(77,163,255,0.4); background: rgba(46,142,243,0.12);
+  color: #d6e9ff; font-weight: 700; font-size: 13px;
+}
+.cb-modal .cb-tabpane--search .bb-battle-settings-trigger:hover { border-color: var(--primary); background: rgba(46,142,243,0.2); }
+
+/* ============================================================================
+   Battle Settings modal — beta reskin. The shared modal is portaled to <body>
+   and wrapped in `.beta-portal` (token scope) when opened from the beta pages,
+   so these overrides only apply in beta; the default Optimizer/Best Builds
+   keep the legacy look. Re-tones the frame, sections, grids, and the modal's
+   own controls (it's outside `.cb-modal`, so it needs its own input kit).
+   ========================================================================== */
+.beta-portal .bb-settings-modal-overlay { background: rgba(4, 6, 10, 0.74); z-index: 950; }
+.beta-portal .bb-settings-modal {
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0) 36%), var(--panel);
+  border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 40px 100px rgba(0,0,0,0.6);
+}
+.beta-portal .bb-settings-modal__header { border-bottom: 1px solid var(--line); background: var(--panel-2); padding: 15px 20px; }
+.beta-portal .bb-settings-modal__title { font-family: "Fraunces", Georgia, serif; font-size: 20px; }
+.beta-portal .bb-settings-modal__close {
+  width: 34px; height: 34px; min-height: 0; border-radius: 9px; border: 1px solid var(--line);
+  background: var(--bg-soft); color: var(--text); font-size: 18px;
+}
+.beta-portal .bb-settings-modal__close:hover { border-color: var(--primary); background: rgba(255,255,255,0.04); }
+.beta-portal .bb-settings-modal__footer { border-top: 1px solid var(--line); background: var(--panel-2); padding: 13px 20px; }
+.beta-portal .bb-settings-modal__reset {
+  min-height: 0; border-radius: 999px; border: 1px solid var(--line); background: var(--bg-soft);
+  color: var(--text-dim); font-weight: 700; font-size: 12px; padding: 7px 14px;
+}
+.beta-portal .bb-settings-modal__reset:hover { border-color: rgba(240,123,123,0.55); color: #f6b6b0; }
+.beta-portal .bb-settings-modal__done {
+  border: none; border-radius: 10px; padding: 9px 20px; font-weight: 700; font-size: 13px;
+  color: #07090e; background: linear-gradient(180deg, #5aabff, #2e8ef3); box-shadow: 0 6px 16px rgba(46,142,243,0.32);
+}
+/* Inline variant (beta Setup Battle tab): the cb-modal is already the modal, so
+   strip the window chrome and reset/done bar and let the sections flow in the
+   tab - it reuses the skin hooks above without nesting a second modal. */
+.beta-portal .bb-settings-modal.bb-settings-modal--inline { width: auto; max-height: none; background: none; border: none; border-radius: 0; box-shadow: none; overflow: visible; }
+.beta-portal .bb-settings-modal--inline .bb-settings-modal__body { flex: initial; overflow: visible; padding: 0; gap: 16px; }
+.beta-portal .bb-settings-modal--inline .bb-settings-modal__footer { border-top: none; background: none; padding: 6px 0 0; justify-content: flex-start; }
+
+/* Section cards. */
+.beta-portal .bb-settings-section { border: 1px solid var(--line); border-radius: 14px; background: rgba(0,0,0,0.2); padding: 15px 16px; box-shadow: inset 0 1px 0 rgba(255,255,255,0.04); }
+.beta-portal .bb-settings-section__title { display: flex; align-items: center; gap: 8px; color: var(--text-dim); font-weight: 800; font-size: 11px; letter-spacing: 0.09em; }
+.beta-portal .bb-settings-section__title::before { content: ""; width: 3px; height: 13px; border-radius: 2px; background: var(--primary); box-shadow: 0 0 6px rgba(77,163,255,0.5); }
+.beta-portal .bb-settings-section__hint { color: var(--text-dim); }
+.beta-portal .bb-settings-grid__head { color: var(--text-dim); border-bottom: 1px solid var(--line); }
+.beta-portal .bb-settings-grid__label-title { color: var(--text); }
+.beta-portal .bb-settings-grid__label-hint, .beta-portal .bb-settings-grid__cell-label, .beta-portal .bb-settings-baseline-grid__ascensions-hint { color: var(--text-dim); }
+.beta-portal .bb-settings-baseline-grid__ascensions-label { color: var(--text); }
+
+/* The modal's own control kit (it's outside .cb-modal). */
+.beta-portal .bb-settings-modal .field { display: grid; gap: 6px; }
+.beta-portal .bb-settings-modal .field > label,
+.beta-portal .bb-settings-modal .label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); }
+.beta-portal .bb-settings-modal select,
+.beta-portal .bb-settings-modal input:not([type="checkbox"]):not([type="radio"]):not([type="range"]) {
+  width: 100%; box-sizing: border-box; background: var(--bg-soft); color: var(--text);
+  border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; font: inherit; font-size: 13px; min-height: 0;
+}
+/* Quiet focus: no blue outline / glow ring (user dislikes the blue edge);
+   just a slightly brighter border. box-shadow is left untouched so the
+   env-colored selects keep their inset accent strip while focused. */
+.beta-portal .bb-settings-modal select:focus,
+.beta-portal .bb-settings-modal input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus { outline: none; border-color: rgba(120, 160, 210, 0.6); }
+.beta-portal .bb-settings-modal input[type="checkbox"], .beta-portal .bb-settings-modal input[type="range"] { accent-color: var(--primary); }
+.beta-portal .bb-settings-modal .note { color: var(--text-dim); }
+/* Reuse the cb chip / segmented look for the modal's chips + segmented buttons. */
+.beta-portal .bb-settings-modal .compare-buff-chip { min-height: 34px; border: 1px solid var(--line); border-radius: 10px; background: rgba(255,255,255,0.03); color: var(--text); font-weight: 600; }
+.beta-portal .bb-settings-modal .compare-buff-chip.selected { border-color: rgba(77,163,255,0.85); color: #eaf3ff; background: linear-gradient(180deg, rgba(46,142,243,0.24), rgba(46,142,243,0.08)); }
+.beta-portal .bb-settings-modal .switch { border: 1px solid var(--line); border-radius: 12px; background: rgba(0,0,0,0.22); padding: 9px 11px; }
+.beta-portal .bb-settings-modal .switch.on { border-color: rgba(77,163,255,0.6); background: rgba(46,142,243,0.16); }
+.beta-portal .bb-settings-modal .switch-thumb { background: rgba(255,255,255,0.18); }
+.beta-portal .bb-settings-modal .switch.on .switch-thumb { background: var(--primary); }
+.beta-portal .bb-settings-modal .switch-desc { color: var(--text-dim); }
+
+/* Phone: the legacy modal is min(96vw,1100) inside a 24px-padded centering
+   grid, which overflows a narrow viewport. Tighten the padding and let the
+   modal fill the track so it never crosses the edge. Beta-scoped only. */
+@media (max-width: 560px) {
+  .beta-portal .bb-settings-modal-overlay { padding: 10px; }
+  .beta-portal .bb-settings-modal { width: 100%; max-height: 94vh; }
+  .beta-portal .bb-settings-modal__header,
+  .beta-portal .bb-settings-modal__body,
+  .beta-portal .bb-settings-modal__footer { padding-left: 14px; padding-right: 14px; }
+  .beta-portal .bb-settings-section { padding: 13px; }
+}
+
+/* ============================================================================
+   Battle Settings — per-side ACCORDION (beta). The legacy modal dumped ~10
+   category rows × Source/Opponent all at once. In beta each category is a
+   collapsible card (closed by default) → a tidy overview of titles you expand
+   on demand. Plus Compare-style Environment coloring on the day/moon/weather
+   selects so the active condition reads at a glance.
+   ========================================================================== */
+/* Per-side: two side-by-side fighter columns (Source = blue, Opponent = green),
+   each listing every category top-to-bottom. Everything's visible (no accordion
+   click-through), structured by side, and fills the wide modal. Mirrors the
+   two-creature build cards in Compare. */
+.beta-portal .bb-sides { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+.beta-portal .bb-side { display: flex; flex-direction: column; border: 1px solid var(--line); border-top-width: 2px; border-radius: 14px; background: rgba(0, 0, 0, 0.2); padding: 13px 15px; }
+.beta-portal .bb-side--src { border-top-color: var(--primary); }
+.beta-portal .bb-side--opp { border-top-color: var(--ok); }
+.beta-portal .bb-side__head { font-family: "Fraunces", Georgia, serif; font-size: 15px; font-weight: 700; padding-bottom: 11px; margin-bottom: 4px; border-bottom: 1px solid var(--line); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.beta-portal .bb-side--src .bb-side__head { color: var(--primary); }
+.beta-portal .bb-side--opp .bb-side__head { color: var(--ok); }
+.beta-portal .bb-side__cat { display: flex; flex-direction: column; gap: 7px; padding: 11px 0; border-bottom: 1px solid var(--b-line-soft, rgba(140, 170, 210, 0.1)); }
+.beta-portal .bb-side__cat:last-child { border-bottom: none; padding-bottom: 0; }
+.beta-portal .bb-side__cat-title { font-size: 10.5px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-dim); }
+@media (max-width: 760px) { .beta-portal .bb-sides { grid-template-columns: 1fr; } }
+
+/* Environment coloring (day / moon / weather selects), same hues as Compare:
+   left accent strip + faint wash keyed to the selected condition. */
+.beta-portal .bb-settings-modal select[data-env-value="day"] { box-shadow: inset 3px 0 0 rgb(242, 181, 95); background-color: rgba(242, 181, 95, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="night"] { box-shadow: inset 3px 0 0 rgb(124, 131, 255); background-color: rgba(124, 131, 255, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="blueMoon"] { box-shadow: inset 3px 0 0 rgb(90, 171, 255); background-color: rgba(90, 171, 255, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="bloodMoon"] { box-shadow: inset 3px 0 0 rgb(240, 116, 110); background-color: rgba(240, 116, 110, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="heatWave"] { box-shadow: inset 3px 0 0 rgb(255, 159, 90); background-color: rgba(255, 159, 90, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="blizzard"] { box-shadow: inset 3px 0 0 rgb(95, 208, 224); background-color: rgba(95, 208, 224, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="acidRain"] { box-shadow: inset 3px 0 0 rgb(143, 209, 79); background-color: rgba(143, 209, 79, 0.1); }
+/* Seasons carry the colours the game paints them with. */
+.beta-portal .bb-settings-modal select[data-env-value="spring"] { box-shadow: inset 3px 0 0 rgb(2, 159, 0); background-color: rgba(2, 159, 0, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="summer"] { box-shadow: inset 3px 0 0 rgb(216, 145, 2); background-color: rgba(216, 145, 2, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="drought"] { box-shadow: inset 3px 0 0 rgb(255, 171, 2); background-color: rgba(255, 171, 2, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="fall"] { box-shadow: inset 3px 0 0 rgb(200, 56, 0); background-color: rgba(200, 56, 0, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="famine"] { box-shadow: inset 3px 0 0 rgb(159, 159, 159); background-color: rgba(159, 159, 159, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="sakura"] { box-shadow: inset 3px 0 0 rgb(252, 152, 255); background-color: rgba(252, 152, 255, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="winter"] { box-shadow: inset 3px 0 0 rgb(172, 212, 221); background-color: rgba(172, 212, 221, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="ground"] { box-shadow: inset 3px 0 0 rgb(170, 130, 84); background-color: rgba(170, 130, 84, 0.1); }
+.beta-portal .bb-settings-modal select[data-env-value="underwater"] { box-shadow: inset 3px 0 0 rgb(58, 152, 220); background-color: rgba(58, 152, 220, 0.1); }
+
+/* Top-align the global / baseline field grids so each .field stays its natural
+   height. Without this the grid stretches every field to the tallest one
+   (the long-note Weather field), and the inner field-grid then redistributes
+   that height into its rows — pushing labels/selects to different levels. */
+.beta-portal .bb-settings-global-grid,
+.beta-portal .bb-settings-baseline-grid { align-items: start; }
+
+/* Battle-settings selects were left with the native browser dropdown arrow
+   (appearance:auto) — ugly + inconsistent with the rest of the beta kit. Give
+   them the same custom chevron as the cb-modal selects. The env tint
+   (background-color) + left accent (inset box-shadow) are separate properties,
+   so they coexist with the chevron background-image. */
+.beta-portal .bb-settings-modal select {
+  appearance: none; -webkit-appearance: none; padding-right: 32px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' fill='none' stroke='%238ea4c2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 11px center;
+}
+.beta-portal .bb-settings-modal select option { background: #101725; color: var(--text); }

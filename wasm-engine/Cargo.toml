@@ -1,0 +1,35 @@
+[package]
+name = "cos-calc-wasm-engine"
+version = "0.1.0"
+edition = "2021"
+
+# wasm-pack bundles binaryen's wasm-opt (v117), whose `precompute` pass crashes
+# on this crate's generated wasm (UNREACHABLE at Precompute.cpp:838). Skip
+# wasm-pack's internal wasm-opt; the `rust:build` npm script runs a newer
+# binaryen (the `binaryen` devDependency's wasm-opt) over the same output
+# instead, which optimizes it without the crash.
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+serde-wasm-bindgen = "0.6"
+wasm-bindgen = "0.2"
+# Routes Rust panics to JS console.error with the actual panic message
+# (panic_handler default in WASM is unhelpful — it throws an Error
+# whose pointer/length pair can desync from the source string, producing
+# JS-side `TypeError: encoded data was not valid for encoding utf-8`
+# when the panic message memory is read after the panic unwinds).
+# Activate once at module load via `console_error_panic_hook::set_once()`.
+console_error_panic_hook = "0.1"
+
+[dev-dependencies]
+# Property-based testing for the policy engine. Used by
+# `src/policy/tests/properties.rs` to assert invariants of the
+# light-projection forward-step (determinism, time monotonicity,
+# HP bounds, status-stack non-increase) across randomized inputs.
+proptest = "1"

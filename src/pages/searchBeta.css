@@ -1,0 +1,340 @@
+/* Beta "Search" view ("Browse and inspect the creature roster").
+ *
+ * The query builder is bespoke beta (SearchBetaQuery + BetaSelect), so this
+ * file styles the sr-q / sr-p builder tree, the BetaSelect-driven sort + the
+ * Columns popover toolbar, the per-card "add to Best Builds pool" toggle, and
+ * the progressive-reveal footer. It also reskins the SearchResultsList cards
+ * (which ship default-theme colors) to the beta palette. Everything is scoped
+ * under `.sr` so the classic SearchPage (rendered when beta is off) is
+ * untouched. */
+
+.sr { display: flex; flex-direction: column; gap: 16px; }
+
+/* ============================================================================
+   Builder card — the query is the hero of this page, so it stays inline and
+   prominent (not tucked into a Configure overlay like the other beta pages).
+   ========================================================================== */
+.sr-builder {
+  display: flex; flex-direction: column; gap: 14px; padding: 18px;
+  border: 1px solid var(--line); border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0) 42%), var(--panel-2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), var(--shadow);
+}
+.sr-builder__intro { display: flex; flex-direction: column; gap: 6px; }
+.sr-builder__title {
+  margin: 0; font-family: var(--b-font-display); font-size: 19px; font-weight: 700;
+  display: flex; align-items: center; gap: 10px;
+}
+.sr-builder__title::before {
+  content: ""; width: 4px; height: 18px; border-radius: 2px;
+  background: linear-gradient(180deg, var(--primary), var(--ok)); box-shadow: 0 0 7px rgba(77, 163, 255, 0.4);
+}
+.sr-builder__lede { margin: 0; max-width: 86ch; font-size: 12.5px; line-height: 1.55; color: var(--text-dim); }
+
+/* Name filter — leading magnifier, full-width pill. */
+.sr-namebar { position: relative; display: flex; align-items: center; }
+.sr-namebar > svg { position: absolute; left: 13px; color: var(--text-dim); pointer-events: none; }
+.app[data-design="beta"] .beta-content .sr-namebar input {
+  width: 100%; box-sizing: border-box; min-height: 44px; padding: 10px 14px 10px 38px;
+  border: 1px solid var(--line); border-radius: 12px; background: rgba(0, 0, 0, 0.28);
+  color: var(--text); font-size: 14px;
+}
+.sr-namebar input::placeholder { color: var(--text-dim); opacity: 0.7; font-style: italic; }
+.app[data-design="beta"] .beta-content .sr-namebar input:focus {
+  outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(77, 163, 255, 0.2);
+}
+
+/* ============================================================================
+   Query builder — the "smart tree" (SearchBetaQuery).
+   ========================================================================== */
+.sr-q {
+  display: flex; flex-direction: column; gap: 10px; padding: 13px;
+  border: 1px solid var(--line); border-radius: 14px; background: rgba(0, 0, 0, 0.18);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+/* Operators are now per-gap (not per-group), so the group carries a neutral
+   accent rather than an AND/OR color. */
+.sr-q--nested { background: rgba(255, 255, 255, 0.022); border-left: 3px solid rgba(140, 170, 210, 0.4); }
+
+.sr-q__head { display: flex; align-items: center; gap: 10px; }
+.sr-q__glabel { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); }
+.sr-q__remove {
+  margin-left: auto; display: inline-grid; place-items: center; width: 28px; height: 28px; cursor: pointer;
+  border-radius: 8px; border: 1px solid var(--line); background: var(--bg-soft); color: var(--text-dim);
+}
+.sr-q__remove:hover { border-color: rgba(240, 123, 123, 0.55); color: #f6b6b0; }
+
+.sr-q__empty { font-size: 12px; color: var(--text-dim); font-style: italic; padding: 2px; }
+/* Empty group while dragging — explicit "drop inside" affordance. */
+.sr-q__empty--drop {
+  font-style: normal; text-align: center; padding: 10px 12px; border-radius: 10px;
+  border: 1px dashed rgba(77, 163, 255, 0.5); background: rgba(46, 142, 243, 0.08); color: #cfe2f9;
+}
+
+.sr-q__kids { display: flex; flex-direction: column; gap: 8px; }
+.sr-q__child { position: relative; display: flex; flex-direction: column; gap: 8px; }
+.sr-q__childrow { display: flex; align-items: stretch; gap: 8px; }
+.sr-q__childrow > .sr-p,
+.sr-q__childrow > .sr-q { flex: 1 1 auto; min-width: 0; }
+
+/* Drag handle — conditions only (groups aren't draggable). Recedes into the
+   row (no box), just faint dots that brighten when you hover the row — the
+   standard quiet handle. */
+.sr-q__grip {
+  flex: none; align-self: stretch; display: inline-grid; place-items: center; width: 18px; padding: 0;
+  cursor: grab; border: none; background: none; color: var(--text-dim); opacity: 0.35;
+  transition: opacity 0.12s var(--b-ease), color 0.12s var(--b-ease);
+}
+.sr-q__child:hover .sr-q__grip { opacity: 0.8; color: var(--text); }
+.sr-q__grip:hover { opacity: 1; }
+.sr-q__grip:active { cursor: grabbing; }
+
+/* Dragged condition — ghosted in place; grip shows the grabbing cursor. */
+.sr-q__child.is-dragging > .sr-q__childrow { opacity: 0.35; }
+.sr-q__child.is-dragging .sr-q__grip { cursor: grabbing; }
+
+/* Drop targets are the whole rows (top/bottom half) + the group body, so there
+   are no fiddly micro-slots. The kids gap collapses to 0 during a drag so the
+   rows abut and there's no dead zone between them. The insertion point shows as
+   an absolutely-positioned accent line (no layout shift) with a lead dot. */
+.sr-q__kids.is-dropmode { gap: 0; }
+.sr-q__kids.is-dropmode .sr-q__child { padding: 3px 0; }
+.sr-q__insert {
+  position: absolute; left: 0; right: 0; top: 0; height: 3px; border-radius: 2px; z-index: 2; pointer-events: none;
+  background: linear-gradient(90deg, var(--primary), var(--ok)); box-shadow: 0 0 9px rgba(77, 163, 255, 0.55);
+}
+.sr-q__insert::before {
+  content: ""; position: absolute; left: -2px; top: 50%; transform: translateY(-50%);
+  width: 8px; height: 8px; border-radius: 50%; background: var(--primary); box-shadow: 0 0 8px rgba(77, 163, 255, 0.75);
+}
+.sr-q__insert--end { position: relative; top: auto; margin-top: 4px; }
+
+/* Group highlighted as the "drop inside" target. */
+.sr-q--nested.is-droptarget {
+  border-color: rgba(77, 163, 255, 0.6);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 0 0 2px rgba(77, 163, 255, 0.35);
+  background: rgba(46, 142, 243, 0.06);
+}
+/* Per-gap operator — one consistent control for both AND and OR: a centered
+   click-to-toggle pill, same shape/size/position, distinguished only by a
+   subtle color tint (AND blue, OR amber) + label. (Precedence — AND binds
+   tighter than OR — is conveyed by the header hint, not by differing shapes.) */
+.sr-q__op {
+  align-self: center; cursor: pointer; font: inherit; font-weight: 800; font-size: 9.5px; letter-spacing: 0.08em;
+  padding: 3px 13px; border-radius: 999px; border: 1px solid var(--line); background: rgba(0, 0, 0, 0.25);
+  color: var(--text-dim);
+  transition: border-color 0.12s var(--b-ease), background 0.12s var(--b-ease), color 0.12s var(--b-ease);
+}
+.sr-q__op[data-op="and"] { border-color: rgba(77, 163, 255, 0.4); background: rgba(46, 142, 243, 0.12); color: #bcdcff; }
+.sr-q__op[data-op="and"]:hover { border-color: var(--primary); background: rgba(46, 142, 243, 0.22); }
+.sr-q__op[data-op="or"] { border-color: rgba(242, 181, 95, 0.45); background: rgba(242, 181, 95, 0.12); color: #ffd98a; }
+.sr-q__op[data-op="or"]:hover { border-color: var(--warn); background: rgba(242, 181, 95, 0.22); }
+
+.sr-q__actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 2px; }
+.sr-q__add,
+.sr-q__addgroup {
+  display: inline-flex; align-items: center; gap: 6px; cursor: pointer; min-height: 34px; padding: 7px 14px;
+  border-radius: 9px; border: 1px solid var(--line); font: inherit; font-weight: 700; font-size: 12.5px;
+  transition: border-color 0.14s var(--b-ease), background 0.14s var(--b-ease), color 0.14s var(--b-ease);
+}
+.sr-q__add { border-color: rgba(77, 163, 255, 0.45); background: rgba(46, 142, 243, 0.12); color: #cfe2f9; }
+.sr-q__add:hover { border-color: var(--primary); background: rgba(46, 142, 243, 0.2); }
+.sr-q__add svg { color: var(--primary); }
+.sr-q__addgroup { background: var(--bg-soft); color: var(--text-dim); }
+.sr-q__addgroup:hover { border-color: rgba(120, 160, 210, 0.55); color: var(--text); }
+.sr-q__addgroup svg { color: var(--text-dim); }
+
+/* Predicate row — BetaSelect controls + a value input. */
+.sr-p {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 7px; padding: 9px 10px;
+  border: 1px solid var(--line); border-radius: 11px; background: rgba(0, 0, 0, 0.24);
+}
+.sr-p .sr-p__kind { flex: 0 0 138px; }
+.sr-p .sr-p__field { flex: 1 1 150px; }
+.sr-p .sr-p__name { flex: 1 1 160px; }
+.sr-p .sr-p__value { flex: 1 1 130px; }
+.sr-p .sr-p__op { flex: 0 0 66px; }
+.sr-p .sr-p__seg { flex: 0 0 auto; }
+.app[data-design="beta"] .beta-content .sr-p__num {
+  flex: 1 1 96px; min-width: 60px; box-sizing: border-box; min-height: 32px; padding: 5px 10px;
+  border: 1px solid var(--line); border-radius: 9px; background: rgba(0, 0, 0, 0.3); color: var(--text);
+  font: inherit; font-size: 13px; font-variant-numeric: tabular-nums;
+}
+.app[data-design="beta"] .beta-content .sr-p__num:focus {
+  outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(77, 163, 255, 0.18);
+}
+.sr-p__remove {
+  margin-left: auto; display: inline-grid; place-items: center; width: 30px; height: 30px; cursor: pointer;
+  border-radius: 8px; border: 1px solid var(--line); background: var(--bg-soft); color: var(--text-dim);
+}
+.sr-p__remove:hover { border-color: rgba(240, 123, 123, 0.55); color: #f6b6b0; }
+
+/* ============================================================================
+   Results
+   ========================================================================== */
+.sr-results { display: flex; flex-direction: column; gap: 12px; }
+.sr-results__head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.sr-results__head::before {
+  content: ""; align-self: center; width: 4px; height: 18px; border-radius: 2px;
+  background: linear-gradient(180deg, var(--primary), var(--ok)); box-shadow: 0 0 7px rgba(77, 163, 255, 0.4);
+}
+.sr-results__title { font-family: var(--b-font-display); font-size: 18px; font-weight: 700; }
+.sr-results__count { font-size: 12px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+.sr-results__tools { display: flex; align-items: center; gap: 10px; margin-left: auto; flex-wrap: wrap; }
+
+/* Pool chip — count of opponents queued for Best Builds, with a clear. */
+.sr-pool-chip {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px; font-weight: 700;
+  padding: 4px 6px 4px 10px; border-radius: 999px; border: 1px solid rgba(242, 181, 95, 0.45);
+  background: rgba(242, 181, 95, 0.12); color: #ffe3ad; font-variant-numeric: tabular-nums;
+}
+.sr-pool-chip > svg { color: var(--warn); }
+.sr-pool-chip__clear {
+  display: inline-grid; place-items: center; width: 18px; height: 18px; cursor: pointer;
+  border: none; border-radius: 999px; background: rgba(0, 0, 0, 0.25); color: #ffe3ad;
+}
+.sr-pool-chip__clear:hover { background: rgba(240, 123, 123, 0.3); color: #ffd0cb; }
+
+/* Sort — BetaSelect field picker + ↑/↓ segmented direction. */
+.sr-sort { display: inline-flex; align-items: center; gap: 8px; }
+.sr-sort__cap { font-size: 10px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+.sr-sort__sel { min-width: 132px; max-width: 168px; }
+.sr-dir { flex: none; }
+.sr-dir .cb-seg__opt { min-width: 30px; padding: 6px 11px; font-size: 13px; line-height: 1; }
+
+/* Columns popover. */
+.sr-cols { position: relative; display: inline-flex; }
+.sr-cols__trigger {
+  display: inline-flex; align-items: center; gap: 7px; cursor: pointer; min-height: 34px; padding: 6px 12px;
+  border: 1px solid var(--line); border-radius: 9px; background: var(--bg-soft); color: var(--text);
+  font: inherit; font-weight: 700; font-size: 12.5px;
+}
+.sr-cols__trigger:hover { border-color: var(--primary); }
+.sr-cols__trigger > svg { color: var(--text-dim); }
+.sr-cols__count {
+  display: inline-grid; place-items: center; min-width: 18px; height: 18px; padding: 0 5px;
+  border-radius: 999px; background: rgba(46, 142, 243, 0.2); color: #cfe2f9; font-size: 11px; font-weight: 800;
+}
+.sr-cols__panel {
+  position: absolute; top: calc(100% + 6px); right: 0; z-index: 60; width: max-content; max-width: min(360px, 86vw);
+  max-height: 320px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; padding: 14px;
+  border: 1px solid var(--line); border-radius: 12px; background: var(--panel);
+  box-shadow: 0 24px 60px -18px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  animation: bselIn 0.13s var(--b-ease) both;
+}
+.sr-cols__group { display: flex; flex-direction: column; gap: 7px; }
+.sr-cols__group-label { font-size: 9.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); }
+.sr-cols__chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.sr-cols__chip {
+  cursor: pointer; border: 1px solid var(--line); border-radius: 999px; background: rgba(255, 255, 255, 0.04);
+  color: var(--text-dim); font: inherit; font-size: 12px; font-weight: 600; padding: 5px 11px;
+  transition: border-color 0.12s, background 0.12s, color 0.12s;
+}
+.sr-cols__chip:hover { border-color: rgba(77, 163, 255, 0.6); color: var(--text); }
+.sr-cols__chip.is-active {
+  border-color: rgba(77, 163, 255, 0.85); color: #eaf3ff;
+  background: linear-gradient(180deg, rgba(46, 142, 243, 0.24), rgba(46, 142, 243, 0.08));
+}
+
+.sr-reset { display: inline-flex; align-items: center; gap: 6px; }
+.sr-reset:disabled { opacity: 0.5; cursor: default; border-color: var(--line); }
+
+/* ---- Result cards (reskin of SearchResultsList) ---------------------------- */
+.sr .search-results-grid { grid-template-columns: repeat(auto-fill, minmax(248px, 1fr)); gap: 12px; }
+.sr .search-result-card {
+  /* The whole creature roster renders as cards in this grid — skip off-screen
+     ones, drop the big blur shadow + per-card gradient (repeated paint), and
+     never transition box-shadow (re-blurs every frame). Lift on hover with
+     transform only. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 120px;
+  position: relative; gap: 10px; padding: 14px; border: 1px solid var(--line); border-radius: 14px;
+  background: var(--panel-2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.16s var(--b-ease), transform 0.16s var(--b-ease);
+}
+.sr .search-result-card:hover {
+  border-color: rgba(120, 160, 210, 0.4); transform: translateY(-2px);
+}
+.sr .search-result-head { gap: 11px; padding-right: 54px; }
+.sr .search-result-head .icon-img { border-radius: 11px; border: 1px solid var(--line); background: rgba(0, 0, 0, 0.3); }
+.sr .search-result-name-block strong { font-family: var(--b-font-display); font-size: 15.5px; font-weight: 700; }
+.sr .search-result-subline { font-size: 10.5px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* Per-card add-to-pool toggle (top-right). */
+.sr .search-result-pool {
+  position: absolute; top: 10px; right: 10px; z-index: 2; cursor: pointer; white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 10.5px; font-weight: 800; letter-spacing: 0.02em; padding: 4px 9px 4px 7px; border-radius: 999px;
+  border: 1px solid var(--line); background: rgba(0, 0, 0, 0.4); color: var(--text-dim);
+  transition: border-color 0.14s var(--b-ease), background 0.14s var(--b-ease), color 0.14s var(--b-ease);
+}
+.sr .search-result-pool:hover { border-color: rgba(242, 181, 95, 0.6); color: #ffe3ad; }
+.sr .search-result-pool.is-pooled { border-color: rgba(242, 181, 95, 0.7); background: rgba(242, 181, 95, 0.18); color: #ffe3ad; }
+
+.sr .search-result-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px 12px; }
+.sr .search-result-stat { border-bottom: 1px dashed rgba(140, 170, 210, 0.12); padding: 3px 5px; border-radius: 5px; }
+.sr .search-result-stat-label { color: var(--text-dim); font-size: 9.5px; }
+.sr .search-result-stat-value { color: var(--text); font-variant-numeric: tabular-nums; }
+.sr .search-result-stat.is-matched { background: rgba(77, 163, 255, 0.16); box-shadow: inset 2px 0 0 var(--primary); }
+.sr .search-result-stat.is-matched .search-result-stat-value { color: #cfe2f9; }
+
+.sr .search-result-badge {
+  font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 999px;
+  border: 1px solid rgba(77, 163, 255, 0.4); background: rgba(77, 163, 255, 0.14); color: #d6e9ff;
+}
+.sr .search-result-badge-status { border-color: rgba(66, 211, 146, 0.45); background: rgba(66, 211, 146, 0.12); color: #c9f3dd; }
+
+/* Use as A / Use as B — A=blue, B=green, the site's side language. */
+.sr .search-result-actions { gap: 8px; margin-top: 2px; }
+.sr .search-result-actions button {
+  flex: 1 1 0; min-height: 32px; border-radius: 9px; font-weight: 700; font-size: 12px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--bg-soft); color: var(--text);
+}
+.sr .search-result-actions button:nth-child(1) { border-color: rgba(77, 163, 255, 0.45); color: #bcdcff; background: rgba(46, 142, 243, 0.12); }
+.sr .search-result-actions button:nth-child(1):hover { border-color: var(--primary); background: rgba(46, 142, 243, 0.2); }
+.sr .search-result-actions button:nth-child(2) { border-color: rgba(66, 211, 146, 0.45); color: #a9ecc9; background: rgba(66, 211, 146, 0.1); }
+.sr .search-result-actions button:nth-child(2):hover { border-color: var(--ok); background: rgba(66, 211, 146, 0.18); }
+
+.sr .search-results-empty {
+  padding: 32px 20px; border: 1px dashed var(--line); border-radius: 14px;
+  background: var(--panel); color: var(--text-dim); font-size: 14px;
+}
+
+/* ============================================================================
+   Progressive reveal — first page on load, more on scroll / click.
+   ========================================================================== */
+.sr-more { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 6px 0 2px; }
+.sr-more__btn {
+  display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 11px; padding: 10px 22px;
+  background: var(--bg-soft); color: var(--text); font-weight: 700; font-size: 13px;
+  transition: border-color 0.16s var(--b-ease), background 0.16s var(--b-ease), transform 0.16s var(--b-ease);
+}
+.sr-more__btn:hover { border-color: var(--primary); background: rgba(46, 142, 243, 0.12); transform: translateY(-1px); }
+.sr-more__btn svg { color: var(--primary); }
+.sr-more__count { font-size: 11px; color: var(--text-dim); letter-spacing: 0.04em; font-variant-numeric: tabular-nums; }
+.sr-more--done { padding-top: 10px; }
+.sr-more--done .sr-more__count { opacity: 0.7; }
+
+/* ---- Phone ----------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .sr-results__head { gap: 8px 12px; }
+  .sr-results__tools { width: 100%; margin-left: 0; }
+  .sr-sort { flex: 1 1 auto; }
+  .sr-sort__sel { flex: 1 1 auto; max-width: none; }
+  .sr-cols, .sr-reset { flex: 1 1 auto; justify-content: center; }
+  .sr-cols__trigger { width: 100%; justify-content: center; }
+  .sr-cols__panel { right: auto; left: 0; }
+  .sr .search-results-grid { grid-template-columns: 1fr; }
+  .sr .search-result-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sr-p .sr-p__kind, .sr-p .sr-p__field, .sr-p .sr-p__name, .sr-p .sr-p__value { flex: 1 1 100%; }
+
+  /* The 999px pills (↑/↓ sort direction, AND/OR operators, Columns count) read
+     as oversized blobs on a phone — square them off to match the rounded-rect
+     controls around them. */
+  .sr-dir.cb-seg { border-radius: 9px; }
+  .sr-dir .cb-seg__opt { border-radius: 7px; min-width: 40px; font-size: 15px; }
+  .sr-q__op { border-radius: 8px; padding: 4px 12px; }
+  .sr-cols__count { border-radius: 6px; }
+}

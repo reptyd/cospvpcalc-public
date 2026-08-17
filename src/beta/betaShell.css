@@ -1,0 +1,769 @@
+/* Beta design - shell chrome.
+ *
+ * The new app frame: layered background, sticky left sidebar nav, sticky
+ * translucent topbar, scrollable content column, slim footer. All scoped
+ * under `.app[data-design="beta"]` so the default shell is untouched. */
+
+/* Reserve the scrollbar gutter while the beta shell is mounted, so the page
+ * never shifts ~10px sideways when a result list makes the window scrollbar
+ * appear/disappear (e.g. when a Best Builds / Optimizer run populates cards).
+ * Scoped to beta via :has() on the page scroller (html). */
+html:has(.app[data-design="beta"]) { scrollbar-gutter: stable; }
+
+.app[data-design="beta"] {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+}
+/* Ambient corner glows on a position:fixed layer instead of
+   `background-attachment: fixed`. A fixed-attachment background re-paints on
+   EVERY scroll frame with no GPU fast-path — the dominant cause of scroll jank
+   on phones (desktop has a fast path, so it felt fine there). A fixed element
+   is composited once and simply held in place during scroll, so there's no
+   per-frame paint. */
+.app[data-design="beta"]::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(1200px 720px at 10% -10%, rgba(77, 163, 255, 0.1), transparent 58%),
+    radial-gradient(1000px 820px at 112% 116%, rgba(66, 211, 146, 0.07), transparent 54%);
+}
+
+.beta-shell {
+  display: grid;
+  grid-template-columns: var(--b-sidebar-w) minmax(0, 1fr);
+  align-items: start;
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------------------------------------------------------------- Sidebar */
+
+.beta-sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 14px;
+  border-right: 1px solid var(--b-line-soft);
+  /* Near-opaque background instead of a backdrop blur: this is full 100vh
+     chrome, so a backdrop-filter re-rasterizes a 16px blur on every scroll
+     frame (severe jank on weak GPUs / phones) for a frost the ~0.9 opacity
+     already hides. Solid bg = same look, no per-frame cost. */
+  background: linear-gradient(180deg, rgba(13, 19, 32, 0.975), rgba(8, 13, 21, 0.95));
+}
+
+.beta-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 10px 16px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--b-line-soft);
+}
+
+.beta-brand-mark {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  overflow: hidden;
+  flex: none;
+}
+
+/* The site logo replaces the old flask glyph — it carries its own colors, so
+   the mark is just a clean container (no gradient fill). */
+.beta-brand-logo {
+  width: 38px;
+  height: 38px;
+  display: block;
+  object-fit: contain;
+}
+
+.beta-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  min-width: 0;
+}
+
+.beta-brand-title {
+  font-family: var(--b-font-display);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* On desktop the wrapper is transparent to layout (the nav is the flex child
+   directly); it only becomes a positioning context for the scroll indicators
+   on mobile, where the nav turns into a horizontal scroller. */
+.beta-nav-wrap {
+  display: contents;
+}
+
+.beta-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  overflow-y: auto;
+  flex: 1;
+  margin: 0 -4px;
+  padding: 0 4px;
+}
+
+.beta-nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: var(--b-radius-sm);
+  background: transparent;
+  color: var(--text-dim);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.18s var(--b-ease), background 0.18s var(--b-ease), border-color 0.18s var(--b-ease);
+}
+
+.beta-nav-item svg {
+  width: 19px;
+  height: 19px;
+  flex: none;
+  opacity: 0.85;
+}
+
+.beta-nav-item:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.beta-nav-item.active {
+  color: #eaf3ff;
+  background: var(--b-primary-soft);
+  border-color: var(--b-primary-line);
+  box-shadow: var(--b-top-highlight);
+}
+
+.beta-nav-item.active::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 9px;
+  bottom: 9px;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--primary), var(--primary-strong));
+  box-shadow: var(--b-glow-primary);
+}
+
+.beta-nav-item.active svg {
+  opacity: 1;
+}
+
+.beta-sidebar-footer {
+  padding-top: 12px;
+  margin-top: 6px;
+  border-top: 1px solid var(--b-line-soft);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+
+.beta-sidebar-footer .beta-hash {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+/* Bottom-left design switch: leaves the beta layout for the classic one.
+   Replaces the Settings "Beta design" toggle (the classic shell shows the
+   inverse: a floating button that returns here). */
+.beta-design-switch {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex: 1;
+  min-width: 0;
+  padding: 8px 11px;
+  border: 1px solid var(--b-line-soft);
+  border-radius: var(--b-radius-sm);
+  background: transparent;
+  color: var(--text-dim);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.18s var(--b-ease), background 0.18s var(--b-ease), border-color 0.18s var(--b-ease);
+}
+.beta-design-switch svg { flex: none; opacity: 0.85; }
+.beta-design-switch:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--b-primary-line);
+}
+
+/* Mobile fallback for the Classic-design switch (the sidebar footer is hidden
+   <=900px). Floats bottom-left, mirroring the classic shell's "New design"
+   pill; quiet dark surface so it doesn't shout. Desktop keeps it hidden. */
+.beta-mobile-classic-btn { display: none; }
+@media (max-width: 900px) {
+  .beta-mobile-classic-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: fixed;
+    left: 14px;
+    bottom: 14px;
+    z-index: 60;
+    padding: 9px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--panel-2, rgba(20, 26, 38, 0.96));
+    color: var(--text-dim);
+    font: inherit;
+    font-size: 12.5px;
+    font-weight: 600;
+    box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+  .beta-mobile-classic-btn svg { flex: none; opacity: 0.9; }
+  .beta-mobile-classic-btn:active { transform: translateY(1px); }
+}
+
+/* ---------------------------------------------------------------- Main col */
+
+.beta-main-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.beta-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 28px;
+  border-bottom: 1px solid var(--b-line-soft);
+  /* Sticky topbar over scrolling content — a backdrop blur re-rasterizes every
+     scroll frame. Use a near-opaque background instead (content no longer shows
+     through, so the blur isn't needed): same look, no per-frame cost. */
+  background: linear-gradient(180deg, rgba(9, 14, 23, 0.97), rgba(9, 14, 23, 0.93));
+}
+
+.beta-topbar-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.beta-page-title {
+  font-family: var(--b-font-display);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+.beta-page-sub {
+  font-size: 12.5px;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.beta-topbar-actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+}
+
+.beta-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 38px;
+  padding: 0 14px;
+  border-radius: var(--b-radius-sm);
+  border: 1px solid var(--b-line-strong);
+  background: var(--b-surface);
+  color: var(--text);
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.18s var(--b-ease), background 0.18s var(--b-ease), transform 0.18s var(--b-ease);
+}
+
+.beta-icon-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+.beta-icon-btn:hover {
+  border-color: var(--b-primary-line);
+  background: var(--b-surface-strong);
+}
+
+.beta-icon-btn:active {
+  transform: translateY(1px);
+}
+
+.beta-icon-btn.active {
+  border-color: var(--b-primary-line);
+  background: var(--b-primary-soft);
+  box-shadow: var(--b-glow-primary);
+}
+
+/* Reused Share / Report buttons (App.css `.share-match-btn`) re-skinned
+ * to sit cleanly in the beta topbar. */
+.app[data-design="beta"] .beta-topbar .share-match-btn {
+  height: 38px;
+  padding: 0 14px;
+  border-radius: var(--b-radius-sm);
+  border: 1px solid var(--b-line-strong);
+  background: var(--b-surface);
+  color: var(--text);
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.18s var(--b-ease), background 0.18s var(--b-ease);
+}
+
+.app[data-design="beta"] .beta-topbar .share-match-btn:hover {
+  border-color: var(--b-primary-line);
+  background: var(--b-surface-strong);
+}
+
+.app[data-design="beta"] .beta-topbar .share-match-btn--report {
+  color: var(--text-dim);
+}
+
+/* On narrow viewports keep the report action reachable (a bug report is most
+ * useful from the device that hit the bug) but compact its label so it fits
+ * the topbar alongside Share / Settings. */
+@media (max-width: 720px) {
+  .app[data-design="beta"] .beta-topbar .share-match-btn--report {
+    padding: 0 11px;
+  }
+
+  .app[data-design="beta"] .beta-topbar .share-match-btn--report .share-match-btn__label-full {
+    display: none;
+  }
+
+  .app[data-design="beta"] .beta-topbar .share-match-btn--report .share-match-btn__label-short {
+    display: inline;
+  }
+}
+
+/* ---------------------------------------------------- Settings sheet */
+
+.beta-settings {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: min(360px, 86vw);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+  border-radius: var(--b-radius-md);
+  border: 1px solid var(--b-line-strong);
+  background: linear-gradient(180deg, rgba(20, 28, 44, 0.98), rgba(13, 19, 32, 0.98)), var(--panel);
+  box-shadow: var(--b-elev-2);
+  /* Background is fully opaque, so the backdrop blur was painting a costly
+     filter with zero visible effect — dropped. */
+}
+
+.beta-settings-title {
+  font-family: var(--b-font-display);
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 0 2px;
+}
+
+.beta-settings .note {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+/* ---- Settings internals — reskin the shared toggles + same-time-order control
+   to the beta language. Scoped to .beta-settings so the classic settings (in
+   AppHero) are untouched. -------------------------------------------------- */
+
+.app[data-design="beta"] .beta-settings {
+  gap: 12px;
+  width: min(384px, 88vw);
+}
+.app[data-design="beta"] .beta-settings-title {
+  font-size: 16px;
+}
+
+/* Toggle rows */
+.app[data-design="beta"] .beta-settings .switch {
+  border: 1px solid var(--b-line-soft);
+  border-radius: var(--b-radius-sm);
+  background: rgba(255, 255, 255, 0.025);
+  padding: 11px 13px;
+  gap: 12px;
+  transition: border-color 0.16s var(--b-ease), background 0.16s var(--b-ease);
+}
+.app[data-design="beta"] .beta-settings .switch:hover {
+  border-color: var(--b-line-strong);
+  background: rgba(255, 255, 255, 0.05);
+}
+.app[data-design="beta"] .beta-settings .switch.on {
+  border-color: var(--b-primary-line);
+  background: var(--b-primary-soft);
+}
+.app[data-design="beta"] .beta-settings .switch-thumb {
+  width: 38px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.18);
+}
+.app[data-design="beta"] .beta-settings .switch-thumb::after {
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  left: 3px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.app[data-design="beta"] .beta-settings .switch.on .switch-thumb {
+  background: linear-gradient(180deg, var(--primary), var(--primary-strong));
+  box-shadow: var(--b-glow-primary);
+}
+.app[data-design="beta"] .beta-settings .switch.on .switch-thumb::after {
+  transform: translateX(16px);
+  background: #fff;
+}
+.app[data-design="beta"] .beta-settings .switch-label {
+  font-family: var(--b-font-display);
+  font-size: 13.5px;
+  font-weight: 700;
+}
+.app[data-design="beta"] .beta-settings .switch-state {
+  font-weight: 800;
+}
+.app[data-design="beta"] .beta-settings .switch-state.on {
+  border-color: var(--b-primary-line);
+  color: #bcdcff;
+  background: rgba(46, 142, 243, 0.16);
+}
+.app[data-design="beta"] .beta-settings .switch-state.off {
+  border-color: var(--line);
+  color: var(--text-dim);
+}
+.app[data-design="beta"] .beta-settings .switch-desc {
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+
+/* Same-time order control */
+.app[data-design="beta"] .beta-settings .settings-order-control {
+  gap: 9px;
+}
+.app[data-design="beta"] .beta-settings .settings-order-heading {
+  font-family: var(--b-font-display);
+  font-size: 13.5px;
+  color: var(--text);
+}
+.app[data-design="beta"] .beta-settings .settings-order-reset {
+  border: 1px solid var(--b-line-strong);
+  border-radius: 999px;
+  background: var(--b-surface);
+  color: var(--text-dim);
+  min-height: 26px;
+  padding: 3px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  transition: border-color 0.16s var(--b-ease), color 0.16s var(--b-ease);
+}
+.app[data-design="beta"] .beta-settings .settings-order-reset:hover {
+  border-color: var(--b-primary-line);
+  color: var(--text);
+}
+.app[data-design="beta"] .beta-settings .settings-order-chip {
+  border: 1px solid var(--b-line-soft);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  min-height: 34px;
+  padding: 4px 11px 4px 6px;
+  transition: border-color 0.16s var(--b-ease), background 0.16s var(--b-ease);
+}
+.app[data-design="beta"] .beta-settings .settings-order-chip:hover {
+  border-color: var(--b-line-strong);
+  background: rgba(255, 255, 255, 0.055);
+}
+.app[data-design="beta"] .beta-settings .settings-order-chip.selected {
+  border-color: var(--b-primary-line);
+  background: var(--b-primary-soft);
+  box-shadow: var(--b-glow-primary);
+}
+.app[data-design="beta"] .beta-settings .settings-order-chip.fixed {
+  color: var(--text-dim);
+}
+.app[data-design="beta"] .beta-settings .settings-order-index {
+  width: 22px;
+  height: 22px;
+  background: rgba(46, 142, 243, 0.18);
+  color: #bcdcff;
+  font-weight: 800;
+}
+.app[data-design="beta"] .beta-settings .settings-order-chip.fixed .settings-order-index {
+  background: rgba(242, 181, 95, 0.18);
+  color: #ffd98a;
+}
+.app[data-design="beta"] .beta-settings .settings-order-fixed {
+  color: var(--warn);
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Note + hint */
+.app[data-design="beta"] .beta-settings-hint {
+  margin: 0;
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--text-dim);
+}
+.app[data-design="beta"] .beta-settings .note {
+  margin-top: 2px;
+  padding-top: 11px;
+  border-top: 1px solid var(--b-line-soft);
+  font-size: 11.5px;
+}
+
+/* ---------------------------------------------------------------- Content */
+
+.beta-content {
+  flex: 1;
+  width: 100%;
+  max-width: var(--b-content-max);
+  margin: 0 auto;
+  padding: 28px 28px 56px;
+}
+
+.beta-banners {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.beta-content-enter {
+  /* `backwards` (not `both`): `forwards` would hold the `to` frame after the
+     animation, which leaves a computed `transform: matrix(1,0,0,1,0,0)` on the
+     element. A non-`none` transform — even identity — makes this div the
+     containing block for every `position: fixed` descendant, so modal overlays
+     (pseudocode docs, etc.) anchor to it and render far down the page instead
+     of covering the viewport. `backwards` still applies the start frame before
+     the run (no flash) but reverts to the base `transform: none` after. */
+  animation: betaContentIn 0.34s var(--b-ease) backwards;
+}
+
+@keyframes betaContentIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.beta-footer {
+  margin-top: auto;
+  padding: 18px 28px;
+  /* Clear the floating Discord orb (fixed, bottom-right) so it never covers the
+     Privacy link. */
+  padding-right: 88px;
+  border-top: 1px solid var(--b-line-soft);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+  color: var(--text-dim);
+}
+
+.beta-footer a {
+  color: var(--text-dim);
+  text-decoration: none;
+}
+
+.beta-footer a:hover {
+  color: var(--primary);
+}
+
+.beta-shell-fallback {
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+  color: var(--text-dim);
+}
+
+/* ---------------------------------------------------------------- Responsive */
+
+@media (max-width: 900px) {
+  .beta-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .beta-sidebar {
+    position: sticky;
+    top: 0;
+    height: auto;
+    z-index: 35;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border-right: none;
+    border-bottom: 1px solid var(--b-line-soft);
+  }
+
+  .beta-brand {
+    padding: 0 6px 0 2px;
+    margin: 0;
+    border-bottom: none;
+    border-right: 1px solid var(--b-line-soft);
+    padding-right: 12px;
+  }
+
+  .beta-brand-text {
+    display: none;
+  }
+
+  .beta-nav-wrap {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    display: block;
+  }
+  .beta-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    margin: 0;
+    padding: 2px;
+    gap: 4px;
+    scrollbar-width: none;
+  }
+  .beta-nav::-webkit-scrollbar {
+    display: none;
+  }
+  /* Scroll affordance — a gradient + chevron pinned to each scrollable edge,
+     shown (via :has on the JS-toggled has-*-fade classes) only on the side
+     that still has hidden tabs. A clear "more this way" cue, not a faint fade. */
+  .beta-nav-wrap::before,
+  .beta-nav-wrap::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 50px;
+    pointer-events: none;
+    display: none;
+    align-items: center;
+    color: var(--text);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .beta-nav-wrap::before {
+    content: "\2039";
+    left: 0;
+    justify-content: flex-start;
+    padding-left: 6px;
+    background: linear-gradient(90deg, var(--bg-soft) 34%, transparent);
+  }
+  .beta-nav-wrap::after {
+    content: "\203A";
+    right: 0;
+    justify-content: flex-end;
+    padding-right: 8px;
+    background: linear-gradient(270deg, var(--bg-soft) 34%, transparent);
+  }
+  .beta-nav-wrap:has(.beta-nav.has-start-fade)::before {
+    display: flex;
+  }
+  .beta-nav-wrap:has(.beta-nav.has-end-fade)::after {
+    display: flex;
+  }
+
+  .beta-nav-item {
+    white-space: nowrap;
+    padding: 8px 12px;
+  }
+
+  .beta-nav-item.active::before {
+    display: none;
+  }
+
+  .beta-sidebar-footer {
+    display: none;
+  }
+
+  .beta-topbar {
+    padding: 12px 16px;
+  }
+
+  .beta-content {
+    padding: 18px 14px 44px;
+  }
+
+  /* The topbar actions take a fixed slice of a phone's width, leaving the
+     title column narrow. Let the page subtitle wrap to as many lines as it
+     needs instead of getting clipped to a single ellipsised line. */
+  .beta-page-sub {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+}
+
+@media (max-width: 560px) {
+  .beta-nav-item span {
+    display: none;
+  }
+
+  .beta-nav-item {
+    padding: 8px 10px;
+  }
+
+  .beta-page-title {
+    font-size: 18px;
+  }
+}

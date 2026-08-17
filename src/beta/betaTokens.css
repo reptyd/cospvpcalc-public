@@ -1,0 +1,72 @@
+/* Beta design - token layer.
+ *
+ * Scoped to `.app[data-design="beta"]`. Custom properties set here are
+ * inherited by the entire app subtree, overriding the `:root` defaults
+ * from App.css for beta mode only - so the default site is never touched
+ * and there is no specificity battle (closest ancestor wins for inherited
+ * custom properties).
+ *
+ * Brand hues (--primary / --ok / --warn / --bad) are INTENTIONALLY kept
+ * identical to the default palette. The new look comes from layout,
+ * surface treatment, typography, spacing and motion - not hue changes. */
+
+.app[data-design="beta"],
+.beta-portal {
+  /* --- Brand hues: unchanged from default --- */
+  --primary: #4da3ff;
+  --primary-strong: #2e8ef3;
+  --ok: #42d392;
+  --warn: #f2b55f;
+  --bad: #f07b7b;
+
+  /* --- Neutral surfaces: deeper, richer, more layered --- */
+  --bg: #080d15;
+  --bg-soft: #0d1320;
+  --panel: #121a28;
+  --panel-2: #18233a;
+  --line: #283751;
+  --text: #eaf2ff;
+  --text-dim: #93a8c6;
+  --shadow: 0 8px 22px -16px rgba(0, 0, 0, 0.72);
+
+  /* --- Beta-only design tokens --- */
+  --b-radius: 18px;
+  --b-radius-md: 14px;
+  --b-radius-sm: 10px;
+  --b-sidebar-w: 252px;
+  --b-content-max: 1180px;
+
+  --b-line-soft: rgba(140, 170, 210, 0.12);
+  --b-line-strong: rgba(140, 170, 210, 0.22);
+
+  --b-glass: saturate(150%) blur(16px);
+  --b-surface: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012));
+  --b-surface-strong: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
+  --b-top-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  --b-primary-soft: rgba(77, 163, 255, 0.14);
+  --b-primary-line: rgba(77, 163, 255, 0.4);
+  --b-glow-primary: 0 0 28px -8px rgba(77, 163, 255, 0.6);
+  --b-glow-ok: 0 0 26px -8px rgba(66, 211, 146, 0.55);
+
+  /* Shadow blur is the expensive part of a box-shadow (cost scales with blur
+     radius) and these tokens sit on the universal .panel + most cards/list
+     rows. Tightened from 24px/64px blur to 12px/26px — same sense of elevation,
+     far cheaper to repaint on scroll on mobile. */
+  --b-elev-1: 0 4px 12px -8px rgba(0, 0, 0, 0.8);
+  --b-elev-2: 0 12px 26px -18px rgba(0, 0, 0, 0.85);
+
+  --b-font-display: "Fraunces", serif;
+  --b-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* --- Custom-ability editor token group: keep it consistent with the
+   * beta surfaces so the Custom page adopts the new look too. --- */
+  --ce-bg: rgba(255, 255, 255, 0.03);
+  --ce-bg-hover: rgba(255, 255, 255, 0.06);
+  --ce-bg-input: rgba(0, 0, 0, 0.32);
+  --ce-border: var(--b-line-soft);
+  --ce-border-hover: var(--b-line-strong);
+  --ce-accent: var(--primary);
+  --ce-accent-hover: #7cc0ff;
+  --ce-accent-bg: var(--b-primary-soft);
+}

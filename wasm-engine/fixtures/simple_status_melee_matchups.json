@@ -1,0 +1,685 @@
+[
+  {
+    "name": "korathos-vs-aesho-poison-block",
+    "attacker": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        },
+        {
+          "statusId": "Shredded_Wings",
+          "stacks": 1
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 4000,
+      "weight": 3500,
+      "damage": 155,
+      "biteCooldown": 0.8,
+      "healthRegen": 8,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Necropoison_Status",
+          "stacks": 3.5
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 1
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4,
+        "Necropoison_Status": 0.5,
+        "Poison_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "maxTimeSec": 18,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 18,
+      "dpsAtoB": 1000,
+      "ttkAtoB": 4,
+      "damageDealtA": 4176.5,
+      "damageDealtAAtBDeath": 4000,
+      "extendedDamagePotentialA": 27000.0
+    }
+  },
+  {
+    "name": "kendyll-vs-akorbik-injury-block",
+    "attacker": {
+      "health": 7000,
+      "weight": 13000,
+      "damage": 620,
+      "biteCooldown": 1.2,
+      "healthRegen": 5,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 1700,
+      "weight": 1900,
+      "damage": 135,
+      "biteCooldown": 1,
+      "healthRegen": 6,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0.25,
+      "firstStrikeHpRatioThreshold": 0.75,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 75,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.8,
+        "Burn_Status": 0.2,
+        "Injury_Status": 0.5,
+        "Poison_Status": 0.4
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "maxTimeSec": 18,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 18,
+      "dpsAtoB": 1416.6666666666667,
+      "ttkAtoB": 1.2,
+      "damageDealtA": 1714,
+      "damageDealtAAtBDeath": 1700,
+      "extendedDamagePotentialA": 31000.0
+    }
+  },
+  {
+    "name": "vetemortem-vs-korathos-disease-attack",
+    "attacker": {
+      "health": 3500,
+      "weight": 3400,
+      "damage": 300,
+      "biteCooldown": 0.8,
+      "healthRegen": 6,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 3.5
+        },
+        {
+          "statusId": "Disease_Status",
+          "stacks": 4
+        },
+        {
+          "statusId": "Shredded_Wings",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Poison_Status": 0.35
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        },
+        {
+          "statusId": "Shredded_Wings",
+          "stacks": 1
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "maxTimeSec": 18,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 3,
+      "maxTimeSec": 18,
+      "dpsAtoB": 213.56521739130423,
+      "ttkAtoB": 18,
+      "damageDealtA": 3929.5999999999985,
+      "damageDealtAAtBDeath": 3929.5999999999985,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "ani-vs-aesho-necropoison-block",
+    "attacker": {
+      "health": 700,
+      "weight": 850,
+      "damage": 50,
+      "biteCooldown": 0.4,
+      "healthRegen": 10,
+      "damageTakenMultiplierOnBeingBitten": 0.5,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": -0.5
+        },
+        {
+          "statusId": "Burn_Status",
+          "stacks": -1
+        },
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": -0.5
+        },
+        {
+          "statusId": "Disease_Status",
+          "stacks": -0.5
+        },
+        {
+          "statusId": "Frostbite_Status",
+          "stacks": -0.5
+        },
+        {
+          "statusId": "Injury_Status",
+          "stacks": -0.5
+        },
+        {
+          "statusId": "Necropoison_Status",
+          "stacks": -0.5
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": -0.5
+        }
+      ],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Burn_Status",
+          "stacks": 1.5
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": -1,
+        "Necropoison_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 4000,
+      "weight": 3500,
+      "damage": 155,
+      "biteCooldown": 0.8,
+      "healthRegen": 8,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Necropoison_Status",
+          "stacks": 3.5
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 1
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4,
+        "Necropoison_Status": 0.5,
+        "Poison_Status": 0.5
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "maxTimeSec": 18,
+    "expectedSummary": {
+      "winner": "B",
+      "deathTimeA": 3.2,
+      "maxTimeSec": 18,
+      "dpsAtoB": 77.6785714285715,
+      "ttkAtoB": 18,
+      "damageDealtA": 1429.2857142857154,
+      "damageDealtAAtBDeath": 1429.2857142857154,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "korathos-vs-ginger-snapper-defender",
+    "attacker": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        },
+        {
+          "statusId": "Shredded_Wings",
+          "stacks": 1
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        },
+        {
+          "statusId": "Shredded_Wings",
+          "stacks": 1
+        }
+      ],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Frostbite_Status",
+          "stacks": 0.5
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {
+        "Burn_Status": -0.05
+      }
+    },
+    "maxTimeSec": 18,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 18,
+      "dpsAtoB": 438.30345394736844,
+      "ttkAtoB": 18,
+      "damageDealtA": 8327.765625,
+      "damageDealtAAtBDeath": 8327.765625,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "korathos-vs-sparkler-burn-block",
+    "attacker": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 438.75,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        },
+        {
+          "statusId": "Shredded_Wings",
+          "stacks": 1
+        },
+        {
+          "statusId": "Burn_Status",
+          "stacks": 0.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        },
+        {
+          "statusId": "Shredded_Wings",
+          "stacks": 1
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {
+        "Poison_Status": 0.15,
+        "Frostbite_Status": 0.15,
+        "Burn_Status": 0.15,
+        "Bleed_Status": -0.2
+      }
+    },
+    "maxTimeSec": 18,
+    "expectedSummary": {
+      "winner": "Draw",
+      "deathTimeA": null,
+      "maxTimeSec": 18,
+      "dpsAtoB": 444.3230263157895,
+      "ttkAtoB": 18,
+      "damageDealtA": 8442.1375,
+      "damageDealtAAtBDeath": 8442.1375,
+      "extendedDamagePotentialA": 0
+    }
+  },
+  {
+    "name": "korathos-vs-apofuex-self-destruct",
+    "attacker": {
+      "health": 10750,
+      "weight": 50000,
+      "damage": 450,
+      "biteCooldown": 1,
+      "healthRegen": 4,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Poison_Status",
+          "stacks": 2.5
+        },
+        {
+          "statusId": "Shredded_Wings",
+          "stacks": 1
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.5,
+        "Burn_Status": 0.25,
+        "Poison_Status": 0.75
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 4000,
+      "weight": 3000,
+      "damage": 75,
+      "biteCooldown": 0.8,
+      "healthRegen": 6,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 1,
+      "berserkHpRatioThreshold": 0,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": {
+        "triggerHpRatioLte": 0.15,
+        "damagePct": 10,
+        "selfHpFloorPct": 5,
+        "applyStatuses": [
+          {
+            "statusId": "Burn_Status",
+            "stacks": 10
+          }
+        ]
+      },
+      "onHitStatuses": [],
+      "onHitTakenStatuses": [
+        {
+          "statusId": "Corrosion_Status",
+          "stacks": 3.5
+        },
+        {
+          "statusId": "Disease_Status",
+          "stacks": 3
+        },
+        {
+          "statusId": "Poison_Status",
+          "stacks": 3
+        }
+      ],
+      "statusResistFractions": {
+        "Bleed_Status": 0.4,
+        "Disease_Status": 0.65,
+        "Poison_Status": 0.9
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "maxTimeSec": 18,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": null,
+      "maxTimeSec": 18,
+      "dpsAtoB": 1000,
+      "ttkAtoB": 4,
+      "damageDealtA": 4038.0,
+      "damageDealtAAtBDeath": 4000,
+      "extendedDamagePotentialA": 27000.0
+    }
+  },
+  {
+    "name": "kendyll-vs-adharcaiin-unbreakable",
+    "attacker": {
+      "health": 7000,
+      "weight": 13000,
+      "damage": 620,
+      "biteCooldown": 1.2,
+      "healthRegen": 5,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0,
+      "firstStrikeHpRatioThreshold": 1,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Injury_Status",
+          "stacks": 3.5
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 0.55
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "defender": {
+      "health": 1000,
+      "weight": 1250,
+      "damage": 250,
+      "biteCooldown": 0.6,
+      "healthRegen": 7,
+      "damageTakenMultiplierOnBeingBitten": 1,
+      "berserkBiteCooldownMultiplier": 0.5,
+      "berserkHpRatioThreshold": 0.2,
+      "firstStrikePct": 0.2,
+      "firstStrikeHpRatioThreshold": 0.75,
+      "hasWardenResistance": false,
+      "immuneStatusIds": [
+        "Bleed_Status",
+        "Injury_Status"
+      ],
+      "hunkerReductionPct": 0,
+      "selfDestructProfile": null,
+      "onHitStatuses": [
+        {
+          "statusId": "Bleed_Status",
+          "stacks": 2
+        }
+      ],
+      "onHitTakenStatuses": [],
+      "statusResistFractions": {
+        "Bleed_Status": 1
+      },
+      "plushieStatusBlockFractions": {}
+    },
+    "maxTimeSec": 18,
+    "expectedSummary": {
+      "winner": "A",
+      "deathTimeA": 14.699999999999994,
+      "maxTimeSec": 18,
+      "dpsAtoB": 55.55555555555556,
+      "ttkAtoB": 0,
+      "damageDealtA": 1013.0,
+      "damageDealtAAtBDeath": 1000,
+      "extendedDamagePotentialA": 0.0
+    }
+  }
+]

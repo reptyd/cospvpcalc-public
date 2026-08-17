@@ -1,0 +1,47 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+# Local-only files (e.g. *.local.md, *.local.ts) — never tracked
+*.local.*
+wasm-engine/target
+# Early-changes tool scratch input (paste target); template is .example.txt
+tools/early-changes.input.txt
+
+# Playwright E2E artifacts
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Local debug / parity-hunt artifacts
+scripts/probe_*.ts
+scripts/trace_*.ts
+ts_trace.txt
+
+# Generated reports
+*_report.json
+
+# wasm-freshness gate dumps (written by the CI wasm-fresh job; never committed)
+committed-summaries.json
+fresh-summaries.json
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
