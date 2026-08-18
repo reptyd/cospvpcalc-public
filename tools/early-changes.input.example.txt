@@ -1,0 +1,13 @@
+Icebreaker Meorlark
+
+Weight from 5600 to 6000
+Damage from 475 to 425
+HealthRegen from 5 to 4
+BlockFrostbite from 35 to 50
+InjuryAttack from 2 to 3
+BleedAttack from 3 to 0.5
+Addition of Frosty
+Addition of Charge Launch
+Addition of Lance Frostbite
+
+Stat Insight: Icebreaker Meorlark is bulkier than Meorlark. It may possess less damage, but it is heavier, with more injury.

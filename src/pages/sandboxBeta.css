@@ -1,0 +1,385 @@
+/* Beta Sandbox ("Combat Lab"). Reuses the beta tokens + cb-* primitives
+ * (compareBeta.css) and the cb-modal reskin + battle-settings accordion
+ * (optimizerBeta.css). These sb-* rules cover the bespoke surfaces: the stepper
+ * bar, the time transport, the interactive fighter cards, and the event log. */
+
+.sb { display: flex; flex-direction: column; gap: 14px; }
+
+/* ---- Stepper bar ---------------------------------------------------------- */
+.sb-bar {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  background: var(--panel-2); border: 1px solid var(--line); border-radius: 14px;
+  padding: 10px 16px; box-shadow: var(--shadow);
+}
+.sb-now { display: flex; align-items: baseline; gap: 10px; }
+.sb-now__t { font-family: "Fraunces", Georgia, serif; font-size: 30px; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; }
+.sb-now__t em { font-size: 15px; font-style: normal; color: var(--text-dim); font-weight: 700; margin-left: 2px; }
+.sb-now__state { font-size: 10px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; }
+.sb-now__state.is-halted { color: #f6b6b0; border-color: rgba(240, 123, 123, 0.45); background: rgba(240, 123, 123, 0.1); }
+.sb-mode { flex-wrap: wrap; }
+.sb-bar__actions { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+.sb-reset:hover { border-color: rgba(240, 123, 123, 0.55); color: #f6b6b0; }
+.sb-reset svg, .sb-bar__actions .cb-ghostbtn svg { vertical-align: -2px; }
+
+/* ---- Transport ------------------------------------------------------------ */
+.sb-transport {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px;
+}
+.sb-transport__grp { display: flex; align-items: center; gap: 8px; }
+.sb-transport__cap { font-size: 9px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+/* Thin vertical divider between the three control groups. */
+.sb-transport__sep { width: 1px; align-self: stretch; min-height: 26px; background: var(--line); }
+
+/* "Next event" — a connected action-button group (segmented-control shell, but
+   each button is a one-shot advance, no persistent active state). */
+.sb-evgroup { display: inline-flex; gap: 2px; padding: 3px; background: rgba(0, 0, 0, 0.32); border: 1px solid var(--line); border-radius: 10px; }
+.sb-evgroup__btn {
+  border: none; background: none; color: var(--text-dim); border-radius: 7px;
+  padding: 5px 11px; font: inherit; font-weight: 700; font-size: 12px; cursor: pointer;
+  transition: background 0.13s ease, color 0.13s ease;
+}
+.sb-evgroup__btn:hover:not(:disabled) { background: rgba(255, 255, 255, 0.07); color: var(--text); }
+.sb-evgroup__btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* Step + Jump use the site's STANDARD boxed input (.beta-content input gets a
+   border + dark fill globally) flanked by matched control buttons. No wrapping
+   pill → no "box-in-a-box". Buttons share the input's border / radius / fill so
+   the row reads as one cohesive set, not loose pills. */
+.sb-ctl {
+  display: inline-flex; align-items: center; justify-content: center; gap: 5px; box-sizing: border-box; flex: none;
+  height: 34px; padding: 0 13px;
+  border: 1px solid var(--b-line-strong, var(--line)); border-radius: var(--b-radius-sm, 9px);
+  background: rgba(0, 0, 0, 0.28); color: var(--text);
+  font: inherit; font-weight: 700; font-size: 12.5px; cursor: pointer; font-variant-numeric: tabular-nums;
+  transition: border-color 0.14s ease, background 0.14s ease, color 0.14s ease;
+}
+.sb-ctl:hover:not(:disabled) { border-color: var(--b-primary-line, rgba(120, 160, 210, 0.6)); background: rgba(120, 160, 210, 0.14); color: #eaf3ff; }
+.sb-ctl:disabled { opacity: 0.4; cursor: not-allowed; }
+.sb-ctl svg { flex: none; }
+.sb-ctl--sq { width: 34px; padding: 0; }
+.sb-ctl--sq svg { color: var(--text); }
+/* Go shares the neutral box family (like STEP's −/+) — just a light-blue text
+   hint marks it as the action, instead of a strong fill that read as a
+   mismatched standalone element. */
+.sb-ctl--go { color: #a9cdf5; }
+.sb-ctl--go:hover { border-color: var(--b-primary-line, rgba(120, 160, 210, 0.6)); background: rgba(46, 142, 243, 0.16); color: #eaf3ff; }
+/* Amount = the standard boxed input + a small borderless "s" label beside it. */
+.sb-amount { display: inline-flex; align-items: center; gap: 5px; }
+/* min-height overrides the global `input { min-height: 42px }` floor so the
+   number box matches the 34px buttons instead of towering over them. */
+.sb-num { width: 48px; height: 34px; min-height: 34px; box-sizing: border-box; text-align: center; padding: 0 6px; font: inherit; font-size: 12.5px; font-variant-numeric: tabular-nums; -moz-appearance: textfield; }
+.sb-num::-webkit-outer-spin-button, .sb-num::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.sb-unit { font-size: 11px; font-weight: 700; color: var(--text-dim); }
+
+/* ---- Interactive HUD ------------------------------------------------------ */
+.sb-hud { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.sb-fighter {
+  position: relative; display: flex; flex-direction: column; gap: 11px; padding: 15px 16px;
+  border: 1px solid var(--line); border-top-width: 3px; border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0) 42%), var(--panel-2);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), var(--shadow);
+}
+.sb-fighter--a { border-top-color: var(--primary); }
+.sb-fighter--b { border-top-color: var(--ok); }
+.sb-fighter.is-dead { opacity: 0.72; filter: saturate(0.7); }
+
+.sb-fighter__head { display: flex; align-items: center; gap: 11px; }
+.sb-fighter__head img { border-radius: 9px; border: 1px solid var(--line); flex: none; }
+.sb-fighter__id { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.sb-fighter__name { font-family: "Fraunces", Georgia, serif; font-size: 17px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sb-fighter--a .sb-fighter__name { color: #9ccaff; }
+.sb-fighter--b .sb-fighter__name { color: #8fe9bd; }
+.sb-fighter__sub { font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); }
+
+/* Clickable creature identity — same "click to pick" affordance as
+   Compare / Best Builds / Optimizer. Opens the Configure overlay on this
+   side's tab (creature picker + build). Posture control stays outside it. */
+.sb-fighter__pick {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  flex: 1;
+  min-width: 0;
+  margin: -4px -6px;
+  padding: 4px 6px;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.14s ease;
+}
+.sb-fighter__pick:hover { background: rgba(140, 170, 210, 0.1); }
+.sb-fighter__pick:focus-visible { outline: 2px solid var(--b-primary-line, rgba(120, 150, 255, 0.6)); outline-offset: 1px; }
+
+/* Posture segmented (compact). */
+.sb-posture { display: inline-flex; gap: 2px; padding: 2px; background: rgba(0, 0, 0, 0.32); border: 1px solid var(--line); border-radius: 999px; flex: none; }
+.sb-posture__opt { border: none; background: none; color: var(--text-dim); border-radius: 999px; padding: 4px 10px; font: inherit; font-weight: 700; font-size: 11px; cursor: pointer; }
+.sb-posture__opt:hover:not(:disabled) { color: var(--text); }
+.sb-posture__opt.is-active { color: #07090e; background: linear-gradient(180deg, #5aabff, #2e8ef3); }
+.sb-fighter--b .sb-posture__opt.is-active { background: linear-gradient(180deg, #5ee0a4, #2bb47a); }
+.sb-posture__opt:disabled { opacity: 0.45; cursor: not-allowed; }
+
+/* HP + breath bars. */
+.sb-bars { display: flex; flex-direction: column; gap: 7px; }
+.sb-bar2 { display: grid; grid-template-columns: 46px 1fr auto; align-items: center; gap: 9px; }
+.sb-bar2__cap { font-size: 9px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-dim); }
+.sb-bar2__track { height: 12px; border-radius: 999px; background: rgba(0, 0, 0, 0.4); border: 1px solid var(--line); overflow: hidden; }
+.sb-bar2__fill { display: block; height: 100%; border-radius: 999px; transition: width 0.2s ease; }
+/* Each bar is coloured for what it measures, not for variety: health green,
+   thirst the blue of water, hunger the warm tone of food, breath the violet of
+   a charge. Blue moved off breath to free it for the meter it actually means. */
+.sb-bar2__fill--hp { background: linear-gradient(90deg, #2bb47a, #5ee0a4); }
+.sb-bar2__fill--hp.is-dead { background: linear-gradient(90deg, #8a2b2b, #f07b7b); }
+.sb-bar2__fill--breath { background: linear-gradient(90deg, #6c4de0, #a389ff); }
+.sb-bar2__fill--hunger { background: linear-gradient(90deg, #c2321f, #f5705a); }
+.sb-bar2__fill--thirst { background: linear-gradient(90deg, #2e8ef3, #5aabff); }
+.sb-bar2__val { font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.sb-bar2__val em { font-style: normal; color: var(--text-dim); font-weight: 600; }
+
+.sb-fighter__timing { display: flex; gap: 16px; font-size: 11px; color: var(--text-dim); }
+.sb-fighter__timing b { color: var(--text); font-variant-numeric: tabular-nums; }
+.sb-posture-note { font-size: 11px; color: var(--text-dim); }
+
+/* Manual actions. */
+.sb-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding-top: 11px; border-top: 1px solid var(--b-line-soft, rgba(140, 170, 210, 0.12)); }
+.sb-act { border: none; border-radius: 10px; padding: 9px 16px; font-weight: 700; font-size: 13px; cursor: pointer; font-variant-numeric: tabular-nums; }
+.sb-act:disabled { opacity: 0.5; cursor: not-allowed; }
+.sb-act--bite { background: linear-gradient(180deg, #f0857b, #e0564c); color: #1a0606; box-shadow: 0 4px 12px rgba(224, 86, 76, 0.3); }
+.sb-act--breath { background: rgba(46, 142, 243, 0.16); border: 1px solid rgba(77, 163, 255, 0.45); color: #d6e9ff; }
+.sb-variant { display: inline-flex; gap: 2px; padding: 2px; background: rgba(0, 0, 0, 0.3); border: 1px solid var(--line); border-radius: 8px; }
+.sb-variant button { border: none; background: none; color: var(--text-dim); border-radius: 6px; padding: 4px 9px; font: inherit; font-weight: 700; font-size: 11px; cursor: pointer; }
+.sb-variant button.is-active { color: #07090e; background: linear-gradient(180deg, #f0857b, #e0564c); }
+
+.sb-readyrow { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.sb-readyrow__cap { font-size: 9px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-dim); }
+.sb-ready { border: 1px solid var(--line); background: rgba(255, 255, 255, 0.02); color: var(--text-dim); border-radius: 999px; padding: 4px 12px; font-weight: 700; font-size: 11px; cursor: pointer; }
+.sb-ready:hover:not(:disabled) { border-color: rgba(120, 160, 210, 0.5); color: var(--text); }
+.sb-ready:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.sb-abilities { display: flex; flex-wrap: wrap; gap: 6px; }
+.sb-ability { border: 1px solid rgba(187, 154, 255, 0.4); background: rgba(187, 154, 255, 0.1); color: #ddccff; border-radius: 9px; padding: 6px 11px; font-weight: 700; font-size: 12px; cursor: pointer; }
+.sb-ability:hover:not(:disabled) { border-color: rgba(187, 154, 255, 0.7); }
+.sb-ability.is-cooldown { border-color: var(--line); background: rgba(255, 255, 255, 0.02); color: var(--text-dim); }
+.sb-ability:disabled { cursor: not-allowed; opacity: 0.6; }
+
+.sb-statuses { display: flex; flex-wrap: wrap; gap: 5px; }
+.sb-statuses__none { font-size: 11px; color: var(--text-dim); font-style: italic; }
+.sb-status { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line); background: rgba(0, 0, 0, 0.22); color: var(--text); }
+.sb-status b { color: #ffe3ad; font-variant-numeric: tabular-nums; }
+.sb-status em { font-style: normal; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+
+/* ---- Event log ------------------------------------------------------------ */
+.sb-logwrap { background: var(--panel-2); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); }
+.sb-logwrap__head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; }
+.sb-logwrap__head::before { content: ""; align-self: center; width: 4px; height: 16px; border-radius: 2px; background: linear-gradient(180deg, var(--primary), var(--ok)); }
+.sb-logwrap__title { font-family: "Fraunces", Georgia, serif; font-size: 17px; font-weight: 700; }
+.sb-logwrap__hint { font-size: 11.5px; color: var(--text-dim); }
+/* Compare-style event timeline: a chronological list (oldest → newest). Each
+   row = time · actor + HP · category badge + title/detail · HP swing. Mirrors
+   the Compare Timeline's columns so the Sandbox reads the same way. */
+.sb-tlx-scroll { max-height: 440px; overflow-y: auto; padding-right: 4px; }
+.sb-tlx-scroll::-webkit-scrollbar { width: 9px; }
+.sb-tlx-scroll::-webkit-scrollbar-thumb { background: var(--line); border-radius: 999px; border: 2px solid transparent; background-clip: content-box; }
+.sb-tlx { display: flex; flex-direction: column; gap: 3px; }
+.sb-tlx-entry {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 40px;
+  display: grid; grid-template-columns: 46px minmax(92px, 0.85fr) 1fr auto; gap: 12px; align-items: center;
+  padding: 7px 12px 7px 9px; border-radius: 9px; border-left: 3px solid transparent;
+  background: rgba(255, 255, 255, 0.015);
+}
+.sb-tlx-entry:nth-child(even) { background: rgba(255, 255, 255, 0.035); }
+.sb-tlx-time { font-size: 11px; font-weight: 700; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+.sb-tlx-actor { min-width: 0; }
+.sb-tlx-actor strong { font-size: 12.5px; font-weight: 700; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sb-tlx-hp { font-size: 10.5px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+.sb-tlx-copy { min-width: 0; }
+.sb-tlx-copy-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.sb-tlx-copy-top > span:last-child { font-size: 12.5px; }
+.sb-tlx-why { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+.sb-tlx-badge {
+  font-size: 9px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase;
+  padding: 2px 7px; border-radius: 999px; flex: none;
+  border: 1px solid var(--line); background: rgba(255, 255, 255, 0.04); color: var(--text-dim);
+}
+.sb-tlx-result { font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.sb-tlx-result--muted { color: var(--text-dim); font-weight: 600; font-size: 11px; }
+.sb-tlx-dmg { color: #f0857b; }
+.sb-tlx-heal { color: #5ee0a4; }
+/* Side accent on the left edge (A blue, B green). */
+.sb-tlx-entry--side-a { border-left-color: rgba(77, 163, 255, 0.55); }
+.sb-tlx-entry--side-b { border-left-color: rgba(66, 211, 146, 0.55); }
+.sb-tlx-empty { padding: 16px 14px; font-size: 12.5px; color: var(--text-dim); font-style: italic; }
+/* Category badge colors. */
+.sb-tlx-badge--damage { color: #f0857b; border-color: rgba(240, 133, 123, 0.4); background: rgba(240, 133, 123, 0.12); }
+.sb-tlx-badge--ability { color: #ddccff; border-color: rgba(187, 154, 255, 0.4); background: rgba(187, 154, 255, 0.12); }
+.sb-tlx-badge--status { color: #ffe3ad; border-color: rgba(242, 181, 95, 0.4); background: rgba(242, 181, 95, 0.12); }
+.sb-tlx-badge--heal { color: #8fe9bd; border-color: rgba(94, 224, 164, 0.4); background: rgba(94, 224, 164, 0.12); }
+.sb-tlx-badge--death { color: #ff9a9a; border-color: rgba(240, 90, 90, 0.5); background: rgba(240, 90, 90, 0.14); }
+.sb-tlx-badge--manual { color: #cfe6ff; border-color: rgba(120, 170, 255, 0.4); background: rgba(120, 170, 255, 0.12); }
+
+/* ---- Shared Setup form kit (Start Setup + Overrides builder) --------------- */
+/* Side A/B toggle: tinted active per side so it reads like the rest of the kit. */
+.sb-sidetoggle { width: max-content; }
+.sb-sidetoggle__opt--a.is-active { color: #07090e; background: linear-gradient(180deg, #5aabff, #2e8ef3); }
+.sb-sidetoggle__opt--b.is-active { color: #07090e; background: linear-gradient(180deg, #5ee0a4, #2bb47a); }
+
+/* Leading-label form rows: [label][control(s) 1fr][optional apply], so labels
+   and the right-hand Apply buttons line up in columns (fixes the crooked look). */
+/* Start Setup is NOT a .panel-block: the modal's `.cb-tabpane--search
+   .panel-block` rule forces a 2-col grid (for settings forms) which would
+   scatter these rows. A plain .sb-form keeps the flex column + a top divider
+   separates it from the Battle-settings block above. */
+.sb-form { display: flex; flex-direction: column; gap: 12px; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.sb-form__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 0; }
+.sb-form__head h3, .sb-ov__head h3 { margin: 0; font-family: "Fraunces", Georgia, serif; font-size: 18px; font-weight: 700; }
+.sb-form__row { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; align-items: center; gap: 10px; }
+.sb-form__lbl { font-size: 9px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+.sb-form__field { min-width: 0; width: 100%; box-sizing: border-box; }
+.sb-form__statusctl { display: grid; grid-template-columns: minmax(0, 1fr) 84px; gap: 8px; }
+.sb-form__apply {
+  border: 1px solid rgba(77, 163, 255, 0.45); background: rgba(46, 142, 243, 0.16); color: #d6e9ff;
+  border-radius: 9px; padding: 9px 15px; font-weight: 700; font-size: 12.5px; cursor: pointer; white-space: nowrap;
+}
+.sb-form__apply:hover { border-color: rgba(77, 163, 255, 0.7); }
+
+/* Compact 3-up grid for the loose Policy / Actives / Breath selects. It's a
+   single child of the battle-settings panel, so span both columns of the
+   modal's search-tab grid and lay its own three columns inside. */
+.sb-policy-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+.sb-policy-grid .field { margin: 0; }
+.cb-modal .cb-tabpane--search .panel-block > .sb-policy-grid { grid-column: 1 / -1; }
+
+/* ---- Overrides editor (beta-native) --------------------------------------- */
+.sb-ov__head { margin-bottom: 14px; }
+.sb-ov__head h3 { margin: 0 0 4px; }
+.sb-ov__intro { margin: 0; font-size: 12px; color: var(--text-dim); line-height: 1.5; }
+.sb-ov-builder {
+  display: flex; flex-direction: column; gap: 11px;
+  border: 1px solid var(--line); border-radius: 12px; background: rgba(0, 0, 0, 0.18); padding: 14px;
+}
+.sb-ov-split { display: grid; grid-template-columns: minmax(0, 1fr) 130px; gap: 8px; }
+.sb-ov-actions { margin-top: 2px; }
+.sb-ov-actions__btns { display: flex; gap: 8px; }
+.sb-ov-set {
+  border: none; border-radius: 9px; padding: 9px 16px; font-weight: 700; font-size: 12.5px; cursor: pointer;
+  color: #07090e; background: linear-gradient(180deg, #5aabff, #2e8ef3); box-shadow: 0 4px 12px rgba(46, 142, 243, 0.28);
+}
+.sb-ov-set:hover { filter: brightness(1.05); }
+.sb-ov-add {
+  border: 1px solid var(--line); background: rgba(255, 255, 255, 0.03); color: var(--text);
+  border-radius: 9px; padding: 9px 16px; font-weight: 700; font-size: 12.5px; cursor: pointer;
+}
+.sb-ov-add:hover:not(:disabled) { border-color: rgba(120, 160, 210, 0.55); }
+.sb-ov-add:disabled { opacity: 0.4; cursor: not-allowed; }
+.sb-ov-hint { margin: 0; padding-left: 66px; font-size: 11px; color: var(--text-dim); line-height: 1.45; }
+
+.sb-ov-active { margin-top: 16px; }
+.sb-ov-active__head { font-size: 10px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 10px; }
+.sb-ov-sides { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.sb-ov-side {
+  border: 1px solid var(--line); border-top-width: 2px; border-radius: 11px; padding: 11px 12px;
+  background: rgba(255, 255, 255, 0.015);
+}
+.sb-ov-side--a { border-top-color: rgba(77, 163, 255, 0.5); }
+.sb-ov-side--b { border-top-color: rgba(66, 211, 146, 0.5); }
+.sb-ov-side__head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 9px; }
+.sb-ov-side__name { font-size: 12px; font-weight: 700; }
+.sb-ov-side__name--a { color: #9ccaff; }
+.sb-ov-side__name--b { color: #8fe9bd; }
+.sb-ov-clear {
+  border: 1px solid var(--line); background: rgba(255, 255, 255, 0.02); color: var(--text-dim);
+  border-radius: 999px; padding: 3px 11px; font-weight: 700; font-size: 10.5px; cursor: pointer;
+}
+.sb-ov-clear:hover { border-color: rgba(240, 123, 123, 0.55); color: #f6b6b0; }
+.sb-ov-empty { font-size: 11.5px; color: var(--text-dim); font-style: italic; }
+.sb-ov-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.sb-ov-chip {
+  display: inline-flex; align-items: center; gap: 7px; font-size: 11.5px; font-weight: 600;
+  padding: 4px 4px 4px 11px; border-radius: 999px; border: 1px solid var(--line); background: rgba(0, 0, 0, 0.22);
+}
+.sb-ov-chip__x {
+  border: none; background: none; color: var(--text-dim); padding: 0;
+  width: 20px; height: 20px; border-radius: 999px; cursor: pointer; font-size: 16px; line-height: 1;
+  display: inline-flex; align-items: center; justify-content: center; flex: none;
+  transition: background 0.14s ease, color 0.14s ease;
+}
+.sb-ov-chip__x:hover, .sb-ov-chip__x:focus-visible { background: rgba(240, 123, 123, 0.2); color: #f6b6b0; outline: none; }
+
+/* Live tools — Start setup + Overrides surfaced out of the Configure modal onto
+   the page (classic-style), as a collapsible card below the timeline so they can
+   be applied mid-run without opening a window. */
+.sb-tools {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0) 42%), var(--panel);
+  border: 1px solid var(--line); border-radius: 14px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05); overflow: hidden;
+}
+.sb-tools__summary { display: flex; align-items: center; gap: 9px; padding: 13px 16px; cursor: pointer; font-family: "Fraunces", Georgia, serif; font-size: 16px; font-weight: 700; list-style: none; user-select: none; }
+.sb-tools__summary::-webkit-details-marker { display: none; }
+.sb-tools__summary svg { color: var(--text-dim); flex: none; }
+.sb-tools[open] .sb-tools__summary { border-bottom: 1px solid var(--line); }
+.sb-tools__hint { margin-left: auto; font-size: 11px; font-weight: 500; font-family: system-ui, sans-serif; color: var(--text-dim); }
+.sb-tools__body { display: flex; flex-direction: column; gap: 16px; padding: 14px 16px 16px; }
+/* Start setup is one block → a bordered sub-card; head spans, HP | Status side
+   by side so it reads wide rather than as a tall stack. */
+.sb-tools__body > .sb-form {
+  margin: 0; border: 1px solid var(--line); border-radius: 12px;
+  background: rgba(0, 0, 0, 0.18); padding: 14px 15px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+.sb-tools .sb-form { display: grid; grid-template-columns: 1fr 1fr; gap: 11px 18px; border-top: none; }
+.sb-tools .sb-form__head { grid-column: 1 / -1; }
+/* Overrides is a titled section holding TWO blocks side by side: the builder
+   (form) and the active list. The active block stacks Side A OVER Side B so it
+   grows tall, and align-items: stretch makes both blocks exactly equal height —
+   so the two cards read as a balanced pair instead of big-left / tiny-right. */
+.sb-tools .sb-ov { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "head head" "builder active"; column-gap: 14px; row-gap: 10px; align-items: stretch; }
+.sb-tools .sb-ov__head { grid-area: head; }
+.sb-tools .sb-ov__intro { margin: 4px 0 0; font-size: 12px; color: var(--text-dim); line-height: 1.5; }
+.sb-tools .sb-ov-builder { grid-area: builder; }
+.sb-tools .sb-ov-active {
+  grid-area: active; margin-top: 0;
+  border: 1px solid var(--line); border-radius: 12px; background: rgba(0, 0, 0, 0.18);
+  padding: 14px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+.sb-tools .sb-ov-active .sb-ov-sides { grid-template-columns: 1fr; }
+
+/* ---- Phone ---------------------------------------------------------------- */
+@media (max-width: 980px) {
+  .sb-tools .sb-form { grid-template-columns: 1fr; }
+  .sb-tools .sb-ov { grid-template-columns: 1fr; grid-template-areas: "head" "builder" "active"; }
+}
+@media (max-width: 760px) {
+  .sb-hud { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .sb-bar { gap: 12px; }
+  .sb-bar__actions { margin-left: 0; width: 100%; }
+  .sb-bar__actions .cb-ghostbtn { flex: 1 1 auto; justify-content: center; }
+  .sb-transport { gap: 14px; }
+  /* Each group stacks: cap on its own full-width line, controls on the next —
+     so every group's controls align at the same left edge instead of starting
+     at a ragged x behind caps of different widths. */
+  .sb-transport__grp { width: 100%; flex-wrap: wrap; gap: 6px 8px; }
+  .sb-transport__cap { flex-basis: 100%; }
+  .sb-transport__sep { display: none; }
+  .sb-evgroup { flex: 1 1 auto; justify-content: space-between; }
+  .sb-fighter__head { flex-wrap: wrap; }
+  /* Identity takes the whole first line so the creature name isn't squeezed
+     by the posture control; posture wraps to its own line below. */
+  .sb-fighter__pick { flex-basis: 100%; }
+  .sb-posture { order: 3; }
+  /* Timeline rows collapse the actor column; the result wraps under the copy. */
+  .sb-tlx-entry { grid-template-columns: 42px 1fr auto; gap: 9px; }
+  .sb-tlx-actor { grid-column: 2 / 4; display: flex; align-items: baseline; gap: 8px; }
+  .sb-tlx-actor strong { display: inline; }
+  /* Form rows: label on its own line, control + apply below — no cramped 3-col. */
+  .sb-form__row { grid-template-columns: 1fr auto; }
+  .sb-form__lbl { grid-column: 1 / -1; }
+  .sb-policy-grid { grid-template-columns: 1fr; }
+  .sb-ov-sides { grid-template-columns: 1fr; }
+  .sb-ov-split { grid-template-columns: minmax(0, 1fr) 96px; }
+  .sb-ov-hint { padding-left: 0; }
+}

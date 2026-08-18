@@ -1,0 +1,182 @@
+/* Beta Best Builds ("Best build finder"). Reuses the beta tokens + the cb-*
+ * primitives (compareBeta.css) and the ob-* control-bar / BuildCard primitives
+ * (optimizerBeta.css — the page is its sibling: both rank a BUILD). These bbb-*
+ * rules cover what's bespoke to Best Builds: the source + pool-summary on the
+ * control bar, the POOL BUILDER inside the Setup overlay, and the per-opponent
+ * matchup grid on each card. */
+
+/* ---- Metric basis toggle (Avg ↔ Common) in the results header ------------- */
+.bbb-basis { display: inline-flex; align-items: center; gap: 8px; margin-left: auto; align-self: center; }
+.bbb-basis__cap { font-size: 9px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+.bbb-basis__seg { flex: none; }
+/* Hint sits on its own full-width row under the title + toggle, so changing its
+   length (it grows in Common mode) never shifts the toggle. */
+.bbb-results-hint { flex-basis: 100%; margin-top: -2px; }
+
+/* ---- Control bar: source creature + pool-summary chip --------------------- */
+.bbb-source { display: flex; align-items: center; gap: 10px; min-width: 0; }
+/* Creature + name is a clickable shortcut into Setup → Build. */
+.bbb-source__btn { display: flex; align-items: center; gap: 10px; min-width: 0; border: 1px solid transparent; background: none; cursor: pointer; padding: 4px 8px; border-radius: 10px; font: inherit; color: inherit; transition: border-color 0.14s ease, background 0.14s ease; }
+.bbb-source__btn:hover { border-color: var(--line); background: rgba(255, 255, 255, 0.03); }
+.bbb-source__id { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
+.bbb-source__id em { font-size: 10px; font-style: normal; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); }
+.bbb-source__id b { font-size: 16px; font-weight: 800; color: #9ccaff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bbb-pool-chip {
+  display: inline-flex; align-items: center; gap: 6px; margin-left: 4px;
+  border: 1px solid var(--line); border-radius: 999px; background: rgba(0, 0, 0, 0.28);
+  color: var(--text-dim); font-weight: 700; font-size: 12px; padding: 6px 12px; cursor: pointer;
+  font-variant-numeric: tabular-nums; transition: border-color 0.14s ease, color 0.14s ease;
+}
+.bbb-pool-chip:hover { border-color: var(--primary); color: #cfe6ff; }
+.bbb-pool-chip svg { color: var(--primary); flex: none; }
+
+.bbb-dev-note { font-family: ui-monospace, monospace; font-size: 11px; opacity: 0.85; }
+
+/* ---- BuildCard: win-rate-as-lead tone overrides + per-opponent toggle ------
+   When the objective IS win rate, the lead tile shows the pool win-rate; grade
+   its colour by band (the amber "objective" accent doesn't fit a verdict). */
+.ob-metric--lead.bbb-lead-good { border-color: rgba(66, 211, 146, 0.45); background: rgba(66, 211, 146, 0.1); }
+.ob-metric--lead.bbb-lead-good > b { color: #bff0d5; }
+.ob-metric--lead.bbb-lead-bad { border-color: rgba(240, 123, 123, 0.45); background: rgba(240, 123, 123, 0.1); }
+.ob-metric--lead.bbb-lead-bad > b { color: #f7c2bd; }
+
+.bbb-opp-toggle.is-open { border-color: var(--primary); color: #cfe6ff; }
+
+/* ---- Per-opponent matchup grid (expanded card) ---------------------------- */
+.bbb-matchups { border-top: 1px solid var(--b-line-soft, rgba(140, 170, 210, 0.12)); padding-top: 13px; display: flex; flex-direction: column; gap: 10px; }
+.bbb-matchups__loading { font-size: 13px; color: var(--text-dim); padding: 6px 2px; }
+.bbb-matchups__head { display: flex; align-items: baseline; gap: 10px; }
+.bbb-matchups__head > span:first-child { font-size: 11px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+.bbb-matchups__hint { font-size: 11px; color: var(--text-dim); opacity: 0.8; }
+/* Fixed-column grid table. Head + every row share the SAME template, so the
+   Win/Loss column and the four numeric columns line up perfectly down the list
+   (the old per-row label+value chips wobbled because their widths varied). */
+.bbb-mtable { display: flex; flex-direction: column; gap: 3px; max-height: 380px; overflow-y: auto; padding-right: 4px; }
+.bbb-mtable::-webkit-scrollbar { width: 9px; }
+.bbb-mtable::-webkit-scrollbar-thumb { background: var(--line); border-radius: 999px; border: 2px solid transparent; background-clip: content-box; }
+.bbb-mtable__head,
+.bbb-mtable__row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 56px 58px 58px 64px 58px;
+  align-items: center; gap: 10px;
+}
+.bbb-mtable__head {
+  position: sticky; top: 0; z-index: 1; padding: 4px 11px 7px; margin-bottom: 1px;
+  background: var(--panel-2); border-bottom: 1px solid var(--line);
+}
+/* Clickable sort headers: button reset + the same uppercase micro-label look. */
+.bbb-mtable__th {
+  font: inherit; font-size: 9px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--text-dim); background: none; border: none; padding: 2px 0; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 3px; min-width: 0;
+  transition: color 0.13s ease;
+}
+.bbb-mtable__th:hover { color: var(--text); }
+.bbb-mtable__th.is-sorted { color: var(--primary); }
+/* Numeric columns (TTK/DPS/Eff/Surv) right-align; Opponent + Result stay left. */
+.bbb-mtable__head > .bbb-mtable__th:not(:first-child):not(:nth-child(2)) { justify-content: flex-end; }
+.bbb-sort-arrow { font-size: 7px; line-height: 1; }
+.bbb-mtable__row { border: 1px solid var(--b-line-soft, rgba(140, 170, 210, 0.12)); border-radius: 10px; background: rgba(0, 0, 0, 0.22); padding: 7px 11px; }
+.bbb-mtable__opp { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.bbb-mtable__opp img { border-radius: 6px; flex: none; }
+.bbb-mtable__name { font-size: 13px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bbb-mtable__tier { flex: none; font-size: 10px; font-weight: 700; color: var(--text-dim); }
+.bbb-mtable__result { display: flex; }
+.bbb-mtable__num { text-align: right; font-size: 12px; font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
+.bbb-winner { width: 100%; text-align: center; font-size: 10.5px; font-weight: 800; letter-spacing: 0.04em; padding: 3px 0; border-radius: 999px; border: 1px solid var(--line); }
+.bbb-winner--good { color: #07090e; background: linear-gradient(180deg, #5ee0a4, #2bb47a); border-color: transparent; }
+.bbb-winner--bad { color: #f7c2bd; background: rgba(240, 123, 123, 0.14); border-color: rgba(240, 123, 123, 0.4); }
+.bbb-winner--flat { color: var(--text-dim); background: rgba(255, 255, 255, 0.04); }
+
+/* ============================================================================
+   Pool builder (Setup overlay → Pool tab). The genuine new design surface:
+   meta-size + tier-scope as chip boards, OR a custom picker, with a live
+   resolved-pool preview.
+   ========================================================================== */
+.bbb-pool { display: flex; flex-direction: column; gap: 16px; }
+.bbb-pool__seg { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.bbb-copycode { font-size: 12px; padding: 7px 13px; }
+.bbb-pool__group { display: flex; flex-direction: column; gap: 9px; }
+.bbb-pool__label { font-size: 11px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); display: flex; align-items: center; gap: 8px; }
+.bbb-pool__label::before { content: ""; width: 3px; height: 12px; border-radius: 2px; background: var(--primary); box-shadow: 0 0 6px rgba(77, 163, 255, 0.5); }
+
+.bbb-chiprow { display: flex; flex-wrap: wrap; gap: 7px; }
+.bbb-chiprow--tiers { padding-top: 2px; }
+.bbb-sizechip, .bbb-scopechip, .bbb-tierchip {
+  border: 1px solid var(--line); border-radius: 10px; background: rgba(255, 255, 255, 0.03);
+  color: var(--text-dim); font-weight: 700; font-size: 13px; padding: 8px 14px; cursor: pointer;
+  font-variant-numeric: tabular-nums; transition: border-color 0.14s ease, color 0.14s ease, background 0.14s ease;
+}
+.bbb-sizechip { min-width: 52px; text-align: center; }
+.bbb-tierchip { min-width: 44px; text-align: center; border-radius: 999px; }
+.bbb-sizechip:hover, .bbb-scopechip:hover, .bbb-tierchip:hover { border-color: rgba(120, 160, 210, 0.55); color: var(--text); }
+.bbb-sizechip.is-active, .bbb-scopechip.is-active, .bbb-tierchip.is-active {
+  color: #07090e; border-color: transparent; background: linear-gradient(180deg, #5aabff, #2e8ef3);
+  box-shadow: 0 2px 10px rgba(46, 142, 243, 0.34);
+}
+
+.bbb-pool__search, .bbb-pool__code {
+  width: 100%; box-sizing: border-box; background: var(--bg-soft); color: var(--text);
+  border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; font: inherit; font-size: 13px;
+}
+.bbb-pool__search:focus, .bbb-pool__code:focus { outline: none; border-color: rgba(120, 160, 210, 0.6); }
+.bbb-pool__code { resize: vertical; min-height: 56px; font-family: ui-monospace, monospace; font-size: 12px; }
+
+.bbb-pickgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px; max-height: 240px; overflow-y: auto; padding-right: 4px; }
+.bbb-pickgrid::-webkit-scrollbar { width: 9px; }
+.bbb-pickgrid::-webkit-scrollbar-thumb { background: var(--line); border-radius: 999px; border: 2px solid transparent; background-clip: content-box; }
+.bbb-pickchip {
+  display: flex; align-items: center; gap: 7px; min-width: 0; border: 1px solid var(--line);
+  border-radius: 10px; background: rgba(255, 255, 255, 0.03); color: var(--text); cursor: pointer;
+  padding: 6px 9px; transition: border-color 0.14s ease, background 0.14s ease;
+}
+.bbb-pickchip:hover { border-color: rgba(120, 160, 210, 0.55); }
+.bbb-pickchip.is-selected { border-color: rgba(66, 211, 146, 0.6); background: rgba(43, 180, 122, 0.16); }
+.bbb-pickchip__name { flex: 1; min-width: 0; font-size: 12.5px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bbb-pickchip__tier { flex: none; font-size: 10px; font-weight: 700; color: var(--text-dim); }
+
+.bbb-preview { display: flex; flex-wrap: wrap; gap: 6px; max-height: 200px; overflow-y: auto; border: 1px solid var(--line); border-radius: 12px; background: rgba(0, 0, 0, 0.2); padding: 10px; }
+.bbb-preview:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.bbb-preview::-webkit-scrollbar { width: 9px; }
+.bbb-preview::-webkit-scrollbar-thumb { background: var(--line); border-radius: 999px; border: 2px solid transparent; background-clip: content-box; }
+.bbb-preview__item { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255, 255, 255, 0.03); padding: 4px 10px 4px 5px; }
+.bbb-preview__item.is-removable { cursor: pointer; }
+.bbb-preview__item.is-removable:hover { border-color: rgba(240, 123, 123, 0.55); background: rgba(240, 123, 123, 0.08); }
+.bbb-preview__name { font-size: 12px; font-weight: 600; }
+.bbb-preview__tier { font-size: 9.5px; font-weight: 700; color: var(--text-dim); }
+
+/* The depth segmented control sits in a grid .field — justify-self:start +
+   width:max-content keep it hugging its two options instead of stretching the
+   full modal width (which left a long empty bar to the right). Each option
+   carries a one-word hint (em) instead of a long note below. */
+.bbb-depth-seg { justify-self: start; width: max-content; max-width: 100%; }
+.bbb-depth-seg .cb-seg__opt em { font-style: normal; font-weight: 600; font-size: 11px; opacity: 0.6; margin-left: 4px; }
+.bbb-depth-seg .cb-seg__opt.is-active em { opacity: 0.8; }
+
+/* ---- Phone ---------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .bbb-source { width: 100%; flex-wrap: wrap; }
+  .bbb-pool-chip { margin-left: 0; }
+  /* The 6-column matchup grid won't fit a phone. Re-flow each row to two
+     lines: opponent + result on top, the four stats as a 4-up grid below
+     (still column-aligned, now with their own mini-labels since the sticky
+     header is hidden). */
+  .bbb-mtable__head { display: none; }
+  .bbb-mtable__row {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "opp opp result result" "n1 n2 n3 n4";
+    row-gap: 9px; column-gap: 8px;
+  }
+  .bbb-mtable__opp { grid-area: opp; }
+  .bbb-mtable__result { grid-area: result; justify-content: flex-end; }
+  .bbb-mtable__row > .bbb-mtable__num:nth-child(3) { grid-area: n1; }
+  .bbb-mtable__row > .bbb-mtable__num:nth-child(4) { grid-area: n2; }
+  .bbb-mtable__row > .bbb-mtable__num:nth-child(5) { grid-area: n3; }
+  .bbb-mtable__row > .bbb-mtable__num:nth-child(6) { grid-area: n4; }
+  .bbb-mtable__num { text-align: left; display: flex; flex-direction: column; gap: 1px; }
+  .bbb-mtable__num::before { content: attr(data-label); font-size: 8px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-dim); }
+  .bbb-pickgrid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .bbb-pickgrid { grid-template-columns: 1fr; }
+}

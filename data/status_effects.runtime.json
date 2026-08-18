@@ -1,0 +1,454 @@
+[
+  {
+    "id": "Aftershock",
+    "name": "Aftershock",
+    "parsed": {
+      "modifiers": {
+        "damagePct": -20,
+        "stamRegenPct": -50
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Aftershock"
+    }
+  },
+  {
+    "id": "Ashy_Lungs",
+    "name": "Ashy Lungs",
+    "parsed": {
+      "modifiers": {
+        "stamRegenDebuffPct": 20
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Ashy_Lungs"
+    }
+  },
+  {
+    "id": "Bad_Omen",
+    "name": "Bad Omen",
+    "parsed": {
+      "modifiers": {
+        "hpRegenDebuffPct": 25
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Bad_Omen"
+    }
+  },
+  {
+    "id": "Bleed_Status",
+    "name": "Bleed Status",
+    "parsed": {
+      "type": "dot",
+      "dot": {
+        "mode": "flat",
+        "damagePerStackPerSec": 2
+      },
+      "modifiers": {
+        "disablesHpRegen": true
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Bleed_Status"
+    }
+  },
+  {
+    "id": "Broken_Legs_Status",
+    "name": "Broken Legs Status",
+    "parsed": {},
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Broken_Legs_Status"
+    }
+  },
+  {
+    "id": "Burn_Status",
+    "name": "Burn Status",
+    "parsed": {
+      "type": "dot",
+      "dot": {
+        "mode": "percentMaxHp",
+        "base": 0.25,
+        "perStack": 0.1,
+        "tickSec": 3
+      },
+      "modifiers": {
+        "hpRegenDebuffPerStackPct": 10
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Burn_Status"
+    }
+  },
+  {
+    "id": "Confusion_Status",
+    "name": "Confusion Status",
+    "parsed": {},
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Confusion_Status"
+    }
+  },
+  {
+    "id": "Corrosion_Status",
+    "name": "Corrosion Status",
+    "parsed": {
+      "type": "dot",
+      "dot": {
+        "mode": "percentMaxHp",
+        "flatPerTickPct": 0.5,
+        "tickSec": null
+      },
+      "modifiers": {
+        "weightReductionBasePct": 7.5,
+        "weightReductionPerStackPct": 1,
+        "weightReductionCapPct": 97.5
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Corrosion_Status"
+    }
+  },
+  {
+    "id": "Deep_Wounds_Status",
+    "name": "Deep Wounds Status",
+    "parsed": {
+      "type": "flag",
+      "modifiers": {
+        "disablesBleedHealing": true
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Deep_Wounds_Status"
+    }
+  },
+  {
+    "id": "Disease_Status",
+    "name": "Disease Status",
+    "parsed": {
+      "modifiers": {
+        "hungerThirstDepletionIncreasePerStackPct": 1.5,
+        "hpRegenDebuffPct": 15,
+        "stamRegenDebuffPct": 15
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Disease_Status"
+    }
+  },
+  {
+    "id": "Freeze_Status",
+    "name": "Freeze Status",
+    "parsed": {},
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Freeze_Status"
+    }
+  },
+  {
+    "id": "Frostbite_Status",
+    "name": "Frostbite Status",
+    "parsed": {
+      "modifiers": {
+        "biteCooldownIncreasePerStackPct": 2,
+        "stamRegenDebuffPct": 25
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Frostbite_Status"
+    }
+  },
+  {
+    "id": "Heartbroken_Status",
+    "name": "Heartbroken Status",
+    "parsed": {
+      "type": "flag",
+      "modifiers": {
+        "blocksExternalHealing": true
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Heartbroken_Status"
+    }
+  },
+  {
+    "id": "Healing_Ailment",
+    "name": "Healing Ailment",
+    "parsed": {
+      "modifiers": {}
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Healing_Ailment"
+    }
+  },
+  {
+    "id": "Heat_Wave_Status",
+    "name": "Heat Wave Status",
+    "parsed": {
+      "type": "dot",
+      "dot": {
+        "mode": "percentMaxHp",
+        "flatPerTickPct": 1,
+        "tickSec": 3
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Heat_Wave_Status"
+    }
+  },
+  {
+    "id": "Hypothermia_Status",
+    "name": "Hypothermia Status",
+    "parsed": {
+      "type": "dot",
+      "dot": {
+        "mode": "percentMaxHp",
+        "flatPerTickPct": 0.75,
+        "tickSec": 3
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Hypothermia_Status"
+    }
+  },
+  {
+    "id": "Injury_Status",
+    "name": "Injury Status",
+    "parsed": {
+      "modifiers": {
+        "movementDebuffPerStackPct": 0.85
+      },
+      "caps": {
+        "maxStacks": 99
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Injury_Status"
+    }
+  },
+  {
+    "id": "Muddy_Status",
+    "name": "Muddy Status",
+    "parsed": {
+      "modifiers": {
+        "hpRegenBoostPct": 25,
+        "doublesPoisonBleedHealingRate": true
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Muddy_Status"
+    }
+  },
+  {
+    "id": "Necropoison_Status",
+    "name": "Necropoison Status",
+    "parsed": {},
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Necropoison_Status"
+    }
+  },
+  {
+    "id": "Paralyze_Status",
+    "name": "Paralyze Status",
+    "parsed": {},
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Paralyze_Status"
+    }
+  },
+  {
+    "id": "Poison_Status",
+    "name": "Poison Status",
+    "parsed": {
+      "type": "dot",
+      "dot": {
+        "mode": "percentMaxHp",
+        "base": 0.2,
+        "perStack": 0.05,
+        "tickSec": 3
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Poison_Status"
+    }
+  },
+  {
+    "id": "Radiation_Status",
+    "name": "Radiation Status",
+    "parsed": {},
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Radiation_Status"
+    }
+  },
+  {
+    "id": "Reflect_Status",
+    "name": "Reflect Status",
+    "parsed": {
+      "type": "flag",
+      "modifiers": {
+        "reflectsMeleeDamage": true
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Reflect_Status"
+    }
+  },
+  {
+    "id": "Scared_Status",
+    "name": "Scared Status",
+    "parsed": {
+      "modifiers": {
+        "damageReductionPct": 50
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Scared_Status"
+    }
+  },
+  {
+    "id": "Scent_Hidden",
+    "name": "Scent Hidden",
+    "parsed": {},
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Scent_Hidden"
+    }
+  },
+  {
+    "id": "Shock_Status",
+    "name": "Shock Status",
+    "parsed": {},
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Shock_Status"
+    }
+  },
+  {
+    "id": "Shredded_Wings",
+    "name": "Shredded Wings",
+    "parsed": {},
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Shredded_Wings"
+    }
+  },
+  {
+    "id": "Sickly_Status",
+    "name": "Sickly Status",
+    "parsed": {
+      "modifiers": {
+        "hungerDepletionIncreasePct": 20,
+        "thirstDepletionIncreasePct": 20,
+        "stamRegenDebuffPct": 20,
+        "hpRegenDebuffPct": 20
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Sickly_Status"
+    }
+  },
+  {
+    "id": "Star_Speed",
+    "name": "Star Speed",
+    "parsed": {},
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Star_Speed"
+    }
+  },
+  {
+    "id": "Stolen_Speed_Status",
+    "name": "Stolen Speed Status",
+    "parsed": {
+      "modifiers": {
+        "stamRegenDebuffPct": 25
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Stolen_Speed_Status"
+    }
+  },
+  {
+    "id": "Sticky_Teeth_Status",
+    "name": "Sticky Teeth Status",
+    "parsed": {
+      "modifiers": {
+        "biteCooldownIncreasePct": 65
+      },
+      "caps": {
+        "stacking": "duration",
+        "maxStacks": 10
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Sticky_Teeth_Status"
+    }
+  },
+  {
+    "id": "Sticky_Trap_Status",
+    "name": "Sticky Trap Status",
+    "parsed": {},
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Sticky_Trap_Status"
+    }
+  },
+  {
+    "id": "Tail_Dropped",
+    "name": "Tail Dropped",
+    "parsed": {},
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Tail_Dropped"
+    }
+  },
+  {
+    "id": "Torn_Ligaments_Status",
+    "name": "Torn Ligaments Status",
+    "parsed": {
+      "type": "flag"
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Torn_Ligaments"
+    }
+  },
+  {
+    "id": "Unbridled_Rage_Status",
+    "name": "Unbridled Rage Status",
+    "parsed": {
+      "modifiers": {
+        "damageBoostPct": 50,
+        "disablesStamRegen": true
+      }
+    },
+    "source": {
+      "page": "https://creatures-of-sonaria-official.fandom.com/wiki/Creature_Abilities",
+      "anchor": "#Unbridled_Rage_Status"
+    }
+  }
+]

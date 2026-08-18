@@ -1,0 +1,233 @@
+/* Beta Speed Builds. Shares the beta tokens and the cb-* primitives from
+ * compareBeta.css (cb-seg, cb-empty, cb-ghostbtn, cb-modal and its input
+ * reskin). What is bespoke here is the control bar, and then two layouts that
+ * do not overlap: ranked cards for Optimize, a form beside a pinned answer for
+ * Manual. */
+
+.spb { display: flex; flex-direction: column; gap: 16px; }
+
+/* ---- Control bar: creature, mode, channel, and Optimize's one popover ------ */
+.spb-bar {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  background: var(--panel-2); border: 1px solid var(--line); border-radius: 14px;
+  padding: 12px 16px; box-shadow: var(--shadow);
+}
+.spb-creature {
+  display: flex; align-items: center; gap: 9px; padding: 4px 8px; border-radius: 10px;
+  border: 1px solid transparent; background: none; color: inherit; font: inherit; cursor: pointer;
+  transition: border-color 0.14s ease, background 0.14s ease; min-width: 0;
+}
+.spb-creature:hover { border-color: var(--line); background: rgba(255, 255, 255, 0.03); }
+.spb-creature > span { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
+.spb-creature b { font-size: 15px; font-weight: 800; color: #9ccaff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.spb-creature em { font-size: 10px; font-style: normal; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-dim); }
+
+.spb-bar__lever { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.spb-bar__label { font-size: 10px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); white-space: nowrap; }
+.spb-bar__select { min-width: 0; }
+.spb-bar__actions { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+.spb-bar__actions .cb-ghostbtn { display: inline-flex; align-items: center; gap: 7px; }
+.spb-count {
+  display: inline-flex; align-items: center; justify-content: center; min-width: 19px; height: 19px;
+  padding: 0 5px; border-radius: 999px; font-size: 11px; font-weight: 800;
+  color: #07090e; background: var(--ok);
+}
+/* A constraint takes something away, so its count does not read in the green a
+   held buff earns. */
+.spb-count--set { background: var(--warn, #f2b55f); }
+
+.spb-modal { width: min(620px, 94vw); }
+
+/* The creature picker is one combobox, so the modal has nothing to scroll and
+   the scroll box only serves to cut the suggestion list in half. */
+.spb-modal--spill,
+.spb-modal--spill .cb-modal__body { overflow: visible; }
+
+/* ---- What the whole ranking holds fixed -----------------------------------
+   The strip is BuildLoadout's vocabulary (bl-*), because that is what the rest
+   of the app prints a build with; all this adds is the lead-in caption. Inside
+   a card that vocabulary is a footer and sizes itself accordingly - here it
+   heads the ranking, so it sits in a panel of its own and takes the type the
+   family gives a row's own name rather than the type it gives a footnote. */
+.spb-fixed {
+  gap: 9px 14px; padding: 11px 14px; border-radius: 12px;
+  border: 1px solid var(--line); background: rgba(0, 0, 0, 0.22);
+}
+.spb-fixed .cb-bar__cap { font-size: 13px; font-weight: 700; color: var(--text); letter-spacing: 0; text-transform: none; }
+/* The captions and the dividers arrive from a card footer, where both are held
+   back so the build under a result stays under it. Heading the ranking they are
+   the structure of the sentence, and at a footnote's weight the strip read as
+   an unlit patch above the cards - so they take the contrast Compare and Best
+   Builds give the summary line above their own results, and the frame the cards
+   directly below this one carry. */
+.spb-fixed .bl__cap { font-size: 10px; opacity: 1; }
+.spb-fixed .bl__sep { background: var(--line); }
+.spb-fixed .bl__name, .spb-fixed .bl__none { font-size: 13px; }
+.spb-fixed .bl__elder { font-size: 13px; padding: 5px 12px; }
+.spb-fixed .bl__flag { font-size: 12px; }
+/* Which of the fixed choices the reader made himself rather than the sweep. The
+   caption carries it, so a locked elder is not mistaken for a measured one. */
+.spb-fixed .bl__cap--set { color: var(--warn, #f2b55f); }
+.spb-ruled-out { border-color: rgba(240, 123, 123, 0.4); background: rgba(240, 123, 123, 0.09); }
+.spb-ruled-out .bl__name { color: #ffc9c9; text-decoration: line-through; }
+.spb-ruled-out img { opacity: 0.55; }
+
+/* ---- Sections ------------------------------------------------------------- */
+.spb-section { display: flex; flex-direction: column; gap: 10px; }
+.spb-section__head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.spb-section__head::before {
+  content: ""; align-self: center; width: 4px; height: 17px; border-radius: 2px;
+  background: linear-gradient(180deg, var(--primary), var(--ok)); box-shadow: 0 0 7px rgba(77, 163, 255, 0.4);
+}
+.spb-section__title { font-family: "Fraunces", Georgia, serif; font-size: 18px; font-weight: 700; }
+.spb-section__hint { font-size: 12px; color: var(--text-dim); }
+
+/* ---- Optimize: ranked cards ----------------------------------------------- */
+.spb-cards { display: flex; flex-direction: column; gap: 9px; }
+.spb-card {
+  display: flex; flex-direction: column; gap: 12px;
+  padding: 12px 15px; border: 1px solid var(--line); border-radius: 13px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0) 60%), var(--panel-2);
+}
+.spb-card--hero {
+  border-top: 3px solid var(--ok);
+  background: linear-gradient(180deg, rgba(66, 211, 146, 0.1), rgba(255, 255, 255, 0) 60%), var(--panel);
+}
+.spb-card__head { display: grid; grid-template-columns: 32px minmax(150px, auto) minmax(0, 1fr) auto; align-items: center; gap: 12px; }
+.spb-card__rank { font-family: "Fraunces", Georgia, serif; font-size: 15px; font-weight: 700; color: var(--text-dim); }
+.spb-card--hero .spb-card__rank { color: var(--ok); }
+.spb-card__figures { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.spb-card__value { font-size: 21px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.spb-card--hero .spb-card__value { font-size: 27px; color: #ffe3ad; }
+.spb-card__sustained { font-size: 11px; color: var(--text-dim); font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* Bear pays nothing of its own and would otherwise win a slot for no visible
+   reason - the winning card is the only place left that can say why. */
+.spb-card__why { margin: 0; font-size: 12px; color: var(--text-dim); }
+.spb-card__open { white-space: nowrap; }
+/* auto-FILL, not auto-fit: a creature with two channels beside the focused one
+   keeps two tile-sized tiles instead of stretching them over the whole card. */
+.spb-card__metrics {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px;
+  padding-top: 12px; border-top: 1px solid var(--b-line-soft, rgba(140, 170, 210, 0.12));
+}
+
+/* Plushie pills on a ranked row: BuildLoadout's, at its own gap rather than the
+   strip's wider one. */
+.spb-slots { gap: 6px; }
+
+/* ---- Readout: the focused channel is the hero, the rest are metrics -------- */
+.spb-hero {
+  display: flex; flex-direction: column; justify-content: center; gap: 4px; padding: 16px 18px;
+  border: 1px solid rgba(242, 181, 95, 0.45); border-radius: 16px; background: rgba(242, 181, 95, 0.1);
+  box-shadow: var(--b-top-highlight, inset 0 1px 0 rgba(255, 255, 255, 0.06));
+}
+.spb-hero__cap { font-size: 10px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+/* The creature's printed stat rides on the channel name: it belongs to neither
+   figure, and it is the one number on the page nobody plays on. */
+.spb-hero__cap em { margin-left: 8px; font-style: normal; font-weight: 600; letter-spacing: 0; text-transform: none; opacity: 0.62; }
+.spb-hero__value { font-size: 40px; font-weight: 700; line-height: 1; color: #ffe3ad; font-variant-numeric: tabular-nums; }
+.spb-hero__note { font-size: 12px; color: var(--text-dim); }
+
+/* Sustained beside peak. The divider does the work of saying they are two
+   readings of one channel rather than two channels. */
+.spb-hero__pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.spb-hero__leg { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.spb-hero__leg--peak { padding-left: 14px; border-left: 1px solid rgba(242, 181, 95, 0.35); }
+.spb-hero__legcap { font-size: 10px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+.spb-hero__pair .spb-hero__value { font-size: 31px; }
+.spb-hero__leg:not(.spb-hero__leg--peak) .spb-hero__value { color: var(--text); }
+
+.spb-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; align-content: start; }
+.spb-metric {
+  display: flex; flex-direction: column; gap: 2px; padding: 9px 12px; min-width: 0;
+  border: 1px solid var(--b-line-soft, rgba(140, 170, 210, 0.12)); border-radius: 11px; background: rgba(0, 0, 0, 0.22);
+}
+.spb-metric > span:first-child { font-size: 9.5px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+.spb-metric > b { font-size: 17px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.spb-metric__from { font-size: 11px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+
+.spb-delta { font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.spb-delta--good { color: var(--ok); }
+.spb-delta--bad { color: var(--bad); }
+.spb-delta--flat { color: var(--text-dim); }
+
+/* ---- Manual: the loadout on the page, the answer pinned beside it ---------
+   Same two-pane shape the Custom editor uses for its live preview: sticky at
+   the top of the scroll, and above the form rather than beside it once the
+   column is too narrow to hold both. */
+.spb-live { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 16px; align-items: start; }
+.spb-live__form { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+/* The elder cards lie in a line here rather than in the 2x2 Compare's narrow
+   rail folds them into - the loadout column has the width for it, and on a page
+   that recomputes as you click, a picker two rows deep pushes the figures it is
+   moving off the screen. Same cards, same chips; only the wrapping differs. */
+.spb-live__form .elder-selector-grid { grid-template-columns: repeat(auto-fit, minmax(158px, 1fr)); }
+/* Clear of the sticky beta topbar (79 px) with the page's own gap under it. */
+.spb-live__answer { position: sticky; top: 95px; }
+.spb-answer {
+  display: flex; flex-direction: column; gap: 12px; padding: 16px; border-radius: 16px;
+  border: 1px solid var(--line); border-top: 3px solid var(--primary);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0) 44%), var(--panel-2);
+  box-shadow: 0 18px 40px -22px rgba(0, 0, 0, 0.85);
+}
+.spb-answer__moves { display: flex; flex-direction: column; gap: 8px; padding-top: 12px; border-top: 1px solid var(--b-line-soft, rgba(140, 170, 210, 0.12)); }
+.spb-answer__cap { font-size: 10px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+/* The pane only stays pinned while it fits the viewport, and a creature holding
+   half the registry can outgrow it - so the breakdown scrolls, not the pane. */
+.spb-answer .spb-moves { max-height: min(34vh, 320px); overflow-y: auto; }
+.spb-answer .spb-move { grid-template-columns: minmax(0, 1fr) auto; }
+.spb-answer .spb-move__change { grid-column: 1 / -1; }
+
+/* ---- Breakdown ------------------------------------------------------------ */
+.spb-moves { display: flex; flex-direction: column; gap: 10px; }
+.spb-moves__group { display: flex; flex-direction: column; gap: 6px; }
+.spb-moves__cap { font-size: 9.5px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+.spb-move {
+  display: grid; grid-template-columns: minmax(140px, 250px) 88px minmax(0, 1fr); align-items: center; gap: 12px;
+  padding: 9px 14px; border: 1px solid var(--b-line-soft, rgba(140, 170, 210, 0.12)); border-radius: 11px;
+  background: rgba(0, 0, 0, 0.22);
+}
+.spb-move__name { font-weight: 700; font-size: 13px; min-width: 0; }
+.spb-move__name em { display: block; font-style: normal; font-weight: 600; font-size: 11px; color: var(--text-dim); }
+.spb-move__src { font-size: 9.5px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); }
+.spb-move__change { font-size: 12.5px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+.spb-none { font-size: 13px; color: var(--text-dim); }
+
+/* ---- Narrow ---------------------------------------------------------------- */
+@media (max-width: 920px) {
+  .spb-live { grid-template-columns: 1fr; }
+  .spb-live__answer { position: static; order: -1; }
+  .spb-answer .spb-moves { max-height: none; overflow: visible; }
+}
+
+@media (max-width: 760px) {
+  .spb-hero { padding: 14px 16px; }
+  .spb-hero__value { font-size: 34px; }
+  .spb-hero__pair .spb-hero__value { font-size: 27px; }
+  .spb-card__head { grid-template-columns: 30px minmax(0, 1fr); row-gap: 9px; }
+  .spb-slots { grid-column: 1 / -1; }
+  .spb-card__open { grid-column: 1 / -1; }
+}
+
+/* Two 27 px figures and their captions stop fitting side by side around here,
+   and a wrapped "sustained" reads worse than one stacked on the other. */
+@media (max-width: 420px) {
+  .spb-hero__pair { grid-template-columns: 1fr; gap: 10px; }
+  .spb-hero__leg--peak { padding-left: 0; padding-top: 10px; border-left: none; border-top: 1px solid rgba(242, 181, 95, 0.35); }
+}
+
+@media (max-width: 640px) {
+  /* compareBeta.css drops the caption its HP bars carry at phone widths. Here
+     the caption is the sentence the rest of the strip completes, so it stays -
+     on a line of its own, which is where the row would wrap it anyway. */
+  .spb-fixed .cb-bar__cap { display: block; flex-basis: 100%; }
+  .spb-bar { gap: 12px; }
+  .spb-bar__lever { width: 100%; }
+  .spb-bar__lever .cb-seg { flex: 1 1 auto; }
+  .spb-bar__lever .cb-seg__opt { flex: 1 1 auto; }
+  .spb-bar__select { flex: 1 1 auto; }
+  .spb-bar__actions { margin-left: 0; width: 100%; }
+  .spb-bar__actions .cb-ghostbtn { flex: 1 1 auto; justify-content: center; }
+  .spb-move { grid-template-columns: minmax(0, 1fr) auto; }
+  .spb-move__change { grid-column: 1 / -1; }
+}
