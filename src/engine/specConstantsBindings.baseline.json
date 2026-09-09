@@ -1,0 +1,3 @@
+{
+  "divination_burn_stacks": "Divination applies 2 Burn through an apply path that emits no combat_log event and does not expose the stack count in the trace (composable/mod.rs:4811); the 2-stack magnitude is welded to the spec prose by the drift + prose-bind gates, and the Burn mechanism itself is witnessed by divination.rs::charged_bites_apply_burn_to_target."
+}

@@ -1,0 +1,54 @@
+/* Apply-to-Compare split control (beta BuildCards). One pill: a label + two
+   side targets, A blue / B green to match the Compare HUD. Compact so it sits
+   beside "Copy build/summary" in the card action row without crowding it. */
+.atc {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 4px 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.025);
+}
+.atc__label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.atc__sides {
+  display: inline-flex;
+  gap: 4px;
+}
+.atc__side {
+  --atc-rgb: 140, 170, 210;
+  min-width: 30px;
+  height: 28px;
+  padding: 0 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  color: rgb(var(--atc-rgb));
+  background: rgba(var(--atc-rgb), 0.12);
+  border: 1px solid rgba(var(--atc-rgb), 0.4);
+  border-radius: 999px;
+  transition: background 0.13s ease, border-color 0.13s ease, transform 0.1s ease, color 0.13s ease;
+}
+.atc__side--a { --atc-rgb: 77, 163, 255; }
+.atc__side--b { --atc-rgb: 66, 211, 146; }
+.atc__side:hover {
+  background: rgba(var(--atc-rgb), 0.9);
+  border-color: rgba(var(--atc-rgb), 0.9);
+  color: #08121c;
+  transform: translateY(-1px);
+}
+.atc__side:active { transform: translateY(0); }
+.atc__side:focus-visible {
+  outline: 2px solid rgba(var(--atc-rgb), 0.85);
+  outline-offset: 2px;
+}

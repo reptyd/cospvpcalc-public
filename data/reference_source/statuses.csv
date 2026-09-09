@@ -1,0 +1,151 @@
+What defines a Status?,"Statuses are temporary condition flags that represent the creature’s state, circumstance, or performance modifier. Unlike Ailments, Statuses do not necessarily harm the user, they can be negative, neutral, or beneficial depending on origin. Statuses are non-stacking or limited-stacking, following predefined parameters. They typically arise from environmental interactions, or result from combat triggers/ability effects. Some harmful statuses are curable through resting actions.",,,,
+Status Name,Code,Type,In-Game Description,Functionality,Notes
+Adrenaline,Adrenaline,Positive,Gain increased damage and speed at the cost of disabled stamina regeneration while on low health,"(HP must be below 25%)
+- 20% damage increase
+- 1.25x overall speed 
+- Disables stamina regeneration",
+Aftershock,Aftershock,Negative,N/A,Reduces Damage by -20% and Stamina Regen by -50%,
+Ashy Lungs,AshyLungs,Negative,Decreases stamina regen,-20% Stamina Regen,
+Blood Moon,BloodMoon,Positive,"The blood moon drives all into a frenzy, greatly increasing their damage, attack speed, and stamina regen","-50% Bite Cooldown
++50% Damage
++50% Stamina Regen",
+Blurred Vision,BlurredVision,Negative,Blurs your vision,Blurs player's screen,
+Clean Water,CleanWater,Positive,"Decreases your hunger and thirst drain, Increases your stamina and health regen","-20% Hunger
+-20% Thirst
++20% Stamina Regen
++20% Health Regen",
+Cocooning,Cocooning,Negative,Slows you while becoming cocooned,Slows the player by 70% in all types,
+Cocooned,Cocooned,Positive,Immune to damage while cocooned,"Forces the player to lay, makes the player immune to damage and applies the Frozen Status",
+Cocoon Rage,CocoonRage,Positive,Increases damage dealt,Gives a 15% damage boost,
+Confusion,Confusion,Negative,Periodically inverts your controls and disorients movement,,
+Day Time,DayTime,Positive,"Increases damage, health regen, and stamina regen for photovores and photocarnivores","
++15% Damage
++25% Stamina Regen
++15% Health Regen",
+Dazzling Flash,DazzlingFlash,Negative,Gives you tunnel vision and occasionally inverts your controls,,
+Deep Wounds,DeepWounds,Negative,Prevents those inflicted with this from healing any bleed until it runs out,BleedHeal Disabled,
+"Disable Spacebar 
+(now Broken Legs)",DisableSpacebar,Negative,Disables your ability to fly or jump,Flier Takeoff/Jump Disabled,
+Drowsy,Drowsy,Negative,Ailment that increases time between bites,"
++30% Bite Cooldown",
+Energy,Energy,Positive,"Ailment only given to things with cloud breath, instantly restores 10% Health",Regenerates 10% Health,
+Enriched,Enriched,Positive,Increases your stamina and stamina regen,"
++25% Stamina
++25% Stamina Regen",
+Escape Area,EscapeArea,Positive,Takes away a large chunk of your health in exchange for greatly increased speed and stamina regen,"
++100% Walk Speed
++100% Sprint Speed
++100% Fly Speed (fliers only)",
+Fear,Fear,Negative,An AOE that instantly halves the damage of all nearby players but also greatly increases their speed,"-50% Damage
++40% Walk Speed
++40% Sprint Speed
++40% Fly Speed",
+Flowering,Flowering*,Positive,"Increases the speed at which eggs gestate
+", +100% Egg Gestation Rate,
+Fortify ,Fortify,Positive,Provides immunity to incoming ailments for a time,"Grants Immunity to ailments for set  duration
++5% Weight",
+Freeze,Freeze*,Negative,"Grounds fliers and decreases your overall speed, disables jumping/takeoff","base walk speed -75%
+base sprint speed -75%",
+Growth Boost,GrowthBoost,Positive,Provides a % growth speed increase,-15% Growth Time,
+Harden,Harden,Positive,Temporarily slows the user but increases their weight and health regen,"-20% Walk Speed
+-20% Sprint Speed
+-20% Fly Speed
++35% Weight
++25% Health Regen",
+Healing Pulse,HealingPulse,Positive,An AOE effect that greatly increases the hp regen of both the user and all nearby players,"
+-Multiplies HPR by a value equal to 700 ÷ Base HPR%
+- Allows those affected to heal regardless of hp regen hindering ailments such as bleed",
+Hide Scent/Hidden Scent,HideScent,Positive,Prevents other players from smelling you,,
+Horned Beetlefly,HornedBeetlefly,Positive,Slightly decreases the takeoff cost for fliers,-25% takeoff cost,
+Hungry ,Hungry,Negative,Causes damage via starvation,-105.6% Health Regen,
+Hunker,Hunker,Positive,Take heavily reduced damage from other players after strafing for 5 seconds at the cost of halving your own,"- Take a customizable % of reduced damage when active
+- User deals 50% less damage while active 
+- User has -25% to all speeds",
+Hunters Curse,HuntersCurse,Positive,Instantly halves your current health but doubles your max damage,"
++100% Damage",
+Hypothermia,Hypothermia,Negative,Lowers your stamina regeneration,-98% Stamina Regen,
+Life Leech,LifeLeech,Positive,"For the next few seconds, all attacks landed on others will heal you for a bit of the damage you deal",,
+Magic Pronghorn,MagicPronghorn*,Positive,Slightly increases health regen, +10% health regen,
+Muddy,Muddy,Positive,Increases your health regen,"
++25% Health Regen",
+Mythic Boost,MythicBoost,Positive,Decreases the time it takes to grow,-10% Grow Time,
+Newborn,Newborn,Positive,"Reduces hunger and thirst, and increases your health regen","-25% Hunger
+-25% Thirst
++50% Health Regen",
+Night Time,NightTime,Negative,"Decreases damage, health regen, and stamina regen for photovores and photocarnivores","-15% Damage
+-25% Stamina Regen
+-15% Health Regen",
+Rain,Rain,Negative,"Increases stamina takeoff cost, replenishes water sources","
++15% Flier Takeoff Multiplier
++50% Water Sources",
+Reflect,Reflect,Positive,"Protects the user for a few seconds, negating all incoming damage and reflecting it right back at attackers",,"Does not reflect ailments, user will still deal/recieve them if applicable"
+Satiated,Satiated,Positive,Decreases hunger drain and growth time,"-30% Hunger
+-50% Growth Time",
+SelfDestruct,SelfDestruct,Positive,Increases speed before exploding, +25% Speed,
+Shock,Shock,Negative,Disorients player movement while applied,,
+Shredded Wings,WingShredder,Negative,Prevents you from flying,Flier Takeoff Disabled,
+Sickly,Sickly,Negative,"Increases hunger and thirst drain, and decreases health regen and stamina regen","-20% Stamina Regen
+-20% Health Regen
++20% Hunger
++20% Thirst",
+Slowed,Slowed,Negative,Slows player’s overall speed,"-20% Walk Speed
+-20% Sprint Speed
+-20% Fly Speed",
+Snow,Snow,Negative,Increases stamina needed to takeoff,"
++10% Flier Takeoff Multiplier",
+Snow Shield,SnowShield,Negative,Creates a protective dome that you can pass through but others cannot at the cost of faster hunger and thirst drain,"
++200% Hunger
++200% Thirst",
+Spawn Immunity,SpawnImmunity,Positive,Cannot take damage from others when spawned in,Damage On Spawn Disabled,
+Speed Blitz,SpeedBlitz,Positive,Increases stamina regen and player’s overall speed,"
++35% Stamina Regen
++30% Walk Speed
++30% Sprint Speed
++30% Fly Speed",
+Speed Gift,SpeedGift,Positive,Increases stamina regen and player’s overall speed,"
++25% Stamina Regen
++25% Walk Speed
++25% Sprint Speed",
+Stamina Boost,StaminaBoost,Positive,Increases stamina regen,"
++200% Stamina Regen",
+Stat Boost,StatBoost,Positive,"Increases player’s overall speed, damage, and stamina regen","
++10% Stamina Regen
++10% Damage
++10% Sprint Speed
++10% Walk Speed
++10% Fly Speed",
+Sticky Teeth,StickyTeeth,Negative,Increases player’s bite cooldown,"
++75% Bite Cooldown",
+Sticky Trap,StickyTrap,Negative,Decreases player’s overall speed,"-75% Walk Speed
+-75% Sprint Speed",
+Stolen Speed,StolenSpeed,Negative,"Decreases stamina regen, decreases player’s overall speed","-25% Stamina Regen
+-25% Walk Speed
+-25% Sprint Speed",
+Survival Boost,DeathStatBoost,Positive,Decreases hunger and thirst drain,"-20% Hunger
+-20% Thirst",
+Tail Dropped,TailDropped,Positive,"Increases overall speed, decreases your weight","-30% Weight
++50% Walk Speed
++50% Sprint Speed",
+Territory,Territory,Positive,Decreases hunger drain,-20% Hunger,
+Thirsty,Thirsty,Negative,Causes damage via dehydration,-105.6% Health Regen,
+Thunderstorm,Thunderstorm,Negative,"Increases stamina needed to takeoff, replenishes water sources","
++25% Flier Takeoff Multiplier
++100% Water Sources",
+Tunnel Vision,TunnelVision,Negative,Applies tunnel vision,Darkens the edges of the screen,
+Tutorial Immunity,TutorialImmunity,Positive,Cannot take or deal damage against others while in the tutorial,"Dealing Damage Disabled
+Damage On Spawn Disabled",
+Unbridled Rage,UnbridledRage,Positive,"Disables stamina regen, increases your damage","Stamina Regen Disabled
++50% Damage",
+Violent Winds,ViolentWinds,Positive,Increases stamina and glide regen,"
++25% Stamina Regen
++25% Glide Regen",
+Wardens Nebula,WardensNebula,Positive,Decreases growth time,-25% Growth Time,
+Water Gale,WaterGale,Negative,Decreases player’s overall speed,"-25% Walk Speed
+-25% Sprint Speed
+-25% Fly Speed",
+Water Regeneration,WaterRegeneration,Positive,Regenerates your thirst meter,,
+Windstorm,Windstorm,Positive,Increases your stamina regen and increases your overall speed,"
++25% Stamina Regen
++15% Walk Speed
++15% Sprint Speed
++15% Fly Speed",

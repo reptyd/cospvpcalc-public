@@ -1,0 +1,44 @@
+/* Loadout strip for the beta BuildCards. Grouped, icon-bearing readout of a
+ * build: Elder | Traits | Plushies | Flags, separated by thin dividers. Uses
+ * the beta tokens (rendered inside .ob-card on a beta page). */
+
+.bl { display: flex; flex-wrap: wrap; align-items: center; gap: 9px 12px; width: 100%; }
+.bl__grp { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.bl__grp--flags { gap: 6px; }
+.bl__cap { font-size: 9px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-dim); opacity: 0.7; }
+.bl__sep { align-self: stretch; width: 1px; min-height: 22px; background: var(--b-line-soft, rgba(140, 170, 210, 0.16)); }
+
+.bl__item { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255, 255, 255, 0.04); padding: 3px 5px 3px 4px; }
+.bl__item img { border-radius: 5px; flex: none; }
+.bl__name { font-size: 12px; font-weight: 600; white-space: nowrap; }
+.bl__pts {
+  font-size: 10px; font-weight: 800; color: #07090e; background: var(--warn, #f2b55f);
+  border-radius: 999px; min-width: 16px; height: 16px; display: inline-flex; align-items: center;
+  justify-content: center; padding: 0 4px; font-variant-numeric: tabular-nums;
+}
+.bl__item--plush { border-color: rgba(77, 163, 255, 0.38); background: rgba(77, 163, 255, 0.1); padding-right: 9px; }
+.bl__item--plush .bl__name { color: #cfe6ff; }
+/* An unfilled slot is a slot the reader can still fill, so it keeps the frame
+   and only loses the fill: dashed outline, dimmed name, an empty icon well of
+   the same size. Two slots then read as two whether or not both are carrying. */
+.bl__item--empty { border-style: dashed; border-color: rgba(140, 170, 210, 0.32); background: rgba(255, 255, 255, 0.02); }
+.bl__item--empty .bl__name { color: var(--text-dim); }
+.bl__slot { flex: none; width: 18px; height: 18px; border-radius: 5px; border: 1px dashed rgba(140, 170, 210, 0.32); }
+
+.bl__none { font-size: 12px; font-weight: 600; color: var(--text-dim); }
+
+.bl__elder { font-size: 12px; font-weight: 700; padding: 4px 11px; border-radius: 999px; border: 1px solid rgba(var(--bl-elder, 140, 170, 210), 0.45); background: rgba(var(--bl-elder, 140, 170, 210), 0.12); color: rgb(var(--bl-elder, 200, 215, 230)); }
+.bl__elder[data-elder="Powerful"] { --bl-elder: 240, 116, 110; }
+.bl__elder[data-elder="Gentle"] { --bl-elder: 94, 224, 164; }
+.bl__elder[data-elder="Devious"] { --bl-elder: 187, 154, 255; }
+
+.bl__flag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; padding: 3px 11px 3px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--text-dim); }
+.bl__flag::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--text-dim); opacity: 0.45; }
+.bl__flag.is-on { color: #bff0d5; border-color: rgba(66, 211, 146, 0.4); background: rgba(66, 211, 146, 0.1); }
+.bl__flag.is-on::before { background: var(--ok, #42d392); opacity: 1; box-shadow: 0 0 5px rgba(66, 211, 146, 0.6); }
+
+@media (max-width: 640px) {
+  .bl { gap: 8px 10px; }
+  .bl__sep { display: none; }
+  .bl__grp { flex-wrap: wrap; }
+}

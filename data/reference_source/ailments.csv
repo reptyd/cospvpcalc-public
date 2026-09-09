@@ -1,0 +1,51 @@
+What defines an Ailment?,"Ailments are debilitating, stackable conditions. They are inflicted by enemies through attacks, defenses, environmental hazards, or abilities and can progressively worsen if not addressed. Ailments are always negative in nature, gradually reducing combat effectiveness, health, or mobility over time. Ailments can be resisted, and are typically removed or reduced by resting actions such as sitting or laying.",,,,
+Ailment Name,Code,Type,In-Game Description,Functionality,Notes
+Bleed,"BleedAttack
+DefensiveBleed
+BlockBleed",Negative,Disables your health regen and causes damage based on the amount of this ailment,,
+Burn,"BurnAttack
+DefensiveBurn
+BlockBurn",Negative,Disables your health regen and causes damage based on the amount of this ailment,"base damage 0.25%
+stack damage 0.1%
+disables health regen",
+Corrosion,"CorrosionAttack
+DefensiveCorrosion
+BlockCorrosion",Negative,Decreases your weight and causes damage,"base damage 0.5%
+base weight -7.5%
+stack weight -1%",Ailment stacks scale on Weight
+Disease,"DiseaseAttack
+DefensiveDisease
+BlockDisease",Negative,"Passively drains your food and water, with this effect becoming more intense the more disease you have"," +15% base hunger drain
+ +1.5% stack hunger drain
+ +15% base thirst drain
+ +1.5% stack thirst drain
+ -50% stam regen
+ -50% health regen",Ailment stacks scale on Weight
+Frostbite,"FrostbiteAttack
+DefensiveFrostbite
+BlockFrostbite",Negative,"Increases your hunger drain, bite cooldown and decreases your stamina regen"," -10% hunger
+ -25% stamina regeneration
+ -2% bite cooldown for every stack",
+Injury,"InjuryAttack
+DefensiveInjury
+BlockInjury",Negative,"Slows the movement speed of those afflicted, with higher injury slowing speed more","stack walk speed -0.85%
+stack sprint speed -0.85%",Ailment stacks scale on Weight
+Necropoison,"NecropoisonAttack
+DefensiveNecropoison
+BlockNecropoison",Negative,"Disables your abilities, occasionally inverts your controls, and causes colors to appear differently","0+ stacks: Causes color changes
+7+ stacks: Causes Confusion
+10+ stacks: Disables abilities","The more necropoison you have, the more common confusion happens
+Confusion percentage chance is equal to 1.5x the displayed number, e.g. if you have 10 Necropoison, you have a 15% chance to be confused every tick."
+Poison ,"PoisonAttack
+DefensivePoison
+BlockPoison",Negative,Decreases stamina regen and causes damage based on the amount of this ailment,"- base damage 0.2%
+- stack damage 0.05%
+- stack stamina drain 0.35%",
+Paralyze,"ParalyzeAttack
+DefensiveParalyze
+BlockParalyze",Negative,"When you are bitten by another player, they will gain the paralyzed ailment",- Apply a customizable amount of unstackable Freeze when attacked,"Currently only set up defensively, will probably remain that way"
+Radiation,"RadiationAttack
+DefensiveRadiation
+BlockRadiation",Negative,"Ailment that reduces damage, disables stamina regen, and disables health regen","-30% Damage
+Stamina Regen Disabled
+Health Regen Disabled",Not implemented currently

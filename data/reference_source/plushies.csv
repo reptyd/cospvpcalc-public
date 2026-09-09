@@ -1,0 +1,64 @@
+Plush Name,Obtained From,Functionality,Stackable?
+Horned Beetlefly,Bug Gacha,Lowers take-off stamina cost by 25% on fliers/gliders,Yes
+Magic Pronghorn,Bug Gacha,Adds 10% Health Regeneration,Yes
+Oceanwing,Bug Gacha,1.5x buff to the mudroll effect,Yes
+Rock,Plant Gacha,Increases stamina regeneration by 25%,Yes
+Stick,Plant Gacha,Increases creature max stamina by 10%,Yes
+Succulant,Plant Gacha,2.5% to all movement speeds,Yes
+Aerix,Hybrid Gacha,-10% growth time,Yes
+Aerodon,Hybrid Gacha,15% slower thirst,Yes
+Euvatops,Hybrid Gacha,15% slower hunger,Yes
+Cat,Halloween,"Adds 1 BleedAttack on any creature, decreases Damage by 2.5%",Yes
+Cavity Critter,Halloween,"Adds a ""20% chance for creatures that bite you to be knocked back",No
+Dragon,Halloween,Adds 0.5 PoisonAttack,Yes
+Ghost,Halloween,Adds 7.5% bleed-block,Yes
+Magic Frog,Halloween,"Adds a chance to nest a creature with the Bewitched mutation, or become Bewitched mutated at age 67, even outside the Halloween Events. Also boosts all chances for other Halloween-themed mutations during the events.",Yes
+Owl,Halloween, Increases nightvision by 1,Yes
+Pig O' Lantern,Halloween,Adds 0.5 BurnAttack and decreases Damage by 2.5%,Yes
+Vampire Bat,Halloween,"Adds 1 BleedDefense and +2.5% BleedBlock, decreases Damage by 2.5%",Yes
+Coal,Winter,Adds 3.5% Weight,Yes
+Frost Dragon,Winter, Adds 25% frostbite block and lowers both Hunger and Thirst by 5%,Yes
+Ginger Snapper,Winter,Adds 0.5 FrostbiteDefense and decreases BurnBlock by 5%,No
+Ice Wolf,Winter,Adds 5% damage,Yes
+Minty Wiggler,Winter,Gives you Frosty ,No
+Partridge,Winter,Increases Stamina by 20% and decreases Speed by 2%,Yes
+Reindeer,Winter,Adds 0.5 glide regeneration and +2.5% to flight speed,Yes
+Snowman,Winter,Prevents creature from growing,No
+Tannenbaum,Winter,Adds 0.5 FrostbiteAttack and increases BiteCooldown by 5%,Yes
+Heart,Valentine's,Adds 30% HealthRegen and decreases Weight by 5%,Yes
+Swan,Valentine's,Adds Agile Swimmer for 25% stamina decrease,No
+Bunny,Easter,Adds 10% to ambush,Yes
+Chick,Easter,"Adds 5% to all movement speeds, 7.5% less weight",Yes
+Cow,Easter,Adds 7.5% Weight and decreases Damage by 5%,Yes
+Eggshell,Easter,Speeds up gestation period by 1.5x,Yes
+Heartsnake,Easter,Adds 0.75 PoisonDefense,
+Springram,Easter, Increases duration for Satiation by 1.5x,Yes
+Land,LSS,adds 100% Mud and hidden scent effects duration,Yes
+Sea,LSS,Adds 7.5% Walkspeed and 7.5% BeachedSpeed,Yes
+Sky,LSS,"adds 2 Flight Speed, -15% Weight",Yes
+Void,LSS,Adds 7.5% Damage and decreases Speed by 2.5%,Yes
+Goldfish,Summer Paradise,Applies Iron Stomach ability and increases hunger and thirst drain by 20%,No
+Palm Tree,Summer Paradise,Adds 15% of Hunger Capacity,Yes
+Serpent,Summer Paradise,Decreases Turn by 1 and decreases Damage by 10%,No
+Jammy Slug,Harvest,Adds 0.5 NecropoisonDefense and decreases Damage by 5%,Yes
+Maple Leaflet,Harvest,adds 22.5% block injury,Yes
+Pie Chomper,Harvest,Adds Serrated Teeth and decreases HealthRegen by 25%,No
+Smore Cat,Redeem Code,"Adds a 10% to nest a creature with the Smores mutation, or become smore mutated at age 100",Yes
+Astral Quetzal,Redeem Code, +50% Breath & Bleed Resistance in turn for -5% of all speeds and decreases HealthRegen by 25%,No
+Ember Spirit,Redeem Code,Adds 0.5 BurnDefense and decreases FrostbiteBlock by 7.5%,Yes
+Mylo,UGC,"Applies a new Material Palette look called ""Mylo""",No
+Bear,Limited,Provides a flat 10% increase to the Cower and Aggro buffs,No
+Fox,Limited,"Increases the amount of burrows a creature can place by +1 (if not already capped at 4)
+While in a burrow, ailment healing is increased by 30%, and HP Regen is increased by 5%",No
+Dolt,Limited,"Gives the player the ability to double jump if they already can jump.
+Gives 15% less jump cost",No
+Hum,Limited,"Gives the player the ability to double jump if they already can jump.
+Gives a 2.5% increase in weight",No
+Knox,Limited,"Gives the player the ability to double jump if they already can jump.
+Gives 5% increased walkspeed",No
+Mo,Limited,"Gives the player the ability to double jump if they already can jump.
+Gives 2.5% increased damage",No
+Rod,Limited,"Gives the player the ability to double jump if they already can jump.
+Gives 10% increased HP regen",No
+Baby Dragon,Limited,Provides a 20% increase to breath regeneration rate,No
+Stitch Head,Limited,Gives a 100% chance of obtaining the Stitch Head mutation upon nesting or growth,No

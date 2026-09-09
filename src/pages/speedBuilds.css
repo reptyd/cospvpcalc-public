@@ -1,0 +1,41 @@
+/* Speed Builds - page-scoped additions only. The layout, cards, fields, toggles
+   and tables all come from the shared vocabulary in App.css; what is left is
+   the up/down colouring of a channel change and the emphasis on the channel the
+   ranking is built from. */
+
+.speed-builds-page .speed-delta {
+  font-variant-numeric: tabular-nums;
+}
+
+.speed-builds-page .speed-delta--good {
+  color: var(--ok);
+}
+
+.speed-builds-page .speed-delta--bad {
+  color: var(--bad);
+}
+
+.speed-builds-page .speed-delta--flat {
+  color: var(--text-dim);
+}
+
+/* The row the ranking is built from, so the table and the "Rank by" control
+   read as one answer. */
+.speed-builds-page .speed-row--target td {
+  background: rgba(77, 163, 255, 0.08);
+}
+
+.speed-builds-page .speed-row--target td:first-child {
+  box-shadow: inset 3px 0 0 var(--primary);
+}
+
+/* A percentage field does not need the full card width. */
+.speed-builds-page .speed-appetite {
+  max-width: 220px;
+}
+
+@media (max-width: 760px) {
+  .speed-builds-page .speed-appetite {
+    max-width: none;
+  }
+}

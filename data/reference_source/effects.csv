@@ -1,0 +1,85 @@
+What defines an Effect?,"Also referred to as Passive Abilities, these are innate traits or conditional modifiers that are always active or automatically triggered without direct player input.",,
+Effect Name,Code,In-Game Description,Functionality
+Adrenaline,Adrenaline,Gain increased damage and speed at the cost of disabled stamina regeneration while on low health,"(HP must be below 25%)
+- 20% damage increase
+- 1.25x overall speed 
+- Disables stamina regeneration"
+Agile Swimmer,AgileSwimmer,"While swimming, your stamina regen and stamina amounts are increased, you also have more oxygen ","
+         
+(only activates in water)
+- 1.75x speed boost
+- Increase oxygen bar capacity by 45
+- 2x stamina regen
+- 1.5x Stamina"
+Berserk,Berserk,"At low health, your stamina regeneration and attack speed increase","(HP must be below 20%)
+- stamina regen 2x
+- attack speed increased by 2x (faster bite)"
+Breath Resistance,BreathResistance,The ability to resist breath,- blocks a % of any breath's damage (not ailments/status)
+Channeling ,Channeling ,"Periodically strikes the user with lightning while on low health, shocking any nearby players","- Activates when below 25% health 
+- Lightning strikes every 5 seconds 
+- Applies 2 Confusion (3s-6s Duration)
+- Applies 2 Shock (3s-6s Duration)"
+Diver,Diver,You are able to dive underwater for a breath moment while flying,"- Allows the user to retain their flight speed underwater for a customizable duration 
+- Allows the user to regenerate stamina if gliding into water during the duration 
+- Cancels if the user runs into any obstacles "
+First Strike,FirstStrike ,"While above 75% hp, deal increased damage.","- Only works above 75% hp
+- Damage is increased by a customizable %"
+Frosty,Frosty,During winter and fall you experience a weight and stamina regeneration buff,"- Only active during Fall, Winter, and Famine
+- Increases health regen by 25%
+- Increases stamina regen by 25%
+- Decreases hunger and thirst depletion by 25%"
+Glittering Trail,GlitteringTrail,"When below a certain health threshold while in combat, you leave behind lingering clouds of light that inflict a random vision-distorting ailment on creatures that pass through them.","Each spawned cloud can apply the following Statuses:
+- Confusion
+- BlurredVision
+- TunnelVision"
+Gourmandizer,Gourmandizer,"Allows the creature to overfill its primary appetite bar up to 1.5x. Overfilling increases weight, but also reduces speed, and causes the overfilled appetite bar to drain twice as fast.","- User gains up to 15% more weight based on overfill, capping at 1.25x capacity
+- User loses up to 7.5% speed based on overfill, capping at 1.25x capacity
+- Overfilled appetites drain twice 2x normal speed"
+Guilt,Guilt,You take reduced damage from enemies,"- The user takes 50% reduced damage from attacks
+- Damage from breaths isn't reduced"
+Healing Step,HealingStep,Leaves behind a trail which heals your packmates when hurt,"- Activates under 65% health
+- Heals a customizable % of health when stepped in
+- Can heal the user 
+- Cannot heal anyone outside of pack
+- Trail segments last 8 seconds before disappearing"
+Hunker,Hunker,Take heavily reduced damage from other players after strafing for 5 seconds at the cost of halving your own,"- Must be strafing for 5 seconds to activate, and stopping causes the ability to stop
+- Applies a persistent single stack of Hunker until conditions fall off"
+Iron Stomach,IronStomach,You cannot receive negative ailments from eating rotten meat or drinking dirty water,
+Keen Observer,KeenObserver,An ability where you can temporarily see the health of those around you,- Allows the user to see the health and ailments of all creatures in its radius   
+Pack Healer,PackHealer,You give players nearby you a buff to health regeneration,"- increases packmate hp regen by 1.25x/+25%
+- 125 stud radius"
+Quick Recovery,QuickRecovery,Boosts health regeneration when you are heavily damaged,"(at 40% or less hp)
+- health regeneration 2x
+- HP regen increase scales based on current hp, maxing at a 100% boost"
+Raider,Raider,Allows the user to invade the burrows of other players,- Cooldown of 5 seconds upon entering/exiting a burrow 
+Self Destruct,SelfDestruct,"At very low health, gain a burst of movement speed. Upon death or expiration, explode to damage, burn, and heavily knock back nearby creatures. There is a 5 minute cooldown between activation.","At 15% HP, applies 3 stakcs of the SelfDestruct Status.
+After it runs out:
+- Sets HP of self to 5%
+- Deals 10% maxHP damage to nearby creatures.
+- Deals 10 Burn to nearby creatures.
+- Applies 2 stacks of the Slowed Ailment to self.
+"
+Serrated Teeth,SerratedTeeth,It is more difficult for your enemy to heal bleed while this ailment is active,- Applies 10 Deep Wounds (28s-30s)
+Silent Hunter,SilentHunter,"Reduces the noise creatures make, making them harder to hear on the hearing wheel.",Makes Sprinting/Flying appear as if the user is further away than they actually are.
+Soft Landing,SoftLanding,Reduces your fall speed after a jump or falling off a ledge ,"- Reduces fall speed by a customizable %
+- Can be disabled by pressing the jump button midair"
+Sonic Wings,SonicWings,An ability which lets the user fly in place without consuming stamina,"- Only works on fliers
+- Disables stamina drain while idle flying"
+Sticky Fur,StickyFur,Your attacker deals damage to you at a reduced speed,- Applies 10 stacks of Sticky Fur (28s-30s)
+Strength In Numbers,StrengthInNumbers,Get extra health regen/stamina regen when in a pack ,"- Increases health regen by 7%
+- Increases stamina regen by 7%
+- Only members of the same species receive boosts"
+Toxic Trail,ToxicTrail,Leaves behind a trail when on low health which poisons and damages whoever steps on it,"- Activates when below a customizable health %
+- Trail causes 1% damage and 3 poison every 3 seconds 
+- Trail segments last 5 seconds"
+Unbreakable,Unbreakable,You are immune to injury and bleed,"- user is immune to bleed
+- user is immune to injury"
+Volcanic,Volcanic,You are immune to lava and have improved healing during famine and drought,"- Makes the user immune to damage and burn from lava
+- Only active during summer/drought
+- Increases health regen by 50%
+- Decreases hunger and thirst drain by 25%"
+Wardens Resistance,WardensResistance,When below 50% health. Gain 100% block to all incoming ailments.,
+Will To Live,WillToLive,"You are able to run with 0 stamina, at the cost of some health","- Only active once stamina is fully depleted 
+- Drains 3% health every 3 seconds
+- Health regen is disabled while active"
+Wing Shredder,WingShredder,"You apply a Shredded Wings ailment to your enemy, which knocks them out of the sky and makes it hard to fly",- Applies variable stacks of Shredded Wings

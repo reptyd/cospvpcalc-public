@@ -1,0 +1,110 @@
+/* Beta design - surface layer.
+ *
+ * Reskins the shared page primitives (panels, cards, headings, form
+ * controls, buttons) that every reused page is built from. Scoped to
+ * `.app[data-design="beta"] .beta-content` so the new shell chrome (which
+ * has its own `.beta-*` classes) is never affected, and so the default
+ * design is fully isolated. Reusing the same components + restyling here
+ * is what gives the whole site the new look while keeping 100% of the
+ * functionality. */
+
+.app[data-design="beta"] .beta-content {
+  --shadow: var(--b-elev-1);
+}
+
+/* ---- Panels & cards ---- */
+
+.app[data-design="beta"] .beta-content .panel {
+  border: 1px solid var(--b-line-soft);
+  border-radius: var(--b-radius);
+  background: var(--b-surface), var(--panel);
+  box-shadow: var(--b-elev-1), var(--b-top-highlight);
+  padding: 22px;
+}
+
+.app[data-design="beta"] .beta-content .panel + .panel {
+  margin-top: 18px;
+}
+
+.app[data-design="beta"] .beta-content .panel-block {
+  border: 1px solid var(--b-line-soft);
+  border-radius: var(--b-radius-md);
+  background: var(--panel-2);
+  box-shadow: var(--b-top-highlight);
+}
+
+.app[data-design="beta"] .beta-content .panel-block h3,
+.app[data-design="beta"] .beta-content .card-title {
+  font-family: var(--b-font-display);
+  letter-spacing: 0.2px;
+}
+
+/* ---- Headings ---- */
+
+.app[data-design="beta"] .beta-content h1,
+.app[data-design="beta"] .beta-content h2,
+.app[data-design="beta"] .beta-content h3 {
+  font-family: var(--b-font-display);
+}
+
+/* ---- Form controls ---- */
+
+.app[data-design="beta"] .beta-content input[type="text"],
+.app[data-design="beta"] .beta-content input[type="number"],
+.app[data-design="beta"] .beta-content input[type="search"],
+.app[data-design="beta"] .beta-content select,
+.app[data-design="beta"] .beta-content textarea {
+  border: 1px solid var(--b-line-strong);
+  border-radius: var(--b-radius-sm);
+  background: rgba(0, 0, 0, 0.28);
+  color: var(--text);
+  transition: border-color 0.16s var(--b-ease), box-shadow 0.16s var(--b-ease);
+}
+
+.app[data-design="beta"] .beta-content input[type="text"]:focus,
+.app[data-design="beta"] .beta-content input[type="number"]:focus,
+.app[data-design="beta"] .beta-content input[type="search"]:focus,
+.app[data-design="beta"] .beta-content select:focus,
+.app[data-design="beta"] .beta-content textarea:focus {
+  outline: none;
+  border-color: var(--b-primary-line);
+  box-shadow: var(--b-glow-primary);
+}
+
+/* ---- Buttons (generic page buttons only; chrome uses .beta-* classes) ---- */
+
+.app[data-design="beta"] .beta-content .apply-btn,
+.app[data-design="beta"] .beta-content button.primary,
+.app[data-design="beta"] .beta-content .primary-btn {
+  border-radius: var(--b-radius-sm);
+  background: linear-gradient(150deg, var(--primary), var(--primary-strong));
+  border: 1px solid var(--b-primary-line);
+  color: #04101f;
+  font-weight: 700;
+  box-shadow: var(--b-glow-primary), var(--b-top-highlight);
+  transition: transform 0.16s var(--b-ease), box-shadow 0.16s var(--b-ease), filter 0.16s var(--b-ease);
+}
+
+.app[data-design="beta"] .beta-content .apply-btn:hover,
+.app[data-design="beta"] .beta-content button.primary:hover,
+.app[data-design="beta"] .beta-content .primary-btn:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+/* ---- Banners shown inside the beta content area ---- */
+
+.app[data-design="beta"] .beta-banners .app-update-banner {
+  border-radius: var(--b-radius-md);
+  border: 1px solid var(--b-line-strong);
+  background: var(--b-surface), var(--panel-2);
+  box-shadow: var(--b-elev-1);
+}
+
+/* ---- Ad slots (dev-only) tidy up in the new frame ---- */
+
+.app[data-design="beta"] .beta-content .ad-slot {
+  border-radius: var(--b-radius-md);
+  border: 1px dashed var(--b-line-strong);
+  background: transparent;
+}

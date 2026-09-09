@@ -1,0 +1,171 @@
+What defines an Ability?,"Abilities are player-controlled actions that require deliberate input to execute. They are the core of active gameplay, representing the special moves and utilities unique to each creature. Typically, each creature can equip a maximum of four Abilities at any time (there are exceptions). Most abilities have cooldowns tied to them.",,,,,
+Ability Name,Code,Type,In-Game Description,Functionality,Studs,Cooldown
+Adrenaline,Adrenaline,Ability Key,Stops stamina regen in trade for increased speed and damage,"- Automatically activates if HP is below 20% ~ Legacy Functionality
+- 20% Damage increase
+- 25% Speed increase 
+- Disables stamina regeneration
+- Applies 10 Stacks of Adrenaline (28s-30s Duration)",,90s
+Ambush,Ambush,Ability Key,Experience a burst of fast sprinting at the cost of faster consumed stamina,- Customizable per creature,,
+Area Food Restore,AreaFoodRestore,Ability Key,A ranged ability which refreshes food sources in range,- Refills food sources by 20%,350,600s
+Area Water Restore,AreaWaterRestore,Ability Key,A ranged ability which refreshes water sources in range,- Refills water sources by 20%,350,600s
+Burrower,Burrower,Ability Key,Place burrows and teleport to underground burrows in the world,"- Maximum of 4 burrows
+- Cooldown of 3 seconds upon entering/exiting a burrow",,30s
+Breath,Breath,Ability Key,Spew a breath from your mouth which deals varying effects ,All breaths and their info can be found on the Breaths Data sheet,,1s
+Fear,CauseFear,Ability Key,A ranged ability which impacts those in range by reducing damage but increasing speed,"- Damage reduced by 50%
+- All speeds increased by 40%
+- Applies 10 Stacks of Fear (28s-30s Duration)",150,120s
+Change Weather,ChangeWeather,Ability Key,Forces a weather to occur," 
+         
+- Changes weather
+- Cannot change important events (such as Blood Moon and Wardens Nebula)",,600s
+Charge,Charge,Passive,"Begin filling a charge meter while running, dealing extra effects on hit once fully charged ","- All charges do some knockback
+- All charges have a cooldown of 5 seconds after being used
+- All charges take 5 seconds to activate ",,5s
+Gore Charge,Charge Gore,Passive,"Begin filling a charge meter while running, dealing extra effects on hit once fully charged ",Gore charge applies 2 bleed and 10 Deep Wounds (28s-30s Duration),,5s
+Power Charge,Charge Power,Passive,"Begin filling a charge meter while running, dealing extra effects on hit once fully charged ",Power charge increases damage by 50% and applies 2 Shredded Wings (3s-6s Duration),,5s
+Crush Charge,Charge Crush,Passive,"Begin filling a charge meter while running, dealing extra effects on hit once fully charged ",Crush charge applies 8 injury and does 50% less damage ,,5s
+Launch Charge,Charge Launch,Passive,"Begin filling a charge meter while running, dealing extra effects on hit once fully charged ",Launch charge does extra Knockback and applies 2 Confusion (3s-6s Duration) ,,5s
+Throw Charge,Charge Throw,Passive,"Begin filling a charge meter while running, dealing extra effects on hit once fully charged ","Throw Charge launches players upwards, applies 2 Broken Bones (3s-6s Duration), and 1 Shock (0s-3s Duration)",,5s
+Cocoon,Cocoon,Ability Key,"Cocoon yourself for a short time, slowly healing your health, then emerge stronger with a brief damage boost.","Applies the Cocooning Status for 5 seconds.
+Afterwards, apply the Cocooned Status for 5 seconds.
+Then finally, apply the Cocoon Rage Status for 20 seconds (6.66 stacks)",,120s
+Cursed Sigil,CursedSigil,Ability Key,"Inflict your opponent with a curse, decreasing their healing for a short time and giving them a random ailment afterwards","- Applies a customizable amount of Bad Omen which decreases health regen by 25%
+- Applies 3 Tunnel Vision (6s-9s Duration)
+- Once Bad Omen runs out, applies a set amount of a random ailment:
+5 Frostbite, 8 Burn, 10 Bleed, 4 Blurred Vision, 5 Corrosion, 3 Confusion, 3 Disabled Spacebar + 3 Shredded Wings, 20 Disease, 10 Injury, 10 Necro Poison, 10 Poison",100,85s
+Dart,Dart,Mobility Augment,Experience a burst of movement in water at the cost of stamina,- Customizable power and stamina cost per creature,,
+Damage Link,DamageLink,Ability Key,"Link up to 3 nearby creatures, causing hits dealt to one of them to be applied to all of them.","- All linked creatures apart from the target take 20% reduced damage
+- Link is broken if creatures travel more than 90 studs apart from each other 
+- 20s Duration
+- Currently exclusive to Ardor Warden until further notice ",60,45s
+Dazzling Flash,DazzlingFlash,Ability Key,A ranged ability which impacts those in range by causing erratic controls and impacting vision,"- Makes your controls erratic 
+- Applies 3 Stacks of Dazzling Flash (6s-9s Duration)
+- Applies 2 Stacks of Blurred Vision (3s-6s Duration)
+- FOV is increased 2x",150,70s
+Drowsy Area,DrowsyArea,Ability Key,"Causes those within your radius to have the drowsy ailment, which causes bite slowness","- Applies 5 Stacks of Drowsy (13s-15s Duration)
+- Adds 5 Stacks of Slowed (13s-15s Duration)",150,60s
+Earthquake,Earthquake,Ability Key,A ranged ability which applies injury to those in range,"- Instantly applies 40 injury to all nearby players 
+- Costs 25% Stamina to use
+- Applies 4 Aftershock to the user (9s-12s Duration)",100,150s
+Egg Stealer,EggStealer,Passive,Allows a creature to steal eggs from another's nest,"- User can steal eggs from any nest
+- Can sniff eggs
+- Fully eating an egg restores 20 food and applies Satiated",,
+Escape Area,EscapeArea,Ability Key,"At the cost of health, gives yourself a speed boost to escape the area","- Costs 40% HP to use
+- Speed is increased by 100%
+- Fully refills stamina bar
+- Releases you from any grab/latch upon use 
+- Applies 10 Stacks (28s-30s Duration) ",,75s
+Fortify,Fortify,Ability Key,"An ability which clears ailments and grants ailment resistance to the user, also increasing weight","- Clears any negative ailments
+- Increases weight by 5%
+- Applies 3 stacks of Fortify (6s-9s Duration)",,90s
+Frost Nova,FrostNova,Ability Key,"An area-of-effect ability, applying the frostbite ailment to any creatures around you","- Applies 3 Frostbite every 3s
+- Range of the AOE is customizable per creature
+- 15s Duration",N/A,60s
+Frost Snare,FrostSnare,Ability Key,"Place a snare that tethers nearby creatures to a central point, applying frostbite over time until they break free.","- Applies 5 Frostbite when initially used
+- Tether takes 5 hits to break
+- 20s Duration",50,205s
+Grab,Grab,Ability Key,Grab another player when they are near your head,"- Can only grab creatures 25% lighter than yourself 
+- Cannot grab the tier higher",,10s
+Harden,Harden,Ability Key,Decreases the players speed in trade of more weight and increased healing ,- Applies 10 Stacks of Harden (28s-30s Duration),,120s
+Heal Aura,HealAura,Ability Key,A toggleable ability which heals any nearby players while active,- Heals other players by a customizable % every 3 seconds,175,Toggle
+Healing Hunter,HealingHunter,Ability Key,A toggleable ability which allows you to swap from damage to healing mode,"- Won't apply offensive ailments when on
+- When on, heals for customizable healing value",,Toggle
+Healing Pulse ,HealingPulse,Ability Key,"Applies a healing ailment to creatures around you, and yourself",- Applies 10 Healing Pulse to everything in range (28s-30s Duration),175,90s
+Hunters Curse,HuntersCurse,Ability Key,An ability which costs health to use and increase damage,"- Reduces health by 50% on use
+- Applies 10 stacks of Hunters Curse (28s-30s Duration)",,120s
+Invisibility,Invisibility,Ability Key,An ability where you appear fully invisible to those around you,"- You can walk, eat, drink, sit, lay & mudroll while invis
+- Running, attacking, or flying will disable it
+- can be sniffed unless you have Hidden Scent",,30s
+Jump,Jump,Mobility Augment,"Leap forwards, upwards, or backwards at the cost of stamina","- Length, height, and stamina cost of jump are fully customizable",,
+Lance,Lance,Ability Key,"Launches a concentrated lance that pierces forward, damaging and slowing enemies on direct impact, and deals area of effect ailment damage over a short interval.","- Deals 5% max HP damage and applies the 'Slowed' Status on direct impact
+- Spawns an AoE that lasts 5 seconds
+- Deals 1% max HP and 1 specified ailment per second if the target remains in the AoE",500,60s
+Latch,Latch,Ability Key,Latch onto another player when they are near your head for 5 seconds,- Currently drains 15% of max stamina on use,,10s
+Life Leech,LifeLeech,Ability Key,Allows you to heal yourself based on the bite damage you do to others while active,"- Heals you for a customizable % of the damage you deal to others while active
+- Applies 4 stacks of Life Leech (9s-12s Duration)",,60s
+Mud Pile,MudPlacer,Ability Key,An ability which allows you to place a mud pile to roll in for healing benefits,"- 2 can be placed at once
+- Removed upon creature death/mene",,120s
+Poison Area,PoisonArea,Ability Key,Affects those in a radius with poison,- Applies 5 poison,100,15s
+Radiation,Radiation,Ability Key,A ranged toggleable ability that applies corrosion to creatures in your vicinity,- Applies 3 corrosion every 3 seconds,100,"10s
+Toggle"
+Reflect,Reflect,Ability Key,An ability which allows you to reflect applied damage back onto the attacker while you are immune,"- Deflects damage you receive back onto the target
+ - Applies 2 Stacks of Reflect (3s-6s Duration)",,60s
+Reflux,Reflux,Ability Key,"Spit a blob of acid that splashes on impact, damaging enemies and coating the area in a caustic haze that inflicts continuous corrosive damage. Costs hunger and cannot be used when below 25% hunger.","- Deals 5% max HP damage and applies the 'Slowed' Status on direct impact
+- Spawns an AoE that lasts 10 seconds
+- Deals 1.5% max HP and 0.5 Corrosion per second if the target remains in the AoE",,120s
+Rewind ,Rewind ,Ability Key,A special ability which sets you back 10 seconds in the past on use while also healing you a little ,"- Teleports the user to their position 10 seconds ago
+- Heals up to 75% health on use if the users hp was higher 10 seconds ago
+- Sets any applied ailments on the user to their amounts from 10 seconds ago 
+- Currently exclusive to Hellion Warden until further notice  ",,100s
+Self Destruct,SelfDestruct ,Ability Key,"An ability which allows you to self destruct when on low health, dealing huge damage and burn to nearby players at the cost of your own health","- Only usable below 25% health 
+- Deals 35% damage to all nearby players which scales with weight
+- Applies 10 burn to all nearby players 
+- Deals knockback to all nearby players 
+- Leaves the user on 2.5% health after use ",100,300s
+Shadow Barrage,ShadowBarrage,Ability Key,Tap into the shadow dimension to strike your last-hit creature three more times.,"- The amount of hits dealt by the ability is customizable per creature 
+- Each hit following the initial one does 10% less damage 
+- Also applies any ailments the user has each hit 
+- Only creatures hit in the last 10 seconds can be hit by the ability
+- Currently exclusive to Shadow Creatures until further notice",,30s
+Shock Area,ShockArea,Ability Key,Causes disoriented movement and grounds fliers/prevents takeoff for a short time,"- Makes the movement of other players erratic
+- Knocks fliers out of the air
+- Applies 4 Stacks of Shock (9s-12s Duration)",150,80s
+Snow Shield,SnowShield,Ability Key,An ability which conceals you with a shield and increases hunger and thirst drain,"- Only one can be placed at a time
+- Thirst and Hunger drain increased by 200% while active
+- Takes 40 hits to destroy
+- Press keybind again to remove",,120s
+Speed Blitz,SpeedBlitz,Ability Key,An ability which requires stamina and increases your speed and stamina regeneration,"- Reduces stamina by 50% on use
+- Applies 6 Stacks of Speed Blitz (16s-18s Duration)",,90s
+Speed Steal,SpeedSteal,Ability Key,A ranged ability that decreases the speed of those in your vicinity and increases your own speed," - Applies 4 Stacks of Speed Gift to self (9s-12s Duration)
+-Applies 4 Stacks of Stolen Speed to all others (9s-12s Duration)",,60s
+Spite,Spite,Ability Key,An ability which begins increasing your damage and ailments on use but taking some time to fully charge ,"- Takes 5 seconds to fully charge 
+- Charge immediately begins depleting after fully charged 
+- Increases damage by a customizable %
+- Doubles offensive ailments when fully charged",,20s
+Stamina Puddle,"
+StaminaPuddlePlacer",Ability Key,An ability to drop a puddle of stamina which grants bonuses to stamina regen when rolled in ,"- Puddle must be mud rolled in to apply
+- Increases stamina regen by 200%
+- 2 can be placed at once
+- All puddles removed upon users death/menu
+- Applies 180 stacks of Stamina Puddle (538s-540s Duration)",,120s
+Sticky Trap,StickyTrap,Ability Key,Drops a trap causing those ensnared to move slower,"- Can place 2 at once
+- Reduces walk, run, and swim speeds by 75%
+- Disables flying/jumping
+- All traps removed upon users death/menu
+- Applies 4 stacks of Sticky Trap & Broken Bones (9s-12s Duration)",,75s
+Tail Drop,TailDrop,Ability Key,"An ability where you can drop your tail as a food source to increase your speed, yet your weight is decreased. Your tail costs food to regrow ","- Makes your tail model invisible while active
+- Food is worth 8 food points and applies 30 enriched
+- Decreases weight by 40%
+- Increases speed by 35%
+- Tail can be regrown and stat changes reverted at the cost of 30% hunger ",,10s
+Tail Whip,TailDamage,Passive,Face your tail to whip behind you,- Tail damage varies per creature,,
+Thorn Trap,ThornTrap,Ability Key,"Place a thorn trap which slows, damages, and applies bleed to anyone who steps on it","- Can place 3 at once 
+- Deals 5% damage on contact 
+- Applies 6 bleed on contact 
+- Applies 1 Freeze (0s-3s Duration)
+- Trap is destroyed after coming in contact with someone
+- All traps are destroyed upon user death/menu",,45s
+Totem,,Ability Key,A placeable totem that applies an ailment to nearby players every few seconds,"- Applies 2 of an ailment every 3 seconds when in range
+- Can be broken by attacking 
+- Maximum of 1 placed at once
+- All totems are removed upon users death/menu
+- (Only Poison totem exists as of current)",,120s
+Toxic Trap,ToxicTrap,Ability Key,Place a trap that causes those ensnared to receive poison,"- Applies 5 poison every 3 seconds when touched 
+- Applies 4 Stacks of Broken Bones (3s-6s Duration)
+- Maximum of 2 placed at once
+- All toxic traps are deleted upon users death/menu",,120s
+Two Faced,TwoFaced,Ability Key,"Switch between two different forms, with each form providing its own damage and bite cooldown buffs/debuffs","- Tranquility: +60% damage, +60% bite cooldown
+- Madness: -37.5% damage, -37.5% bite cooldown",,15s
+Unbridled Rage,UnbridledRage,Ability Key,An ability which requires stamina to raise your damage but prevents stamina regeneration,"-Reduces stamina by 50% on use
+- Applies 6 stacks of Unbridled Rage (16s-19s Duration)",,120s
+Wardens Rage,WardensRage,Ability Key,As you are damaged your attack power increases at the cost of no healing,"- Only occurs when creature is an adult 
+- Stamina regeneration is increased by 2x
+- Grants Ailment immunity below 50% HP
+- HP cannot be regenerated while active
+- Damage multiplier is 1x while the creature is at max health, will increase up to 8.5x damage at half health
+- Can be activated via ability key, but also activates automatically when attacked",,30s
+Gale,WaterGale,Ability Key,A ranged ability which impacts those in range by slowing them down and impacting their vision,"- Slows all speed stats by 25%
+- FoV increased by 200%
+- Applies 7 stacks of Water Gale (19s-21s Duration)",150,90s
+Yolk Bomb,YolkBomb,Ability Key,"Allows a creature to drop a ""bomb"" projectile whilst flying, knocking back ant creatures hit, and damaging them.","- The ailment applied by the ability is customizable per creature, but not the amount which is always 4
+- Applies 2 stacks of Slowed (3s-6s Duration)",40,30s
